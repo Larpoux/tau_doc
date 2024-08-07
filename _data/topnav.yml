@@ -4,14 +4,6 @@ topnav:
 - title: Topnav
   items:
 
- 
-    - title: Download
-      url: /download.html
-      hint: "Installing the app"
-
-    - title: Prices
-      url: /prices.html
-      hint: "Prices"
 
 
 #Topnav dropdowns
@@ -78,24 +70,20 @@ topnav_dropdowns:
           external_url: https://discord.com/channels/799683099473870848/799683099473870852
 
 
-    - title: Language
+
+    - title: The τ family
       folderitems:
-
-        - title: English
-          url: /english.html
-
-        - title: French
-          url: /french.html
-
-
-
-    - title: Roles
-      folderitems:
-        - title: The student doc
+        - title: τ-dio
           url: /index.html
 
-        - title: The teacher doc
-          url: /teacher_landing_page.html
+        - title: Flutter Sound
+          url: /flutter_sound_landing_page.html
 
-        - title: The contributor doc
-          url: /contributor_landing_page.html
+        - title: τ-graph
+          url: /tau_graph_landing_page.html
+
+        - title: τ-cpal
+          url: /tau_cpal_landing_page.html
+
+        - title: e-τ
+          url: /tau_cpal_landing_page.html
