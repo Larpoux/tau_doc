@@ -108,7 +108,7 @@ img {
 }
 
 svg:not(:root) {
-    overflow: auto
+    overflow: hidden
 }
 
 figure {
@@ -1462,7 +1462,7 @@ hr {
     height: 1px;
     padding: 0;
     margin: -1px;
-    overflow: auto;
+    overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0
 }
@@ -1807,7 +1807,7 @@ dd {
     .dl-horizontal dt {
         float: left;
         width: 160px;
-        overflow: auto;
+        overflow: hidden;
         clear: left;
         text-align: right;
         text-overflow: ellipsis;
@@ -2994,7 +2994,7 @@ table th[class*=col-] {
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;
-        overflow-y: auto;
+        overflow-y: hidden;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         border: 1px solid #ddd
     }
@@ -4049,7 +4049,7 @@ tbody.collapse.in {
 .collapsing {
     position: relative;
     height: 0;
-    overflow: auto;
+    overflow: hidden;
     -webkit-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
@@ -4110,7 +4110,7 @@ tbody.collapse.in {
 .dropdown-menu .divider {
     height: 1px;
     margin: 9px 0;
-    overflow: auto;
+    overflow: hidden;
     background-color: #e5e5e5
 }
 
@@ -4646,7 +4646,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
-    overflow: auto;
+    overflow: hidden;
     background-color: #e5e5e5
 }
 
@@ -5943,7 +5943,7 @@ a.thumbnail:hover {
 .progress {
     height: 20px;
     margin-bottom: 20px;
-    overflow: auto;
+    overflow: hidden;
     background-color: #f5f5f5;
     border-radius: 4px;
 }
@@ -6028,7 +6028,7 @@ a.thumbnail:hover {
 
 .media,
 .media-body {
-    overflow: auto;
+    overflow: hidden;
     zoom: 1
 }
 
@@ -6690,7 +6690,7 @@ a.list-group-item-danger.active:hover {
     display: block;
     height: 0;
     padding: 0;
-    overflow: auto
+    overflow: hidden
 }
 
 .embed-responsive .embed-responsive-item,
@@ -6767,7 +6767,7 @@ button.close {
 }
 
 .modal-open {
-    overflow: auto
+    overflow: hidden
 }
 
 .modal {
@@ -6778,7 +6778,7 @@ button.close {
     left: 0;
     z-index: 1040;
     display: none;
-    overflow: auto;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
     outline: 0
 }
@@ -6801,7 +6801,7 @@ button.close {
 }
 
 .modal-open .modal {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto
 }
 

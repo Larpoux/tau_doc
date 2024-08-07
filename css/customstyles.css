@@ -336,7 +336,6 @@ a.accordion-toggle, a.accordion-collapsed {
 .nav a {
     color: #333;
     display: block;
-    outline: none;
     /*-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;*/
@@ -358,7 +357,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav a:hover, .nav li.active > a {
-    background-color: #00A000; /* LARPOUX */
+    background-color: #8D8D8D;
     color: #f5f5f5;
 }
 
@@ -536,6 +535,10 @@ button.cursorNorm {
 
 a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
     margin-left: 10px;
+}
+
+.navbar a:focus {
+    outline: 1px solid #fff;
 }
 
 hr.faded {
