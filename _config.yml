@@ -27,24 +27,12 @@ host: 127.0.0.1
 port: 4000
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
-exclude:
-  - .idea/
-  - .gitignore
-  - vendor
-# these are the files and directories that jekyll will exclude from the build
+
 
 feedback_subject_line: The Dank u Documentation
 
 feedback_email: larpoux@canardoux.xyz
-# used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
-# if you uncomment the previous line, the Feedback link gets removed
-
-# feedback_text: "Need help?"
-# if you uncomment the previous line, it changes the Feedback text
-
-# feedback_link: "http://helpy.io/"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 DANKU_VERSION: 0.0.2
@@ -79,43 +67,9 @@ defaults:
       search: true
       sidebar: mydoc_sidebar
       topnav: topnav
-  -
-    scope:
-      path: ""
-      type: "tooltips"
-    values:
-      layout: "page"
-      search: true
-      tooltip: true
-
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true
-      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
-      search: true
-      sidebar: mydoc_sidebar
-      topnav: topnav
-
-# these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
-- mydoc_sidebar
-- student_sidebar
-- teacher_sidebar
 - developer_sidebar
 - other
 
 description: "This is the documentation of the Dank u Project."
-# the description is used in the feed.xml file
-
-# needed for sitemap.xml file only
-# url: http://idratherbewriting.com
-# baseurl: /documentation-theme-jekyll
-
-
-# github: [metadata]
