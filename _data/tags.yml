@@ -1,0 +1,19 @@
+# Note:
+# If you are using the createtag script, don't leave a blank line at the end of this file.
+# In other words, the last line must be the last tag in the allowed-tags list.
+allowed-tags:
+  - getting_started
+  - overview
+  - role
+  - classroom
+  - license
+  - platform
+  - anki
+  - dyglot
+  - super_memo
+  - news
+  - troubleshooting
+  - faq
+  - danku_web
+  - multilingualism
+  - prices
