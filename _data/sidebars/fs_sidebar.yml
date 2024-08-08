@@ -28,13 +28,8 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Introduction
-      url: /fs-readme.html
-      output: web, pdf
-      type: homepage
-
     - title: Changelog
-      url: /fs-changelog.html
+      url: /fs-CHANGELOG.html
       output: web, pdf
 
     - title: Development Setup

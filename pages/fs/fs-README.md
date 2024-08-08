@@ -50,6 +50,7 @@ The Flutter Sound recorder can record sounds to:
 - Streams
 
 Flutter Sound can be used to interface a Speech-to-Text remote application.
+
 Flutter Sound can be used to interface a Text-to-Speech remote application.
 
 # Flutter Sound 10.0
@@ -89,7 +90,7 @@ The Flutter Sound package includes the following features :
 
 # License
 
-Flutter Sound 9.x is released under the Mozilla very permissive Plublic License version 2.0 (MPL 2.0). This is a Free And Open Source license which has a **weak copyleft** clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed Sources License (shame on you!).
+Flutter Sound 9.x is released under the Mozilla very permissive Plublic License version 2.0 (MPL 2.0). This is a Free And Open Source license which has a **weak copyleft** clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your own App with any license you want. Even a Proprietary/Closed Sources License (shame on you!).
 
 If you can and want to publish your App under the GPL 3.0 license, we suggest that you consider using the [τ-dio fork](https://tau.canardoux.xyz/td-README.html) which is in fact Flutter Sound 10.0 .
 
