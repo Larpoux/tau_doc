@@ -18,4 +18,4 @@ git pull
 git push
 
 ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
-scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/
+scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null

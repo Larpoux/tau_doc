@@ -5,8 +5,10 @@ keywords: home homepage readme
 tags: [FlutterSound]
 sidebar: fs_sidebar
 permalink: fs-README.html
-summary: The Flutter Sound documentation.
+summary: Overview on the Flutter Sound documentation.
 ---
+
+## Flutter Sound stands for Ukraine
 
 {% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
 {% include image.html file="banner.png"  caption="Stand up For Ukraine : Street Art" %}
