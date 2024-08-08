@@ -56,6 +56,11 @@ Flutter Sound can be used to interface a Text-to-Speech remote application.
 
 Flutter Sound 9.x has been completely rewritten. If you can and want to publish your App under the GPL 3.0 license, we suggest that you consider using the [τ-dio fork](https://tau.canardoux.xyz/td-README.html) which is in fact Flutter Sound 10.0 .
 
+# Documentation
+
+- Flutter Sound documention [is here](https://tau.canardoux.xyz/fs-README.html)
+- Flutter Sound changelog [is here](https://tau.canardoux.xyz/fs-CHANGELOG)
+
 # SDK requirements
 
 - Flutter Sound requires an iOS 12.0 SDK \(or later\)
@@ -98,5 +103,7 @@ Actually, my main project is the GPL [Taudio 10.0](https://tau.canardoux.xyz/td-
 
 # Thanks
 
+{% include note.html content="
 You might click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/flutter_sound).
 This is free and this will reassure me that **I do not spend most of my life for nobody**.
+" %}
