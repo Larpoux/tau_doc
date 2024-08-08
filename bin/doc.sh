@@ -9,11 +9,6 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
-cd _site
-rm index.html
-ln -s td-README.html index.html
-cd ..
-
 cp index.html _site
 
 git add .

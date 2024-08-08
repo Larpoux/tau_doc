@@ -127,19 +127,19 @@ topnav_dropdowns:
     - title: The τ family
       folderitems:
         - title: τ-dio
-          url: /index.html
+          url: /td-README.html
 
         - title: Flutter Sound
-          url: /fs-readme.html
+          url: /fs-README.html
 
         - title: τ
-          url: /tau-readme.html
+          url: /tau-README.html
 
         - title: τ-graph
-          url: /tgr-readme.html
+          url: /tgr-README.html
 
         - title: τ-cpal
-          url: /tau-readme.html
+          url: /tau-README.html
 
         - title: e-τ
-          url: /etau-readme.html
+          url: /etau-README.html
