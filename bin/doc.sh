@@ -13,4 +13,5 @@ cp index.html _site
 
 git add .
 git commit -m 'tau-doc update'
+git pull
 git push
