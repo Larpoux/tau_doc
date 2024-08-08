@@ -44,7 +44,7 @@ The Flutter Sound player supports playback from:
 - URL
 - Streams
 
-The Flutter Sound recorder can record sounds from:
+The Flutter Sound recorder can record sounds to:
 
 - Files
 - Streams

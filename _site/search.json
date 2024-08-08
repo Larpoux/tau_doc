@@ -92,22 +92,22 @@
 
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs-tau_api_utilities_constructor.html",
-"summary": "constructor"
+"title": "constructor",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_constructor.html",
+"summary": "Creating the `Recorder` instance."
 }
 ,
 
 
 
 {
-"title": "constructor",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs-tau_api_recorder_constructor.html",
-"summary": "Creating the `Recorder` instance."
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_constructor.html",
+"summary": "constructor"
 }
 ,
 
@@ -207,17 +207,6 @@
 "keywords": "API, utilities, helpers",
 "url": "fs-tau_api_utilities_ffmpeg_get_media_information.html",
 "summary": "ffMpegGetMediaInformation()"
-}
-,
-
-
-
-{
-"title": "Flutter Sound",
-"tags": "flutter_sound",
-"keywords": "Flutter, Flutter Sound",
-"url": "fs-flutter_sound.html",
-"summary": "The &tau; Project under Flutter."
 }
 ,
 
@@ -403,7 +392,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "fsguides_record_stream.html",
+"url": "fs-guides_record_stream.html",
 "summary": "Recording PCM-16 to a Dart Stream."
 }
 ,
@@ -458,7 +447,7 @@
 "title": "Installation",
 "tags": "flutter_soundinstallation",
 "keywords": "Flutter, Flutter Sound, installation",
-"url": "fs-lutter_sound_install.html",
+"url": "fs-flutter_sound_install.html",
 "summary": "Flutter Sound installation."
 }
 ,
@@ -587,22 +576,22 @@
 
 
 {
-"title": "openRecorder()",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs-tau_api_recorder_open_audio_session.html",
-"summary": "`openRecorder()` and `closeRecorder()`"
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
 
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs-tau_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
+"title": "openRecorder()",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_open_audio_session.html",
+"summary": "`openRecorder()` and `closeRecorder()`"
 }
 ,
 
@@ -796,10 +785,10 @@
 
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs-tau_api_player_setLogLevel.html",
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_setLogLevel.html",
 "summary": "setLogLevel()"
 }
 ,
@@ -818,22 +807,11 @@
 
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs-tau_api_utilities_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-
-
-{
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs-tau_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
+"url": "fs-tau_api_player_setLogLevel.html",
+"summary": "setLogLevel()"
 }
 ,
 
@@ -845,6 +823,17 @@
 "keywords": "API Recorder",
 "url": "fs-tau_api_recorder_set_audio_focus.html",
 "summary": "setAudioFocus()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
 }
 ,
 

@@ -22,9 +22,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The &tau; Project under Flutter.">
-<meta name="keywords" content="flutter_sound,  Flutter, Flutter Sound">
-<title>Flutter Sound | The Dank u Documentation</title>
+<meta name="description" content="Recording PCM-16 to a Dart Stream.">
+<meta name="keywords" content="guide,  guides">
+<title>Guides | The Dank u Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -311,7 +311,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Flutter Sound page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Guides page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -329,7 +329,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Flutter Sound">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Guides">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -460,7 +460,7 @@
           
           
           
-          <li><a title="Recording to a Dart Stream" href="fs-guides_record_stream.html">Recording to a Dart Stream</a></li>
+          <li class="active"><a title="Recording to a Dart Stream" href="fs-guides_record_stream.html">Recording to a Dart Stream</a></li>
           
           
           
@@ -1044,7 +1044,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Flutter Sound</h1>
+   <h1 class="post-title-main">Guides</h1>
 </div>
 
 
@@ -1052,7 +1052,7 @@
 <div class="post-content">
 
    
-    <div class="summary">The &tau; Project under Flutter.</div>
+    <div class="summary">Recording PCM-16 to a Dart Stream.</div>
    
 
     
@@ -1083,11 +1083,47 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/Canardoux/danku/tree/master/doc/en/pages/fs/tau-sound/fs-flutter_sound.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/Canardoux/danku/tree/master/doc/en/pages/fs/guides/fs-guides_record_stream.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h1 id="todo">TODO</h1>
+   <hr />
+
+<h2 id="recording-pcm-16-to-a-dart-stream">Recording PCM-16 to a Dart Stream</h2>
+
+<p>Please, remember that actually, Flutter Sound does not support Floating Point PCM data, nor records with more that one audio channel. On Flutter Sound, <strong>Raw PCM is only PCM-LINEAR 16 monophony</strong></p>
+
+<p>To record a Live PCM file, when calling the verb <code class="language-plaintext highlighter-rouge">startRecorder()</code>, you specify the parameter <code class="language-plaintext highlighter-rouge">toStream:</code> with you Stream sink, instead of the parameter <code class="language-plaintext highlighter-rouge">toFile:</code>. This parameter is a StreamSink that you can listen to, for processing the input data.</p>
+
+<h2 id="notes-">Notes :</h2>
+
+<ul>
+  <li>This new functionnality needs, at least, an Android SDK &gt;= 21</li>
+  <li>This new functionnality works better with Android minSdk &gt;= 23, because previous SDK was not able to do UNBLOCKING <code class="language-plaintext highlighter-rouge">write</code>.</li>
+</ul>
+
+<p><em>Example</em></p>
+
+<p>You can look to the <a href="https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/recordToStream/record_to_stream_example.dart">simple example</a> provided with Flutter Sound.</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">IOSink</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="k">await</span> <span class="n">createFile</span><span class="p">();</span>
+  <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Food</span><span class="p">&gt;</span> <span class="n">recordingDataController</span> <span class="o">=</span> <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Food</span><span class="p">&gt;();</span>
+  <span class="n">_mRecordingDataSubscription</span> <span class="o">=</span>
+          <span class="n">recordingDataController</span><span class="o">.</span><span class="na">stream</span><span class="o">.</span><span class="na">listen</span>
+            <span class="p">((</span><span class="n">Uint8List</span> <span class="n">buffer</span><span class="p">)</span>
+              <span class="p">{</span>
+                <span class="n">outputFile</span><span class="o">.</span><span class="na">add</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
+              <span class="p">}</span>
+            <span class="p">);</span>
+  <span class="k">await</span> <span class="n">_mRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span>
+        <span class="nl">toStream:</span> <span class="n">recordingDataController</span><span class="o">.</span><span class="na">sink</span><span class="p">,</span>
+        <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">pcm16</span><span class="p">,</span>
+        <span class="nl">numChannels:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nl">sampleRate:</span> <span class="mi">48000</span><span class="p">,</span>
+  <span class="p">);</span>
+</code></pre></div></div>
+
+<hr />
 
 
     <div class="tags">

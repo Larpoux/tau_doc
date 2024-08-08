@@ -2,7 +2,7 @@
 title:  "Installation"
 description: "Flutter Sound installation."
 summary: "Flutter Sound installation."
-permalink: fs-lutter_sound_install.html
+permalink: fs-flutter_sound_install.html
 sidebar: fs_sidebar
 tags: [flutter_sound,installation]
 keywords: Flutter, Flutter Sound, installation
