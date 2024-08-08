@@ -103,11 +103,13 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
 - mydoc_sidebar
-- student_sidebar
-- teacher_sidebar
-- developer_sidebar
+- fs_sidebar
+- td_sidebar
+- t_sidebar
+- tgr_sidebar
+- tcp_sidebar
+- et_sidebar
 - other
 
 description: "This is the documentation of the Dank u Project."

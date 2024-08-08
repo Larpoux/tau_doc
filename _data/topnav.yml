@@ -14,44 +14,97 @@ topnav_dropdowns:
     - title: Run
       folderitems:
 
-        - title: Danku-web
+        - title: τ-dio ex.
           external_url: /toto
-          hint: "The Dank u Project"
+          hint: "The τ-dio examples"
 
-        - title: Danku-teacher
+        - title: Flutter Sound ex.
           external_url: /titi
-          hint: "The Dank u Teacher"
+          hint: "The Flutter Sound examples"
+
+        - title: τ ex.
+          external_url: /titi
+          hint: "The τ examples"
+
+        - title: τ-graph engine
+          external_url: /titi
+          hint: "Run a τ-graph in the web browser"
+
+        - title: τ-cpal ex.
+          external_url: /titi
+          hint: "The τ-cpal examples"
+
+        - title: Run e-τ
+          external_url: /titi
+          hint: "Big surprise!"
+
 
     - title: News
       folderitems:
 
         - title: News
           url: /news.html
-          hint: "The Dank u Project news"
+          hint: "The τ Project news"
 
         - title: Roadmap
-          external_url: https://github.com/Canardoux/danku/projects/1
-          hint: A better Dank u
-
-        - title: Changelog
-          url: /changelog.html
-          hint: "Log of all changes in The Dank u Project"
-
+          external_url: https://github.com/canardoux/tau-doc/projects/1
+          hint: A better τ
 
 
     - title: Repo
       folderitems:
 
-        - title: Github
-          external_url: https://github.com/Canardoux/danku
+        - title: τ-dio
+          external_url: https://github.com/canardoux/taudio
+          hint: τ-dio on github
  
-        - title: Gitlab
-          external_url: https://gitlab.com/canardoux/danku
-          hint: A great FOSS (Free and Open Source Software) alternative to Github
+        - title: Flutter Sound
+          external_url: https://github.com/canardoux/flutter_sound
+          hint: Flutter Sound on github
 
-        - title: Problem Report
-          external_url: https://github.com/Canardoux/danku/issues
-          hint: Problem Report
+        - title: τ-graph
+          external_url: https://github.com/canardoux/taugraph
+          hint: τ-graph on github
+
+        - title: τ
+          external_url: https://github.com/canardoux/tau
+          hint: τ on github
+
+        - title: τ-cpal
+          external_url: https://github.com/canardoux/taucpal
+          hint: τ-cpal on github
+
+        - title: e-τ
+          external_url: https://github.com/canardoux/etau
+          hint: e-τ on github
+
+
+    - title: pub.dev
+      folderitems:
+
+        - title: τ-dio
+          external_url: https://pub.dev/packages/taudio
+          hint: τ-dio on flutter main site
+ 
+        - title: Flutter Sound
+          external_url: https://pub.dev/packages/flutter_sound
+          hint: Flutter Sound on flutter main site
+
+        - title: τ
+          external_url: https://pub.dev/packages/tau
+          hint: τ on flutter main site
+
+        - title: τ-graph
+          external_url: https://pub.dev/packages/taugraph
+          hint: τ-graph on flutter main site
+
+        - title: τ-cpal
+          external_url: https://pub.dev/packages/taucpal
+          hint: τ-cpal on flutter main site
+
+        - title: e-τ
+          external_url: https://pub.dev/packages/etau
+          hint: e-τ on flutter main site
 
 
     - title: Sharing
@@ -77,13 +130,16 @@ topnav_dropdowns:
           url: /index.html
 
         - title: Flutter Sound
-          url: /flutter_sound_landing_page.html
+          url: /fs-readme.html
+
+        - title: τ
+          url: /tau-readme.html
 
         - title: τ-graph
-          url: /tau_graph_landing_page.html
+          url: /tgr-readme.html
 
         - title: τ-cpal
-          url: /tau_cpal_landing_page.html
+          url: /tau-readme.html
 
         - title: e-τ
-          url: /tau_cpal_landing_page.html
+          url: /etau-readme.html
