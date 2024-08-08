@@ -22,15 +22,14 @@ entries:
 
 # -------------------------------------------------
 
-
-
   - title: The Flutter Sound Project
     output: web, pdf
     folderitems:
 
-    - title: Changelog
-      url: /fs-CHANGELOG.html
+    - title: README
+      url: /fs-README.html
       output: web, pdf
+      type: homepage
 
     - title: Development Setup
       url: /fs-tau_dev.html
@@ -39,8 +38,6 @@ entries:
     - title: Taudio RFC
       url: /fs-taudio_rfc.html
       output: web,pdf
-
-
 
 # ----------------------------------------------------------
 
@@ -65,10 +62,6 @@ entries:
       url: /fs-logger.html
       output: web, pdf
 
-    - title: Lite vs Full
-      url: /fs-guides_lite-full.html
-      output: web, pdf
-
     - title: Temporary files
       url: /fs-temporary_files.html
       output: web, pdf
@@ -87,14 +80,6 @@ entries:
 
     - title: Playback from a Dart Stream
       url: /fs-guides_play_stream.html
-      output: web, pdf
-
-    - title: Widgets
-      url: /fs-guides_ui.html
-      output: web, pdf
-
-    - title: Notification on the lock screen
-      url: /fs-guides_lock_screen.html
       output: web, pdf
 
     - title: Flutter Sound on Web
@@ -296,27 +281,6 @@ entries:
           output: web, pdf
 
 
-
-# -----------
-
-
-      - title: The Widgets UI
-        output: web, pdf
-        subfolderitems:
-
-        - title: UI Player
-          url: /fs-tau_api_widgets_ui_player.html # TODO
-          output: web, pdf
-
-        - title: UI Recorder
-          url:  /fs-tau_api_widgets_ui_recorder.html # TODO
-          output: web, pdf
-
-        - title: UI Controller
-          url:  /fs-tau_api_widgets_ui_controller.html # TODO
-          output: web, pdf
-
-
 # -------------------------------------------------------------
 
 
@@ -425,10 +389,6 @@ entries:
       url: /pages\/flutter-sound\/api\/topics\/Utilities-topic.html
       output: web, pdf
 
-    - title: Widgets UI
-      url: /pages\/flutter-sound\/api\/topics\/UI_Widgets-topic.html
-      output: web, pdf
-
 # ---------------------------------------------------
 
   - title: Links
@@ -442,12 +402,11 @@ entries:
     - title: Problem Report
       output: web, pdf
       hint: Issues on Github
-      external_url: https://github.com/canardoux/tau/issues
-
+      external_url: https://github.com/canardoux/flutter_sound/issues
 
 
     - title: Roadmap
-      external_url: https://github.com/canardoux/tau/projects/3
+      external_url: https://github.com/canardoux/flutter_sound/projects/3
       output: web, pdf
 
     - title: Contributions
