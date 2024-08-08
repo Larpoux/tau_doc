@@ -103,14 +103,13 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- mydoc_sidebar
+- other
 - fs_sidebar
 - td_sidebar
 - t_sidebar
 - tgr_sidebar
 - tcp_sidebar
 - et_sidebar
-- other
 
 description: "This is the documentation of the Dank u Project."
 # the description is used in the feed.xml file

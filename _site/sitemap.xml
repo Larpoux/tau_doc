@@ -23,16 +23,18 @@
 
   
   
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  
   
   
   
   
   <url>
     <loc>/links_license.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/fs-architecture.html</loc>
   </url>
   
   
@@ -326,25 +328,25 @@
   
   
   <url>
-    <loc>/fs-tau_api_recorder_on_progress.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>/fs-tau_api_player_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>/fs-tau_api_player_open_audio_session.html</loc>
+    <loc>/fs-tau_api_recorder_on_progress.html</loc>
   </url>
   
   
   
   <url>
     <loc>/fs-tau_api_recorder_open_audio_session.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/fs-tau_api_player_open_audio_session.html</loc>
   </url>
   
   
@@ -590,6 +592,12 @@
   
   
   <url>
+    <loc>/fs-tau_dev.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>/fs-tau_api_utilities</loc>
   </url>
   
@@ -609,12 +617,6 @@
   
   <url>
     <loc>/fs-flutter_sound_examples_widget_ui.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>/fs-guides_ui.html</loc>
   </url>
   
   

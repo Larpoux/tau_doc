@@ -22,9 +22,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Simple Playback">
-<meta name="keywords" content="exampledemo,  Flutter, Flutter Sound, examples, demo">
-<title>Examples | The Dank u Documentation</title>
+<meta name="description" content="The &tau; Architecture.">
+<meta name="keywords" content="tauarchitecture,  tau architecture">
+<title>The &tau; Architecure | The Dank u Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -311,7 +311,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Examples page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the The &tau; Architecure page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -329,7 +329,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Examples">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="The &amp;tau; Architecure">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -776,7 +776,7 @@
           
           
           
-          <li class="active"><a title="Simple Playback" href="fs-flutter_sound_examples_simple_playback.html">Simple Playback</a></li>
+          <li><a title="Simple Playback" href="fs-flutter_sound_examples_simple_playback.html">Simple Playback</a></li>
           
           
           
@@ -975,7 +975,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Examples</h1>
+   <h1 class="post-title-main">The &tau; Architecure</h1>
 </div>
 
 
@@ -983,7 +983,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Simple Playback</div>
+    <div class="summary">The &tau; Architecture.</div>
    
 
     
@@ -1014,23 +1014,69 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/Canardoux/danku/tree/master/doc/en/pages/fs/examples/fs-simple_playback.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/Canardoux/danku/tree/master/doc/en/pages/fs/guides/architecture.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h1 id="examples">Examples</h1>
+   <h1 id="the-τ-architecture">The τ architecture</h1>
 
-<h2 id="simpleplayback">SimplePlayback</h2>
+<figure><img class="docimage" src="images/the-t-architecture.svg" alt="" /><figcaption>The &tau; architecture</figcaption></figure>
 
-<p><a href="https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_playback/simple_playback.dart">SimplePlayback</a></p>
+<p>On this diagram, we can see clearly the three layers :</p>
 
-<figure><img class="docimage" src="images/examples/simple_playback.png" alt="" /></figure>
+<h2 id="the-platform-layer">The Platform layer</h2>
 
-<p>This is a very simple example for Flutter Sound beginners, that shows how to play a remote file.</p>
+<p>This is the highest layer. This layer must implement the various platforms/frameworks that τ wants to support.</p>
 
-<p>This example is really basic.</p>
+<p>Actually the only platform is Flutter. Maybe in the future we will have others :</p>
 
-<p>The complete example source <a href="https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_playback/simple_playback.dart">is there</a></p>
+<ul>
+  <li>React Native</li>
+  <li>Native Script</li>
+  <li>Cordova</li>
+  <li>Solar 2D</li>
+  <li>…</li>
+</ul>
+
+<p>This layer is independant of the target OS. The API is general enough to accomodate various target OS.</p>
+
+<h2 id="the-os-layer">The OS layer</h2>
+
+<p>This is the lowest layer. this layer must implement the various target OS that τ wants to support.</p>
+
+<p>Actually the OS supported are :</p>
+
+<ul>
+  <li>Android</li>
+  <li>iOS</li>
+  <li>Web</li>
+</ul>
+
+<p>Maybe in the future we will have others :</p>
+
+<ul>
+  <li>Linux</li>
+  <li>Windows</li>
+  <li>MacOS</li>
+</ul>
+
+<p>This layer is independant of the platforms/frameworks that τ wants to be supported by.</p>
+
+<h2 id="the-interface-layer">The Interface layer</h2>
+
+<p>The middle layer is the interface between the two other layers. This middle layer must be as thin as possible.
+Its purpose is just for doing an interface. No real processing mus be done in this layer</p>
+
+<h2 id="where-to-find-information">Where to find information</h2>
+
+<ul>
+  <li>Flutter Sound is published on <code class="language-plaintext highlighter-rouge">pub.dev</code> under the project <code class="language-plaintext highlighter-rouge">flutter_sound</code>  (or <code class="language-plaintext highlighter-rouge">flauto</code>) and <code class="language-plaintext highlighter-rouge">flutter_sound_lite</code> (or <code class="language-plaintext highlighter-rouge">flauto_lite</code>).</li>
+  <li>The Flutter Sound Platform Interface is published on <code class="language-plaintext highlighter-rouge">pub.dev</code> under the project <code class="language-plaintext highlighter-rouge">flutter_sound_platform_interface</code> (or <code class="language-plaintext highlighter-rouge">flauto_platform_interface</code> ).</li>
+  <li>The Flutter Web plugin is published on <code class="language-plaintext highlighter-rouge">pub.dev</code> under the project <code class="language-plaintext highlighter-rouge">flutter_sound_web</code> (or <code class="language-plaintext highlighter-rouge">flauto_web</code>).</li>
+  <li>The τ Core for Android is published on <code class="language-plaintext highlighter-rouge">Bintray</code> (<code class="language-plaintext highlighter-rouge">jcenter()</code>) under the project <code class="language-plaintext highlighter-rouge">tau_sound_core</code> (or <code class="language-plaintext highlighter-rouge">flutter_sound_core</code>).</li>
+  <li>The τ Core for iOS is published on <code class="language-plaintext highlighter-rouge">Cocoapods</code> under the project <code class="language-plaintext highlighter-rouge">tau_sound_core</code> (or <code class="language-plaintext highlighter-rouge">flutter_sound_core</code>).</li>
+  <li>The τ Core for Web is published on <code class="language-plaintext highlighter-rouge">npm</code> under the project <code class="language-plaintext highlighter-rouge">tau_sound_core</code> (or <code class="language-plaintext highlighter-rouge">flutter_sound_core</code>).</li>
+</ul>
 
 
     <div class="tags">

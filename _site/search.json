@@ -1,15 +1,6 @@
 [
 
 
-{
-"title": "",
-"tags": "",
-"keywords": "",
-"url": "404.html",
-"summary": ""
-}
-,
-
 
 
 
@@ -20,6 +11,17 @@
 "keywords": "license",
 "url": "links_license.html",
 "summary": "Flutter Sound License"
+}
+,
+
+
+
+{
+"title": "The &amp;tau; Architecure",
+"tags": "tauarchitecture",
+"keywords": "tau architecture",
+"url": "fs-architecture.html",
+"summary": "The &tau; Architecture."
 }
 ,
 
@@ -554,17 +556,6 @@
 
 
 {
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs-tau_api_recorder_on_progress.html",
-"summary": "onProgress"
-}
-,
-
-
-
-{
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
@@ -576,11 +567,11 @@
 
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs-tau_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_on_progress.html",
+"summary": "onProgress"
 }
 ,
 
@@ -592,6 +583,17 @@
 "keywords": "API Recorder",
 "url": "fs-tau_api_recorder_open_audio_session.html",
 "summary": "`openRecorder()` and `closeRecorder()`"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -1038,6 +1040,17 @@
 
 
 {
+"title": "Contributions",
+"tags": "contributions",
+"keywords": "Contributions",
+"url": "fs-tau_dev.html",
+"summary": "We need you!"
+}
+,
+
+
+
+{
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
@@ -1076,17 +1089,6 @@
 "keywords": "Flutter, Flutter Sound, examples, demo",
 "url": "fs-flutter_sound_examples_widget_ui.html",
 "summary": "Widget UI"
-}
-,
-
-
-
-{
-"title": "Widgets",
-"tags": "guide",
-"keywords": "ui_widgets",
-"url": "fs-guides_ui.html",
-"summary": "The &tau; Project offers two built-in widgets."
 }
 ,
 

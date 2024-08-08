@@ -22,9 +22,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Simple Playback">
-<meta name="keywords" content="exampledemo,  Flutter, Flutter Sound, examples, demo">
-<title>Examples | The Dank u Documentation</title>
+<meta name="description" content="We need you!">
+<meta name="keywords" content="contributions,  Contributions">
+<title>Contributions | The Dank u Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -311,7 +311,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Examples page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Contributions page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -329,7 +329,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Examples">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Contributions">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -397,7 +397,7 @@
           
           
           
-          <li><a title="Development Setup" href="fs-tau_dev.html">Development Setup</a></li>
+          <li class="active"><a title="Development Setup" href="fs-tau_dev.html">Development Setup</a></li>
           
           
           
@@ -776,7 +776,7 @@
           
           
           
-          <li class="active"><a title="Simple Playback" href="fs-flutter_sound_examples_simple_playback.html">Simple Playback</a></li>
+          <li><a title="Simple Playback" href="fs-flutter_sound_examples_simple_playback.html">Simple Playback</a></li>
           
           
           
@@ -975,7 +975,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Examples</h1>
+   <h1 class="post-title-main">Contributions</h1>
 </div>
 
 
@@ -983,7 +983,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Simple Playback</div>
+    <div class="summary">We need you!</div>
    
 
     
@@ -1014,30 +1014,137 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/Canardoux/danku/tree/master/doc/en/pages/fs/examples/fs-simple_playback.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/Canardoux/danku/tree/master/doc/en/pages/fs/guides/fs-tau_dev.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h1 id="examples">Examples</h1>
+   <h1 id="contributions">Contributions</h1>
 
-<h2 id="simpleplayback">SimplePlayback</h2>
+<p>Flutter Sound is a free and Open Source project. Several contributors have already contributed to Flutter Sound. Specially :</p>
 
-<p><a href="https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_playback/simple_playback.dart">SimplePlayback</a></p>
+<ul>
+  <li>@hyochan who is the Flutter Sound father</li>
+  <li>@salvatore373 who wrote the Track Player</li>
+  <li>@bsutton who wrote the UI Widgets</li>
+  <li>@larpoux who add several codec supports</li>
+</ul>
 
-<figure><img class="docimage" src="images/examples/simple_playback.png" alt="" /></figure>
+<p><strong>We really need your contributions.</strong>
+Pull Requests are welcome and will be considered very carefully.</p>
 
-<p>This is a very simple example for Flutter Sound beginners, that shows how to play a remote file.</p>
+<h2 id="setup-a-development-environment">Setup a development environment</h2>
 
-<p>This example is really basic.</p>
+<h3 id="clone-the-flutter-sound-project-and-the-flutter_sound_core-module">Clone the Flutter Sound project and the flutter_sound_core module</h3>
 
-<p>The complete example source <a href="https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_playback/simple_playback.dart">is there</a></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>some_where
+git clone <span class="nt">--recursive</span> https://github.com/canardoux/tau.git
+</code></pre></div></div>
+
+<h3 id="setup-a-development-environment-1">setup a development environment</h3>
+
+<p>cd to the τ root dir and run the script <code class="language-plaintext highlighter-rouge">bin/reldev.sh DEV</code></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau
+bin/reldev.sh DEV
+</code></pre></div></div>
+
+<h3 id="ios-signing">iOS signing</h3>
+
+<p>Open tau/flutter_sound/example/ios/Runner.xcworkspace in XCode, and set your <code class="language-plaintext highlighter-rouge">Team</code> in the <code class="language-plaintext highlighter-rouge">Signing &amp; Capabilities</code> tab.</p>
+
+<h3 id="set-your-flutter-sound-flavor">Set your Flutter Sound flavor</h3>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau
+
+<span class="c"># If you want to work on the full flavor</span>
+bin/flavor.sh FULL
+
+<span class="c"># if you want to work on the lite flavor</span>
+bin/flavor.sh LITE
+</code></pre></div></div>
+
+<h3 id="clean-your-space">Clean your space</h3>
+
+<p>Probably good to clean the space :</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>flutter_sound/example
+<span class="nb">rm</span> <span class="nt">-r</span> build ios/.symlinks ios/Podfile.lock
+flutter clean
+flutter pub get
+<span class="nb">cd </span>ios
+pod <span class="nb">install
+cd</span> ..
+</code></pre></div></div>
+
+<h3 id="debug-the-example">Debug the example</h3>
+
+<p>If everything good, you are now ready to run the example in debug mode using either Visual Studio Code, Android Studio or XCode</p>
+
+<ul>
+  <li>To debug/develop the Dart side, you open the project /tau/flutter_sound/example/ in Visual Studio Code or Android Studio.</li>
+  <li>To debug/develop the iOS side you open tau/flutter_sound/example/ios/Runner.xcworkspace in XCode.</li>
+  <li>To debug/develop the Android side, you open the project tau/flutter_sound/example/android in Android Studio</li>
+</ul>
+
+<h3 id="debug-your-own-app">Debug your own App</h3>
+
+<p>You must change the dependencies in your pubspec.yaml file and do a <code class="language-plaintext highlighter-rouge">flutter pub get</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ============================================================================</span>
+<span class="c1"># The following instructions are just for developing/debugging Flutter Sound</span>
+<span class="c1"># Do not put them in a real App</span>
+  <span class="na">flutter_sound_platform_interface</span><span class="pi">:</span>
+    <span class="na">path</span><span class="pi">:</span> <span class="s">../tau/flutter_sound_platform_interface</span> <span class="c1"># flutter_sound_platform_interface Dir</span>
+  <span class="na">flutter_sound_web</span><span class="pi">:</span>
+    <span class="na">path</span><span class="pi">:</span> <span class="s">../tau/flutter_sound_web</span> <span class="c1"># flutter_sound_web Dir</span>
+  <span class="na">flutter_sound</span><span class="pi">:</span> 
+    <span class="na">path</span><span class="pi">:</span> <span class="s">../tau/flutter_sound</span>
+<span class="c1"># ============================================================================</span>
+</code></pre></div></div>
+
+<h2 id="update-the-documentation">Update the documentation</h2>
+
+<p>τ uses the Jekyll tool with a “Documentation Theme” to generate the documentation.
+<a href="https://idratherbewriting.com/documentation-theme-jekyll/">Here</a> is the Jekyll documentation.
+Please refer to this documentation to install ruby and jekyll on your dev machine.</p>
+
+<p>All the τ documentation is in markdown files under tau/doc/pages.
+You can see your modifications in live doing:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau/doc
+jekyll serve
+</code></pre></div></div>
+
+<p>Then, if you have the necessary credentials (but you certainly do not have them), you can do:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau
+bin/doc.sh
+</code></pre></div></div>
+
+<h2 id="build-a-new-release">Build a new release</h2>
+
+<p>if you have the necessary credentials (but you certainly do not have them), you can do:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau
+newVersion.sh 8.2.0
+</code></pre></div></div>
+
+<p>(In this example, 8.2.0 is the version number that you want to build).</p>
+
+<p>When the script asks if OK to upload your new flutter_sound plugin,
+it is a good idea to wait something like half an hour before answering.
+This will give time to <code class="language-plaintext highlighter-rouge">npm</code> and <code class="language-plaintext highlighter-rouge">cocoaPod</code> to update their repositories (you do not want that someone will use your new build before that the repositories are updated.</p>
+
+<hr />
+
+<p>When you have finished your contribution, you commit and push your files, and do a Pull Request in the Github τ Project.</p>
+
+<p><strong>THANK YOU FOR YOUR CONTRIBUTION</strong></p>
 
 
     <div class="tags">
         
         <b>Tags: </b>
-        
-        
         
         
         

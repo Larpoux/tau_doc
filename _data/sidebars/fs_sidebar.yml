@@ -31,13 +31,6 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Development Setup
-      url: /fs-tau_dev.html
-      output: web, pdf
-
-    - title: Taudio RFC
-      url: /fs-taudio_rfc.html
-      output: web,pdf
 
 # ----------------------------------------------------------
 
@@ -52,6 +45,10 @@ entries:
 
     - title: Installation
       url: /fs-flutter_sound_install.html
+      output: web, pdf
+
+    - title: Development Setup
+      url: /fs-tau_dev.html
       output: web, pdf
 
     - title: Supported Codecs
