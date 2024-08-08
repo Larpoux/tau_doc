@@ -24,7 +24,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Overview on the Flutter Sound documentation.">
 <meta name="keywords" content="FlutterSound,  home homepage readme">
-<title>Flutter Sound | The Dank u Documentation</title>
+<title>Flutter Sound 9.x | The Dank u Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -311,7 +311,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Flutter Sound page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The Dank u Documentation feedback&body=I have some feedback about the Flutter Sound 9.x page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -329,7 +329,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Flutter Sound">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Flutter Sound 9.x">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -1044,7 +1044,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Flutter Sound</h1>
+   <h1 class="post-title-main">Flutter Sound 9.x</h1>
 </div>
 
 
@@ -1087,15 +1087,19 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="flutter-sound-stands-for-ukraine">Flutter Sound stands for Ukraine</h2>
+   <p><img src="https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square" alt="pub version" /></p>
 
-<figure><img class="docimage" src="images/2-year-old-irish-girl-ukrainian.jpg" alt="" /><figcaption>Peace for Ukraine</figcaption></figure>
+<p><img src="https://tau.canardoux.xyz/images/fs/Logotype-primary" alt="pub version" /></p>
 
-<figure><img class="docimage" src="images/banner.png" alt="" /><figcaption>Stand up For Ukraine : Street Art</figcaption></figure>
+<p>Flutter Sound is a Flutter package allowing you to play and record audio for :</p>
 
-<p><img src="https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square" alt="pub version" /></p>
+<ul>
+  <li>Android</li>
+  <li>iOS</li>
+  <li>Flutter Web</li>
+</ul>
 
-<p>Flutter Sound is a set of libraries which deal with audio :</p>
+<p>It is composed with :</p>
 
 <ul>
   <li>A player for audio playback</li>
@@ -1103,30 +1107,21 @@ $('#toc').on('click', 'a', function() {
   <li>Several utilities to handle audio files</li>
 </ul>
 
+<h1 id="flutter-sound-stands-with-ukraine">Flutter Sound stands with Ukraine</h1>
+
+<p><img src="https://tau.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg" alt="PeaceForUkraine" />
+Peace for Ukraine</p>
+
+<p><img src="https://tau.canardoux.xyz/images/banner.png" alt="PrayForUkraine" />
+Pray for Ukraine</p>
+
+<h1 id="overview">Overview</h1>
+
 <p><img src="https://user-images.githubusercontent.com/27461460/77531555-77c9ec00-6ed6-11ea-9813-320f943b08cc.gif" alt="Demo" /></p>
-
-<h2 id="overview">Overview</h2>
-
-<p>Flutter Sound is a library package allowing you to play and record audio for :</p>
-
-<ul>
-  <li>iOS</li>
-  <li>Android</li>
-  <li>Web</li>
-</ul>
-
-<p>Flutter Sound provides both a high level API and widgets for:</p>
-
-<ul>
-  <li>play audio</li>
-  <li>record audio</li>
-</ul>
 
 <p>Flutter Sound can be used to play a beep from an asset all the way up to implementing a complete media player.</p>
 
-<p>The API is designed so you can use the supplied widgets or roll your own.</p>
-
-<p>The Flutter Sound package supports playback from:</p>
+<p>The Flutter Sound player supports playback from:</p>
 
 <ul>
   <li>Assets</li>
@@ -1135,83 +1130,68 @@ $('#toc').on('click', 'a', function() {
   <li>Streams</li>
 </ul>
 
-<h2 id="sdk-requirements">SDK requirements</h2>
+<p>The Flutter Sound recorder can record sounds from:</p>
 
 <ul>
-  <li>Flutter Sound requires an iOS 10.0 SDK (or later)</li>
-  <li>Flutter Sound requires an Android 21 (or later)</li>
+  <li>Files</li>
+  <li>Streams</li>
 </ul>
 
-<h2 id="examples-demo-apps">Examples (Demo Apps)</h2>
+<p>Flutter Sound can be used to interface a Speech-to-Text remote application.
+Flutter Sound can be used to interface a Text-to-Speech remote application.</p>
+
+<h1 id="flutter-sound-100">Flutter Sound 10.0</h1>
+
+<p>Flutter Sound 9.x has been completely rewritten. If you can and wants to publish your App under the GPL 3.0 license, we suggest that you consider using the <a href="https://tau.canardoux.xyz/td-README.html">τ-dio fork</a> which is in fact Flutter Sound 10.0 .</p>
+
+<h1 id="sdk-requirements">SDK requirements</h1>
+
+<ul>
+  <li>Flutter Sound requires an iOS 12.0 SDK (or later)</li>
+  <li>Flutter Sound requires an Android 21 (or later)</li>
+  <li>Flutter Sound web can run on every modern web browser</li>
+</ul>
+
+<h1 id="examples-demo-apps">Examples (Demo Apps)</h1>
 
 <p>Flutter Sound comes with several Demo/Examples :</p>
 
-<p><a href="https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/main.dart">The <code class="language-plaintext highlighter-rouge">examples App</code></a> is a driver which can call all the various examples.</p>
+<p><a href="https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/main.dart">The <code class="language-plaintext highlighter-rouge">examples App</code></a> is a driver which can call all the various examples.</p>
 
-<h2 id="features">Features</h2>
+<h1 id="features">Features</h1>
 
 <p>The Flutter Sound package includes the following features :</p>
 
 <ul>
-  <li>Play and Record τ or music with various codecs. (See <a href="guides_codec.html">the supported codecs here</a>)</li>
+  <li>Runs on iOS, Android and Web</li>
+  <li>Play and Record τ or music with various codecs. (See <a href="fs-guides_codec.html">the supported codecs here</a>)</li>
   <li>Play local or remote files specified by their URL.</li>
   <li>Play assets.</li>
-  <li>Record to a live stream Stream</li>
-  <li>Playback from a live Stream</li>
-  <li>The App playback can be controlled from the device lock screen or from an Apple watch</li>
-  <li>Play audio using the built in [SoundPlayerUI] Widget.</li>
-  <li>Roll your own UI utilizing the τ api.</li>
-  <li>Record audio using the builtin [SoundRecorderUI] Widget.</li>
-  <li>Roll your own Recording UI utilizing the τ api.</li>
-  <li>Support for releasing/resuming resources when the app pauses/resumes.</li>
+  <li>Record to a live Dart Stream</li>
+  <li>Playback from a live Dart Stream</li>
   <li>Record to a Dart Stream</li>
   <li>Playback from a Dart Stream</li>
-  <li>The App playback can be controlled from the device lock screen or from an Apple watch</li>
+  <li>Support for releasing/resuming resources when the app pauses/resumes.</li>
 </ul>
 
-<h2 id="supported-platforms">Supported platforms</h2>
+<h1 id="license">License</h1>
 
-<p>Flutter Sound is actually supported by the Flutter Framework.</p>
+<p>Flutter Sound 9.x is released under the Mozilla very permissive Plublic License version 2.0 (MPL 2.0). This is a Free And Open Source license which has a <strong>weak copyleft</strong> clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed Sources License (shame on you!).</p>
 
-<p>If you are interested with other platforms (React Native, Cordova, JS, …) maybe you can have a look to the GPL project <a href="https://tau.canardoux.xyz/readme.html"><code class="language-plaintext highlighter-rouge">Tau Sound Project 9.0</code></a> : we actually have several plans to port the τ project to other frameworks.</p>
+<p>If you can and wants to publish your App under the GPL 3.0 license, we suggest that you consider using the <a href="https://tau.canardoux.xyz/td-README.html">τ-dio fork</a> which is in fact Flutter Sound 10.0 .</p>
 
-<h2 id="license">License</h2>
+<p>Note : Flutter Sound is copyrighted by Dooboolab (2018, 2019, 2020, 2021).</p>
 
-<p>Flutter Sound 8.3 was published under the LGPL License.
-A Flutter Sound developer noticed recently that this <a href="https://github.com/canardoux/tau/issues/696">license was incorrect</a> :
-the LGPL license does not allow static links to the library. The library must be linked dynamically.
-The problem was that Flutter links-edit the plugins statically. This means that many Flutter Sound users who
-use our library in private/close sources App was in a copyright infringement.</p>
+<h1 id="we-need-help">We need help</h1>
 
-<p>To solve this issue, we forked Flutter Sound 8.3 to two different branches.</p>
+<p>We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.</p>
 
-<ul>
-  <li>Flutter Sound 8.4 (this fork) is published under the Mozilla Public License 2.0.</li>
-  <li><a href="https://pub.dev/packages/tau_sound">The τ Sound Project 9.0</a> is published under a pure GPL License.</li>
-</ul>
+<p>Actually, my main project is the GPL <a href="https://tau.canardoux.xyz/td-README.html">Taudio 10.0</a> and not anymore Flutter Sound. To be frank, I must say that there is no other main developers on Flutter Sound. This is bad, because Flutter Sound deserves to be maintained.</p>
 
-<p>Flutter Sound is copyrighted by Dooboolab (2018, 2019, 2020, 2021).</p>
+<h1 id="thanks">Thanks</h1>
 
-<ul>
-  <li>Flutter Sound is now released under the permissive Mozilla license which has a <strong>weak</strong> <em>copyleft</em> clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Close Sources License (shame on you!).</li>
-</ul>
-
-<h2 id="we-need-help">We need help</h2>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.</div>
-
-<p>Actually, my main project is the GPL <a href="https://tau.canardoux.xyz/readme.html">Tau Sound Project 9.0</a> and not anymore Flutter Sound. To be frank, I must say that there is no other main developers on Flutter Sound. This is bad, because Flutter Sound deserves to be maintained.</p>
-
-<h2 id="thanks">Thanks</h2>
-
-<p><a href="https://www.buymeacoffee.com/larpoux"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=💛&amp;slug=larpoux&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00" /></a>
-<a href="https://paypal.me/thetauproject?locale.x=fr_FR"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="Paypal" /></a></p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can also click on the <code class="language-plaintext highlighter-rouge">Thumb up</code> button of the top of the <a href="https://pub.dev/packages/flutter_sound">pub.dev page</a>.
-This is free and this will reassure me that <strong>I do not spend most of my life for nobody</strong>.</div>
-
-<script data-name="BMC-Widget" src="http://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="larpoux" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
+<p>You might click on the <code class="language-plaintext highlighter-rouge">Thumb up</code> button of the top of the <a href="https://pub.dev/packages/flutter_sound">pub.dev page</a>.
+This is free and this will reassure me that <strong>I do not spend most of my life for nobody</strong>.</p>
 
 
     <div class="tags">
