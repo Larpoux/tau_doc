@@ -15,28 +15,6 @@
 
 
 {
-"title": "Flutter Sound CHANGELOG",
-"tags": "changelog",
-"keywords": "changelog",
-"url": "changelog.html",
-"summary": "The Changelog of The &tau; Project."
-}
-,
-
-
-
-{
-"title": "License",
-"tags": "license",
-"keywords": "license",
-"url": "links_license.html",
-"summary": "Flutter Sound License"
-}
-,
-
-
-
-{
 "title": "License",
 "tags": "license",
 "keywords": "license",
@@ -53,39 +31,6 @@
 "keywords": "tau architecture",
 "url": "architecture.html",
 "summary": "The &tau; Architecture."
-}
-,
-
-
-
-{
-"title": "constructor",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_constructor.html",
-"summary": "Creating the `Recorder` instance."
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_constructor.html",
-"summary": "constructor"
-}
-,
-
-
-
-{
-"title": "Contributions",
-"tags": "contributions",
-"keywords": "Contributions",
-"url": "links_contribution.html",
-"summary": "We need you!"
 }
 ,
 
@@ -114,121 +59,22 @@
 
 
 {
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "flutter_sound_examples_convert.html",
-"summary": "Convert audio to MP3"
+"title": "Flutter Sound CHANGELOG",
+"tags": "FlutterSoundchangelog",
+"keywords": "changelog",
+"url": "fs-CHANGELOG.html",
+"summary": "The Changelog of The Flutter Sound Project."
 }
 ,
 
 
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_convert_file.html",
-"summary": "convertFile()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_delete_record.html",
-"summary": "deleteRecord()"
-}
-,
-
-
-
-{
-"title": "Demo",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_demo.html",
-"summary": "A demonstration of the Flutter Sound features."
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_duration.html",
-"summary": "duration()"
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_execute_ffmpeg_with_arguments.html",
-"summary": "executeFFmpegWithArguments()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_feed_from_stream.html",
-"summary": "feedFromStream()."
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_ffmpeg_get_media_information.html",
-"summary": "ffMpegGetMediaInformation()"
-}
-,
-
-
-
-{
-"title": "Flutter Sound",
-"tags": "flutter_sound",
-"keywords": "Flutter, Flutter Sound",
-"url": "flutter_sound.html",
-"summary": "The &tau; Project under Flutter."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_food.html",
-"summary": "Food."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_food_sink.html",
-"summary": "foodSink."
+"title": "MPL 2.0",
+"tags": "FlutterSoundlicense",
+"keywords": "license FlutterSound",
+"url": "fs-LICENSE.html",
+"summary": "Mozilla Public License 2.0."
 }
 ,
 
@@ -249,7 +95,161 @@
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_get_last_ffmpeg_command_output.html",
+"url": "fs-tau_api_utilities_constructor.html",
+"summary": "constructor"
+}
+,
+
+
+
+{
+"title": "constructor",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_constructor.html",
+"summary": "Creating the `Recorder` instance."
+}
+,
+
+
+
+{
+"title": "Contributions",
+"tags": "contributions",
+"keywords": "Contributions",
+"url": "fs-links_contribution.html",
+"summary": "We need you!"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-flutter_sound_examples_convert.html",
+"summary": "Convert audio to MP3"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_convert_file.html",
+"summary": "convertFile()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_delete_record.html",
+"summary": "deleteRecord()"
+}
+,
+
+
+
+{
+"title": "Demo",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_demo.html",
+"summary": "A demonstration of the Flutter Sound features."
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_duration.html",
+"summary": "duration()"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_execute_ffmpeg_with_arguments.html",
+"summary": "executeFFmpegWithArguments()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_feed_from_stream.html",
+"summary": "feedFromStream()."
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_ffmpeg_get_media_information.html",
+"summary": "ffMpegGetMediaInformation()"
+}
+,
+
+
+
+{
+"title": "Flutter Sound",
+"tags": "flutter_sound",
+"keywords": "Flutter, Flutter Sound",
+"url": "fs-flutter_sound.html",
+"summary": "The &tau; Project under Flutter."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_food.html",
+"summary": "Food."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_food_sink.html",
+"summary": "foodSink."
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_get_last_ffmpeg_command_output.html",
 "summary": "getLastFFmpegCommandOutput()"
 }
 ,
@@ -260,7 +260,7 @@
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_get_last_ffmpeg_return_code.html",
+"url": "fs-tau_api_utilities_get_last_ffmpeg_return_code.html",
 "summary": "getLastFFmpegReturnCode()"
 }
 ,
@@ -271,7 +271,7 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "tau_api_player_get_player_state.html",
+"url": "fs-tau_api_player_get_player_state.html",
 "summary": "`playerState`, `isPlaying`, `isPaused`, `isStopped`. `getPlayerState()`"
 }
 ,
@@ -282,7 +282,7 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "tau_api_player_get_progress.html",
+"url": "fs-tau_api_player_get_progress.html",
 "summary": "getProgress()"
 }
 ,
@@ -293,7 +293,7 @@
 "title": "Codecs",
 "tags": "guide",
 "keywords": "guides",
-"url": "guides_codec.html",
+"url": "fs-guides_codec.html",
 "summary": "Supported codecs."
 }
 ,
@@ -304,7 +304,7 @@
 "title": "Raw PCM and Wave files",
 "tags": "guide",
 "keywords": "guides",
-"url": "guides_pcm_wave.html",
+"url": "fs-guides_pcm_wave.html",
 "summary": "Raw PCM and Wave files."
 }
 ,
@@ -315,7 +315,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "guides_guides.html",
+"url": "fs-guides_guides.html",
 "summary": "Various guides about The &tau; Project."
 }
 ,
@@ -324,9 +324,9 @@
 
 {
 "title": "Codecs",
-"tags": "guide",
+"tags": "FlutterSoundguide",
 "keywords": "guides",
-"url": "guides_codec.html",
+"url": "fs-guides_codec.html",
 "summary": "Supported codecs."
 }
 ,
@@ -337,7 +337,7 @@
 "title": "Getting Started",
 "tags": "getting_startedguide",
 "keywords": "gettingStarted",
-"url": "guides_getting_started.html",
+"url": "fs-guides_getting_started.html",
 "summary": "Introduction for Flutter Sound beginners."
 }
 ,
@@ -348,7 +348,7 @@
 "title": "Audio Graphs",
 "tags": "guides",
 "keywords": "Audio Graph",
-"url": "guides_graph.html",
+"url": "fs-guides_graph.html",
 "summary": "What is a &tau; audio Graph ?"
 }
 ,
@@ -359,7 +359,7 @@
 "title": "Flutter FFmpeg",
 "tags": "flutter_sound",
 "keywords": "Flutter, &tau;",
-"url": "guides_lite-full.html",
+"url": "fs-guides_lite-full.html",
 "summary": "Flutter FFmpeg compatibility."
 }
 ,
@@ -370,7 +370,7 @@
 "title": "Lock-screen",
 "tags": "guide",
 "keywords": "lock_screen",
-"url": "guides_lock_screen.html",
+"url": "fs-guides_lock_screen.html",
 "summary": "The &tau; Project allows the App to be controlled from the Lock Screen."
 }
 ,
@@ -381,7 +381,7 @@
 "title": "Logger",
 "tags": "flutter_sound",
 "keywords": "Flutter, &tau;",
-"url": "logger.html",
+"url": "fs-logger.html",
 "summary": "Debugging logs."
 }
 ,
@@ -392,7 +392,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "guides_play_stream.html",
+"url": "fs-guides_play_stream.html",
 "summary": "Playing PCM-16 from a Dart Stream."
 }
 ,
@@ -403,7 +403,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "guides_record_stream.html",
+"url": "fsguides_record_stream.html",
 "summary": "Recording PCM-16 to a Dart Stream."
 }
 ,
@@ -414,7 +414,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "guides_recording_pcm.html",
+"url": "fs-guides_recording_pcm.html",
 "summary": "Recording PCM."
 }
 ,
@@ -425,7 +425,7 @@
 "title": "&amp;tau; on web",
 "tags": "flutter_soundweb",
 "keywords": "Flutter, Web",
-"url": "guides_web.html",
+"url": "fs-guides_web.html",
 "summary": "Flutter Sound on web."
 }
 ,
@@ -436,7 +436,7 @@
 "title": "Temporary files",
 "tags": "flutter_sound",
 "keywords": "Flutter, &tau;",
-"url": "temporary_files.html",
+"url": "fs-temporary_files.html",
 "summary": "Using temporary files."
 }
 ,
@@ -447,19 +447,8 @@
 "title": "Widgets",
 "tags": "guide",
 "keywords": "ui_widgets",
-"url": "guides_ui.html",
+"url": "fs-guides_ui.html",
 "summary": "The &tau; Project offers two built-in widgets."
-}
-,
-
-
-
-{
-"title": "Flutter Sound",
-"tags": "FlutterSound",
-"keywords": "home homepage readme",
-"url": "readme.html",
-"summary": "The Flutter Sound documentation."
 }
 ,
 
@@ -469,7 +458,7 @@
 "title": "Installation",
 "tags": "flutter_soundinstallation",
 "keywords": "Flutter, Flutter Sound, installation",
-"url": "flutter_sound_install.html",
+"url": "fs-lutter_sound_install.html",
 "summary": "Flutter Sound installation."
 }
 ,
@@ -480,7 +469,7 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "tau_api_player_is_decoder_supported.html",
+"url": "fs-tau_api_player_is_decoder_supported.html",
 "summary": "isDecoderSupported()"
 }
 ,
@@ -491,7 +480,7 @@
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
-"url": "tau_api_recorder_is_encoder_supported.html",
+"url": "fs-tau_api_recorder_is_encoder_supported.html",
 "summary": "isEncoderSupported()"
 }
 ,
@@ -502,7 +491,7 @@
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_is_ffmpeg_available.html",
+"url": "fs-tau_api_utilities_is_ffmpeg_available.html",
 "summary": "isFFmpegAvailable()"
 }
 ,
@@ -513,7 +502,7 @@
 "title": "Lock-screen",
 "tags": "guide",
 "keywords": "lock_screen",
-"url": "guides_lock_screen.html",
+"url": "fs-guides_lock_screen.html",
 "summary": "Configuring Flutter Sound for background audio"
 }
 ,
@@ -524,7 +513,7 @@
 "title": "Logger",
 "tags": "flutter_sound",
 "keywords": "Flutter, &tau;",
-"url": "logger.html",
+"url": "fs-logger.html",
 "summary": "Debugging logs."
 }
 ,
@@ -535,7 +524,7 @@
 "title": "&amp;tau; API",
 "tags": "apigetting_started",
 "keywords": "API",
-"url": "tau_api_main.html",
+"url": "fs-tau_api_main.html",
 "summary": "&tau; is composed with 4 modules."
 }
 ,
@@ -546,8 +535,569 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "links_migration.html",
+"url": "fs-links_migration.html",
 "summary": "Migration from previous version"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_multi_playbacks.html",
+"summary": "Multi Playbacks"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_now_playing.html",
+"summary": "nowPlaying()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_on_progress.html",
+"summary": "onProgress"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_on_progress.html",
+"summary": "onProgress."
+}
+,
+
+
+
+{
+"title": "openRecorder()",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_open_audio_session.html",
+"summary": "`openRecorder()` and `closeRecorder()`"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_pause_player.html",
+"summary": "pausePlayer()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_pause_recorder.html",
+"summary": "pauseRecorder()"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_pcm_to_wave.html",
+"summary": "pcmToWave()"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_pcm_to_wave_buffer.html",
+"summary": "pcmToWaveBuffer()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_play_from_mic.html",
+"summary": "A simple example which play what is recorded by the microphone"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_playback_from_stream_1.html",
+"summary": "Playback From Stream(1)"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_playback_from_stream_2.html",
+"summary": "Playback From Stream (2)"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_constructor.html",
+"summary": "The &tau; player API."
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_player_onprogress.html",
+"summary": "Simple setSubscriptionDuration()/onProgress()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_record_to_stream.html",
+"summary": "RecordToStream"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_recorder_onprogress.html",
+"summary": "Simple setSubscriptionDuration()/onProgress() for a FlutterSoundRecorder"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_recorder_state.html",
+"summary": "`recorderState`, `isRecording`, `isPaused`, `isStopped`."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_resume_player.html",
+"summary": "resumePlayer()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_resume_recorder.html",
+"summary": "resumeRecorder"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-flutter_sound_examples_seek.html",
+"summary": "Seek into a playback"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_seek_player.html",
+"summary": "seekToPlayer()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-flutter_sound_examples_setLogLevel.html",
+"summary": "Set Log Level"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_setLogLevel.html",
+"summary": "setLogLevel()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_setLogLevel.html",
+"summary": "setLogLevel()"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_setLogLevel.html",
+"summary": "setLogLevel()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_set_audio_focus.html",
+"summary": "setAudioFocus()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_speed.html",
+"summary": "setSpeed()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_subscription_duration.html",
+"summary": "setSubscriptionDuration()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_set_subscription_duration.html",
+"summary": "setSubscriptionDuration()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_ui_progress_bar.html",
+"summary": "setUIProgressBar()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_volume.html",
+"summary": "setVolume()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-flutter_sound_examples_setVolume.html",
+"summary": "Set the sound volume"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_simple_playback.html",
+"summary": "Simple Playback"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_simple_recorder.html",
+"summary": "Simple Recorder"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_sound_effects.html",
+"summary": "Sound Effects"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-flutter_sound_examples_setSpeed.html",
+"summary": "Set the speed of a playback"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_startPlayer.html",
+"summary": "startPlayer()."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_start_player_from_mic.html",
+"summary": "startPlayerFromMic()."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_start_player_from_stream.html",
+"summary": "startPlayerFromStream()."
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_start_player_from_track.html",
+"summary": "startPlayerFromTrack()."
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_start_recorder.html",
+"summary": "startRecorder()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_stop_player.html",
+"summary": "stopPlayer()"
+}
+,
+
+
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_stop_recorder.html",
+"summary": "stopRecorder()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_stream_loop.html",
+"summary": "Stream Loop"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities",
+"summary": "The &tau; Project offers several helper utilities."
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_wave_to_pcm.html",
+"summary": "waveToPCM()"
+}
+,
+
+
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_wave_to_pcm_buffer.html",
+"summary": "waveToPCMBuffer()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-flutter_sound_examples_widget_ui.html",
+"summary": "Widget UI"
+}
+,
+
+
+
+{
+"title": "Widgets",
+"tags": "guide",
+"keywords": "ui_widgets",
+"url": "fs-guides_ui.html",
+"summary": "The &tau; Project offers two built-in widgets."
 }
 ,
 
@@ -565,28 +1115,6 @@
 
 
 {
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_multi_playbacks.html",
-"summary": "Multi Playbacks"
-}
-,
-
-
-
-{
-"title": "News",
-"tags": "news",
-"keywords": "news, blog, updates, release notes, announcements",
-"url": "news.html",
-"summary": ""
-}
-,
-
-
-
-{
 "title": "News",
 "tags": "news",
 "keywords": "news, blog, updates, release notes, announcements",
@@ -603,512 +1131,6 @@
 "keywords": "news, blog, updates, release notes, announcements",
 "url": "news_archive.html",
 "summary": ""
-}
-,
-
-
-
-{
-"title": "News",
-"tags": "",
-"keywords": "news, blog, updates, release notes, announcements",
-"url": "news_archive.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_now_playing.html",
-"summary": "nowPlaying()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_on_progress.html",
-"summary": "onProgress."
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_on_progress.html",
-"summary": "onProgress"
-}
-,
-
-
-
-{
-"title": "openRecorder()",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_open_audio_session.html",
-"summary": "`openRecorder()` and `closeRecorder()`"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_pause_player.html",
-"summary": "pausePlayer()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_pause_recorder.html",
-"summary": "pauseRecorder()"
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_pcm_to_wave.html",
-"summary": "pcmToWave()"
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_pcm_to_wave_buffer.html",
-"summary": "pcmToWaveBuffer()"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_play_from_mic.html",
-"summary": "A simple example which play what is recorded by the microphone"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_playback_from_stream_1.html",
-"summary": "Playback From Stream(1)"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_playback_from_stream_2.html",
-"summary": "Playback From Stream (2)"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_constructor.html",
-"summary": "The &tau; player API."
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_player_onprogress.html",
-"summary": "Simple setSubscriptionDuration()/onProgress()"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_record_to_stream.html",
-"summary": "RecordToStream"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_recorder_onprogress.html",
-"summary": "Simple setSubscriptionDuration()/onProgress() for a FlutterSoundRecorder"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_recorder_state.html",
-"summary": "`recorderState`, `isRecording`, `isPaused`, `isStopped`."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_resume_player.html",
-"summary": "resumePlayer()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_resume_recorder.html",
-"summary": "resumeRecorder"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "flutter_sound_examples_seek.html",
-"summary": "Seek into a playback"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_seek_player.html",
-"summary": "seekToPlayer()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "flutter_sound_examples_setLogLevel.html",
-"summary": "Set Log Level"
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_set_audio_focus.html",
-"summary": "setAudioFocus()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_set_speed.html",
-"summary": "setSpeed()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_set_subscription_duration.html",
-"summary": "setSubscriptionDuration()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_set_subscription_duration.html",
-"summary": "setSubscriptionDuration()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_set_ui_progress_bar.html",
-"summary": "setUIProgressBar()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_set_volume.html",
-"summary": "setVolume()"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "flutter_sound_examples_setVolume.html",
-"summary": "Set the sound volume"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_simple_playback.html",
-"summary": "Simple Playback"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_simple_recorder.html",
-"summary": "Simple Recorder"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_sound_effects.html",
-"summary": "Sound Effects"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "flutter_sound_examples_setSpeed.html",
-"summary": "Set the speed of a playback"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_startPlayer.html",
-"summary": "startPlayer()."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_start_player_from_mic.html",
-"summary": "startPlayerFromMic()."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_start_player_from_stream.html",
-"summary": "startPlayerFromStream()."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_start_player_from_track.html",
-"summary": "startPlayerFromTrack()."
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_start_recorder.html",
-"summary": "startRecorder()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "tau_api_player_stop_player.html",
-"summary": "stopPlayer()"
-}
-,
-
-
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "tau_api_recorder_stop_recorder.html",
-"summary": "stopRecorder()"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_stream_loop.html",
-"summary": "Stream Loop"
 }
 ,
 
@@ -1150,127 +1172,6 @@
 
 
 
-
-
-
-{
-"title": "UI Widgets API",
-"tags": "apiuiwidget",
-"keywords": "API, UI, widgets",
-"url": "tau_api_widgets_ui_controller.html",
-"summary": "UIController"
-}
-,
-
-
-
-{
-"title": "UI Widgets API",
-"tags": "apiuiwidget",
-"keywords": "API, UI, widgets",
-"url": "tau_api_widgets_ui_player.html",
-"summary": "UIPlayer"
-}
-,
-
-
-
-{
-"title": "UI Widgets API",
-"tags": "apiuiwidget",
-"keywords": "API, UI, widgets",
-"url": "tau_api_widgets_ui_recorder.html",
-"summary": "UIRecorder"
-}
-,
-
-
-
-{
-"title": "UI Widgets API",
-"tags": "apiuiwidget",
-"keywords": "API, UI, widgets",
-"url": "tau_api_widgets",
-"summary": "The &tau; Project offers several UI Widgets."
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities",
-"summary": "The &tau; Project offers several helper utilities."
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_wave_to_pcm.html",
-"summary": "waveToPCM()"
-}
-,
-
-
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities_wave_to_pcm_buffer.html",
-"summary": "waveToPCMBuffer()"
-}
-,
-
-
-
-{
-"title": "Examples",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
-"url": "flutter_sound_examples_widget_ui.html",
-"summary": "Widget UI"
-}
-,
-
-
-
-{
-"title": "Widgets",
-"tags": "guide",
-"keywords": "ui_widgets",
-"url": "guides_ui.html",
-"summary": "The &tau; Project offers two built-in widgets."
-}
-,
-
-
-
-{
-"title": "τ under React Native",
-"tags": "",
-"keywords": "",
-"url": "pagesfsreact-nativereact-native.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "τ under React Native",
-"tags": "",
-"keywords": "",
-"url": "pagesfsreact-nativet-under-react-native.html",
-"summary": ""
-}
-,
 
 
 
