@@ -12,6 +12,9 @@ fi
 
 cp index.html _site
 
+rm -rf danku/rs-live
+cp -a ../flutter_sound/flutter_sound/example/build/web danku/rs-live
+
 git add .
 git commit -m 'tau-doc update'
 git pull
@@ -19,3 +22,7 @@ git push
 
 ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
 scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null
+
+ssh danku@danku "rm -rf /var/www/canardoux.xyz/danku/fs-live"
+scp -r ../flutter_sound/flutter_sound/example/build/web  danku@danku:/var/www/canardoux.xyz/danku/fs-live >/dev/null
+

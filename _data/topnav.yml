@@ -19,7 +19,7 @@ topnav_dropdowns:
           hint: "The τ-dio examples"
 
         - title: Flutter Sound ex.
-          external_url: /titi
+          external_url: https://danku.canardoux.xyz/fs-live/
           hint: "The Flutter Sound examples"
 
         - title: τ ex.
