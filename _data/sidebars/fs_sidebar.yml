@@ -19,23 +19,29 @@ entries:
       output: pdf
       type: frontmatter
 
-
 # -------------------------------------------------
 
-  - title: The Flutter Sound Project
+  - title: === FLUTTER SOUND
     output: web, pdf
     folderitems:
 
-    - title: README
+
+    - title: Readme
       url: /fs-README.html
       output: web, pdf
-      type: homepage
+      
+    - title: Changelog
+      url: /fs-CHANGELOG.html
+      output: web, pdf
 
+    - title: Live demo
+      external_url: https://flutter-sound.canardoux.xyz/web_example/
+      output: web, pdf
 
 # ----------------------------------------------------------
 
 
-  - title: Guides
+  - title: === GUIDES
     output: web, pdf
     folderitems:
 
@@ -89,7 +95,7 @@ entries:
 
 
 
-  - title: API
+  - title: === API
     output: web, pdf
     folderitems:
 
@@ -278,22 +284,11 @@ entries:
           output: web, pdf
 
 
-# -------------------------------------------------------------
-
-
-  - title: Live Demo
-    output: web, pdf
-    folderitems:
-
-    - title: Live demo
-      external_url: https://flutter-sound.canardoux.xyz/web_example/
-      output: web, pdf
-
 
 # ---------------------------------------------------------------
 
 
-  - title: Examples
+  - title: === EXAMPLES
     output: web, pdf
     folderitems:
 
@@ -370,7 +365,7 @@ entries:
 # --------------------------------------------------------------------
 
 
-  - title: API reference (dartdoc)
+  - title: === API REF (DARTDOC)
     output: web, pdf
     folderitems:
 
@@ -388,7 +383,7 @@ entries:
 
 # ---------------------------------------------------
 
-  - title: Links
+  - title: === LINKS
     output: web, pdf
 
     folderitems:

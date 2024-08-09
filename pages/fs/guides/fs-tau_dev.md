@@ -13,9 +13,7 @@ keywords: Contributions
 Flutter Sound is a free and Open Source project. Several contributors have already contributed to Flutter Sound. Specially :
 
 - @hyochan who is the Flutter Sound father
-- @salvatore373 who wrote the Track Player
-- @bsutton who wrote the UI Widgets
-- @larpoux who add several codec supports
+- @larpoux who add several codec supports and the Streams support
 
 **We really need your contributions.**
 Pull Requests are welcome and will be considered very carefully.
@@ -26,12 +24,12 @@ Pull Requests are welcome and will be considered very carefully.
 
 ```sh
 cd some_where
-git clone --recursive https://github.com/canardoux/tau.git
+git clone --recursive https://github.com/canardoux/flutter_sound.git
 ```
 
 ### setup a development environment
 
-cd to the &tau; root dir and run the script `bin/reldev.sh DEV`
+cd to the Flutter Sound root dir and run the script `bin/reldev.sh DEV`
 
 ```sh
 cd tau
@@ -41,19 +39,6 @@ bin/reldev.sh DEV
 ### iOS signing
 
 Open tau/flutter_sound/example/ios/Runner.xcworkspace in XCode, and set your `Team` in the `Signing & Capabilities` tab.
-
-### Set your Flutter Sound flavor
-
-```sh
-cd tau
-
-# If you want to work on the full flavor
-bin/flavor.sh FULL
-
-# if you want to work on the lite flavor
-bin/flavor.sh LITE
-```
-
 
 ### Clean your space
 
@@ -73,9 +58,9 @@ cd ..
 
 If everything good, you are now ready to run the example in debug mode using either Visual Studio Code, Android Studio or XCode
 
-- To debug/develop the Dart side, you open the project /tau/flutter_sound/example/ in Visual Studio Code or Android Studio.
-- To debug/develop the iOS side you open tau/flutter_sound/example/ios/Runner.xcworkspace in XCode.
-- To debug/develop the Android side, you open the project tau/flutter_sound/example/android in Android Studio
+- To debug/develop the Dart side, you open the project `flutter_sound/flutter_sound/example/` in Visual Studio Code or Android Studio.
+- To debug/develop the iOS side you open `flutter_sound/flutter_sound/example/ios/Runner.xcworkspace` in XCode.
+- To debug/develop the Android side, you open the project `flutter_sound/flutter_sound/example/android` in Android Studio
 
 ### Debug your own App
 
@@ -96,16 +81,25 @@ You must change the dependencies in your pubspec.yaml file and do a `flutter pub
 
 ## Update the documentation
 
-&tau; uses the Jekyll tool with a "Documentation Theme" to generate the documentation.
+Flutter Sound uses the Jekyll tool with a "Documentation Theme" to generate the documentation.
 [Here](https://idratherbewriting.com/documentation-theme-jekyll/) is the Jekyll documentation.
 Please refer to this documentation to install ruby and jekyll on your dev machine.
 
-All the &tau; documentation is in markdown files under tau/doc/pages.
+All the flutter_sound documentation is in markdown files under flutter_sound/doc/fs/pages.
+
+{% include warning.html content="Caution : flutter_sound/doc is a dependant submodule, and is common with all the τ family." %}
+
 You can see your modifications in live doing:
 
 ```sh
-cd tau/doc
+cd flutter_sound/doc
 jekyll serve
+```
+
+or
+
+```sh
+bundle exec jekyll serve
 ```
 
 Then, if you have the necessary credentials (but you certainly do not have them), you can do:

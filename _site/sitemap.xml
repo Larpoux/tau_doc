@@ -34,18 +34,6 @@
   
   
   <url>
-    <loc>/fs-architecture.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>/architecture.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>/links_contribution.html</loc>
   </url>
   
@@ -71,6 +59,12 @@
   
   <url>
     <loc>/fs-README.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/fs-architecture.html</loc>
   </url>
   
   
@@ -328,25 +322,25 @@
   
   
   <url>
-    <loc>/fs-tau_api_player_on_progress.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>/fs-tau_api_recorder_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>/fs-tau_api_recorder_open_audio_session.html</loc>
+    <loc>/fs-tau_api_player_on_progress.html</loc>
   </url>
   
   
   
   <url>
     <loc>/fs-tau_api_player_open_audio_session.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/fs-tau_api_recorder_open_audio_session.html</loc>
   </url>
   
   
@@ -640,19 +634,25 @@
   
   
   <url>
-    <loc>/tau_dev.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>/taudio_rfc.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>/td-README.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/td-architecture.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/td-tau_dev.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/td-taudio_rfc.html</loc>
   </url>
   
   

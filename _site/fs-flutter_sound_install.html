@@ -362,12 +362,26 @@
       
   
   <li>
-      <a title="The Flutter Sound Project" href="#">The Flutter Sound Project</a>
+      <a title="=== FLUTTER SOUND" href="#">=== FLUTTER SOUND</a>
       <ul>
           
           
           
-          <li><a title="README" href="fs-README.html">README</a></li>
+          <li><a title="Readme" href="fs-README.html">Readme</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Changelog" href="fs-CHANGELOG.html">Changelog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Live demo" href="https://flutter-sound.canardoux.xyz/web_example/" target="_blank" rel="noopener">Live demo</a></li>
           
           
           
@@ -378,7 +392,7 @@
       
   
   <li>
-      <a title="Guides" href="#">Guides</a>
+      <a title="=== GUIDES" href="#">=== GUIDES</a>
       <ul>
           
           
@@ -464,7 +478,7 @@
       
   
   <li>
-      <a title="API" href="#">API</a>
+      <a title="=== API" href="#">=== API</a>
       <ul>
           
           
@@ -741,23 +755,7 @@
       
   
   <li>
-      <a title="Live Demo" href="#">Live Demo</a>
-      <ul>
-          
-          
-          
-          <li><a title="Live demo" href="https://flutter-sound.canardoux.xyz/web_example/" target="_blank" rel="noopener">Live demo</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="Examples" href="#">Examples</a>
+      <a title="=== EXAMPLES" href="#">=== EXAMPLES</a>
       <ul>
           
           
@@ -885,7 +883,7 @@
       
   
   <li>
-      <a title="API reference (dartdoc)" href="#">API reference (dartdoc)</a>
+      <a title="=== API REF (DARTDOC)" href="#">=== API REF (DARTDOC)</a>
       <ul>
           
           
@@ -915,7 +913,7 @@
       
   
   <li>
-      <a title="Links" href="#">Links</a>
+      <a title="=== LINKS" href="#">=== LINKS</a>
       <ul>
           
           
@@ -1027,60 +1025,35 @@ $('#toc').on('click', 'a', function() {
 <h3 id="sdk-requirements">SDK requirements</h3>
 
 <ul>
-  <li>Flutter Sound requires an iOS 10.0 SDK (or later)</li>
+  <li>Flutter Sound requires an iOS 12.0 SDK (or later)</li>
   <li>Flutter Sound requires an Android 21 (or later)</li>
 </ul>
 
 <h3 id="flutter-sound-flavors">Flutter Sound flavors</h3>
 
 <p>From version 9.x, Flutter Sound does not have anymore two flavors (LITE/FULL).
-There is now just one plugin.
-Flutter Sound comes in two flavors :</p>
+There is now just one plugin.</p>
 
 <h3 id="linking-your-app-directly-from-pubdev">Linking your App directly from <code class="language-plaintext highlighter-rouge">pub.dev</code></h3>
 
-<p>Add <code class="language-plaintext highlighter-rouge">flutter_sound</code> or <code class="language-plaintext highlighter-rouge">flutter_sound_lite</code> as a dependency in pubspec.yaml.</p>
+<p>Add <code class="language-plaintext highlighter-rouge">flutter_sound</code> as a dependency in pubspec.yaml.</p>
 
-<p>The actual versions are :</p>
-
-<ul>
-  <li>flutter_sound_lite: ^8.3.9  (the LTS version without FFmpeg)</li>
-  <li>flutter_sound: ^8.3.9 (the LTS version with FFmpeg embedded)</li>
-</ul>
-
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound: ^8.3.9
-</code></pre></div></div>
-
-<p>or</p>
-
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite: ^8.3.9
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">dependencies</span><span class="pi">:</span>
+  <span class="na">flutter</span><span class="pi">:</span>
+    <span class="na">sdk</span><span class="pi">:</span> <span class="s">flutter</span>
+  <span class="na">flutter_sound</span><span class="pi">:</span> <span class="s">^9.9.0</span>
 </code></pre></div></div>
 
 <h3 id="linking-your-app-with-flutter-sound-sources-optional">Linking your App with Flutter Sound sources (optional)</h3>
 
-<p>The Flutter-Sound sources <a href="https://github.com/dooboolab/flutter_sound">are here</a>.</p>
+<p>The Flutter-Sound sources <a href="https://github.com/canardoux/flutter_sound">are here</a>.</p>
 
-<p>There is actually two branches :</p>
-
-<ul>
-  <li>V7. This is the last release which is not compliant with Dart Null Safety</li>
-  <li>master. This is the branch currently developed and is released under the version 8.x.x.</li>
-</ul>
-
-<p>You probably want to look to <a href="tau_dev.html">the Dev notice</a>
-If you want to generate your App from the sources with a <code class="language-plaintext highlighter-rouge">FULL</code> flavor:</p>
+<p>You probably want to look to <a href="fs-tau_dev.html">the Dev notice</a>.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>some/where
-git clone https://github.com/dooboolab/flutter_sound
+git clone <span class="nt">--recursive</span> https://github.com/canardoux/flutter_sound
 <span class="nb">cd </span>some/where/flutter_sound
 bin/reldev.sh DEV
-bin/flavor FULL
 </code></pre></div></div>
 
 <p>and add your dependency in your pubspec.yaml :</p>
@@ -1089,24 +1062,6 @@ bin/flavor FULL
   flutter:
     sdk: flutter
   flutter_sound:
-    path: some/where/flutter_sound
-</code></pre></div></div>
-
-<p>If you prefer to link your App with the <code class="language-plaintext highlighter-rouge">LITE</code> flavor :</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>some/where
-git clone https://github.com/dooboolab/flutter_sound
-<span class="nb">cd </span>some/where/flutter_sound
-bin/reldev.sh DEV
-bin/flavor.sh LITE
-</code></pre></div></div>
-
-<p>and add your dependency in your pubspec.yaml :</p>
-
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite:
     path: some/where/flutter_sound
 </code></pre></div></div>
 

@@ -15,58 +15,36 @@ For help on adding as a dependency, view the [documentation](https://flutter.io/
 
 ### SDK requirements
 
-* Flutter Sound requires an iOS 10.0 SDK \(or later\)
+* Flutter Sound requires an iOS 12.0 SDK \(or later\)
 * Flutter Sound requires an Android 21 \(or later\)
 
 ### Flutter Sound flavors
 
 From version 9.x, Flutter Sound does not have anymore two flavors (LITE/FULL).
 There is now just one plugin.
-Flutter Sound comes in two flavors :
 
 ### Linking your App directly from `pub.dev`
 
-Add `flutter_sound` or `flutter_sound_lite` as a dependency in pubspec.yaml.
+Add `flutter_sound` as a dependency in pubspec.yaml.
 
-The actual versions are :
-
-* flutter\_sound\_lite: ^8.3.9  \(the LTS version without FFmpeg\)
-* flutter\_sound: ^8.3.9 \(the LTS version with FFmpeg embedded\)
-
-```text
+```yaml
 dependencies:
   flutter:
     sdk: flutter
-  flutter_sound: ^8.3.9
-```
-
-or
-
-```text
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite: ^8.3.9
+  flutter_sound: ^9.9.0
 ```
 
 ### Linking your App with Flutter Sound sources \(optional\)
 
-The Flutter-Sound sources [are here](https://github.com/dooboolab/flutter_sound).
+The Flutter-Sound sources [are here](https://github.com/canardoux/flutter_sound).
 
-There is actually two branches :
-
-* V7. This is the last release which is not compliant with Dart Null Safety
-* master. This is the branch currently developed and is released under the version 8.x.x.
-
-You probably want to look to [the Dev notice](tau_dev.html)
-If you want to generate your App from the sources with a `FULL` flavor:
+You probably want to look to [the Dev notice](fs-tau_dev.html).
 
 ```bash
 cd some/where
-git clone https://github.com/dooboolab/flutter_sound
+git clone --recursive https://github.com/canardoux/flutter_sound
 cd some/where/flutter_sound
 bin/reldev.sh DEV
-bin/flavor FULL
 ```
 
 and add your dependency in your pubspec.yaml :
@@ -76,26 +54,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_sound:
-    path: some/where/flutter_sound
-```
-
-If you prefer to link your App with the `LITE` flavor :
-
-```bash
-cd some/where
-git clone https://github.com/dooboolab/flutter_sound
-cd some/where/flutter_sound
-bin/reldev.sh DEV
-bin/flavor.sh LITE
-```
-
-and add your dependency in your pubspec.yaml :
-
-```text
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite:
     path: some/where/flutter_sound
 ```
 

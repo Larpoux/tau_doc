@@ -362,12 +362,26 @@
       
   
   <li>
-      <a title="The Flutter Sound Project" href="#">The Flutter Sound Project</a>
+      <a title="=== FLUTTER SOUND" href="#">=== FLUTTER SOUND</a>
       <ul>
           
           
           
-          <li><a title="README" href="fs-README.html">README</a></li>
+          <li><a title="Readme" href="fs-README.html">Readme</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Changelog" href="fs-CHANGELOG.html">Changelog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Live demo" href="https://flutter-sound.canardoux.xyz/web_example/" target="_blank" rel="noopener">Live demo</a></li>
           
           
           
@@ -378,7 +392,7 @@
       
   
   <li>
-      <a title="Guides" href="#">Guides</a>
+      <a title="=== GUIDES" href="#">=== GUIDES</a>
       <ul>
           
           
@@ -464,7 +478,7 @@
       
   
   <li>
-      <a title="API" href="#">API</a>
+      <a title="=== API" href="#">=== API</a>
       <ul>
           
           
@@ -741,23 +755,7 @@
       
   
   <li>
-      <a title="Live Demo" href="#">Live Demo</a>
-      <ul>
-          
-          
-          
-          <li><a title="Live demo" href="https://flutter-sound.canardoux.xyz/web_example/" target="_blank" rel="noopener">Live demo</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="Examples" href="#">Examples</a>
+      <a title="=== EXAMPLES" href="#">=== EXAMPLES</a>
       <ul>
           
           
@@ -885,7 +883,7 @@
       
   
   <li>
-      <a title="API reference (dartdoc)" href="#">API reference (dartdoc)</a>
+      <a title="=== API REF (DARTDOC)" href="#">=== API REF (DARTDOC)</a>
       <ul>
           
           
@@ -915,7 +913,7 @@
       
   
   <li>
-      <a title="Links" href="#">Links</a>
+      <a title="=== LINKS" href="#">=== LINKS</a>
       <ul>
           
           
@@ -1024,9 +1022,7 @@ $('#toc').on('click', 'a', function() {
 
 <ul>
   <li>@hyochan who is the Flutter Sound father</li>
-  <li>@salvatore373 who wrote the Track Player</li>
-  <li>@bsutton who wrote the UI Widgets</li>
-  <li>@larpoux who add several codec supports</li>
+  <li>@larpoux who add several codec supports and the Streams support</li>
 </ul>
 
 <p><strong>We really need your contributions.</strong>
@@ -1037,12 +1033,12 @@ Pull Requests are welcome and will be considered very carefully.</p>
 <h3 id="clone-the-flutter-sound-project-and-the-flutter_sound_core-module">Clone the Flutter Sound project and the flutter_sound_core module</h3>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>some_where
-git clone <span class="nt">--recursive</span> https://github.com/canardoux/tau.git
+git clone <span class="nt">--recursive</span> https://github.com/canardoux/flutter_sound.git
 </code></pre></div></div>
 
 <h3 id="setup-a-development-environment-1">setup a development environment</h3>
 
-<p>cd to the τ root dir and run the script <code class="language-plaintext highlighter-rouge">bin/reldev.sh DEV</code></p>
+<p>cd to the Flutter Sound root dir and run the script <code class="language-plaintext highlighter-rouge">bin/reldev.sh DEV</code></p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau
 bin/reldev.sh DEV
@@ -1051,17 +1047,6 @@ bin/reldev.sh DEV
 <h3 id="ios-signing">iOS signing</h3>
 
 <p>Open tau/flutter_sound/example/ios/Runner.xcworkspace in XCode, and set your <code class="language-plaintext highlighter-rouge">Team</code> in the <code class="language-plaintext highlighter-rouge">Signing &amp; Capabilities</code> tab.</p>
-
-<h3 id="set-your-flutter-sound-flavor">Set your Flutter Sound flavor</h3>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau
-
-<span class="c"># If you want to work on the full flavor</span>
-bin/flavor.sh FULL
-
-<span class="c"># if you want to work on the lite flavor</span>
-bin/flavor.sh LITE
-</code></pre></div></div>
 
 <h3 id="clean-your-space">Clean your space</h3>
 
@@ -1081,9 +1066,9 @@ cd</span> ..
 <p>If everything good, you are now ready to run the example in debug mode using either Visual Studio Code, Android Studio or XCode</p>
 
 <ul>
-  <li>To debug/develop the Dart side, you open the project /tau/flutter_sound/example/ in Visual Studio Code or Android Studio.</li>
-  <li>To debug/develop the iOS side you open tau/flutter_sound/example/ios/Runner.xcworkspace in XCode.</li>
-  <li>To debug/develop the Android side, you open the project tau/flutter_sound/example/android in Android Studio</li>
+  <li>To debug/develop the Dart side, you open the project <code class="language-plaintext highlighter-rouge">flutter_sound/flutter_sound/example/</code> in Visual Studio Code or Android Studio.</li>
+  <li>To debug/develop the iOS side you open <code class="language-plaintext highlighter-rouge">flutter_sound/flutter_sound/example/ios/Runner.xcworkspace</code> in XCode.</li>
+  <li>To debug/develop the Android side, you open the project <code class="language-plaintext highlighter-rouge">flutter_sound/flutter_sound/example/android</code> in Android Studio</li>
 </ul>
 
 <h3 id="debug-your-own-app">Debug your own App</h3>
@@ -1104,15 +1089,23 @@ cd</span> ..
 
 <h2 id="update-the-documentation">Update the documentation</h2>
 
-<p>τ uses the Jekyll tool with a “Documentation Theme” to generate the documentation.
+<p>Flutter Sound uses the Jekyll tool with a “Documentation Theme” to generate the documentation.
 <a href="https://idratherbewriting.com/documentation-theme-jekyll/">Here</a> is the Jekyll documentation.
 Please refer to this documentation to install ruby and jekyll on your dev machine.</p>
 
-<p>All the τ documentation is in markdown files under tau/doc/pages.
-You can see your modifications in live doing:</p>
+<p>All the flutter_sound documentation is in markdown files under flutter_sound/doc/fs/pages.</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>tau/doc
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Caution : flutter_sound/doc is a dependant submodule, and is common with all the τ family.</div>
+
+<p>You can see your modifications in live doing:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>flutter_sound/doc
 jekyll serve
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
 </code></pre></div></div>
 
 <p>Then, if you have the necessary credentials (but you certainly do not have them), you can do:</p>

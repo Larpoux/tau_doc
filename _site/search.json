@@ -17,28 +17,6 @@
 
 
 {
-"title": "The &amp;tau; Architecure",
-"tags": "tauarchitecture",
-"keywords": "tau architecture",
-"url": "fs-architecture.html",
-"summary": "The &tau; Architecture."
-}
-,
-
-
-
-{
-"title": "The &amp;tau; Architecure",
-"tags": "tauarchitecture",
-"keywords": "tau architecture",
-"url": "architecture.html",
-"summary": "The &tau; Architecture."
-}
-,
-
-
-
-{
 "title": "Contributions",
 "tags": "contributions",
 "keywords": "Contributions",
@@ -88,6 +66,17 @@
 "keywords": "home homepage readme",
 "url": "fs-README.html",
 "summary": "Overview on the Flutter Sound documentation."
+}
+,
+
+
+
+{
+"title": "The &amp;tau; Architecure",
+"tags": "tauarchitecture",
+"keywords": "tau architecture",
+"url": "fs-architecture.html",
+"summary": "The &tau; Architecture."
 }
 ,
 
@@ -556,17 +545,6 @@
 
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs-tau_api_player_on_progress.html",
-"summary": "onProgress."
-}
-,
-
-
-
-{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -578,11 +556,11 @@
 
 
 {
-"title": "openRecorder()",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs-tau_api_recorder_open_audio_session.html",
-"summary": "`openRecorder()` and `closeRecorder()`"
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_on_progress.html",
+"summary": "onProgress."
 }
 ,
 
@@ -594,6 +572,17 @@
 "keywords": "API Player",
 "url": "fs-tau_api_player_open_audio_session.html",
 "summary": "`openPlayer()` and `closePlayer()`."
+}
+,
+
+
+
+{
+"title": "openRecorder()",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs-tau_api_recorder_open_audio_session.html",
+"summary": "`openRecorder()` and `closeRecorder()`"
 }
 ,
 
@@ -1128,10 +1117,32 @@
 
 
 {
+"title": "τ-dio",
+"tags": "Taudio",
+"keywords": "home homepage readme",
+"url": "td-README.html",
+"summary": "The τ-dio documentation."
+}
+,
+
+
+
+{
+"title": "The &amp;tau; Architecure",
+"tags": "tauarchitecture",
+"keywords": "tau architecture",
+"url": "td-architecture.html",
+"summary": "The &tau; Architecture."
+}
+,
+
+
+
+{
 "title": "Contributions",
 "tags": "contributions",
 "keywords": "Contributions",
-"url": "tau_dev.html",
+"url": "td-tau_dev.html",
 "summary": "We need you!"
 }
 ,
@@ -1142,19 +1153,8 @@
 "title": "Taudio Streams (RFC)",
 "tags": "rfctaudio",
 "keywords": "rfc, taudio",
-"url": "taudio_rfc.html",
+"url": "td-taudio_rfc.html",
 "summary": "Web Audio API on various frameworks."
-}
-,
-
-
-
-{
-"title": "τ-dio",
-"tags": "Taudio",
-"keywords": "home homepage readme",
-"url": "td-README.html",
-"summary": "The τ-dio documentation."
 }
 ,
 
