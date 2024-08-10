@@ -12,7 +12,7 @@ keywords: guides
 
 Please, remember that actually, Flutter Sound does not support Floating Point PCM data, nor records with more that one audio channel.
 
-To record a Raw PCM16 file, you use the regular `startRecorder()` API verb. To play a Raw PCM16 file, you can either add a Wave header in front of the file with `pcm16ToWave()` verb, or call the regular `startPlayer()` API verb. If you do the later, you must provide the `sampleRate` and `numChannels` parameter during the call. You can look to the simple example provided with Flutter Sound. \[TODO\]
+To record a Raw PCM16 file, you use the regular `startRecorder()` API verb. To play a Raw PCM16 file, you can either add a Wave header in front of the file with `pcm16ToWave()` verb, or call the regular `startPlayer()` API verb. If you do the later, you must provide the `sampleRate` and `numChannels` parameter during the call. You can look to the simple example provided with Flutter Sound.
 
 _Example_
 

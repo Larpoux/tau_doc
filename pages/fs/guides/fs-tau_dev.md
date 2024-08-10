@@ -87,25 +87,31 @@ Please refer to this documentation to install ruby and jekyll on your dev machin
 
 All the flutter_sound documentation is in markdown files under flutter_sound/doc/fs/pages.
 
-{% include warning.html content="Caution : flutter_sound/doc is a dependant submodule, and is common with all the τ family." %}
+{% include warning.html content="Caution : flutter_sound/doc is a dependant submodule, and is shared by all the τ family.
+The `taudo` repo must be cloned beside the flutter_sound repo" %}
+
+```sh
+git clone git@github.com:canardoux/taudoc.git
+```
 
 You can see your modifications in live doing:
 
 ```sh
-cd flutter_sound/doc
+cd taudoc
 jekyll serve
 ```
 
 or
 
 ```sh
+cd taudoc
 bundle exec jekyll serve
 ```
 
 Then, if you have the necessary credentials (but you certainly do not have them), you can do:
 
 ```sh
-cd tau
+cd flutter_sound
 bin/doc.sh
 ```
 
@@ -114,11 +120,11 @@ bin/doc.sh
 if you have the necessary credentials (but you certainly do not have them), you can do:
 
 ```sh
-cd tau
-newVersion.sh 8.2.0
+cd flutter_sound
+newVersion.sh 9.10.0
 ```
 
-(In this example, 8.2.0 is the version number that you want to build).
+(In this example, 9.10.0 is the version number that you want to build).
 
 When the script asks if OK to upload your new flutter_sound plugin,
 it is a good idea to wait something like half an hour before answering.

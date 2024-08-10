@@ -1,7 +1,7 @@
 ---
-title:  "&tau; API"
-description: "The &tau; API."
-summary: "&tau; is composed with 4 modules."
+title:  "Flutter Sound API"
+description: "The Flutter Sound API."
+summary: "Flutter Sound; is composed with 3 modules."
 permalink: fs-tau_api_main.html
 sidebar: fs_sidebar
 tags: [api,getting_started]
@@ -10,45 +10,44 @@ keywords: API
 
 # The Main modules
 
-
-&tau; is composed with 4 modules :
+Flutter Sound is composed with 3 modules :
 
 - `FlutterSoundPlayer`, wich deal with everything about playbacks
 - `FlutterSoundRecorder`, which deal with everything about recording
 - `FlutterSoundHelper`, which offers some convenients tools
-- `FlutterSoundUI`, which offer some Widget ready to be used out of the box
 
 To use Flutter Sound you just do :
-```
+
+```dart
 import 'package:flutter_sound/flutter_sound.dart';
 ```
 
 This will import all the necessaries dart interfaces.
 
-
 ## Playback
 
 1. **Instance one ore more players.**
-A good place to do that is in your `init()` function.
+A good place to do that is during your variables initialisation..
 It is also possible to instanciate the players "on the fly", when needed.
 ```dart
 FlutterSoundPlayer myPlayer = FlutterSoundPlayer();
 ```
 
+
 2. **Open it.**
-You cannot do anything on a close Player.
-An audio-session is then created.
+A good place to do that is in your `init()` function.
+It is also possible to open the players "on the fly", when needed.
+You cannot do anything on a closed Player.
 ```dart
-myPlayer.openAudioSession().then( (){ ...} );
+myPlayer.openPlayer().then( (){ ...} );
 ```
 
 
 3. **Use the various verbs implemented by the players.**
 - `startPlayer()`
 - `startPlayerFromStream()`
-- `startPlayerFromBuffer()`
 - `setVolume()`
-- `FlutterSoundPlayer.stopPlayer()`
+- `stopPlayer()`
 - ...
 
 
@@ -56,7 +55,7 @@ myPlayer.openAudioSession().then( (){ ...} );
 This is important to close every player open for freeing the resources taken by the audio session.
 A good place to do that is in the `dispose()` procedure.
 ```dart
-myPlayer.closeAudioSession();
+myPlayer.closePlayer();
 ```
 
 
@@ -64,16 +63,17 @@ myPlayer.closeAudioSession();
 
 
 1. **Instance your recorder.**
-A good place to do that is in your `init()` function.
+A good place to do that is during your variables initialisation.
 ```dart
 FlutterSoundRecorder myRecorder = FlutterSoundRecorder();
 ```
 
 2. **Open it.**
-You cannot do anything on a close Recorder.
-An audio-session is then created.
+A good place to do that is in your `init()` function.
+It is also possible to open the recorders "on the fly", when needed.
+You cannot do anything on a closed Recorder.
 ```dart
-myRecorder.openAudioSession().then( (){ ...} );
+myRecorder.openRecorder().then( (){ ...} );
 ```
 
 
@@ -89,6 +89,6 @@ myRecorder.openAudioSession().then( (){ ...} );
 This is important to close it for freeing the resources taken by the audio session.
 A good place to do that is in the `dispose()` procedure.
 ```dart
-myRecorder.closeAudioSession();
+myRecorder.closeRecorder();
 ```
 

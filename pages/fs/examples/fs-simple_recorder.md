@@ -11,12 +11,10 @@ keywords: Flutter, Flutter Sound, examples, demo
 
 ## SimpleRecorder
 
-[SimpleRecorder](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_recorder/simple_recorder.dart)
-
 {% include image.html file="examples/simple_recorder.png" %}
 
 This is a very simple example for Flutter Sound beginners, that shows how to record, and then playback a file.
 
 This example is really basic.
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_recorder/simple_recorder.dart)
+The complete example source is there : [SimpleRecorder](https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/simple_recorder/simple_recorder.dart)

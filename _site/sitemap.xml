@@ -88,12 +88,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs-flutter_sound_examples_convert.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/fs-tau_api_utilities_convert_file.html</loc>
   </url>
   
@@ -304,6 +298,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/fs-flutter_sound_examples_mediaRecorder.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/fs-links_migration.html</loc>
   </url>
   
@@ -365,12 +365,6 @@
   
   <url>
     <loc>http://localhost:4000/fs-tau_api_utilities_pcm_to_wave_buffer.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs-flutter_sound_examples_play_from_mic.html</loc>
   </url>
   
   
@@ -502,13 +496,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs-tau_api_player_set_volume.html</loc>
+    <loc>http://localhost:4000/fs-flutter_sound_examples_setVolume.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/fs-flutter_sound_examples_setVolume.html</loc>
+    <loc>http://localhost:4000/fs-tau_api_player_set_volume.html</loc>
   </url>
   
   
@@ -580,12 +574,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs-flutter_sound_examples_stream_loop.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/fs-tau_dev.html</loc>
   </url>
   
@@ -605,12 +593,6 @@
   
   <url>
     <loc>http://localhost:4000/fs-tau_api_utilities_wave_to_pcm_buffer.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs-flutter_sound_examples_widget_ui.html</loc>
   </url>
   
   

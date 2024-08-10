@@ -12,8 +12,6 @@ keywords: Flutter, Flutter Sound, examples, demo
 
 ## MultiPlaybacks
 
-[MultiPlaybacks](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/multi_playback/multi_playback.dart)
-
 {% include image.html file="examples/multi_playback.png" %}
 
 This is a simple example doing several playbacks at the same time.
@@ -22,4 +20,4 @@ This example shows also :
 - The Pause/Resume feature.
 - The Display of the elapsed time
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/multi_playback/multi_playback.dart)
+The complete example source is there : [MultiPlaybacks](https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/multi_playback/multi_playback.dart)

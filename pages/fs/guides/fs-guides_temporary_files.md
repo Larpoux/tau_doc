@@ -11,7 +11,7 @@ keywords: Flutter, &tau;
 
 ## Using path_provider
 
-The App can get the temporary directory with the plugin `path_provider` and use it for `startRecorder()` parameter :
+The App can get the temporary directory with the plugin [path_provider](https://pub.dev/packages/path_provider) and use it for `startRecorder()` parameter :
 
 ```
         var tempDir = await getTemporaryDirectory();
@@ -35,6 +35,9 @@ the `startRecorder()` argument is considered as a temporary file name.
         await myRecorder.stopRecorder();
         await myPlayer.startPlayer( fromURI: 'foo.aac', codec: Codec.aacADTS );
 ```
+
+{% include warning.html content="`stopRecorder()` should a Future to the URL of the temporary file created if the App needs it.
+Unfortunately there is probably a bug in this area and you should not use this feature" %}
 
 `stopRecorder()` returns a Future to the URL of the temporary file created if the App needs it.
 

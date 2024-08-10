@@ -12,11 +12,9 @@ keywords: Flutter, Flutter Sound, examples, demo
 
 ## onProgress()
 
-[SimplePlayback](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/player_onProgress/player_onProgress.dart)
-
 {% include image.html file="examples/player_onProgress.png" %}
 
 This example shows how to use the verb `setSubscriptionDuration()` on a player for having an `onProgress()` callback.
 
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/player_onProgress/player_onProgress.dart)
+The complete example source is there : [Player OnProgress](https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/player_onProgress/player_onProgress.dart)

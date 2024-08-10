@@ -12,8 +12,6 @@ keywords: Flutter, Flutter Sound, examples, demo
 
 ## Demo
 
-[Demo](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/demo/demo.dart)
-
 {% include image.html file="examples/demo.png" %}
 
 This is a Demo of what it is possible to do with Flutter Sound. The code of this Demo app is not so simple and unfortunately not very clean :-\( .
@@ -28,9 +26,8 @@ The biggest interest of this Demo is that it shows most of the features of Flutt
 * Shows how to use a Stream for getting the playback \(or recoding\) events
 * Shows how to specify a callback function when a playback is terminated,
 * Shows how to record to a Stream or playback from a stream
-* Can show controls on the iOS or Android lock-screen
 * ...
 
 It would be really great if someone rewrite this demo soon
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/demo/demo.dart)
+The complete example source is there : [Demo](https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/demo/demo.dart)

@@ -20,7 +20,7 @@ topnav_dropdowns:
 
         - title: Flutter Sound ex.
           #external_url: https://tau.canardoux.xyz/danku/fs-live
-          url: /danku/fs-live
+          url: /danku\/fs-live\/index.html
           hint: "The Flutter Sound examples"
 
         - title: τ ex.

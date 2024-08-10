@@ -35,7 +35,7 @@ entries:
       output: web, pdf
 
     - title: Live demo
-      external_url: https://flutter-sound.canardoux.xyz/web_example/
+      url: /danku\/fs-live\/index.html
       output: web, pdf
 
 # ----------------------------------------------------------
@@ -90,6 +90,74 @@ entries:
       output: web, pdf
 
 
+
+# ---------------------------------------------------------------
+
+
+  - title: === EXAMPLES
+    output: web, pdf
+    folderitems:
+
+
+    - title: demo
+      url: /fs-flutter_sound_examples_demo.html
+      output: web, pdf
+
+    - title: Simple Playback
+      url: /fs-flutter_sound_examples_simple_playback.html
+      output: web, pdf
+
+    - title: Simple Recorder
+      url: /fs-flutter_sound_examples_simple_recorder.html
+      output: web, pdf
+
+    - title: onProgress (Player)
+      url: /fs-flutter_sound_examples_player_onprogress.html
+      output: web, pdf
+
+    - title: onProgress (Recorder)
+      url: /fs-flutter_sound_examples_recorder_onprogress.html
+      output: web, pdf
+
+    - title: Multi Playbacks
+      url: /fs-flutter_sound_examples_multi_playbacks.html
+      output: web, pdf
+
+    - title: Volume Control
+      url: /fs-flutter_sound_examples_setVolume.html
+      output: web, pdf
+
+    - title: Speed Control
+      url: /fs-flutter_sound_examples_setSpeed.html
+      output: web, pdf
+
+    - title: Seek
+      url: /fs-flutter_sound_examples_seek.html
+      output: web, pdf
+
+    - title: Record to Stream
+      url: /fs-flutter_sound_examples_record_to_stream.html
+      output: web, pdf
+
+    - title: Playback from Stream (1)
+      url: /fs-flutter_sound_examples_playback_from_stream_1.html
+      output: web, pdf
+
+    - title: Playback from Stream (2)
+      url: /fs-flutter_sound_examples_playback_from_stream_2.html
+      output: web, pdf
+
+    - title: Sound Effects
+      url: /fs-flutter_sound_examples_sound_effects.html
+      output: web, pdf
+
+    - title: Set Log Level
+      url: /fs-flutter_sound_examples_setLogLevel.html
+      output: web, pdf
+
+    - title: Media Recorder
+      url: /fs-flutter_sound_examples_mediaRecorder.html
+      output: web, pdf
 
 # -------------------------------------------------------------
 
@@ -285,82 +353,6 @@ entries:
 
 
 
-# ---------------------------------------------------------------
-
-
-  - title: === EXAMPLES
-    output: web, pdf
-    folderitems:
-
-
-    - title: demo
-      url: /fs-flutter_sound_examples_demo.html
-      output: web, pdf
-
-    - title: Widget UI
-      url: /fs-flutter_sound_examples_widget_ui.html
-      output: web, pdf
-
-    - title: Simple Playback
-      url: /fs-flutter_sound_examples_simple_playback.html
-      output: web, pdf
-
-    - title: onProgress (Player)
-      url: /fs-flutter_sound_examples_player_onprogress.html
-      output: web, pdf
-
-    - title: onProgress (Recorder)
-      url: /fs-flutter_sound_examples_recorder_onprogress.html
-      output: web, pdf
-
-    - title: Simple Recorder
-      url: /fs-flutter_sound_examples_simple_recorder.html
-      output: web, pdf
-
-    - title: Play from Mic
-      url: /fs-flutter_sound_examples_play_from_mic.html
-      output: web, pdf
-
-    - title: Multi Playbacks
-      url: /fs-flutter_sound_examples_multi_playbacks.html
-      output: web, pdf
-
-    - title: Set Volumes
-      url: /fs-flutter_sound_examples_setVolume.html
-      output: web, pdf
-
-    - title: Set Speed
-      url: /fs-flutter_sound_examples_setSpeed.html
-      output: web, pdf
-
-    - title: Seek
-      url: /fs-flutter_sound_examples_seek.html
-      output: web, pdf
-
-    - title: Record to Stream
-      url: /fs-flutter_sound_examples_record_to_stream.html
-      output: web, pdf
-
-    - title: Playback from Stream (1)
-      url: /fs-flutter_sound_examples_playback_from_stream_1.html
-      output: web, pdf
-
-    - title: Playback from Stream (2)
-      url: /fs-flutter_sound_examples_playback_from_stream_2.html
-      output: web, pdf
-
-    - title: Sound Effects
-      url: /fs-flutter_sound_examples_sound_effects.html
-      output: web, pdf
-
-    - title: Stream Loop
-      url: /fs-flutter_sound_examples_stream_loop.html
-      output: web, pdf
-
-    - title: Set Log Level
-      url: /fs-flutter_sound_examples_setLogLevel.html
-      output: web, pdf
-
 
 # --------------------------------------------------------------------
 
@@ -387,10 +379,6 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Migration
-      url: /fs-links_migration.html
-      output: web, pdf
-
     - title: Problem Report
       output: web, pdf
       hint: Issues on Github
@@ -406,7 +394,8 @@ entries:
       output: web, pdf
 
     - title: License
-      url: /fs-links_license.html
+      url: /fs-LICENSE.html
+      
       output: web, pdf
 
 
