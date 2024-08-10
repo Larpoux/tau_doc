@@ -10,11 +10,11 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
-cp index.html _site
+#cp index.html _site
 
 #rm -rf danku
 #rm -r ../danku/rs-live
-cp -a ../flutter_sound/flutter_sound/example/build/web danku/rs-live
+cp -a ../flutter_sound/flutter_sound/example/build/web danku/fs-live
 #cp -a ../danku danku
 
 git add .
