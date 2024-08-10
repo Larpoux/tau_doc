@@ -14,6 +14,7 @@ fi
 
 #rm -rf danku
 #rm -r ../danku/rs-live
+rm -r danku/fs-live
 cp -a ../flutter_sound/flutter_sound/example/build/web danku/fs-live
 #cp -a ../danku danku
 
