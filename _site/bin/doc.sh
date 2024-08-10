@@ -12,10 +12,10 @@ fi
 
 cp index.html _site
 
-rm -rf danku
-rm -r ../danku/rs-live
-cp -a ../flutter_sound/flutter_sound/example/build/web ../danku/rs-live
-cp -a ../danku danku
+#rm -rf danku
+#rm -r ../danku/rs-live
+cp -a ../flutter_sound/flutter_sound/example/build/web danku/rs-live
+#cp -a ../danku danku
 
 git add .
 git commit -m 'tau-doc update'
@@ -25,8 +25,8 @@ git push
 ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
 scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null
 
-ssh danku@danku "rm -rf /var/www/canardoux.xyz/danku/fs-live"
-scp -r ../flutter_sound/flutter_sound/example/build/web  danku@danku:/var/www/canardoux.xyz/danku/fs-live >/dev/null
+#ssh danku@danku "rm -rf /var/www/canardoux.xyz/danku/fs-live"
+#scp -r ../flutter_sound/flutter_sound/example/build/web  danku@danku:/var/www/canardoux.xyz/danku/fs-live >/dev/null
 
-ssh danku@danku "rm -rf /var/www/canardoux.xyz/danku/extract"
-scp -r ../danku/extract  danku@danku:/var/www/canardoux.xyz/danku/extract >/dev/null
+#ssh danku@danku "rm -rf /var/www/canardoux.xyz/danku/extract"
+#scp -r ../danku/extract  danku@danku:/var/www/canardoux.xyz/danku/extract >/dev/null
