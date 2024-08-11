@@ -5,7 +5,7 @@ search: exclude
 ---
 
 [
-{% for page in site.html_pages %}
+{% for page in site.pages %}
 {% unless page.search == "exclude" %}
 {
 "title": "{{ page.title | escape }}",

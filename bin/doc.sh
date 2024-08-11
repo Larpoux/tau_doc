@@ -3,23 +3,16 @@
 rm -rf _site
 bundle config set --local path '~/vendor/bundle'
 bundle install
+
+bin/apidoc.sh
+exit 0
+
 bundle exec jekyll build
 
 if [ $? -ne 0 ]; then
     echo "Error"
     exit -1
 fi
-
-bin/apidoc.sh
-
-cd ../taudoc-new
-../taudoc/bin/apidoc.sh
-
-cd ../taudoc-old
-../taudoc/bin/apidoc.sh
-
-cd ../taudoc
-exit 0
 
 #rm -rf danku
 #rm -r ../danku/rs-live

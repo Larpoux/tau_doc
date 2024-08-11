@@ -5,5 +5,4 @@ gem 'github-pages', group: :jekyll_plugins
 
 # to publich without github page
 gem "jekyll"
-
-gem "webrick", "~> 1.8"
+gem "webrick"
