@@ -6,11 +6,550 @@
 
 
 {
+"title": "fs-api/enum_helper/EnumHelper-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelper-class-sidebar.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelper-class.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper/EnumHelper.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelperEnumHelper.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper/EnumHelper.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelper-class-sidebar.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelper-class.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/FlutterSoundHelper.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelperFlutterSoundHelper.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/FlutterSoundHelper.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayer-class-sidebar.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayer-class.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/FlutterSoundPlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerFlutterSoundPlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/FlutterSoundPlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorder-class-sidebar.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorder-class.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/FlutterSoundRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderFlutterSoundRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/FlutterSoundRecorder.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/Food-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFood-class-sidebar.html",
+"summary": "dart doc for fs-api/tau/Food-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/Food-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFood-class.html",
+"summary": "dart doc for fs-api/tau/Food-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/Food/Food.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodFood.html",
+"summary": "dart doc for fs-api/tau/Food/Food.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodData-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodData-class-sidebar.html",
+"summary": "dart doc for fs-api/tau/FoodData-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodData-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodData-class.html",
+"summary": "dart doc for fs-api/tau/FoodData-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodData/FoodData.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodDataFoodData.html",
+"summary": "dart doc for fs-api/tau/FoodData/FoodData.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodEvent-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodEvent-class-sidebar.html",
+"summary": "dart doc for fs-api/tau/FoodEvent-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodEvent-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodEvent-class.html",
+"summary": "dart doc for fs-api/tau/FoodEvent-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodEvent/FoodEvent.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodEventFoodEvent.html",
+"summary": "dart doc for fs-api/tau/FoodEvent/FoodEvent.html"
+}
+,
+
+
+
+{
 "title": "License",
 "tags": "license",
 "keywords": "license",
 "url": "links_license.html",
 "summary": "Flutter Sound License"
+}
+,
+
+
+
+{
+"title": "fs-api/topics/Main-topic.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitopicsMain-topic.html",
+"summary": "dart doc for fs-api/topics/Main-topic.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDisposition-class-sidebar.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDisposition-class.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition/PlaybackDisposition.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDispositionPlaybackDisposition.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition/PlaybackDisposition.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition/PlaybackDisposition.zero.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDispositionPlaybackDisposition.zero.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition/PlaybackDisposition.zero.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlayerState-enum-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlayerState-enum-sidebar.html",
+"summary": "dart doc for fs-api/player/PlayerState-enum-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlayerState/PlayerState.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlayerStatePlayerState.html",
+"summary": "dart doc for fs-api/player/PlayerState/PlayerState.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlayerState.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlayerState.html",
+"summary": "dart doc for fs-api/player/PlayerState.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDisposition-class-sidebar.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDisposition-class.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition/RecordingDisposition.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDispositionRecordingDisposition.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition/RecordingDisposition.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition/RecordingDisposition.zero.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDispositionRecordingDisposition.zero.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition/RecordingDisposition.zero.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingPermissionException-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingPermissionException-class-sidebar.html",
+"summary": "dart doc for fs-api/recorder/RecordingPermissionException-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingPermissionException-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingPermissionException-class.html",
+"summary": "dart doc for fs-api/recorder/RecordingPermissionException-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingPermissionException/RecordingPermissionException.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingPermissionExceptionRecordingPermissionException.html",
+"summary": "dart doc for fs-api/recorder/RecordingPermissionException/RecordingPermissionException.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/TWhenFinished.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerTWhenFinished.html",
+"summary": "dart doc for fs-api/player/TWhenFinished.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFileLocations-enum-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFileLocations-enum-sidebar.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFileLocations-enum-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFileLocations/TempFileLocations.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFileLocationsTempFileLocations.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFileLocations/TempFileLocations.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFileLocations.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFileLocations.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFileLocations.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFiles-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFiles-class-sidebar.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFiles-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFiles-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFiles-class.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFiles-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFiles/TempFiles.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFilesTempFiles.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFiles/TempFiles.html"
+}
+,
+
+
+
+{
+"title": "fs-api/topics/Utilities-topic.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitopicsUtilities-topic.html",
+"summary": "dart doc for fs-api/topics/Utilities-topic.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader-class-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeader-class-sidebar.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader-class-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader-class.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeader-class.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader-class.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/WaveHeader.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderWaveHeader.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/WaveHeader.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/closePlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerclosePlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/closePlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/closeRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecordercloseRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/closeRecorder.html"
 }
 ,
 
@@ -33,6 +572,226 @@
 "keywords": "danku, dank u",
 "url": "contributor_landing_page.html",
 "summary": "Dank u for Developers."
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFiles/create.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFilescreate.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFiles/create.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodData/data.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodDatadata.html",
+"summary": "dart doc for fs-api/tau/FoodData/data.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition/decibels.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDispositiondecibels.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition/decibels.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/deleteRecord.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderdeleteRecord.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/deleteRecord.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/dispositionStream.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerdispositionStream.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/dispositionStream.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/Food/dummy.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFooddummy.html",
+"summary": "dart doc for fs-api/tau/Food/dummy.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition/duration.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDispositionduration.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition/duration.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition/duration.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDispositionduration.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition/duration.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/enum_helper-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperenum_helper-library-sidebar.html",
+"summary": "dart doc for fs-api/enum_helper/enum_helper-library-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/enum_helper-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperenum_helper-library.html",
+"summary": "dart doc for fs-api/enum_helper/enum_helper-library.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodData/exec.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodDataexec.html",
+"summary": "dart doc for fs-api/tau/FoodData/exec.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/Food/exec.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodexec.html",
+"summary": "dart doc for fs-api/tau/Food/exec.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodEvent/exec.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodEventexec.html",
+"summary": "dart doc for fs-api/tau/FoodEvent/exec.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/ext-constant.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauext-constant.html",
+"summary": "dart doc for fs-api/tau/ext-constant.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/feedFromStream.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerfeedFromStream.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/feedFromStream.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/flutterSoundHelper.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperflutterSoundHelper.html",
+"summary": "dart doc for fs-api/helper/flutterSoundHelper.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/foodSink.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerfoodSink.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/foodSink.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/formatALAW.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderformatALAW.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/formatALAW.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/formatPCM.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderformatPCM.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/formatPCM.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/formatULAW.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderformatULAW.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/formatULAW.html"
 }
 ,
 
@@ -754,22 +1513,33 @@
 
 
 {
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs-flutter_sound_examples_setLogLevel.html",
-"summary": "Set Log Level"
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs-tau_api_utilities_setLogLevel.html",
+"summary": "setLogLevel()"
 }
 ,
 
 
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs-tau_api_utilities_setLogLevel.html",
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_setLogLevel.html",
 "summary": "setLogLevel()"
+}
+,
+
+
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-flutter_sound_examples_setLogLevel.html",
+"summary": "Set Log Level"
 }
 ,
 
@@ -790,8 +1560,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs-tau_api_player_setLogLevel.html",
-"summary": "setLogLevel()"
+"url": "fs-tau_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
 }
 ,
 
@@ -812,30 +1582,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs-tau_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
 "url": "fs-tau_api_player_set_speed.html",
 "summary": "setSpeed()"
-}
-,
-
-
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs-tau_api_player_set_subscription_duration.html",
-"summary": "setSubscriptionDuration()"
 }
 ,
 
@@ -846,6 +1594,17 @@
 "tags": "apirecorder",
 "keywords": "API Recorder",
 "url": "fs-tau_api_recorder_set_subscription_duration.html",
+"summary": "setSubscriptionDuration()"
+}
+,
+
+
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs-tau_api_player_set_subscription_duration.html",
 "summary": "setSubscriptionDuration()"
 }
 ,
@@ -1051,6 +1810,380 @@
 
 
 {
+"title": "fs-api/temp_file_system/TempFiles/generateRandomFileName.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFilesgenerateRandomFileName.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFiles/generateRandomFileName.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper/getByIndex.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelpergetByIndex.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper/getByIndex.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper/getEnum.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelpergetEnum.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper/getEnum.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper/getIndexOf.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelpergetIndexOf.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper/getIndexOf.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper/getName.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelpergetName.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper/getName.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/getPlayerState.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayergetPlayerState.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/getPlayerState.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/getProgress.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayergetProgress.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/getProgress.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/getRecordURL.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecordergetRecordURL.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/getRecordURL.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/getResourcePath.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayergetResourcePath.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/getResourcePath.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/getSampleRate.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecordergetSampleRate.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/getSampleRate.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/headerLength.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderheaderLength.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/headerLength.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/helper-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperhelper-library-sidebar.html",
+"summary": "dart doc for fs-api/helper/helper-library-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/helper-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperhelper-library.html",
+"summary": "dart doc for fs-api/helper/helper-library.html"
+}
+,
+
+
+
+{
+"title": "fs-api/index.html",
+"tags": "",
+"keywords": "",
+"url": "fs-api",
+"summary": "dart doc for fs-api/index.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/isDecoderSupported.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerisDecoderSupported.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/isDecoderSupported.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/isEncoderSupported.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderisEncoderSupported.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/isEncoderSupported.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/isOpen.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerisOpen.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/isOpen.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/isPaused.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerisPaused.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/isPaused.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/isPaused.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderisPaused.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/isPaused.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/isPlaying.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerisPlaying.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/isPlaying.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/isRecording.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderisRecording.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/isRecording.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/isStopped.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderisStopped.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/isStopped.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/isStopped.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerisStopped.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/isStopped.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/log.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerlog.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/log.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/log.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderlog.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/log.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/logger.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelperlogger.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/logger.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/logger.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerlogger.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/logger.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/logger.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderlogger.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/logger.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/mBitsPerSample.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadermBitsPerSample.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/mBitsPerSample.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/mFormat.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadermFormat.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/mFormat.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/mNumBytes.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadermNumBytes.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/mNumBytes.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/mNumChannels.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadermNumChannels.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/mNumChannels.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/mSampleRate.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadermSampleRate.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/mSampleRate.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/RecordingPermissionException/message.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingPermissionExceptionmessage.html",
+"summary": "dart doc for fs-api/recorder/RecordingPermissionException/message.html"
+}
+,
+
+
+
+{
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
@@ -1078,6 +2211,435 @@
 "keywords": "news, blog, updates, release notes, announcements",
 "url": "news_archive.html",
 "summary": ""
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/oldPosition.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayeroldPosition.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/oldPosition.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/FoodEvent/on.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauFoodEventon.html",
+"summary": "dart doc for fs-api/tau/FoodEvent/on.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/onProgress.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayeronProgress.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/onProgress.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/onProgress.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderonProgress.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/onProgress.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/openPlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayeropenPlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/openPlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/openRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderopenRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/openRecorder.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/pausePlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerpausePlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/pausePlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/pauseRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderpauseRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/pauseRecorder.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/pcmToWave.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelperpcmToWave.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/pcmToWave.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/pcmToWaveBuffer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelperpcmToWaveBuffer.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/pcmToWaveBuffer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/player-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerplayer-library-sidebar.html",
+"summary": "dart doc for fs-api/player/player-library-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/player-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerplayer-library.html",
+"summary": "dart doc for fs-api/player/player-library.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/playerState.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerplayerState.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/playerState.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition/position.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDispositionposition.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition/position.html"
+}
+,
+
+
+
+{
+"title": "fs-api/enum_helper/EnumHelper/reCase.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apienum_helperEnumHelperreCase.html",
+"summary": "dart doc for fs-api/enum_helper/EnumHelper/reCase.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/recorder-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderrecorder-library-sidebar.html",
+"summary": "dart doc for fs-api/recorder/recorder-library-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/recorder-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderrecorder-library.html",
+"summary": "dart doc for fs-api/recorder/recorder-library.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/recorderState.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderrecorderState.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/recorderState.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/requestData.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderrequestData.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/requestData.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/resumePlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerresumePlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/resumePlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/resumeRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderresumeRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/resumeRecorder.html"
+}
+,
+
+
+
+{
+"title": "fs-api/search.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apisearch.html",
+"summary": "dart doc for fs-api/search.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/seekToPlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerseekToPlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/seekToPlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/setLogLevel.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayersetLogLevel.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/setLogLevel.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/setLogLevel.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelpersetLogLevel.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/setLogLevel.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/setLogLevel.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecordersetLogLevel.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/setLogLevel.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/setSpeed.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayersetSpeed.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/setSpeed.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/setSubscriptionDuration.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayersetSubscriptionDuration.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/setSubscriptionDuration.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/setSubscriptionDuration.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecordersetSubscriptionDuration.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/setSubscriptionDuration.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/setVolume.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayersetVolume.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/setVolume.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/startPlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerstartPlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/startPlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/startPlayerFromMic.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerstartPlayerFromMic.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/startPlayerFromMic.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/startPlayerFromStream.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerstartPlayerFromStream.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/startPlayerFromStream.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/startRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderstartRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/startRecorder.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/FlutterSoundPlayer/stopPlayer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerFlutterSoundPlayerstopPlayer.html",
+"summary": "dart doc for fs-api/player/FlutterSoundPlayer/stopPlayer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/recorder/FlutterSoundRecorder/stopRecorder.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderFlutterSoundRecorderstopRecorder.html",
+"summary": "dart doc for fs-api/recorder/FlutterSoundRecorder/stopRecorder.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/tag.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadertag.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/tag.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/tau-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitautau-library-sidebar.html",
+"summary": "dart doc for fs-api/tau/tau-library-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/tau/tau-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitautau-library.html",
+"summary": "dart doc for fs-api/tau/tau-library.html"
 }
 ,
 
@@ -1127,9 +2689,196 @@
 
 
 
+{
+"title": "fs-api/temp_file_system/temp_file_system-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemtemp_file_system-library-sidebar.html",
+"summary": "dart doc for fs-api/temp_file_system/temp_file_system-library-sidebar.html"
+}
+,
 
 
 
+{
+"title": "fs-api/temp_file_system/temp_file_system-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemtemp_file_system-library.html",
+"summary": "dart doc for fs-api/temp_file_system/temp_file_system-library.html"
+}
+,
+
+
+
+
+
+{
+"title": "fs-api/recorder/RecordingDisposition/toString.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apirecorderRecordingDispositiontoString.html",
+"summary": "dart doc for fs-api/recorder/RecordingDisposition/toString.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/toString.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeadertoString.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/toString.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlaybackDisposition/toString.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlaybackDispositiontoString.html",
+"summary": "dart doc for fs-api/player/PlaybackDisposition/toString.html"
+}
+,
+
+
+
+
+
+
+
+{
+"title": "fs-api/tau/validExt-constant.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitauvalidExt-constant.html",
+"summary": "dart doc for fs-api/tau/validExt-constant.html"
+}
+,
+
+
+
+{
+"title": "fs-api/player/PlayerState/values-constant.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiplayerPlayerStatevalues-constant.html",
+"summary": "dart doc for fs-api/player/PlayerState/values-constant.html"
+}
+,
+
+
+
+{
+"title": "fs-api/temp_file_system/TempFileLocations/values-constant.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apitemp_file_systemTempFileLocationsvalues-constant.html",
+"summary": "dart doc for fs-api/temp_file_system/TempFileLocations/values-constant.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/waveToPCM.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelperwaveToPCM.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/waveToPCM.html"
+}
+,
+
+
+
+{
+"title": "fs-api/helper/FlutterSoundHelper/waveToPCMBuffer.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apihelperFlutterSoundHelperwaveToPCMBuffer.html",
+"summary": "dart doc for fs-api/helper/FlutterSoundHelper/waveToPCMBuffer.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/wave_header-library-sidebar.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerwave_header-library-sidebar.html",
+"summary": "dart doc for fs-api/wave_header/wave_header-library-sidebar.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/wave_header-library.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerwave_header-library.html",
+"summary": "dart doc for fs-api/wave_header/wave_header-library.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/write.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderwrite.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/write.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/writeId.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderwriteId.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/writeId.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/writeInt.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderwriteInt.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/writeInt.html"
+}
+,
+
+
+
+{
+"title": "fs-api/wave_header/WaveHeader/writeint.html",
+"tags": "",
+"keywords": "",
+"url": "fs-apiwave_headerWaveHeaderwriteint.html",
+"summary": "dart doc for fs-api/wave_header/WaveHeader/writeint.html"
+}
+,
+
+
+
+{
+"title": "Dart documentation generator",
+"tags": "",
+"keywords": "",
+"url": "fs-apistatic-assets",
+"summary": ""
+}
+,
 
 
 

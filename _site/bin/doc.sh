@@ -10,7 +10,16 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
-#cp index.html _site
+bin/apidoc.sh
+
+cd ../taudoc-new
+../taudoc/bin/apidoc.sh
+
+cd ../taudoc-old
+../taudoc/bin/apidoc.sh
+
+cd ../taudoc
+exit 0
 
 #rm -rf danku
 #rm -r ../danku/rs-live
