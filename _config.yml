@@ -48,7 +48,7 @@ feedback_email: larpoux@canardoux.xyz
 # if you uncomment the previous line, it changes where the feedback link points to
 
 
-FS_VERSION: 6.4.9+1
+FS_VERSION: 1.1.1
 TD_VERSION: 6.4.9+1
 
 highlighter: rouge
