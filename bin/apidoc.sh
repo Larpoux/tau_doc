@@ -27,6 +27,12 @@ do
         gsed -i  "s|</footer|</tau-footer|g"     $f
         gsed -i  "s|<main|<tau-main|g"     $f
         gsed -i  "s|</main|</tau-main|g"     $f
+        gsed -i  "s|<nav|<tau-nav|g"     $f
+        gsed -i  "s|</nav|</nav|g"     $f
+        gsed -i  "s|<navbar|<tau-navbar|g"     $f # not sure because`<`
+        gsed -i  "s|</navbar|</tau-navbar|g"     $f # not sure because`<`
+        gsed -i  "s|navbar-right|tau-navbar-right|g"     $f
+
 done
 
 echo "Symbolic links of the API"
