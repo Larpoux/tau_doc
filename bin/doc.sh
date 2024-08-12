@@ -26,6 +26,7 @@ git push
 
 ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
 scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null
+ssh -t larpoux@danku "sudo /etc/init.d/nginx restart"
 
 #ssh danku@danku "rm -rf /var/www/canardoux.xyz/danku/fs-live"
 #scp -r ../flutter_sound/flutter_sound/example/build/web  danku@danku:/var/www/canardoux.xyz/danku/fs-live >/dev/null
