@@ -140,9 +140,11 @@ tau-body {
   box-sizing: border-box;
 }
 
+/* LARPOUX
 *, *:before, *:after {
   box-sizing: inherit;
 }
+*/
 
 tau-body {
   display: flex;
@@ -237,7 +239,7 @@ tau-body {
   background-color: var(--main-bg-color);
 }
 
-nav.navbar {
+tau-nav.tau-navbar {
   background-color: inherit;
   min-height: 50px;
   border: 0;
@@ -255,11 +257,11 @@ nav.navbar {
   }
 }
 
-nav.navbar .row {
+tau-nav.tau-navbar .row {
   padding-top: 8px;
 }
 
-nav .container {
+tau-nav .container {
   white-space: nowrap;
 }
 
@@ -403,7 +405,7 @@ code {
 }
 
 @media(max-width: 840px) {
-  nav .container {
+  tau-nav .container {
     width: 100%
   }
 
@@ -738,7 +740,7 @@ td {
 }
 
 @media screen and (min-width: 840px) {
-  nav ol.breadcrumbs {
+  tau-nav ol.breadcrumbs {
     float: left;
   }
 }

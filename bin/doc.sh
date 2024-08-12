@@ -5,7 +5,6 @@ bundle config set --local path '~/vendor/bundle'
 bundle install
 
 bin/apidoc.sh
-exit 0
 
 bundle exec jekyll build
 
