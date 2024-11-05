@@ -4,7 +4,7 @@ rm -r fs-api
 cp -a ../flutter_sound/flutter_sound/doc/api fs-api
 rm -r toto
 cp -a ../flutter_sound/flutter_sound/doc/api toto
-cp ../taudoc/bin/taudoc-api-styles.css fs-api/static-assets/styles.css
+cp ../tau_doc/bin/tau_doc-api-styles.css fs-api/static-assets/styles.css
 
 echo "Add Front matter on top of dartdoc pages"
 for f in $(find fs-api -name '*.html' )
