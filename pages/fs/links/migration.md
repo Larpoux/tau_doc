@@ -2,7 +2,8 @@
 title:  "Migration"
 description: "Migration from previous version"
 summary: "Migration from previous version"
-permalink: links_migration.html
+permalink: fs_links_migration.html
+sidebar: fs_sidebar
 tags: [migration]
 keywords: migration
 ---

@@ -3,13 +3,13 @@ repository: canardoux/tau_doc
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: "&tau; Documentation"
+topnav_title: "τ Documentation"
 # this appears on the top navigation bar next to the home button
 
-site_title: The &tau; Project documentation.
+site_title: "The τ Project documentation."
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Canardoux
+company_name: xyz.canardoux
 # this appears in the footer
 
 github_editme_path: canardoux/tau_doc/blob/gh-pages/
@@ -49,7 +49,9 @@ feedback_email: larpoux@canardoux.xyz
 
 
 FS_VERSION: 1.1.1
-TD_VERSION: 6.4.9+1
+TD_VERSION: 3.3.3
+ET_VERSION: 2.2.2
+WEB_VERSION: 4.4.4
 
 highlighter: rouge
 # library used for syntax highlighting
@@ -83,14 +85,42 @@ defaults:
 
   -
     scope:
-      path: "pages/flutter-sound/api"
+      path: "pages/fs/fs_api"
       type: "api"
     values:
       layout: "page"
       comments: false
       # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
       search: true
-      sidebar: td_sidebar
+      sidebar: fs_sidebar
+      toc: false
+      topnav: topnav
+      tooltip: true
+
+  -
+    scope:
+      path: "pages/et/et_api"
+      type: "api"
+    values:
+      layout: "page"
+      comments: false
+      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
+      search: true
+      sidebar: et_sidebar
+      toc: false
+      topnav: topnav
+      tooltip: true
+
+  -
+    scope:
+      path: "pages/web/web_api"
+      type: "api"
+    values:
+      layout: "page"
+      comments: false
+      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
+      search: true
+      sidebar: web_sidebar
       toc: false
       topnav: topnav
       tooltip: true
@@ -127,18 +157,14 @@ sidebars:
 - other
 - fs_sidebar
 - td_sidebar
-- t_sidebar
-- tgr_sidebar
-- tcp_sidebar
 - et_sidebar
+- web_sidebar
 
 description: "This is the documentation of the τ Project."
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-#url: https://canardoux.github.io
-#baseurl: /tau
-
-
-#######github: [metadata]
+url: https://canardoux.github.io/tau_doc
+baseurl: /tau
+github: [metadata]
 
