@@ -13,7 +13,15 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
+git add .
+git commit -m 'doc'
+git pull
+git push
+
+echo -n 'Upload to canardoux.xyz ...'
+ssh tau@danku 'rm -r /var/www/canardoux.xyz/tau/doc'
 scp -r _site tau@danku:/var/www/canardoux.xyz/tau/doc >/dev/null
+echo ''
 exit 0
 
 bin/apidoc.sh
