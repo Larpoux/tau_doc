@@ -31,7 +31,7 @@ startPlayerFromMic() has three optional parameters :
 
 startPlayerFromMic() returns a Future, which is completed when the Player is really started.
 
-{% include note.html content="Several τ users needs to play on the headset what is recorded by the microphone, in quasi-real-time.
+{% include note.html content="Several tau users needs to play on the headset what is recorded by the microphone, in quasi-real-time.
 I am convinced that implementing audio-graph will be the general solution and will be very elegant.
 But I think that we can implement this new simple verb `startPlayerFromMic()` before the great global solution.
 

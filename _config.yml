@@ -3,10 +3,10 @@ repository: canardoux/tau_doc
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: "τ Documentation"
+topnav_title: "tau Documentation"
 # this appears on the top navigation bar next to the home button
 
-site_title: "The τ Project documentation."
+site_title: "The tau Project documentation."
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: xyz.canardoux
@@ -33,7 +33,7 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: The τ Project documentation
+feedback_subject_line: The tau Project documentation
 
 feedback_email: larpoux@canardoux.xyz
 # used as a contact email for the Feedback link in the top navigation bar
@@ -160,7 +160,7 @@ sidebars:
 - et_sidebar
 - web_sidebar
 
-description: "This is the documentation of the τ Project."
+description: "This is the documentation of the tau Project."
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only

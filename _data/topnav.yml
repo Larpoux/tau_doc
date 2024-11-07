@@ -14,28 +14,28 @@ topnav_dropdowns:
     - title: Run
       folderitems:
 
-        - title: τ-dio ex.
+        - title: tau-dio ex.
           external_url: /toto
-          hint: "The τ-dio examples"
+          hint: "The tau-dio examples"
 
         - title: Flutter Sound ex.
           #external_url: https://tau.canardoux.xyz/danku/fs-live
           url: /danku\/fs-live\/index.html
           hint: "The Flutter Sound examples"
 
-        - title: τ ex.
+        - title: tau ex.
           external_url: /titi
-          hint: "The τ examples"
+          hint: "The tau examples"
 
-        - title: τ-graph engine
+        - title: tau-graph engine
           external_url: /titi
-          hint: "Run a τ-graph in the web browser"
+          hint: "Run a tau-graph in the web browser"
 
-        - title: τ-cpal ex.
+        - title: tau-cpal ex.
           external_url: /titi
-          hint: "The τ-cpal examples"
+          hint: "The tau-cpal examples"
 
-        - title: Run e-τ
+        - title: Run e-tau
           external_url: /titi
           hint: "Big surprise!"
 
@@ -45,67 +45,67 @@ topnav_dropdowns:
 
         - title: News
           url: /news.html
-          hint: "The τ Project news"
+          hint: "The tau Project news"
 
         - title: Roadmap
           external_url: https://github.com/canardoux/tau-doc/projects/1
-          hint: A better τ
+          hint: A better tau
 
 
     - title: Repo
       folderitems:
 
-        - title: τ-dio
+        - title: tau-dio
           external_url: https://github.com/canardoux/taudio
-          hint: τ-dio on github
+          hint: tau-dio on github
  
         - title: Flutter Sound
           external_url: https://github.com/canardoux/flutter_sound
           hint: Flutter Sound on github
 
-        - title: τ-graph
+        - title: tau-graph
           external_url: https://github.com/canardoux/taugraph
-          hint: τ-graph on github
+          hint: tau-graph on github
 
-        - title: τ
+        - title: tau
           external_url: https://github.com/canardoux/tau
-          hint: τ on github
+          hint: tau on github
 
-        - title: τ-cpal
+        - title: tau-cpal
           external_url: https://github.com/canardoux/taucpal
-          hint: τ-cpal on github
+          hint: tau-cpal on github
 
-        - title: e-τ
+        - title: e-tau
           external_url: https://github.com/canardoux/etau
-          hint: e-τ on github
+          hint: e-tau on github
 
 
     - title: pub.dev
       folderitems:
 
-        - title: τ-dio
+        - title: tau-dio
           external_url: https://pub.dev/packages/taudio
-          hint: τ-dio on flutter main site
+          hint: tau-dio on flutter main site
  
         - title: Flutter Sound
           external_url: https://pub.dev/packages/flutter_sound
           hint: Flutter Sound on flutter main site
 
-        - title: τ
+        - title: tau
           external_url: https://pub.dev/packages/tau
-          hint: τ on flutter main site
+          hint: tau on flutter main site
 
-        - title: τ-graph
+        - title: tau-graph
           external_url: https://pub.dev/packages/taugraph
-          hint: τ-graph on flutter main site
+          hint: tau-graph on flutter main site
 
-        - title: τ-cpal
+        - title: tau-cpal
           external_url: https://pub.dev/packages/taucpal
-          hint: τ-cpal on flutter main site
+          hint: tau-cpal on flutter main site
 
-        - title: e-τ
+        - title: e-tau
           external_url: https://pub.dev/packages/etau
-          hint: e-τ on flutter main site
+          hint: e-tau on flutter main site
 
 
     - title: Sharing
@@ -125,22 +125,22 @@ topnav_dropdowns:
 
 
 
-    - title: The τ family
+    - title: The tau family
       folderitems:
-        - title: τ-dio
+        - title: tau-dio
           url: /td-README.html
 
         - title: Flutter Sound
           url: /fs-README.html
 
-        - title: τ
+        - title: tau
           url: /tau-README.html
 
-        - title: τ-graph
+        - title: tau-graph
           url: /tgr-README.html
 
-        - title: τ-cpal
+        - title: tau-cpal
           url: /tau-README.html
 
-        - title: e-τ
+        - title: e-tau
           url: /etau-README.html

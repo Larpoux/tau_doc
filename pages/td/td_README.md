@@ -1,14 +1,14 @@
 ---
-title: τ-dio
-description: The τ-dio Project README
+title: tau-dio
+description: The tau-dio Project README
 keywords: home homepage readme
 tags: [Taudio]
 sidebar: td_sidebar
 permalink: td_README.html
-summary: The τ-dio documentation.
+summary: The tau-dio documentation.
 ---
 
-# τ-dio
+# tau-dio
 
 ## Getting started
 
