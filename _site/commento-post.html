@@ -1,0 +1,591 @@
+<!-- LARPOUX -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- the google_analytics_id gets auto inserted from the config file
+
+
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPDLW922EP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1YL444CW83');
+</script>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Happy New Year, &tau; !">
+<meta name="keywords" content="news,  ">
+<title>Happy New Year, &tau; | The tau Project documentation.</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="images/favicon.ico">
+<!--<link rel="shortcut icon" href="images/favicon.ico"> -->
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://canardoux.github.io/tau_doc/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true, // LARPOUX
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right // LARPOUX
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-10');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#tg-dark-link").click(function() {
+                $("#tg-dark-mode").toggle();
+                $("#tg-dark-icon").toggleClass('fa-toggle-on');
+                $("#tg-dark-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<!-- LARPOUX -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <a href="/index.html"> <img src="images/banner7.png" width="60%" height="60%" /> </a>
+           <!--<img class="inline" src="images/tau7.svg" alt="tau" />
+-->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#" title="Show the left navigation bar"><i id="tg-sb-icon" class="fa fa-toggle-on" ></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Run<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/toto" target="_blank" rel="noopener"  title="The tau-dio examples" >tau-dio ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/danku\fs-live\index.html"   title="The Flutter Sound examples" >Flutter Sound ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="The tau examples" >tau ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="Run a tau-graph in the web browser" >tau-graph engine</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="The tau-cpal examples" >tau-cpal ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="Big surprise!" >Run e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/news.html"   title="The tau Project news" >News</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/tau-doc/projects/1" target="_blank" rel="noopener"  title="A better tau" >Roadmap</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Repo<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taudio" target="_blank" rel="noopener"  title="tau-dio on github" >tau-dio</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/flutter_sound" target="_blank" rel="noopener"  title="Flutter Sound on github" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taugraph" target="_blank" rel="noopener"  title="tau-graph on github" >tau-graph</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/tau" target="_blank" rel="noopener"  title="tau on github" >tau</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taucpal" target="_blank" rel="noopener"  title="tau-cpal on github" >tau-cpal</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/etau" target="_blank" rel="noopener"  title="e-tau on github" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pub.dev<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taudio" target="_blank" rel="noopener"  title="tau-dio on flutter main site" >tau-dio</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/flutter_sound" target="_blank" rel="noopener"  title="Flutter Sound on flutter main site" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/tau" target="_blank" rel="noopener"  title="tau on flutter main site" >tau</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taugraph" target="_blank" rel="noopener"  title="tau-graph on flutter main site" >tau-graph</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taucpal" target="_blank" rel="noopener"  title="tau-cpal on flutter main site" >tau-cpal</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/etau" target="_blank" rel="noopener"  title="e-tau on flutter main site" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sharing<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://tau-t7l7803.slack.com" target="_blank" rel="noopener"  title="Slack is not Open Source Software :-(" >Slack</a></li>
+                        
+                        
+                        
+                        <li><a href="https://app.element.io/#/room/#tau:matrix.org" target="_blank" rel="noopener"  title="Free and Open Source. Based on Open Source Protocols" >Element</a></li>
+                        
+                        
+                        
+                        <li><a href="https://discord.com/channels/799683099473870848/799683099473870852" target="_blank" rel="noopener"  title="Unfortunately not Open Source" >Discord</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">The tau family<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/td-README.html"   title="" >tau-dio</a></li>
+                        
+                        
+                        
+                        <li><a href="/fs-README.html"   title="" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="/tau-README.html"   title="" >tau</a></li>
+                        
+                        
+                        
+                        <li><a href="/tgr-README.html"   title="" >tau-graph</a></li>
+                        
+                        
+                        
+                        <li><a href="/tau-README.html"   title="" >tau-cpal</a></li>
+                        
+                        
+                        
+                        <li><a href="/etau-README.html"   title="" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the Happy New Year, &tau; page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Happy New Year, &amp;tau;">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!-- Page Content -->
+<!-- <div class="container"> -->
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+             
+            <!-- Sidebar Column -->
+            <div class="col-md-2" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> - </li>
+  
+      <!-- LARPOUX
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       -->
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+        
+
+        <!-- Content Column -->
+        <div class="col-md-6 col-md-offset-6" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Happy New Year, &tau;</h1>
+        <p class="post-meta"><time datetime="2021-01-10T00:00:00+01:00" itemprop="datePublished">Jan 10, 2021</time> /
+            
+            
+            
+            <a href="tag_news.html">news</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">Happy New Year, &tau; !</div>
+        
+
+        <p>2021 will be a great year for τ</p>
+
+<p>Beside the regular maintenance (I am actually spending too much time on maintenance), I want to achieve
+two major developments during 2021 :</p>
+
+<ul>
+  <li>Implement Audio-Graphs (see below)</li>
+  <li>React Native support (see below)</li>
+</ul>
+
+<p>If at the of the year those two major points are achieved, then I will consider τ as a succes.</p>
+
+<h2 id="playfrommic"><code class="language-plaintext highlighter-rouge">playFromMic()</code></h2>
+
+<p>Several τ users need to play on the headset what is recorded by the microphone, in quasi-real-time.</p>
+
+<p>I am convinced that implementing audio-graph will be the general solution and will be very elegant.
+Today I introduce this new simple verb <code class="language-plaintext highlighter-rouge">startPlayerFromMic()</code> before the great global solution.</p>
+
+<p>The App does not process the audio data. The App is in <code class="language-plaintext highlighter-rouge">pass-threw</code> mode. Later we will implement a <code class="language-plaintext highlighter-rouge">cut-mode</code>.</p>
+
+<p><a href="flutter_sound_examples_play_from_mic.html">This new example</a> can be compared to <a href="flutter_sound_examples_stream_loop.html">the old loop example</a>.</p>
+
+<h3 id="1-ios">1. iOS</h3>
+
+<p><code class="language-plaintext highlighter-rouge">startPlayerFromMic()</code> directely links the microphone to the headset <strong>inside the OS</strong> itself, without any processing by τ</p>
+
+<p>The improvement is really good. The delay between what is recorded and what is played is much better.</p>
+
+<h3 id="2-android">2. Android</h3>
+
+<p>The link between the microphone and the headset is done inside τ-core.
+The messaging channels between Java and Dart are not involved. The audio data are just transfered from the recording-thread to the player thread.</p>
+
+<p>This is a great disappointment : the latency is marginally improved.
+This means that implementing data transfert from/to Dart with FFI will not benefit from using FFI.</p>
+
+<p>I am currentely working to improve this latency problem. I think that it can be possible to do better on Android</p>
+
+<h2 id="comments">Comments</h2>
+
+<p>τ docummentation has a Commento area at the bottom of every pages.</p>
+
+<p>Doing a comment is very simple.
+You can login using :</p>
+<ul>
+  <li>Your google account (momentarily not available during a few days)</li>
+  <li>Your Github account</li>
+  <li>Your gitlab account</li>
+  <li>Your Twitter account</li>
+  <li>By providing your email address</li>
+  <li>And now, you can even post anonymously (in this case, your post will be moderated).</li>
+</ul>
+
+<p>τ documentation is not so good that it cannot be improved.
+Doing a comment with Commento is so simple that I do not understand that nobody want to improve this doc.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> I am not sure to receive correctely emails when a user makes a comment.
+Maybe there are many comments but I have not got them.</div>
+
+<h2 id="audio-graphs">Audio-graphs</h2>
+
+<p>Audio-graph will be several audio-nodes linked together.
+For example, you will be able to connect the Microphone node to the Equalizer node, and the Equalizer node to the Headset node.</p>
+
+<p>I really want to do that. This project is really interesting to be developed, and I am fed up to work on uninteresting things.</p>
+
+<p>My dream is also to create a graphic-editor to be be able to draw the audio-graph with the mouse.
+The graphic editor will generate both a Dart (or Javascript) module and a visual SVG image that the τ user will be able to insert in its own documentation.</p>
+
+<p>It will also generate a graph representation in an external format (JSON?), that you will be able to load during run-time inside your App.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> I guess that some App, will not want to <strong>hard code</strong> their audio-graph during development time,
+but will want to allow their own end-user to define their audio-graph to be run.
+Those App will provide their own graph editor, or perhaps will provide the τ graph editor to the end user.
+The end user will <em>draw</em> their own graph on their personal computer.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If we want that a normal end-user can use this editor, this editor must not be too technical.
+Something powerful but usable by someone who has no computer notion.</div>
+
+<h3 id="examples">Examples</h3>
+
+<figure><img class="docimage" src="images/graph_examples.svg" alt="" /><figcaption>Some Audio-Graph examples</figcaption></figure>
+
+<h2 id="react-native-support">React Native support</h2>
+
+<p>You are a Flutter developer. So you do not care very much about supporting other frameworks.</p>
+
+<p>But I am a complete libertarian. I really believe in freedom.
+I hate jails. And Dart is a kind of jail. Dart does not exist outside Flutter.
+And Flutter is perhaps a good framework, but Flutter cannot be everything.</p>
+
+<p>In Future it will we good if we can support</p>
+<ul>
+  <li>Javascript (React-Native, Native-Script, Ionic). And more generally, all the platforms that support Cordova.</li>
+  <li>LUA (Solar 2D). I love LUA :+1</li>
+  <li>Pascal (Lazarus). I do love Pascal :+1</li>
+  <li>Perhaps C# (Xamarin). Note sure : C# is another jail…</li>
+</ul>
+
+<p>There is no limit of what could be done for τ. But I will probably die before.</p>
+
+<h2 id="the-license">The license</h2>
+
+<p>When I begun to work on Flutter Sound (one year ago), this library was published under the MIT license.
+I consider Free licenses that do not include <code class="language-plaintext highlighter-rouge">copyleft</code> clause as bad licenses.
+I really did not want to spend much of my life on a Software badly protected</p>
+
+<p>I am a liberterian (I believe in Freedom which is the real meaning of anarchy).</p>
+
+<p>The boss of Dooboolab (my friend Hyo), is a very nice man, and accepted without hesitation to change the License to LGPL.
+I am very glad of this change : recently Flutter Sound gave birth to a new fork. Being allowed to fork a Free Software is a very good thing
+and it is the base of the Freedom.</p>
+
+<p>But because Flutter Sound (now τ) is protected by LGPL, this fork will never be Close Source with a proprietary license.
+This fork will probably die soon (if it is not already dead), but the risk having a fork becoming Close Source cannot be taken.</p>
+
+<p>Then, I asked to Dooboolab to transform the LGPL license to GPL. I consider GPL as <strong>THE</strong> real Free license.
+But Dooboolab did not accept that, and I understand his refusal.</p>
+
+<p>I had then two choices :</p>
+<ul>
+  <li>Accept to work part of my life on a software badly protected.</li>
+  <li>Fork Flutter Sound, me too</li>
+</ul>
+
+<p>I choosed the former. I thought that leaving Flutter Sound without any developer was a way to kill it.
+And I do no want the death of Flutter Sound.</p>
+
+<p>Everything that I develop which is linked to Flutter Sound will be covered byt the current LGPL license.</p>
+
+<p>But new developments (τ for React Native, the Audio-Graph editor, …) will be licensed under the GPL and not anymore LGPL.
+This is a political choice, and the reason I develop Free Software is a political reason.</p>
+
+<h2 id="happy-new-year-τ">Happy New Year, τ</h2>
+
+    </div>
+
+
+
+</article>
+
+
+<div id="commento"></div>
+<script src="https://commento.canardoux.xyz/js/commento.js"></script>
+<noscript>Please enable JavaScript to load the comments.</noscript>
+
+
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2024 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
+ Site last generated: Nov 9, 2024 <br />
+<p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+    </div>
+<!-- /.container -->
+<!--</div> -->
+<!-- /#main -->
+    </div>
+
+</body>
+<!--  -->
+</html>

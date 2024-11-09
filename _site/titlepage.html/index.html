@@ -1,0 +1,486 @@
+<!-- LARPOUX -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- the google_analytics_id gets auto inserted from the config file
+
+
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPDLW922EP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1YL444CW83');
+</script>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title> | The tau Project documentation.</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="images/favicon.ico">
+<!--<link rel="shortcut icon" href="images/favicon.ico"> -->
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://canardoux.github.io/tau_doc/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true, // LARPOUX
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right // LARPOUX
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-10');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#tg-dark-link").click(function() {
+                $("#tg-dark-mode").toggle();
+                $("#tg-dark-icon").toggleClass('fa-toggle-on');
+                $("#tg-dark-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<!-- LARPOUX -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <a href="/index.html"> <img src="images/banner7.png" width="60%" height="60%" /> </a>
+           <!--<img class="inline" src="images/tau7.svg" alt="tau" />
+-->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#" title="Show the left navigation bar"><i id="tg-sb-icon" class="fa fa-toggle-on" ></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Run<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/toto" target="_blank" rel="noopener"  title="The tau-dio examples" >tau-dio ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/danku\fs-live\index.html"   title="The Flutter Sound examples" >Flutter Sound ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="The tau examples" >tau ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="Run a tau-graph in the web browser" >tau-graph engine</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="The tau-cpal examples" >tau-cpal ex.</a></li>
+                        
+                        
+                        
+                        <li><a href="/titi" target="_blank" rel="noopener"  title="Big surprise!" >Run e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/news.html"   title="The tau Project news" >News</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/tau-doc/projects/1" target="_blank" rel="noopener"  title="A better tau" >Roadmap</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Repo<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taudio" target="_blank" rel="noopener"  title="tau-dio on github" >tau-dio</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/flutter_sound" target="_blank" rel="noopener"  title="Flutter Sound on github" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taugraph" target="_blank" rel="noopener"  title="tau-graph on github" >tau-graph</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/tau" target="_blank" rel="noopener"  title="tau on github" >tau</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taucpal" target="_blank" rel="noopener"  title="tau-cpal on github" >tau-cpal</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/etau" target="_blank" rel="noopener"  title="e-tau on github" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pub.dev<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taudio" target="_blank" rel="noopener"  title="tau-dio on flutter main site" >tau-dio</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/flutter_sound" target="_blank" rel="noopener"  title="Flutter Sound on flutter main site" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/tau" target="_blank" rel="noopener"  title="tau on flutter main site" >tau</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taugraph" target="_blank" rel="noopener"  title="tau-graph on flutter main site" >tau-graph</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taucpal" target="_blank" rel="noopener"  title="tau-cpal on flutter main site" >tau-cpal</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/etau" target="_blank" rel="noopener"  title="e-tau on flutter main site" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sharing<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://tau-t7l7803.slack.com" target="_blank" rel="noopener"  title="Slack is not Open Source Software :-(" >Slack</a></li>
+                        
+                        
+                        
+                        <li><a href="https://app.element.io/#/room/#tau:matrix.org" target="_blank" rel="noopener"  title="Free and Open Source. Based on Open Source Protocols" >Element</a></li>
+                        
+                        
+                        
+                        <li><a href="https://discord.com/channels/799683099473870848/799683099473870852" target="_blank" rel="noopener"  title="Unfortunately not Open Source" >Discord</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">The tau family<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/td-README.html"   title="" >tau-dio</a></li>
+                        
+                        
+                        
+                        <li><a href="/fs-README.html"   title="" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="/tau-README.html"   title="" >tau</a></li>
+                        
+                        
+                        
+                        <li><a href="/tgr-README.html"   title="" >tau-graph</a></li>
+                        
+                        
+                        
+                        <li><a href="/tau-README.html"   title="" >tau-cpal</a></li>
+                        
+                        
+                        
+                        <li><a href="/etau-README.html"   title="" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the  page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!-- Page Content -->
+<!-- <div class="container"> -->
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+             
+            <!-- Sidebar Column -->
+            <div class="col-md-2" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> - </li>
+  
+      <!-- LARPOUX
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       -->
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+        
+
+        <!-- Content Column -->
+        <div class="col-md-6 col-md-offset-6" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main"></h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+   <div class="printTitleArea">
+    <div class="printTitle"></div>
+    <div class="printSubtitle"></div>
+    <div class="lastGeneratedDate">Last generated: November 09, 2024</div>
+    <hr />
+
+    <div class="printTitleImage">
+        <img src="https://canardoux.github.io/tau_doc//tau/images/company_logo_big.png" alt="Company Logo"/>
+    </div>
+
+    <div class="copyrightBoilerplate">
+        <p>&copy; 2024 xyz.canardoux. This is a boilerplate copyright statement... All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+        </p>
+
+    </div>
+
+</div>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+<div id="commento"></div>
+<script src="https://commento.canardoux.xyz/js/commento.js"></script>
+<noscript>Please enable JavaScript to load the comments.</noscript>
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2024 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
+ Site last generated: Nov 9, 2024 <br />
+<p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+    </div>
+<!-- /.container -->
+<!--</div> -->
+<!-- /#main -->
+    </div>
+
+</body>
+<!--  -->
+</html>
