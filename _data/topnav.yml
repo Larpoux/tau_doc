@@ -63,10 +63,6 @@ topnav_dropdowns:
           external_url: https://github.com/canardoux/flutter_sound
           hint: Flutter Sound on github
 
-        - title: tau-graph
-          external_url: https://github.com/canardoux/taugraph
-          hint: tau-graph on github
-
         - title: tau
           external_url: https://github.com/canardoux/tau
           hint: tau on github
