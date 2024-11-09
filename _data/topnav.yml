@@ -14,16 +14,16 @@ topnav_dropdowns:
     - title: Run
       folderitems:
 
-        - title: tau-dio ex.
+        - title: tau-dio examples.
           external_url: /toto
           hint: "The tau-dio examples"
 
-        - title: Flutter Sound ex.
+        - title: Flutter Sound examples.
           #external_url: https://tau.canardoux.xyz/danku/fs-live
           url: /danku\/fs-live\/index.html
           hint: "The Flutter Sound examples"
 
-        - title: tau ex.
+        - title: tau examples.
           external_url: /titi
           hint: "The tau examples"
 
