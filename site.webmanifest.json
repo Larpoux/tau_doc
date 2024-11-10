@@ -1,0 +1,12 @@
+{
+  "name": "Fredrick Biering",
+  "short_name": "FredrickB",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [],
+  "splash_pages": null
+}
