@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cp ../flutter_sound/flutter_sound/doc/FLUTTER_SOUND_VERSION bin
-. bin/FLUTTER_SOUND_VERSION
-gsed -i "s/^FS_VERSION:.*/FS_VERSION: $FLUTTER_SOUND_VERSION/" _config.yml
+#cp ../flutter_sound/flutter_sound/doc/FLUTTER_SOUND_VERSION bin
+#. bin/FLUTTER_SOUND_VERSION
+#gsed -i "s/^FS_VERSION:.*/FS_VERSION: $FLUTTER_SOUND_VERSION/" _config.yml
 rm -rf _site
 bundle config set --local path '~/vendor/bundle'
 bundle install
