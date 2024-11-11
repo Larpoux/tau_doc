@@ -17,7 +17,7 @@ if [ $? -ne 0 ]; then
 fi
 
 #cp index.html _site/index.html
-cp -a ../etau/example/build/web _site/live_etau_example
+#cp -a ../etau/example/build/web _site/live_etau_example
 
 
 
