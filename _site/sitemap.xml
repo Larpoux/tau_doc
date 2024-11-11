@@ -52,13 +52,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_constructor.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_constructor.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_constructor.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_constructor.html</loc>
   </url>
   
   
@@ -310,13 +310,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_inks_migration.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_links_migration.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_links_migration.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_inks_migration.html</loc>
   </url>
   
   
@@ -346,25 +346,25 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_on_progress.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://canardoux.github.io/tau_doc/fs_api_player_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_open_audio_session.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_on_progress.html</loc>
   </url>
   
   
   
   <url>
     <loc>https://canardoux.github.io/tau_doc/fs_api_player_open_audio_session.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_open_audio_session.html</loc>
   </url>
   
   
@@ -466,18 +466,6 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_examples_setLogLevel.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_setLogLevel.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://canardoux.github.io/tau_doc/fs_api_player_setLogLevel.html</loc>
   </url>
   
@@ -490,13 +478,25 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_audio_focus.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_examples_setLogLevel.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_setLogLevel.html</loc>
   </url>
   
   
   
   <url>
     <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_set_audio_focus.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_audio_focus.html</loc>
   </url>
   
   

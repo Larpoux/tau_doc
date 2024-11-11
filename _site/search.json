@@ -38,20 +38,20 @@
 ,
 
 {
-"title": "constructor",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_constructor.html",
-"summary": "Creating the `Recorder` instance."
-}
-,
-
-{
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
 "url": "fs_api_utilities_constructor.html",
 "summary": "constructor"
+}
+,
+
+{
+"title": "constructor",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs_api_recorder_constructor.html",
+"summary": "Creating the `Recorder` instance."
 }
 ,
 
@@ -428,7 +428,7 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "fs_inks_migration.html",
+"url": "fs_links_migration.html",
 "summary": "Migration from previous version"
 }
 ,
@@ -437,7 +437,7 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "fs_links_migration.html",
+"url": "fs_inks_migration.html",
 "summary": "Migration from previous version"
 }
 ,
@@ -479,6 +479,15 @@
 ,
 
 {
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_on_progress.html",
+"summary": "onProgress."
+}
+,
+
+{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -491,8 +500,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs_api_player_on_progress.html",
-"summary": "onProgress."
+"url": "fs_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -502,15 +511,6 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_open_audio_session.html",
 "summary": "`openRecorder()` and `closeRecorder()`"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -659,24 +659,6 @@
 ,
 
 {
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs_examples_setLogLevel.html",
-"summary": "Set Log Level"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
@@ -695,11 +677,20 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs_examples_setLogLevel.html",
+"summary": "Set Log Level"
+}
+,
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs_api_utilities_setLogLevel.html",
+"summary": "setLogLevel()"
 }
 ,
 
@@ -709,6 +700,15 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_set_audio_focus.html",
 "summary": "setAudioFocus()"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
 }
 ,
 
