@@ -8,8 +8,6 @@ permalink: etau_README.html
 summary: The Ε_τ (Etau) documentation.
 ---
 
-# E_τ (Etau)
-
 ![pub version](https://img.shields.io/pub/v/etau.svg?style=flat-square)
 
 ## Overview
