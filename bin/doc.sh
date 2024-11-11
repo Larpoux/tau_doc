@@ -13,6 +13,8 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
+cp index.html _site/index.html
+
 git add .
 git commit -m 'doc'
 git pull
