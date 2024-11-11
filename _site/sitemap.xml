@@ -28,13 +28,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_links_license.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/LICENSE.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/LICENSE.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_links_license.html</loc>
   </url>
   
   
@@ -52,13 +52,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_constructor.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_constructor.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_constructor.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_constructor.html</loc>
   </url>
   
   
@@ -107,6 +107,12 @@
   
   <url>
     <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_duration.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/etau_CHANGELOG.html</loc>
   </url>
   
   
@@ -304,13 +310,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_links_migration.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_inks_migration.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_inks_migration.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_links_migration.html</loc>
   </url>
   
   
@@ -340,13 +346,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_player_on_progress.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_on_progress.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_player_on_progress.html</loc>
   </url>
   
   
@@ -460,13 +466,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_setLogLevel.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_examples_setLogLevel.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_examples_setLogLevel.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_setLogLevel.html</loc>
   </url>
   
   
@@ -478,7 +484,7 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_setLogLevel.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_setLogLevel.html</loc>
   </url>
   
   
@@ -520,13 +526,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_volume.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_examples_setVolume.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_examples_setVolume.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_volume.html</loc>
   </url>
   
   
