@@ -7,13 +7,18 @@ rm -rf _site
 bundle config set --local path '~/vendor/bundle'
 bundle install
 
+rm -r etau_example 2>/dev/null
+cp -a ../etau/example/build/web etau_example
+
 bundle exec jekyll build
 if [ $? -ne 0 ]; then
     echo "Error"
     exit -1
 fi
 
-cp index.html _site/index.html
+#cp index.html _site/index.html
+
+
 
 git add .
 git commit -m 'doc'
