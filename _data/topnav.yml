@@ -35,8 +35,8 @@ topnav_dropdowns:
           external_url: /titi
           hint: "The tau-cpal examples"
 
-        - title: E_τ
-          url: /etau_example
+        - title: Run E_τ example
+          url: /live_etau_example
           hint: "Run the E_τ example!"
 
 

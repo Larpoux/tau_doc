@@ -7,8 +7,8 @@ rm -rf _site
 bundle config set --local path '~/vendor/bundle'
 bundle install
 
-rm -r etau_example 2>/dev/null
-cp -a ../etau/example/build/web etau_example
+rm -r live_etau_example 2>/dev/null
+cp -a ../etau/example/build/web live_etau_example
 
 bundle exec jekyll build
 if [ $? -ne 0 ]; then
@@ -17,6 +17,7 @@ if [ $? -ne 0 ]; then
 fi
 
 #cp index.html _site/index.html
+cp -a ../etau/example/build/web _site/live_etau_example
 
 
 
