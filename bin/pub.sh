@@ -1,25 +1,36 @@
 #!/bin/bash
 
-source ../bin/new-version.sh
+#cp ../flutter_sound/flutter_sound/doc/FLUTTER_SOUND_VERSION bin
+#. bin/FLUTTER_SOUND_VERSION
+#gsed -i "s/^FS_VERSION:.*/FS_VERSION: $FLUTTER_SOUND_VERSION/" _config.yml
+rm -rf _site
+bundle config set --local path '~/vendor/bundle'
+bundle install
 
-echo "Upload"
-cd _site
-tar  cz --no-xattrs -f ../_toto.tgz *
-cd ..
-pwd
-scp _toto.tgz danku@danku:~
-ssh  danku@danku "rm -rf /var/www/canardoux.xyz/danku/doc; mkdir /var/www/canardoux.xyz/danku/doc/; tar xzf _toto.tgz -C /var/www/canardoux.xyz/danku/doc/; rm _toto.tgz"
+bundle exec jekyll build
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit -1
+fi
 
-rm _toto.tgz
+cp index.html _site/index.html
 
 git add .
-git commit -m "Danku-doc : Version $DANKU_VERSION"
-git pull origin
-git push origin
-#if [ ! -z "$DANKU_VERSION" ]; then
-    git tag -f $DANKU_VERSION
-    git push  -f origin $DANKU_VERSION
-#fi
+git commit -m 'doc'
+git pull
+git push
 
-echo "EOJ"
+echo -n 'Upload to canardoux.xyz ...'
+ssh tau@danku 'rm -r /var/www/canardoux.xyz/tau/doc'
+scp -r _site tau@danku:/var/www/canardoux.xyz/tau/doc >/dev/null
+echo ''
+exit 0
 
+bin/apidoc.sh
+
+rm -r danku/fs-live
+cp -a ../flutter_sound/flutter_sound/example/build/web danku/fs-live
+
+ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
+scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null
+ssh -t larpoux@danku "sudo /etc/init.d/nginx restart"
