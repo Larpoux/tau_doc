@@ -128,6 +128,15 @@
 ,
 
 {
+"title": "E_τ (Etau)",
+"tags": "Etau",
+"keywords": "home homepage readme",
+"url": "etau_README.html",
+"summary": "The Ε_τ (Etau) documentation."
+}
+,
+
+{
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
@@ -344,15 +353,6 @@
 ,
 
 {
-"title": "Getting started with the Documentation Theme for Jekyll",
-"tags": "getting_started",
-"keywords": "sample homepage",
-"url": "index.html",
-"summary": "These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll."
-}
-,
-
-{
 "title": "Installation",
 "tags": "flutter_soundinstallation",
 "keywords": "Flutter, Flutter Sound, installation",
@@ -419,7 +419,7 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "fs_inks_migration.html",
+"url": "fs_links_migration.html",
 "summary": "Migration from previous version"
 }
 ,
@@ -428,7 +428,7 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "fs_links_migration.html",
+"url": "fs_inks_migration.html",
 "summary": "Migration from previous version"
 }
 ,
@@ -470,15 +470,6 @@
 ,
 
 {
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_on_progress.html",
-"summary": "onProgress"
-}
-,
-
-{
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
@@ -488,11 +479,11 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs_api_recorder_on_progress.html",
+"summary": "onProgress"
 }
 ,
 
@@ -502,6 +493,15 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_open_audio_session.html",
 "summary": "`openRecorder()` and `closeRecorder()`"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -659,15 +659,6 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
 "title": "Examples",
 "tags": "example",
 "keywords": "Flutter, Flutter Sound, examples",
@@ -677,11 +668,29 @@
 ,
 
 {
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_setLogLevel.html",
+"summary": "setLogLevel()"
+}
+,
+
+{
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
 "url": "fs_api_utilities_setLogLevel.html",
 "summary": "setLogLevel()"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
 }
 ,
 
@@ -698,8 +707,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
+"url": "fs_api_player_set_speed.html",
+"summary": "setSpeed()"
 }
 ,
 
@@ -707,8 +716,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs_api_player_set_speed.html",
-"summary": "setSpeed()"
+"url": "fs_api_player_set_subscription_duration.html",
+"summary": "setSubscriptionDuration()"
 }
 ,
 
@@ -725,26 +734,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs_api_player_set_subscription_duration.html",
-"summary": "setSubscriptionDuration()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
 "url": "fs_api_player_set_ui_progress_bar.html",
 "summary": "setUIProgressBar()"
-}
-,
-
-{
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs_examples_setVolume.html",
-"summary": "Set the sound volume"
 }
 ,
 
@@ -754,6 +745,15 @@
 "keywords": "API Player",
 "url": "fs_api_player_set_volume.html",
 "summary": "setVolume()"
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs_examples_setVolume.html",
+"summary": "Set the sound volume"
 }
 ,
 
@@ -986,7 +986,7 @@
 "title": "Mozilla Public License",
 "tags": "",
 "keywords": "",
-"url": "pagesLICENSE_moz.html",
+"url": "pagesfsLICENSE_moz.html",
 "summary": ""
 }
 ,
@@ -996,15 +996,6 @@
 "tags": "",
 "keywords": "",
 "url": "pages",
-"summary": ""
-}
-,
-
-{
-"title": "The τ Project on Cordova",
-"tags": "",
-"keywords": "",
-"url": "pagescordova",
 "summary": ""
 }
 ,
