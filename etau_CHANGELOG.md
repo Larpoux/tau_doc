@@ -4,7 +4,7 @@ keywords: Etau changelog
 tags: [changelog]
 sidebar: etau_sidebar
 permalink: etau_CHANGELOG.html
-summary: The Changelog of The E_τ; Project.
+summary: The Changelog of The E_τ Project.
 toc: false
 ---
 
