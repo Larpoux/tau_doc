@@ -64040,7 +64040,7 @@ q.a=m
 s=!$.aig?2:3
 break
 case 2:s=4
-return A.R(A.b7(import("./packages/tau_web/assets/js/tau_web.js"),t.lZ),$async$oR)
+return A.R(A.b7(import("./assets/packages/tau_web/assets/js/tau_web.js"),t.lZ),$async$oR)
 case 4:$.aig=!0
 case 3:return A.I(null,r)}})
 return A.J($async$oR,r)},
