@@ -32421,7 +32421,7 @@ var $async$az=A.L(function(a,b){if(a===1)return A.H(b,r)
 while(true)switch(s){case 0:d=$.bP()
 c=A.fa(null)
 q.w=c
-c=A.ba(c.b.audioWorklet.addModule("./packages/tau_web/js/async_processor.js"),t.X)
+c=A.ba(c.b.audioWorklet.addModule("./assets/packages/tau_web/assets/js/async_processor.js"),t.X)
 s=2
 return A.R(c,$async$az)
 case 2:s=3
