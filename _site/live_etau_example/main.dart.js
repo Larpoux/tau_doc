@@ -32826,7 +32826,7 @@ var $async$az=A.L(function(a,b){if(a===1)return A.H(b,r)
 while(true)switch(s){case 0:m=$.bP()
 l=A.fa(null)
 q.f=l
-l=A.ba(l.b.audioWorklet.addModule("js/random_noise_processor.js"),t.X)
+l=A.ba(l.b.audioWorklet.addModule("assets/random_noise_processor.js"),t.X)
 s=2
 return A.R(l,$async$az)
 case 2:l=t.N
