@@ -9,6 +9,7 @@ bundle install
 
 rm -r live_etau_example 2>/dev/null
 cp -a ../etau/example/build/web live_etau_example
+gsed -i "s/^\ *<base href\=.*$/  \<base href\=\"\/live_etau_example\/\"\>/"           live_etau_example/index.html
 
 bundle exec jekyll build
 if [ $? -ne 0 ]; then
