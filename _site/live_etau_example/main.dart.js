@@ -32493,7 +32493,7 @@ A.wE.prototype={
 ds(){var s=0,r=A.K(t.H),q=this,p,o
 var $async$ds=A.L(function(a,b){if(a===1)return A.H(b,r)
 while(true)switch(s){case 0:s=2
-return A.R($.kw().f4("assets/wav/viper.ogg"),$async$ds)
+return A.R($.kw().f4("assets/viper.ogg"),$async$ds)
 case 2:p=b
 o=q.y
 o===$&&A.a()
