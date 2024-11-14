@@ -166,6 +166,6 @@ description: "This is the documentation of the tau Project."
 
 # needed for sitemap.xml file only
 url: https://canardoux.github.io/tau_doc
-baseurl: /tau
+#baseurl: /tau
 github: [metadata]
 

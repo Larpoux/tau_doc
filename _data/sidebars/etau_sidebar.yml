@@ -44,8 +44,269 @@ entries:
       output: web, pdf
 
 
-# -------------------------------------------------
+  - title: The Flutter Sound Project
+    output: web, pdf
+    folderitems:
 
+    - title: Introduction
+      url: /readme.html
+      output: web, pdf
+      type: homepage
+
+    - title: Changelog
+      url: /changelog.html
+      output: web, pdf
+
+    - title: Development Setup
+      url: /tau_dev.html
+      output: web, pdf
+
+    - title: Taudio RFC
+      url: /taudio_rfc.html
+      output: web,pdf
+
+
+
+# ----------------------------------------------------------
+
+
+  - title: Guides
+    output: web, pdf
+    folderitems:
+
+    - title: Getting Started
+      url: /guides_getting_started.html
+      output: web, pdf
+
+    - title: Installation
+      url: /flutter_sound_install.html
+      output: web, pdf
+
+    - title: Supported Codecs
+      url: /guides_codec.html
+      output: web, pdf
+
+    - title: Logger
+      url: /logger.html
+      output: web, pdf
+
+    - title: Lite vs Full
+      url: /guides_lite-full.html
+      output: web, pdf
+
+    - title: Temporary files
+      url: /temporary_files.html
+      output: web, pdf
+
+    - title: Raw PCM and Wave files
+      url: /guides_pcm_wave.html
+      output: web, pdf
+
+    - title: Recording or playing Raw PCM
+      url: /guides_recording_pcm.html
+      output: web, pdf
+
+    - title: Recording to a Dart Stream
+      url: /guides_record_stream.html
+      output: web, pdf
+
+    - title: Playback from a Dart Stream
+      url: /guides_play_stream.html
+      output: web, pdf
+
+    - title: Widgets
+      url: /guides_ui.html
+      output: web, pdf
+
+    - title: Notification on the lock screen
+      url: /guides_lock_screen.html
+      output: web, pdf
+
+    - title: Flutter Sound on Web
+      url: /guides_web.html
+      output: web, pdf
+
+
+
+# -------------------------------------------------------------
+
+
+
+
+
+
+
+  - title: API
+    output: web, pdf
+    folderitems:
+
+    - title: The API - Overview
+      url: /tau_api_main.html
+      output: web
+
+
+# ------------
+
+      subfolders:
+
+      - title: The Player
+        output: web
+        subfolderitems:
+
+        - title: Constructor
+          url: /tau_api_player_constructor.html
+          output: web, pdf
+
+        - title: setLogLevel()
+          url: /tau_api_player_setLogLevel.html
+          output: web, pdf
+
+
+# ----------
+
+
+      - title: The Recorder
+        output: web, pdf
+        subfolderitems:
+
+        - title: Constructor
+          url: /tau_api_recorder_constructor.html
+          output: web, pdf
+
+        - title: setLogLevel()
+          url: /tau_api_recorder_setLogLevel.html
+          output: web, pdf
+
+
+# ------------
+
+
+# -------------------------------------------------------------
+
+
+  - title: Live Demo
+    output: web, pdf
+    folderitems:
+
+    - title: Live demo
+      external_url: https://flutter-sound.canardoux.xyz/web_example/
+      output: web, pdf
+
+
+# ---------------------------------------------------------------
+
+
+  - title: Examples
+    output: web, pdf
+    folderitems:
+
+
+    - title: demo
+      url: /flutter_sound_examples_demo.html
+      output: web, pdf
+
+    - title: Widget UI
+      url: /flutter_sound_examples_widget_ui.html
+      output: web, pdf
+
+    - title: Simple Playback
+      url: /flutter_sound_examples_simple_playback.html
+      output: web, pdf
+
+    - title: onProgress (Player)
+      url: /flutter_sound_examples_player_onprogress.html
+      output: web, pdf
+
+    - title: onProgress (Recorder)
+      url: /flutter_sound_examples_recorder_onprogress.html
+      output: web, pdf
+
+    - title: Simple Recorder
+      url: /flutter_sound_examples_simple_recorder.html
+      output: web, pdf
+
+    - title: Play from Mic
+      url: /flutter_sound_examples_play_from_mic.html
+      output: web, pdf
+
+    - title: Multi Playbacks
+      url: /flutter_sound_examples_multi_playbacks.html
+      output: web, pdf
+
+    - title: Set Volumes
+      url: /flutter_sound_examples_setVolume.html
+      output: web, pdf
+
+    - title: Set Speed
+      url: /flutter_sound_examples_setSpeed.html
+      output: web, pdf
+
+    - title: Seek
+      url: /flutter_sound_examples_seek.html
+      output: web, pdf
+
+    - title: Record to Stream
+      url: /flutter_sound_examples_record_to_stream.html
+      output: web, pdf
+
+    - title: Playback from Stream (1)
+      url: /flutter_sound_examples_playback_from_stream_1.html
+      output: web, pdf
+
+    - title: Playback from Stream (2)
+      url: /flutter_sound_examples_playback_from_stream_2.html
+      output: web, pdf
+
+    - title: Sound Effects
+      url: /flutter_sound_examples_sound_effects.html
+      output: web, pdf
+
+    - title: Stream Loop
+      url: /flutter_sound_examples_stream_loop.html
+      output: web, pdf
+
+    - title: Set Log Level
+      url: /flutter_sound_examples_setLogLevel.html
+      output: web, pdf
+
+
+# --------------------------------------------------------------------
+
+
+  - title: API reference (dartdoc)
+    output: web, pdf
+    folderitems:
+
+    - title: etau_class
+      url: /mydoc_tag_archives_overview.html
+      output: web
+
+      subfolders:
+      - title: Nodes
+        output: web
+        subfolderitems:
+
+        - title: AnalyserNode
+          url: /etau_api\/public_etau_class\/AnalyserNode-class.html
+          output: web
+
+
+    - title: Recorder Class
+      url: /pages\/flutter-sound\/api\/recorder\/FlutterSoundRecorder-class.html
+      output: web, pdf
+
+    - title: Utilities
+      url: /pages\/flutter-sound\/api\/topics\/Utilities-topic.html
+      output: web, pdf
+
+    - title: Widgets UI
+      url: /pages\/flutter-sound\/api\/topics\/UI_Widgets-topic.html
+      output: web, pdf
+
+
+
+
+# ---------------------------------------------------
 
 
   - title: Release Notes
@@ -91,33 +352,6 @@ entries:
       url: /links_license.html
       output: web, pdf
 
-
-# ---------------------------------------------------
-
-  - title: Admin
-    output: web, pdf
-    folderitems:
-
-    - title: Commento
-      output: web, pdf
-      external_url: http://canardoux.xyz:8090/login
-
-    - title: Dank u Doc Stats
-      output: web, pdf
-      hint: Google Analytics on the DankuDoc
-      external_url: https://analytics.google.com/analytics/web/#/p276308667/reports/defaulthome
-
-    - title: Teacher's stats
-      output: web, pdf
-      external_url: https://zozo.com
-
-    - title: Developer's stats
-      output: web, pdf
-      external_url: https://zazi.com
-
-    - title: Dank u Web stats
-      output: web, pdf
-      external_url: https://momo.com
 
 
 # ---------------------------------------------------
