@@ -51,8 +51,8 @@ feedback_email: larpoux@canardoux.xyz
 
 FS_VERSION: 1.1.1
 TD_VERSION: 3.3.3
-ETAU_VERSION: 0.0.13
-WEB_VERSION: 4.4.4
+ETAU_VERSION: 0.0.14-alpha.1
+ETAU_VERSION: 0.0.14-alpha.1
 
 highlighter: rouge
 # library used for syntax highlighting
