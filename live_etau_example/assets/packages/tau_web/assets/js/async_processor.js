@@ -61,7 +61,7 @@ class AsyncProcessor extends AudioWorkletProcessor {
 
   bufferUndeflow(outputNo)
   {
-    this.port.postMessage({'messageType' : 'AUDIO_BUFFER_UNDERFLOW', 'outputNo' : outputNo});
+    this.port.postMessage({'messageType' : 'AUDIO_BUFFER_UNDERFLOW',  'inputNo' : -1, 'outputNo' : outputNo});
   }
 
 
@@ -76,7 +76,7 @@ class AsyncProcessor extends AudioWorkletProcessor {
 
   receive(inNo, data)
   {
-    this.port.postMessage({ 'messageType' : 'RECEIVE_DATA', 'inputNo' : inNo, 'data': data});
+    this.port.postMessage({ 'messageType' : 'RECEIVE_DATA', 'inputNo' : inNo, 'outputNo' : -1, 'data': data});
   }
 
   getFloats(output, nextChunk,  ln, outNo)

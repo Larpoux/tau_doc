@@ -17,17 +17,117 @@
  */
 
 
-class TauwebJS {
-  constructor() {
-  }
+class TauwebJS
+{
+   recorder;
+   constructor()
+   {
+   }
 
-  static papa() {
-    return 3;
-  }
+   papa(mediaRecorder)
+   {
+      mediaRecorder.ondataavailable = (event) => {
+         let x = event.data;
+         console.log('Rcv ' + event.data);
+      }
+      return 3;
+   }
 
+   zozo(stream)
+   {
+       this.recorder = new MediaRecorder(stream);
+       this.recorder.ondataavailable = (event) => {
+         let x = event.data;
+         console.log('Rcv ' + event.data);
+       }
+       return 4;
+   }
+
+   bloBEventData(blobEvent)
+   {
+      return blobEvent.data;
+   }
+
+   blobArrayBuffer(blob)
+   {
+      return blob.arrayBuffer(blob);
+   }
+
+   arrayBufferFloat32List(arrayBuffer)
+   {
+       console.log('arg ' + arrayBuffer);
+       return new Int32Array(arrayBuffer[0]);
+       //console.log('z=' + f32);
+       //console.log('Ln2 ' + f32.length);
+       //return f32;
+   }
 }
 
 
 // Need to expose the type to the global scope.
 globalThis.TauwebJS = TauwebJS;
 
+
+class TauRecorder extends MediaRecorder
+{
+
+    constructor(stream, type, options)
+    {
+        if (options == null)
+        {
+            options = { mimeType: type };
+        } else
+        {
+            options.mimeType = type;
+        }
+        super(stream, options);
+        this.type = type;
+        //this.blob = null;
+        this.chunks = [];
+    }
+
+
+    start(timeslice)
+    {
+        this.chunks = [];
+
+        this.ondataavailable = (e) => {
+          this.chunks.push(e.data);
+        };
+
+        super.start(timeslice);
+    }
+
+    makeUrl()
+    {
+          const blob = new Blob(this.chunks, { type: this.type });
+          const url = URL.createObjectURL(blob);
+          console.log(url);
+          return url;//URL.createObjectURL(this.blob);
+    }
+
+    makeFile(fileName)
+    {
+                const blob = new Blob(this.chunks, { type: this.type });
+                const elem = document.createElement('a');
+                elem.href = URL.createObjectURL(blob);
+                elem.download = fileName;
+                document.body.appendChild(elem);
+                elem.click();
+                const path = elem.download;
+                document.body.removeChild(elem);
+                return path;
+    }
+
+    makeBuffer()
+    {
+          const blob = new Blob(this.chunks, { type: this.type });
+          return blob.arrayBuffer();
+          //return blob.bytes();
+          //return Buffer.from(blob)
+    }
+}
+
+
+// Need to expose the type to the global scope.
+globalThis.TauRecorder = TauRecorder;
