@@ -92,46 +92,32 @@ defaults:
 
   -
     scope:
-      path: "pages/fs/fs_api"
-      type: "api"
+      path: "pages/td"
+      type: "pages"
     values:
       layout: "page"
       comments: false
       # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
       search: true
-      sidebar: fs_sidebar
-      toc: false
+      sidebar: td_sidebar
+      toc: true
       topnav: topnav
       tooltip: true
 
   -
     scope:
-      path: "pages/et/et_api"
-      type: "api"
+      path: "pages/etau"
+      type: "pages"
     values:
       layout: "page"
       comments: false
       # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
       search: true
-      sidebar: et_sidebar
-      toc: false
+      sidebar: etau_sidebar
+      toc: true
       topnav: topnav
       tooltip: true
-
-  -
-    scope:
-      path: "pages/web/web_api"
-      type: "api"
-    values:
-      layout: "page"
-      comments: false
-      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
-      search: true
-      sidebar: web_sidebar
-      toc: false
-      topnav: topnav
-      tooltip: true
-
+      
   -
     scope:
       path: ""
@@ -164,14 +150,13 @@ sidebars:
 - other
 - fs_sidebar
 - td_sidebar
-- et_sidebar
-- web_sidebar
+- etau_sidebar
 
 description: "This is the documentation of the tau Project."
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: https://canardoux.github.io/tau_doc
+url: https://tau-gh.canardoux.xyz/index.html
 #baseurl: /tau
 github: [metadata]
 

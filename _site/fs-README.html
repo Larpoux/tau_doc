@@ -66,7 +66,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://canardoux.github.io/tau_doc/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://tau-gh.canardoux.xyz/index.html/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -966,7 +966,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="documentation">Documentation</h2>
+   <p><img src="https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square" alt="pub version" /></p>
+
+<h2 id="documentation">Documentation</h2>
 
 <ul>
   <li>
@@ -982,8 +984,6 @@ $('#toc').on('click', 'a', function() {
 <figure><img class="docimage" src="images/2-year-old-irish-girl-ukrainian.jpg" alt="" /><figcaption>Peace for Ukraine</figcaption></figure>
 
 <figure><img class="docimage" src="images/banner.png" alt="" /><figcaption>Stand up For Ukraine : Street Art</figcaption></figure>
-
-<p><img src="https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square" alt="pub version" /></p>
 
 <h2 id="flutter-sound-as-a-τ-project">Flutter Sound as a τ Project</h2>
 
@@ -1034,28 +1034,26 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="examples-demo-apps">Examples (Demo Apps)</h2>
 
-<p>Flutter Sound comes with several <a href="(https://github.com/Canardoux/flutter_sound/tree/master/example/lib)">Demo/Examples</a>.</p>
+<p>Flutter Sound comes with several <a href="https://github.com/Canardoux/flutter_sound/tree/master/example/lib">Demo/Examples</a>.</p>
 
-<p>You can run a live view of these examples <a href="TODO">here</a>.</p>
+<p>You can run a live view of these examples <a href="http://tau.canardoux.xyz/live/fs/index.html">here</a>.</p>
 
 <h2 id="features">Features</h2>
 
 <p>The Flutter Sound package includes the following features :</p>
 
 <ul>
-  <li>Play and Record τ or music with various codecs. (See <a href="fs_guides_codec.html">the supported codecs here</a>)</li>
+  <li>Play and Record sound or music with various codecs. (See <a href="fs_guides_codec.html">the supported codecs here</a>)</li>
   <li>Play local or remote files specified by their URL.</li>
   <li>Play assets.</li>
-  <li>Record to a live stream Stream</li>
-  <li>Playback from a live Stream</li>
+  <li>Record to a live dart Stream</li>
+  <li>Playback from a live dart Stream</li>
   <li>Support for releasing/resuming resources when the app pauses/resumes.</li>
-  <li>Record to a Dart Stream</li>
-  <li>Playback from a Dart Stream</li>
 </ul>
 
 <h2 id="flutter-sound-and-streams">Flutter Sound and Streams</h2>
 
-<p>Streams support are a main Flutter Sound feature that you must not overview.</p>
+<p>Streams support are a main Flutter Sound feature that is very exciting.</p>
 
 <ul>
   <li>Flutter Sound can record to a dart stream of audio data (PCM Float32 or PCM Int16). This let you process live audio data in dart, or send these data to a remote host.</li>
@@ -1073,9 +1071,30 @@ $('#toc').on('click', 'a', function() {
   <li>Flutter Sound is now released under the permissive Mozilla license which has a <strong>weak</strong> <em>copyleft</em> clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).</li>
 </ul>
 
-<h2 id="taudio">Taudio</h2>
+<h2 id="the-τ-family">The τ family</h2>
 
-<p>The current Flutter Sound version is 9.x. <a href="TODO">Taudio</a> is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:</p>
+<p>The τ (Tau) project is composed with the following flutter plugins:</p>
+
+<ul>
+  <li>Flutter Sound 9.x</li>
+  <li><a href="https://pub.dev/packages/flutter_sound_web">Flutter_sound_web</a></li>
+  <li><a href="https://pub.dev/packages/flutter_sound_platform_interface">Flutter_sound_platform_interface</a> (a glue between the Flutter Sound API and the 3 platforms: Web, iOS and Android)</li>
+  <li><a href="https://pub.dev/packages/taudio">Taudio</a> (Flutter Sound 10.0)</li>
+  <li><a href="https://pub.dev/packages/etau">Etau</a> (an implementation of the Web Audio API)</li>
+  <li><a href="https://pub.dev/packages/tau_web">Tau-Web</a> (an implementation of Etau for Flutter Web)</li>
+  <li><a href="https://pub.dev/packages/tau_war">Tau-War</a> (an implementation of Etau for the mobiles)</li>
+</ul>
+
+<p>And two public libraries for mobiles support:</p>
+
+<ul>
+  <li>Flutter Sound Core for iOS</li>
+  <li>Flutter Sound Core for Android</li>
+</ul>
+
+<h3 id="taudio">Taudio</h3>
+
+<p>The current Flutter Sound version is 9.x. <a href="https://pub.dev/packages/taudio">Taudio</a> is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:</p>
 <ul>
   <li>A documentation (TODO)</li>
   <li>A support of the three main platforms:
@@ -1089,11 +1108,11 @@ $('#toc').on('click', 'a', function() {
 
 <p>Taudio is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don’t want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.</p>
 
-<p>Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above <a href="TODO]">Etau</a>.</p>
+<p>Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above <a href="https://pub.dev/packages/etau">Etau</a>.</p>
 
-<h2 id="etau">Etau</h2>
+<h3 id="etau">Etau</h3>
 
-<p>This is (will be) an implementation on flutter of the <a href="TODO">W3C Web Audio API</a>.
+<p>This is (will be) an implementation on flutter of the <a href="https://www.w3.org/TR/webaudio-1.1">W3C Web Audio API</a>.
 Etau is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:</p>
 
 <ul>
@@ -1110,17 +1129,18 @@ Etau is actually in a developement state. It is an Alpha version. Even not a Bet
 <p>The Web Audio API is terrific:</p>
 
 <ul>
-  <li>It is a W3C recommandation</li>
-  <li>It has a great <a href="TODO">documentation from Moziilla</a></li>
+  <li>It is a <a href="https://www.w3.org/TR/webaudio-1.1">W3C recommandation</a></li>
+  <li>It has a great <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">documentation from Moziilla</a></li>
   <li>It is really powerful</li>
   <li>It is simple to use</li>
 </ul>
 
-<p>Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the Mozilla documentation but also from other sources.
-In a few words, the Web Audio API let you assembly <code class="language-plaintext highlighter-rouge">nodes</code> as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, …). But you should look to the Mozilla documentation which is very good.</p>
+<p>Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Mozilla documentation</a> but also from other sources.</p>
 
-<p>You will have to ask yourself if you must use Taudio (which is a wrapper around Etau), or directly Etau.
-The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio.</p>
+<p>In a few words, the Web Audio API let you assembly <code class="language-plaintext highlighter-rouge">nodes</code> as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, …). But you really should look to the Mozilla documentation which is very good.</p>
+
+<p>You will have to ask yourself if you must use <a href="https://pub.dev/packages/taudio">Taudio</a> (which is a wrapper around <a href="https://pub.dev/packages/etau">Etau</a>), or directly Etau.
+The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio any longer.</p>
 
 <p>Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).</p>
 
@@ -1163,7 +1183,7 @@ This is free and this will reassure me that <strong>I do not spend most of my li
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 10, 2025 <br />
+ Site last generated: Feb 11, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

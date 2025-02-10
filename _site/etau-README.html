@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- the google_analytics_id gets auto inserted from the config file
+
+
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPDLW922EP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1YL444CW83');
+</script>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Etau Project README.">
+<meta name="keywords" content=" ">
+<title>Etau | The tau Project documentation.</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest.json">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="images/favicon.ico">
+<!--<link rel="shortcut icon" href="images/favicon.ico"> -->
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://tau-gh.canardoux.xyz/index.html/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true, // LARPOUX
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right // LARPOUX
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-10');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#tg-dark-link").click(function() {
+                $("#tg-dark-mode").toggle();
+                $("#tg-dark-icon").toggleClass('fa-toggle-on');
+                $("#tg-dark-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<!-- LARPOUX -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <a href="/index.html"> <img src="images/banner7.png" width="60%" height="60%" /> </a>
+           <!--<img class="inline" src="images/tau7.svg" alt="tau" />
+-->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#" title="Show the left navigation bar"><i id="tg-sb-icon" class="fa fa-toggle-on" ></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Run<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/toto" target="_blank" rel="noopener"  title="The tau-dio examples" >Taudio examples.</a></li>
+                        
+                        
+                        
+                        <li><a href="/live\fs\index.html"   title="The Flutter Sound examples" >Flutter Sound examples.</a></li>
+                        
+                        
+                        
+                        <li><a href="/live_etau_example"   title="The e-tau example!" >e-tau examples</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/news.html"   title="The tau Project news" >News</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/tau-doc/projects/1" target="_blank" rel="noopener"  title="A better tau" >Roadmap</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Repo<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/canardoux/taudio" target="_blank" rel="noopener"  title="tau-dio on github" >Taudio</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/flutter_sound" target="_blank" rel="noopener"  title="Flutter Sound on github" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/canardoux/etau" target="_blank" rel="noopener"  title="e-tau on github" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pub.dev<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://pub.dev/packages/taudio" target="_blank" rel="noopener"  title="tau-dio on flutter main site" >Taudio</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/flutter_sound" target="_blank" rel="noopener"  title="Flutter Sound on flutter main site" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li><a href="https://pub.dev/packages/etau" target="_blank" rel="noopener"  title="e-tau on flutter main site" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sharing<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://tau-t7l7803.slack.com" target="_blank" rel="noopener"  title="Slack is not Open Source Software :-(" >Slack</a></li>
+                        
+                        
+                        
+                        <li><a href="https://app.element.io/#/room/#tau:matrix.org" target="_blank" rel="noopener"  title="Free and Open Source. Based on Open Source Protocols" >Element</a></li>
+                        
+                        
+                        
+                        <li><a href="https://discord.com/channels/799683099473870848/799683099473870852" target="_blank" rel="noopener"  title="Unfortunately not Open Source" >Discord</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">The τ (tau) family<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/td-README.html"   title="" >Taudio</a></li>
+                        
+                        
+                        
+                        <li><a href="/fs-README.html"   title="" >Flutter Sound</a></li>
+                        
+                        
+                        
+                        <li class="dropdownActive"><a href="/etau-README.html"   title="" >e-tau</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the Etau page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Etau">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!-- Page Content -->
+<!-- <div class="container"> -->
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+             
+            <!-- Sidebar Column -->
+            <div class="col-md-2" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">E_τ - 9.23.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="/index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Introduction" href="/mydoc_introduction.html">Introduction</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Support" href="/mydoc_support.html">Support</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="The Flutter Sound Project" href="#">The Flutter Sound Project</a>
+      <ul>
+          
+          
+          
+          <li><a title="Introduction" href="/readme.html">Introduction</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Changelog" href="/changelog.html">Changelog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Development Setup" href="/tau_dev.html">Development Setup</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Taudio RFC" href="/taudio_rfc.html">Taudio RFC</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Guides" href="#">Guides</a>
+      <ul>
+          
+          
+          
+          <li><a title="Getting Started" href="/guides_getting_started.html">Getting Started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Installation" href="/flutter_sound_install.html">Installation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Supported Codecs" href="/guides_codec.html">Supported Codecs</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Logger" href="/logger.html">Logger</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Lite vs Full" href="/guides_lite-full.html">Lite vs Full</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Temporary files" href="/temporary_files.html">Temporary files</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Raw PCM and Wave files" href="/guides_pcm_wave.html">Raw PCM and Wave files</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Recording or playing Raw PCM" href="/guides_recording_pcm.html">Recording or playing Raw PCM</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Recording to a Dart Stream" href="/guides_record_stream.html">Recording to a Dart Stream</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Playback from a Dart Stream" href="/guides_play_stream.html">Playback from a Dart Stream</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Widgets" href="/guides_ui.html">Widgets</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Notification on the lock screen" href="/guides_lock_screen.html">Notification on the lock screen</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Flutter Sound on Web" href="/guides_web.html">Flutter Sound on Web</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="API" href="#">API</a>
+      <ul>
+          
+          
+          
+          <li><a title="The API - Overview" href="/tau_api_main.html">The API - Overview</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="The Player" href="#">The Player</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Constructor" href="/tau_api_player_constructor.html">Constructor</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="setLogLevel()" href="/tau_api_player_setLogLevel.html">setLogLevel()</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="The Recorder" href="#">The Recorder</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Constructor" href="/tau_api_recorder_constructor.html">Constructor</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="setLogLevel()" href="/tau_api_recorder_setLogLevel.html">setLogLevel()</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Live Demo" href="#">Live Demo</a>
+      <ul>
+          
+          
+          
+          <li><a title="Live demo" href="https://flutter-sound.canardoux.xyz/web_example/" target="_blank" rel="noopener">Live demo</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Examples" href="#">Examples</a>
+      <ul>
+          
+          
+          
+          <li><a title="demo" href="/flutter_sound_examples_demo.html">demo</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Widget UI" href="/flutter_sound_examples_widget_ui.html">Widget UI</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Simple Playback" href="/flutter_sound_examples_simple_playback.html">Simple Playback</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="onProgress (Player)" href="/flutter_sound_examples_player_onprogress.html">onProgress (Player)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="onProgress (Recorder)" href="/flutter_sound_examples_recorder_onprogress.html">onProgress (Recorder)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Simple Recorder" href="/flutter_sound_examples_simple_recorder.html">Simple Recorder</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Play from Mic" href="/flutter_sound_examples_play_from_mic.html">Play from Mic</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Multi Playbacks" href="/flutter_sound_examples_multi_playbacks.html">Multi Playbacks</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Set Volumes" href="/flutter_sound_examples_setVolume.html">Set Volumes</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Set Speed" href="/flutter_sound_examples_setSpeed.html">Set Speed</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Seek" href="/flutter_sound_examples_seek.html">Seek</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Record to Stream" href="/flutter_sound_examples_record_to_stream.html">Record to Stream</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Playback from Stream (1)" href="/flutter_sound_examples_playback_from_stream_1.html">Playback from Stream (1)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Playback from Stream (2)" href="/flutter_sound_examples_playback_from_stream_2.html">Playback from Stream (2)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sound Effects" href="/flutter_sound_examples_sound_effects.html">Sound Effects</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Stream Loop" href="/flutter_sound_examples_stream_loop.html">Stream Loop</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Set Log Level" href="/flutter_sound_examples_setLogLevel.html">Set Log Level</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="API reference (dartdoc)" href="#">API reference (dartdoc)</a>
+      <ul>
+          
+          
+          
+          <li><a title="etau_class" href="/mydoc_tag_archives_overview.html">etau_class</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="Nodes" href="#">Nodes</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="AnalyserNode" href="/etau_api\public_etau_class\AnalyserNode-class.html">AnalyserNode</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Recorder Class" href="/pages\flutter-sound\api\recorder\FlutterSoundRecorder-class.html">Recorder Class</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Utilities" href="/pages\flutter-sound\api\topics\Utilities-topic.html">Utilities</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Widgets UI" href="/pages\flutter-sound\api\topics\UI_Widgets-topic.html">Widgets UI</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Release Notes" href="#">Release Notes</a>
+      <ul>
+          
+          
+          
+          <li><a title="6.0 Release notes" href="/mydoc_release_notes_60.html">6.0 Release notes</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="5.0 Release notes" href="/mydoc_release_notes_50.html">5.0 Release notes</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Links" href="#">Links</a>
+      <ul>
+          
+          
+          
+          <li><a title="Migration" href="/links_migration.html">Migration</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Problem Report" href="https://github.com/Canardoux/tau/issues.html" target="_blank" rel="noopener">Problem Report</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Roadmap" href="https://github.com/Canardoux/tau/projects/3.html" target="_blank" rel="noopener">Roadmap</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Contributions" href="/links_contribution.html">Contributions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="License" href="/links_license.html">License</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Troubleshooting" href="#">Troubleshooting</a>
+      <ul>
+          
+          
+          
+          <li><a title="Troubleshooting" href="/mydoc_troubleshooting.html">Troubleshooting</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Tag archives" href="#">Tag archives</a>
+      <ul>
+          
+          
+          
+          <li><a title="Tag archives overview" href="/mydoc_tag_archives_overview.html">Tag archives overview</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="Tag archive pages" href="#">Tag archive pages</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Formatting pages" href="/tag_formatting.html">Formatting pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Navigation pages" href="/tag_navigation.html">Navigation pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Content types pages" href="/tag_content_types.html">Content types pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Publishing pages" href="/tag_publishing.html">Publishing pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Special layout pages" href="/tag_special_layouts.html">Special layout pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="/tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="/tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- LARPOUX
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       -->
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+        
+
+        <!-- Content Column -->
+        <div class="col-md-10" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Etau</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">The Etau Project README.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/etau/README.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p><img src="https://img.shields.io/pub/v/etau.svg?style=flat-square" alt="pub version" /></p>
+
+<h2 id="documentation">Documentation</h2>
+
+<ul>
+  <li>
+    <h2 id="etau-user--your-doc-is-here">Etau user : your doc <a href="https://tau.canardoux.xyz/etau-README.html">is here</a></h2>
+  </li>
+  <li>
+    <h2 id="the-changelog-is-here">The CHANGELOG <a href="https://tau.canardoux.xyz/etau-CHANGELOG.html">is here</a></h2>
+  </li>
+</ul>
+
+<h2 id="e-tau-stands-for-ukraine">e-tau stands for Ukraine</h2>
+
+<figure><img class="docimage" src="images/2-year-old-irish-girl-ukrainian.jpg" alt="" /><figcaption>Peace for Ukraine</figcaption></figure>
+
+<figure><img class="docimage" src="images/banner.png" alt="" /><figcaption>Stand up For Ukraine : Street Art</figcaption></figure>
+
+<h2 id="overview">Overview</h2>
+
+<p>This is (will be) an implementation on flutter of the <a href="https://www.w3.org/TR/webaudio-1.1">W3C Web Audio API</a>.
+e-tau is actually in a developement state. It is an Alpha version. Even not a Beta version.</p>
+
+<p>There are many things to do before you can use it. Specially:</p>
+
+<ul>
+  <li>A documentation (TODO)</li>
+  <li>A support of the three main platforms:
+    <ul>
+      <li>Web</li>
+      <li>iOS (TODO)</li>
+      <li>Android (TODO)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The Web Audio API is terrific:</p>
+
+<ul>
+  <li>It is a <a href="https://www.w3.org/TR/webaudio-1.1">W3C recommandation</a></li>
+  <li>It has a great <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">documentation from Moziilla</a></li>
+  <li>It is really powerful</li>
+  <li>It is simple to use</li>
+</ul>
+
+<h2 id="the-w3c-web-audio-api-recommandation">The W3C Web Audio API recommandation</h2>
+
+<p>Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Mozilla documentation</a> but also from other sources.</p>
+
+<p>In a few words, the Web Audio API let you assembly <code class="language-plaintext highlighter-rouge">nodes</code> as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, …). But you really should look to the Mozilla documentation which is very good.</p>
+
+<p>You will have to ask yourself if you must use <a href="https://pub.dev/packages/taudio">Taudio</a> (which is a wrapper around e-tau), or directly Etau.
+The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio any longer.</p>
+
+<h2 id="e-tau-structure">e-tau Structure</h2>
+
+<p>e-tau is a Flutter API allowing the App to use the W3C Web Audio API.
+This is an interface: this is what the App see and access.
+Because this is an interface, the App must import an implementation.
+Several implementations are possible. Actually we are developping two implementations:</p>
+
+<ul>
+  <li>Tau Web, which is an implementation for Flutter Web</li>
+  <li>Tau War, which is an implementation for mobiles</li>
+</ul>
+
+<p>The app must import one (or several) implementations. But except for this import, the App does not access them.
+It alway access e-tau which is the inteface. This allow the App to have a unic code for various platform.</p>
+
+<h2 id="examples-demo-apps">Examples (Demo Apps)</h2>
+
+<p>Flutter Sound comes with several <a href="https://github.com/Canardoux/flutter_sound/tree/master/example/lib">Demo/Examples</a>.</p>
+
+<p>You can run a live view of these examples <a href="http://tau.canardoux.xyz/live/etau/index.html">here</a>.</p>
+
+<h2 id="flutter-sound-and-streams">Flutter Sound and Streams</h2>
+
+<p>Streams support are a main Flutter Sound feature that is very exciting.</p>
+
+<ul>
+  <li>Flutter Sound can record to a dart stream of audio data (PCM Float32 or PCM Int16). This let you process live audio data in dart, or send these data to a remote host.</li>
+  <li>Flutter Sound can playback from a dart stream of audio data (PCM Float32 or PCM Int16). This let play live audio data generated from dart
+(sequencer, sound generator, …) or from a remote host.</li>
+</ul>
+
+<p>You can look to the <a href="fs_guides_streams.html">FS Streams guide</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p>Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).</p>
+
+<ul>
+  <li>Flutter Sound is published under the MPL-2.0 License.</li>
+  <li>Flutter Sound is copyrighted by Dooboolab and Canardoux.</li>
+  <li>Flutter Sound is now released under the permissive Mozilla license which has a <strong>weak</strong> <em>copyleft</em> clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).</li>
+</ul>
+
+<h2 id="the-τ-family">The τ family</h2>
+
+<p>The τ (Tau) project is composed with the following flutter plugins:</p>
+
+<ul>
+  <li>Flutter Sound 9.x</li>
+  <li><a href="https://pub.dev/packages/flutter_sound_web">Flutter_sound_web</a></li>
+  <li><a href="https://pub.dev/packages/flutter_sound_platform_interface">Flutter_sound_platform_interface</a> (a glue between the Flutter Sound API and the 3 platforms: Web, iOS and Android)</li>
+  <li><a href="https://pub.dev/packages/taudio">Taudio</a> (Flutter Sound 10.0)</li>
+  <li><a href="https://pub.dev/packages/etau">Etau</a> (an implementation of the Web Audio API)</li>
+  <li><a href="https://pub.dev/packages/tau_web">Tau-Web</a> (an implementation of Etau for Flutter Web)</li>
+  <li><a href="https://pub.dev/packages/tau_war">Tau-War</a> (an implementation of Etau for the mobiles)</li>
+</ul>
+
+<p>And two public libraries for mobiles support:</p>
+
+<ul>
+  <li>Flutter Sound Core for iOS</li>
+  <li>Flutter Sound Core for Android</li>
+</ul>
+
+<h3 id="taudio">Taudio</h3>
+
+<p>The current Flutter Sound version is 9.x. <a href="https://pub.dev/packages/taudio">Taudio</a> is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:</p>
+<ul>
+  <li>A documentation (TODO)</li>
+  <li>A support of the three main platforms:
+    <ul>
+      <li>Web</li>
+      <li>iOS (TODO)</li>
+      <li>Android (TODO)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Taudio is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don’t want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.</p>
+
+<p>Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above <a href="https://pub.dev/packages/etau">Etau</a>.</p>
+
+<h2 id="we-need-help">We need help</h2>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> 
+We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.
+</div>
+<p>.</p>
+
+<p>Actually, I am almost alone to maintain and develop three important projects :</p>
+<ul>
+  <li>Flutter Sound 9.x</li>
+  <li>Taudio (flutter Sound 10.0)</li>
+  <li>Etau</li>
+</ul>
+
+<p>This is too much on my shoulders. We desesperatly need at least one other developer.</p>
+
+<h2 id="thanks">Thanks</h2>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+If you like my work, you can click on the <code class="language-plaintext highlighter-rouge">Thumb up</code> button of the top of the <a href="https://pub.dev/packages/flutter_sound">pub.dev page</a>.
+This is free and this will reassure me that <strong>I do not spend most of my life for nobody</strong>.
+</div>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
+ Site last generated: Feb 11, 2025 <br />
+<p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+
+    </div>
+    <!-- /.row -->
+    </div>
+<!-- /.container -->
+<!--</div> -->
+<!-- /#main -->
+    </div>
+
+</body>
+<!--  -->
+</html>

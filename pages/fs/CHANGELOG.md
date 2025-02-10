@@ -1,11 +1,8 @@
 ---
 title: "Flutter Sound CHANGELOG"
-keywords: changelog
-tags: [changelog]
-sidebar: mydoc_sidebar
-permalink: changelog.html
-summary: The Changelog of The &tau; Project.
-toc: false
+description: The Flutter Sound Project CHANGELOG
+permalink: fs-CHANGELOG.html
+summary: The Changelog of The Flutter Sound Project.
 ---
 ## 9.24.0 - 2025/02/10
 

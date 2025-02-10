@@ -2,11 +2,29 @@
 [
 
 {
+"title": "Etau CHANGELOG",
+"tags": "",
+"keywords": "",
+"url": "etau-CHANGELOG.html",
+"summary": "The Changelog of The Etau Project."
+}
+,
+
+{
 "title": "Flutter Sound CHANGELOG",
-"tags": "changelog",
-"keywords": "changelog",
-"url": "changelog.html",
-"summary": "The Changelog of The &tau; Project."
+"tags": "",
+"keywords": "",
+"url": "fs-CHANGELOG.html",
+"summary": "The Changelog of The Flutter Sound Project."
+}
+,
+
+{
+"title": "License",
+"tags": "license",
+"keywords": "license",
+"url": "fs_links_license.html",
+"summary": "Flutter Sound License"
 }
 ,
 
@@ -21,19 +39,10 @@
 
 {
 "title": "License",
-"tags": "license",
-"keywords": "license",
-"url": "fs_links_license.html",
-"summary": "Flutter Sound License"
-}
-,
-
-{
-"title": "License",
-"tags": "license",
-"keywords": "license",
-"url": "fs_links_license.html",
-"summary": "Flutter Sound License"
+"tags": "Etau",
+"keywords": "",
+"url": "etau-license.html",
+"summary": "GPL-3 - the Gnu Public License v2."
 }
 ,
 
@@ -47,6 +56,15 @@
 ,
 
 {
+"title": "License",
+"tags": "license",
+"keywords": "license",
+"url": "fs_links_license.html",
+"summary": "Flutter Sound License"
+}
+,
+
+{
 "title": "Flutter Sound",
 "tags": "",
 "keywords": "",
@@ -56,11 +74,29 @@
 ,
 
 {
-"title": "τ_doc README",
+"title": "The τ (Tau) Project",
 "tags": "README",
 "keywords": "Etau README",
 "url": "README.html",
 "summary": "The README of The τ Project."
+}
+,
+
+{
+"title": "tau-dio",
+"tags": "Taudio",
+"keywords": "home homepage readme",
+"url": "td-README.html",
+"summary": "The tau-dio documentation."
+}
+,
+
+{
+"title": "Etau",
+"tags": "",
+"keywords": "",
+"url": "etau-README.html",
+"summary": "The Etau Project README."
 }
 ,
 
@@ -473,7 +509,7 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "fs_inks_migration.html",
+"url": "fs_links_migration.html",
 "summary": "Migration from previous version"
 }
 ,
@@ -482,7 +518,7 @@
 "title": "Migration",
 "tags": "migration",
 "keywords": "migration",
-"url": "fs_links_migration.html",
+"url": "fs_inks_migration.html",
 "summary": "Migration from previous version"
 }
 ,
@@ -524,15 +560,6 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_on_progress.html",
-"summary": "onProgress."
-}
-,
-
-{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -545,8 +572,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
+"url": "fs_api_player_on_progress.html",
+"summary": "onProgress."
 }
 ,
 
@@ -556,6 +583,15 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_open_audio_session.html",
 "summary": "`openRecorder()` and `closeRecorder()`"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -704,28 +740,10 @@
 ,
 
 {
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs_examples_setLogLevel.html",
-"summary": "Set Log Level"
-}
-,
-
-{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
 "url": "fs_api_recorder_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_setLogLevel.html",
 "summary": "setLogLevel()"
 }
 ,
@@ -740,11 +758,20 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs_examples_setLogLevel.html",
+"summary": "Set Log Level"
+}
+,
+
+{
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs_api_utilities_setLogLevel.html",
+"summary": "setLogLevel()"
 }
 ,
 
@@ -754,6 +781,15 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_set_audio_focus.html",
 "summary": "setAudioFocus()"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
 }
 ,
 
@@ -943,15 +979,6 @@
 "keywords": "rfc, taudio",
 "url": "fs_rfc.html",
 "summary": "Web Audio API on various frameworks."
-}
-,
-
-{
-"title": "tau-dio",
-"tags": "Taudio",
-"keywords": "home homepage readme",
-"url": "td_README.html",
-"summary": "The tau-dio documentation."
 }
 ,
 

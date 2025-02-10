@@ -4,13 +4,22 @@
 #. bin/FLUTTER_SOUND_VERSION
 #gsed -i "s/^FS_VERSION:.*/FS_VERSION: $FLUTTER_SOUND_VERSION/" _config.yml
 rm -rf _site
-cp ../flutter_sound/README.md pages/fs
+#cp ../flutter_sound/README.md pages/fs
+
 rm -rf live/fs
 cp -r ../flutter_sound/example/build/web live/fs
 if [ $? -ne 0 ]; then
     echo "Error"
     exit -1
 fi
+
+rm -rf live/etau
+cp -r ../etau/example/build/web live/etau
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit -1
+fi
+
 
 
 

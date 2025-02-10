@@ -92,10 +92,10 @@ topnav_dropdowns:
     - title: The τ (tau) family
       folderitems:
         - title: Taudio
-          url: /td-README.html
+          url: td-README.html
 
         - title: Flutter Sound
-          url: /fs-README.html
+          url: fs-README.html
 
         - title: e-tau
-          url: /etau-README.html
+          url: etau-README.html

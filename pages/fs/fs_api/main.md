@@ -15,7 +15,6 @@ keywords: API
 - `FlutterSoundPlayer`, wich deal with everything about playbacks
 - `FlutterSoundRecorder`, which deal with everything about recording
 - `FlutterSoundHelper`, which offers some convenients tools
-- `FlutterSoundUI`, which offer some Widget ready to be used out of the box
 
 To use Flutter Sound you just do :
 ```

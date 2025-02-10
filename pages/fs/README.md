@@ -4,6 +4,8 @@ description: The Flutter Sound Project README
 permalink: fs-README.html
 summary: The Flutter Sound Project README.
 ---
+![pub version](https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square)
+
 ## Documentation
 
 - ## Flutter Sound user : your doc [is here](https://tau.canardoux.xyz/fs-README.html)
@@ -13,8 +15,6 @@ summary: The Flutter Sound Project README.
 
 {% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
 {% include image.html file="banner.png"  caption="Stand up For Ukraine : Street Art" %}
-
-![pub version](https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square)
 
 ## Flutter Sound as a τ Project
 
@@ -55,26 +55,24 @@ The Flutter Sound package supports recording to:
 
 ## Examples \(Demo Apps\)
 
-Flutter Sound comes with several [Demo/Examples]((https://github.com/Canardoux/flutter_sound/tree/master/example/lib)).
+Flutter Sound comes with several [Demo/Examples](https://github.com/Canardoux/flutter_sound/tree/master/example/lib).
 
-You can run a live view of these examples [here](TODO).
+You can run a live view of these examples [here](http://tau.canardoux.xyz/live/fs/index.html).
 
 ## Features
 
 The Flutter Sound package includes the following features :
 
-* Play and Record τ or music with various codecs. \(See [the supported codecs here](fs_guides_codec.html)\)
+* Play and Record sound or music with various codecs. \(See [the supported codecs here](fs_guides_codec.html)\)
 * Play local or remote files specified by their URL.
 * Play assets.
-* Record to a live stream Stream
-* Playback from a live Stream
+* Record to a live dart Stream
+* Playback from a live dart Stream
 * Support for releasing/resuming resources when the app pauses/resumes.
-* Record to a Dart Stream
-* Playback from a Dart Stream
 
 ## Flutter Sound and Streams
 
-Streams support are a main Flutter Sound feature that you must not overview.
+Streams support are a main Flutter Sound feature that is very exciting.
 
 - Flutter Sound can record to a dart stream of audio data (PCM Float32 or PCM Int16). This let you process live audio data in dart, or send these data to a remote host.
 - Flutter Sound can playback from a dart stream of audio data (PCM Float32 or PCM Int16). This let play live audio data generated from dart
@@ -88,9 +86,26 @@ You can look to the [FS Streams guide](fs_guides_streams.html).
 - Flutter Sound is copyrighted by Dooboolab and Canardoux.
 - Flutter Sound is now released under the permissive Mozilla license which has a **weak** *copyleft* clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).
 
-## Taudio
+## The τ family
 
-The current Flutter Sound version is 9.x. [Taudio](TODO) is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:
+The τ (Tau) project is composed with the following flutter plugins:
+
+- Flutter Sound 9.x
+- [Flutter_sound_web](https://pub.dev/packages/flutter_sound_web)
+- [Flutter_sound_platform_interface](https://pub.dev/packages/flutter_sound_platform_interface) (a glue between the Flutter Sound API and the 3 platforms: Web, iOS and Android)
+- [Taudio](https://pub.dev/packages/taudio) (Flutter Sound 10.0)
+- [Etau](https://pub.dev/packages/etau) (an implementation of the Web Audio API)
+- [Tau-Web](https://pub.dev/packages/tau_web) (an implementation of Etau for Flutter Web)
+- [Tau-War](https://pub.dev/packages/tau_war) (an implementation of Etau for the mobiles)
+
+And two public libraries for mobiles support:
+
+- Flutter Sound Core for iOS
+- Flutter Sound Core for Android
+
+### Taudio
+
+The current Flutter Sound version is 9.x. [Taudio](https://pub.dev/packages/taudio) is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:
 - A documentation (TODO)
 - A support of the three main platforms:
    - Web
@@ -99,11 +114,11 @@ The current Flutter Sound version is 9.x. [Taudio](TODO) is a new name for Flutt
 
 Taudio is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don't want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.
 
-Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above [Etau](TODO]).
+Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above [Etau](https://pub.dev/packages/etau).
 
-## Etau
+### Etau
 
-This is (will be) an implementation on flutter of the [W3C Web Audio API](TODO).
+This is (will be) an implementation on flutter of the [W3C Web Audio API](https://www.w3.org/TR/webaudio-1.1).
 Etau is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:
 
 - A documentation (TODO)
@@ -114,16 +129,17 @@ Etau is actually in a developement state. It is an Alpha version. Even not a Bet
 
 The Web Audio API is terrific:
 
-- It is a W3C recommandation
-- It has a great [documentation from Moziilla](TODO)
+- It is a [W3C recommandation](https://www.w3.org/TR/webaudio-1.1)
+- It has a great [documentation from Moziilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 - It is really powerful
 - It is simple to use
 
-Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the Mozilla documentation but also from other sources.
-In a few words, the Web Audio API let you assembly `nodes` as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, ...). But you should look to the Mozilla documentation which is very good.
+Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) but also from other sources.
 
-You will have to ask yourself if you must use Taudio (which is a wrapper around Etau), or directly Etau.
-The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio.
+In a few words, the Web Audio API let you assembly `nodes` as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, ...). But you really should look to the Mozilla documentation which is very good.
+
+You will have to ask yourself if you must use [Taudio](https://pub.dev/packages/taudio) (which is a wrapper around [Etau](https://pub.dev/packages/etau)), or directly Etau.
+The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio any longer.
 
 Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).
 
