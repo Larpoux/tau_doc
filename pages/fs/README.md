@@ -1,16 +1,22 @@
 ---
 title: Flutter Sound
 description: The Flutter Sound Project README
-keywords: home homepage readme
-tags: [FlutterSound]
 permalink: fs-README.html
 summary: The Flutter Sound Project README.
 ---
+## Doc
+
+- Flutter Sound user : your doc [is here]()
+- Your CHANGELOG [is here]()
+
+## Flutter Sound stands for Ukraine
 
 {% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
 {% include image.html file="banner.png"  caption="Stand up For Ukraine : Street Art" %}
 
 ![pub version](https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square)
+
+## Flutter Sound as a τ Project
 
 Flutter Sound is a set of libraries which deal with audio :
 
