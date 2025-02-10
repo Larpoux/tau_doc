@@ -14,7 +14,7 @@ topnav_dropdowns:
     - title: Run
       folderitems:
 
-        - title: tau-dio examples.
+        - title: Taudio examples.
           external_url: /toto
           hint: "The tau-dio examples"
 
@@ -22,22 +22,9 @@ topnav_dropdowns:
           #external_url: https://tau.canardoux.xyz/danku/fs-live
           url: /danku\/fs-live\/index.html
           hint: "The Flutter Sound examples"
-
-        - title: tau examples.
-          external_url: /titi
-          hint: "The tau examples"
-
-        - title: tau-graph engine
-          external_url: /titi
-          hint: "Run a tau-graph in the web browser"
-
-        - title: tau-cpal ex.
-          external_url: /titi
-          hint: "The tau-cpal examples"
-
         - title: Run E_τ example
           url: /live_etau_example
-          hint: "Run the E_τ example!"
+          hint: "Run the e-tau example!"
 
 
     - title: News
@@ -55,21 +42,13 @@ topnav_dropdowns:
     - title: Repo
       folderitems:
 
-        - title: tau-dio
+        - title: Taudio
           external_url: https://github.com/canardoux/taudio
           hint: tau-dio on github
  
         - title: Flutter Sound
           external_url: https://github.com/canardoux/flutter_sound
           hint: Flutter Sound on github
-
-        - title: tau
-          external_url: https://github.com/canardoux/tau
-          hint: tau on github
-
-        - title: tau-cpal
-          external_url: https://github.com/canardoux/taucpal
-          hint: tau-cpal on github
 
         - title: e-tau
           external_url: https://github.com/canardoux/etau
@@ -79,25 +58,13 @@ topnav_dropdowns:
     - title: pub.dev
       folderitems:
 
-        - title: tau-dio
+        - title: Taudio
           external_url: https://pub.dev/packages/taudio
           hint: tau-dio on flutter main site
  
         - title: Flutter Sound
           external_url: https://pub.dev/packages/flutter_sound
           hint: Flutter Sound on flutter main site
-
-        - title: tau
-          external_url: https://pub.dev/packages/tau
-          hint: tau on flutter main site
-
-        - title: tau-graph
-          external_url: https://pub.dev/packages/taugraph
-          hint: tau-graph on flutter main site
-
-        - title: tau-cpal
-          external_url: https://pub.dev/packages/taucpal
-          hint: tau-cpal on flutter main site
 
         - title: e-tau
           external_url: https://pub.dev/packages/etau
@@ -121,22 +88,13 @@ topnav_dropdowns:
 
 
 
-    - title: The tau family
+    - title: The τ (tau) family
       folderitems:
-        - title: tau-dio
+        - title: Taudio
           url: /td-README.html
 
         - title: Flutter Sound
           url: /fs-README.html
-
-        - title: tau
-          url: /tau-README.html
-
-        - title: tau-graph
-          url: /tgr-README.html
-
-        - title: tau-cpal
-          url: /tau-README.html
 
         - title: e-tau
           url: /etau-README.html

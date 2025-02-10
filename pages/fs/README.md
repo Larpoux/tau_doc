@@ -4,10 +4,10 @@ description: The Flutter Sound Project README
 permalink: fs-README.html
 summary: The Flutter Sound Project README.
 ---
-## Doc
+## Documentation
 
-- Flutter Sound user : your doc [is here]()
-- Your CHANGELOG [is here]()
+- ## Flutter Sound user : your doc [is here](https://tau.canardoux.xyz/fs-README.html)
+- ## The CHANGELOG [is here](https://tau.canardoux.xyz/fs-CHANGELOG.html)
 
 ## Flutter Sound stands for Ukraine
 
@@ -84,10 +84,9 @@ You can look to the [FS Streams guide](fs_guides_streams.html).
 
 ## License
 
-Flutter Sound is published under the MPL-2.0 License.
-Flutter Sound is copyrighted by Dooboolab and Canardoux.
-
-Flutter Sound is now released under the permissive Mozilla license which has a **weak** *copyleft* clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).
+- Flutter Sound is published under the MPL-2.0 License.
+- Flutter Sound is copyrighted by Dooboolab and Canardoux.
+- Flutter Sound is now released under the permissive Mozilla license which has a **weak** *copyleft* clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).
 
 ## Taudio
 
@@ -130,7 +129,9 @@ Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).
 
 ## We need help
 
-{% include important.html content="We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation."%}.
+{% include important.html content="
+We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.
+"%}.
 
 Actually, I am almost alone to maintain and develop three important projects :
 - Flutter Sound 9.x
@@ -141,5 +142,7 @@ This is too much on my shoulders. We desesperatly need at least one other develo
 
 ## Thanks
 
-{% include note.html content="If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/flutter_sound).
-This is free and this will reassure me that **I do not spend most of my life for nobody**." %}
+{% include note.html content="
+If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/flutter_sound).
+This is free and this will reassure me that **I do not spend most of my life for nobody**.
+" %}
