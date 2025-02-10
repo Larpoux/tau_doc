@@ -49,10 +49,10 @@ feedback_email: larpoux@canardoux.xyz
 # if you uncomment the previous line, it changes where the feedback link points to
 
 
-FS_VERSION: 1.1.1
+FS_VERSION: 9.23.0
 TD_VERSION: 3.3.3
-ETAU_VERSION: 0.0.14-alpha.5
-ETAU_VERSION: 0.0.14-alpha.5
+ETAU_VERSION: 9.23.0
+ETAU_VERSION: 9.23.0
 TAUWEB_VERSION: 0.0.14-alpha.4
 TAUWEB_VERSION: 0.0.14-alpha.4
 TAUWARS_VERSION: 0.0.14-alpha.4
@@ -87,6 +87,20 @@ defaults:
       search: true
       sidebar: mydoc_sidebar
       topnav: topnav
+
+  -
+    scope:
+      path: "pages/fs"
+      type: "fs"
+    values:
+      layout: "page"
+      comments: false
+      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
+      search: true
+      sidebar: fs_sidebar
+      toc: true
+      topnav: topnav
+      tooltip: true
 
   -
     scope:

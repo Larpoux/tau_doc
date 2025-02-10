@@ -40,7 +40,19 @@
   
   
   <url>
+    <loc>https://canardoux.github.io/tau_doc/fs-license.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://canardoux.github.io/tau_doc/fs_links_license.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/fs-README.html</loc>
   </url>
   
   
@@ -190,7 +202,7 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_guides_pcm_wave.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/guides_pcm_wave.html</loc>
   </url>
   
   
@@ -251,6 +263,12 @@
   
   <url>
     <loc>https://canardoux.github.io/tau_doc/fs_guides_recording_pcm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/fs_guides_streams.html</loc>
   </url>
   
   
@@ -352,13 +370,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_player_on_progress.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_on_progress.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_player_on_progress.html</loc>
   </url>
   
   
@@ -472,13 +490,7 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_setLogLevel.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_setLogLevel.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_examples_setLogLevel.html</loc>
   </url>
   
   
@@ -490,19 +502,25 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_examples_setLogLevel.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_setLogLevel.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_audio_focus.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_utilities_setLogLevel.html</loc>
   </url>
   
   
   
   <url>
     <loc>https://canardoux.github.io/tau_doc/fs_api_recorder_set_audio_focus.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_audio_focus.html</loc>
   </url>
   
   
@@ -532,13 +550,13 @@
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_volume.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_examples_setVolume.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://canardoux.github.io/tau_doc/fs_examples_setVolume.html</loc>
+    <loc>https://canardoux.github.io/tau_doc/fs_api_player_set_volume.html</loc>
   </url>
   
   
@@ -695,12 +713,6 @@
   
   <url>
     <loc>https://canardoux.github.io/tau_doc/fs_guides_ui.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://canardoux.github.io/tau_doc/pages/fs/LICENSE_moz.html</loc>
   </url>
   
   

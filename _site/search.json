@@ -21,10 +21,28 @@
 
 {
 "title": "License",
+"tags": "FlutterSound",
+"keywords": "",
+"url": "fs-license.html",
+"summary": "MPL2 - the Mozilla Public License v2."
+}
+,
+
+{
+"title": "License",
 "tags": "license",
 "keywords": "license",
 "url": "fs_links_license.html",
 "summary": "Flutter Sound License"
+}
+,
+
+{
+"title": "Flutter Sound",
+"tags": "FlutterSound",
+"keywords": "home homepage readme",
+"url": "fs-README.html",
+"summary": "The Flutter Sound Project README."
 }
 ,
 
@@ -245,10 +263,10 @@
 ,
 
 {
-"title": "Raw PCM and Wave files",
+"title": "PCM files",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_pcm_wave.html",
+"url": "guides_pcm_wave.html",
 "summary": "Raw PCM and Wave files."
 }
 ,
@@ -340,6 +358,15 @@
 "keywords": "guides",
 "url": "fs_guides_recording_pcm.html",
 "summary": "Recording PCM."
+}
+,
+
+{
+"title": "PCM Dart Streams",
+"tags": "guide",
+"keywords": "guides",
+"url": "fs_guides_streams.html",
+"summary": "Recording PCM-16 to a Dart Stream."
 }
 ,
 
@@ -488,20 +515,20 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_on_progress.html",
-"summary": "onProgress."
-}
-,
-
-{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
 "url": "fs_api_recorder_on_progress.html",
 "summary": "onProgress"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_on_progress.html",
+"summary": "onProgress."
 }
 ,
 
@@ -668,10 +695,19 @@
 ,
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_setLogLevel.html",
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs_examples_setLogLevel.html",
+"summary": "Set Log Level"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_setLogLevel.html",
 "summary": "setLogLevel()"
 }
 ,
@@ -686,29 +722,11 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_setLogLevel.html",
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs_api_utilities_setLogLevel.html",
 "summary": "setLogLevel()"
-}
-,
-
-{
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs_examples_setLogLevel.html",
-"summary": "Set Log Level"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
 }
 ,
 
@@ -718,6 +736,15 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_set_audio_focus.html",
 "summary": "setAudioFocus()"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_set_audio_focus.html",
+"summary": "setAudioFocus."
 }
 ,
 
@@ -758,20 +785,20 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_volume.html",
-"summary": "setVolume()"
-}
-,
-
-{
 "title": "Examples",
 "tags": "example",
 "keywords": "Flutter, Flutter Sound, examples",
 "url": "fs_examples_setVolume.html",
 "summary": "Set the sound volume"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_set_volume.html",
+"summary": "setVolume()"
 }
 ,
 
@@ -997,15 +1024,6 @@
 "keywords": "ui_widgets",
 "url": "fs_guides_ui.html",
 "summary": "The &tau; Project offers two built-in widgets."
-}
-,
-
-{
-"title": "Mozilla Public License",
-"tags": "",
-"keywords": "",
-"url": "pagesfsLICENSE_moz.html",
-"summary": ""
 }
 ,
 

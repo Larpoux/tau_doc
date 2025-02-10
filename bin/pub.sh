@@ -7,11 +7,11 @@ rm -rf _site
 bundle config set --local path '~/vendor/bundle'
 bundle install
 
-cp -a ../etau/doc/api etau_api
+###cp -a ../etau/doc/api etau_api
 
-rm -r live_etau_example 2>/dev/null
-cp -a ../etau/example/build/web live_etau_example
-gsed -i "s/^\ *<base href\=.*$/  \<base href\=\"\/live_etau_example\/\"\>/"           live_etau_example/index.html
+###rm -r live_etau_example 2>/dev/null
+###cp -a ../etau/example/build/web live_etau_example
+###gsed -i "s/^\ *<base href\=.*$/  \<base href\=\"\/live_etau_example\/\"\>/"           live_etau_example/index.html
 
 bundle exec jekyll build
 if [ $? -ne 0 ]; then
@@ -29,11 +29,30 @@ git commit -m 'doc'
 git pull
 git push
 
+
+exit 0
+
+
+scp bin/doc2.sh canardoux@danku:/home/canardoux/bin
+scp _toto.tgz canardoux@danku:/home/canardoux
+ssh canardoux@danku "bash /home/canardoux/bin/doc2.sh"
+scp -r flutter_sound/example/assets/extract canardoux@danku:/var/www/canardoux.xyz/flutter-sound
+
+
+scp -r flutter_sound/example/build/web      danku@danku:/var/www/canardoux.xyz/danku/web_example
+scp -r flutter_sound/example/assets/extract danku@danku:/var/www/canardoux.xyz/danku
+
+
 echo -n 'Upload to canardoux.xyz ...'
 ssh tau@danku 'rm -r /var/www/canardoux.xyz/tau/doc'
 scp -r _site tau@danku:/var/www/canardoux.xyz/tau/doc >/dev/null
+
+#####
 echo ''
-exit 0
+
+
+###
+
 
 bin/apidoc.sh
 

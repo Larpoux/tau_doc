@@ -16,9 +16,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The &tau; Project offers several helper utilities.">
-<meta name="keywords" content="apiutilitieshelpers,  API, utilities, helpers">
-<title>Utilities API | The tau Project documentation.</title>
+<meta name="description" content="Recording PCM-16 to a Dart Stream.">
+<meta name="keywords" content="guide,  guides">
+<title>PCM Dart Streams | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -325,7 +325,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the Utilities API page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the PCM Dart Streams page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -343,7 +343,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Utilities API">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="PCM Dart Streams">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -1064,7 +1064,7 @@
         <!-- Content Column -->
         <div class="col-md-10" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Utilities API</h1>
+   <h1 class="post-title-main">PCM Dart Streams</h1>
 </div>
 
 
@@ -1072,7 +1072,7 @@
 <div class="post-content">
 
    
-    <div class="summary">The &tau; Project offers several helper utilities.</div>
+    <div class="summary">Recording PCM-16 to a Dart Stream.</div>
    
 
     
@@ -1103,261 +1103,233 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/fs/fs_api/utilities.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/fs/fs_guides/guides_streams.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h1 id="flutter-sound-helpers-api">Flutter Sound Helpers API</h1>
+   <p>Record to Stream and Play from Stream are two very important Flutter Sound features</p>
 
 <hr />
 
-<h2 id="module-instanciation">Module <code class="language-plaintext highlighter-rouge">instanciation</code></h2>
+<h1 id="record-to-stream">Record to Stream</h1>
 
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FlutterSoundHelper flutterSoundHelper = FlutterSoundHelper(); // Singleton
-</code></pre></div></div>
-
-<p>You do not need to instanciate the Flutter Sound Helper module.
-To use this module, you can just use the singleton offers by the module : <code class="language-plaintext highlighter-rouge">flutterSoundHelper</code>.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Duration</span> <span class="n">t</span> <span class="o">=</span> <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">duration</span><span class="p">(</span><span class="n">aPathFile</span><span class="p">);</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="convertfile"><code class="language-plaintext highlighter-rouge">convertFile()</code></h2>
-
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;bool&gt; convertFile
-(
-        String infile,
-        Codec codecin,
-        String outfile,
-        Codec codecout
-) async
-</code></pre></div></div>
-
-<p>This verb is useful to convert a sound file to a new format.</p>
+<p>To record to live PCM data, when calling the verb <code class="language-plaintext highlighter-rouge">startRecorder()</code>, you specify the parameter <code class="language-plaintext highlighter-rouge">toStream:</code>, <code class="language-plaintext highlighter-rouge">toStreamFloat32</code> or <code class="language-plaintext highlighter-rouge">toStreamInt16</code> with your Stream sink, instead of the parameter <code class="language-plaintext highlighter-rouge">toFile:</code>. This parameter is a Dart StreamSink that you can listen to, for processing the audio data.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">infile</code> is the file path of the file you want to convert</li>
-  <li><code class="language-plaintext highlighter-rouge">codecin</code> is the actual file format</li>
-  <li><code class="language-plaintext highlighter-rouge">outfile</code> is the path of the file you want to create</li>
-  <li><code class="language-plaintext highlighter-rouge">codecout</code> is the new file format</li>
+  <li>The parameter <code class="language-plaintext highlighter-rouge">toStream:</code> is used when you want to record interleaved data to a <code class="language-plaintext highlighter-rouge">&lt;Uint8List&gt;</code> Stream Sink</li>
+  <li>The parameter <code class="language-plaintext highlighter-rouge">toStreamFloat32:</code> is used when you want to record non interleaved data to a <code class="language-plaintext highlighter-rouge">&lt;List&lt;Float32List&gt;&gt;</code> Stream Sink</li>
+  <li>The parameter <code class="language-plaintext highlighter-rouge">toStreamInt16:</code> is used when you want to record non interleaved data to a <code class="language-plaintext highlighter-rouge">&lt;List&lt;Int16List&gt;&gt;</code> Stream Sink</li>
 </ul>
 
-<p>Be careful : <code class="language-plaintext highlighter-rouge">outfile</code> and <code class="language-plaintext highlighter-rouge">codecout</code> must be compatible. The output file extension must be a correct file extension for the new format.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <code class="language-plaintext highlighter-rouge">toStreamInt16:</code> are only supported on iOS. It will be supported later on Web and Android.</div>
 
-<p>Note : this verb uses FFmpeg and is not available int the LITE flavor of Flutter Sound.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <code class="language-plaintext highlighter-rouge">toStreamFloat32:</code> is only supported on iOS and web. It will be supported later on Android.</div>
 
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kt">String</span> <span class="n">inputFile</span> <span class="o">=</span> <span class="s">'</span><span class="si">$myInputPath</span><span class="s">/bar.wav'</span><span class="p">;</span>
-        <span class="kd">var</span> <span class="n">tempDir</span> <span class="o">=</span> <span class="k">await</span> <span class="n">getTemporaryDirectory</span><span class="p">();</span>
-        <span class="kt">String</span> <span class="n">outpufFile</span> <span class="o">=</span> <span class="s">'</span><span class="si">${tempDir.path}</span><span class="s">/</span><span class="si">$foo</span><span class="s">.mp3'</span><span class="p">;</span>
-        <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">convertFile</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">codec</span><span class="o">.</span><span class="na">pcm16WAV</span><span class="p">,</span> <span class="n">outputFile</span><span class="p">,</span> <span class="n">Codec</span><span class="o">.</span><span class="na">mp3</span><span class="p">)</span>
-</code></pre></div></div>
+<h2 id="interleaved">Interleaved</h2>
+
+<p>Interleaved data are given as <code class="language-plaintext highlighter-rouge">&lt;Uint8List&gt;</code>. This are the Raw Data where each sample are coded with 2 or 4 unsigned bytes for each sample. This is convenient when you want to handle globally the data as a raw buffer. For example when you want send the raw data to a remote server.</p>
+
+<h2 id="non-interleaved">Non interleaved</h2>
+
+<p>Non interleaved data are coded as <code class="language-plaintext highlighter-rouge">&lt;List&lt;Float32List&gt;&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;List&lt;Int16List&gt;&gt;</code> depending of the codec selected. The number of the element of the List is equal to the number of channels (1 for monophony, 2 for stereophony). This is convenient when you want to access the real audio data as Float32 or Int16.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> You can specify <code class="language-plaintext highlighter-rouge">toStreamFloat32</code> or <code class="language-plaintext highlighter-rouge">toStreamInt16:</code> even when you have just one channel. In this case the length of the list is 1.</div>
+
+<h2 id="startrecorder">startRecorder()</h2>
+
+<p>The main parameters for the verb <code class="language-plaintext highlighter-rouge">startRecorder()</code> are :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">codec:</code> : The codec (Codec.pcm16 or Codec.pcmFloat32)</li>
+  <li>The Stream sink :
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">toStream:</code> : When you want to record data interleaved</li>
+      <li><code class="language-plaintext highlighter-rouge">toStreamFloat32:</code> : When you want to record Float32 data not interleaved</li>
+      <li><code class="language-plaintext highlighter-rouge">toStreamInt16:</code> : When you eant to record record Int16 data  not interleaved</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">sampleRate:</code> : The sample rate</li>
+  <li><code class="language-plaintext highlighter-rouge">numChannels:</code> The number of channels (1 for monophony, 2 for stereophony, or more …)</li>
+</ul>
 
 <hr />
 
-<h2 id="pcmtowave"><code class="language-plaintext highlighter-rouge">pcmToWave()</code></h2>
+<h2 id="interleaved-example"><em>Interleaved Example</em></h2>
 
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;void&gt; pcmToWave
+<p>You can look to the <a href="https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/recordToStream/record_to_stream_example.dart">simple example</a> provided with Flutter Sound.</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Uint8List</span><span class="p">&gt;</span> <span class="n">recordingDataController</span> <span class="o">=</span> <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Uint8List</span><span class="p">&gt;();</span>
+  <span class="n">_mRecordingDataSubscription</span> <span class="o">=</span>
+          <span class="n">recordingDataController</span><span class="o">.</span><span class="na">stream</span><span class="o">.</span><span class="na">listen</span>
+            <span class="p">((</span><span class="n">Uint8List</span> <span class="n">buffer</span><span class="p">)</span>
+              <span class="p">{</span>
+                <span class="p">...</span> <span class="c1">// Process the audio frame</span>
+              <span class="p">}</span>
+            <span class="p">);</span>
+  <span class="k">await</span> <span class="n">_mRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span>
+        <span class="nl">toStream:</span> <span class="n">recordingDataController</span><span class="o">.</span><span class="na">sink</span><span class="p">,</span>
+        <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">pcm16</span><span class="p">,</span>
+        <span class="nl">numChannels:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nl">sampleRate:</span> <span class="mi">48000</span><span class="p">,</span>
+  <span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="non-interleaved-example"><em>Non Interleaved Example</em></h2>
+
+<p>You can look to the <a href="https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/streams/streams.dart">simple example</a> provided with Flutter Sound.</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Food</span><span class="p">&gt;</span> <span class="n">recordingDataController</span> <span class="o">=</span> <span class="n">StreamController</span><span class="p">&lt;</span><span class="kt">List</span><span class="p">&lt;</span><span class="n">Float32List</span><span class="p">&gt;&gt;();</span>
+  <span class="n">_mRecordingDataSubscription</span> <span class="o">=</span>
+          <span class="n">recordingDataController</span><span class="o">.</span><span class="na">stream</span><span class="o">.</span><span class="na">listen</span>
+            <span class="p">(</span> <span class="p">(</span><span class="kt">List</span><span class="p">&lt;</span><span class="n">Float32List</span><span class="p">&gt;</span> <span class="n">buffer</span><span class="p">)</span>
+              <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">channel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">channel</span> <span class="p">&lt;</span> <span class="n">cstChannelCount</span><span class="p">;</span> <span class="o">++</span><span class="n">channel</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">Float32List</span> <span class="n">channelData</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">[</span><span class="n">channel</span><span class="p">];</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">n</span> <span class="p">&lt;</span> <span class="n">channelData</span><span class="o">.</span><span class="na">length</span><span class="p">;</span> <span class="o">++</span><span class="n">n</span><span class="p">)</span>
+                    <span class="p">{</span>
+                      <span class="kt">double</span> <span class="n">sample</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">[</span><span class="n">channel</span><span class="p">][</span><span class="n">n</span><span class="p">];</span>
+                      <span class="p">...</span> <span class="c1">// Process the sample</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">);</span>
+  <span class="k">await</span> <span class="n">_mRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span>
+        <span class="nl">toStreamFloat32:</span> <span class="n">recordingDataController</span><span class="o">.</span><span class="na">sink</span><span class="p">,</span>
+        <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">pcmFloat32</span><span class="p">,</span>
+        <span class="nl">numChannels:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nl">sampleRate:</span> <span class="mi">48000</span><span class="p">,</span>
+  <span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="notes-">Notes :</h2>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Floating Point PCM data is not yet supported on Android. It is actually only implemented on iOS and Web.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> interleaved Int16 PCM data is not yet supported on Web. It is actually only implemented on iOS.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Non interleaved Int16 PCM data is not yet supported on iOS and web.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Note: This functionnality needs, at least, an Android SDK &gt;= 21. This new functionnality works better with Android minSdk &gt;= 23, because previous SDK was not able to do UNBLOCKING <code class="language-plaintext highlighter-rouge">write</code>.</div>
+
+<hr />
+
+<h1 id="play-from-stream">Play from Stream</h1>
+
+<p>To play live stream, you start playing with the verb <code class="language-plaintext highlighter-rouge">startPlayerFromStream()</code> instead of the regular <code class="language-plaintext highlighter-rouge">startPlayer()</code> verb.</p>
+
+<hr />
+
+<h2 id="startplayerfromstream">startPlayerFromStream()</h2>
+
+<p>The main parameters for the verb <code class="language-plaintext highlighter-rouge">startPlayerFromStream()</code> are :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">codec:</code> : The codec (Codec.pcm16 or Codec.pcmFloat32)</li>
+  <li><code class="language-plaintext highlighter-rouge">sampleRate:</code> : The sample rate</li>
+  <li><code class="language-plaintext highlighter-rouge">numChannels:</code> : The number of channels (1 for monophony, 2 for stereophony, or more …)</li>
+  <li><code class="language-plaintext highlighter-rouge">interleaved:</code> : A boolean for specifying if the data played are interleaved</li>
+</ul>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>await myPlayer.startPlayerFromStream
 (
-      {
-          String inputFile,
-          String outputFile,
-          int numChannels,
-          int sampleRate,
-      }
-) async
+    codec: Codec.pcmFloat32 
+    numChannels: 2
+    sampleRate: 48100
+    interleaved: true,
+    whenFinished: (){}, // to desactivate the stopPlayer() when the driver is short on waiting audio data to be played.
+);
 </code></pre></div></div>
 
-<p>This verb is usefull to convert a Raw PCM file to a Wave file.</p>
+<h2 id="interleaved-1">interleaved:</h2>
 
-<p>It adds a <code class="language-plaintext highlighter-rouge">Wave</code> envelop to the PCM file, so that the file can be played back with <code class="language-plaintext highlighter-rouge">startPlayer()</code>.</p>
+<p>This parameter specifies if the data to be played are interleaved or not. When the data are interleaved, you will use the <code class="language-plaintext highlighter-rouge">_mPlayer.foodSink</code> to play data. When the data are not interleaved, you will use <code class="language-plaintext highlighter-rouge">_mPlayer.float32Sink</code> or <code class="language-plaintext highlighter-rouge">_mPlayer.int16Sink</code> depending on the codec used. When the data are interleaved, the data provided by the app are coded as UINt8List. This is convenient when you have raw data to be played from a remote server. When the data are not interleaved, they are provided as <code class="language-plaintext highlighter-rouge">List&lt;List&gt;</code>, with an array of length equal to the number of channels.</p>
 
-<p>Note: the parameters <code class="language-plaintext highlighter-rouge">numChannels</code> and <code class="language-plaintext highlighter-rouge">sampleRate</code> <strong>are mandatory, and must match the actual PCM data</strong>. <a href="codec.md#note-on-raw-pcm-and-wave-files">See here</a> a discussion about <code class="language-plaintext highlighter-rouge">Raw PCM</code> and <code class="language-plaintext highlighter-rouge">WAVE</code> file format.</p>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> It is possible to use non interleaved data, even with <code class="language-plaintext highlighter-rouge">numChannels</code> equal 1 when you have int16 Integers or float32 data to be played and not a raw buffer.</div>
 
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kt">String</span> <span class="n">inputFile</span> <span class="o">=</span> <span class="s">'</span><span class="si">$myInputPath</span><span class="s">/bar.pcm'</span><span class="p">;</span>
-        <span class="kd">var</span> <span class="n">tempDir</span> <span class="o">=</span> <span class="k">await</span> <span class="n">getTemporaryDirectory</span><span class="p">();</span>
-        <span class="kt">String</span> <span class="n">outpufFile</span> <span class="o">=</span> <span class="s">'</span><span class="si">${tempDir.path}</span><span class="s">/</span><span class="si">$foo</span><span class="s">.wav'</span><span class="p">;</span>
-        <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">pcmToWave</span><span class="p">(</span><span class="nl">inputFile:</span> <span class="n">inputFile</span><span class="p">,</span> <span class="nl">outpoutFile:</span> <span class="n">outputFile</span><span class="p">,</span> <span class="nl">numChannels:</span> <span class="mi">1</span><span class="p">,</span> <span class="nl">sampleRate:</span> <span class="mi">8000</span><span class="p">);</span>
-</code></pre></div></div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Non interleaved PCM data is not yet supported on Android. It is actually only implemented on iOS and Web.</div>
 
 <hr />
 
-<h2 id="pcmtowavebuffer"><code class="language-plaintext highlighter-rouge">pcmToWaveBuffer()</code></h2>
+<h2 id="whenfinished">whenFinished:</h2>
 
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;Uint8List&gt; pcmToWaveBuffer
-(
-      {
-        Uint8List inputBuffer,
-        int numChannels,
-        int sampleRate,
-      }
-) async
-
-</code></pre></div></div>
-
-<p>This verb is usefull to convert a Raw PCM buffer to a Wave buffer.</p>
-
-<p>It adds a <code class="language-plaintext highlighter-rouge">Wave</code> envelop in front of the PCM buffer, so that the file can be played back with <code class="language-plaintext highlighter-rouge">startPlayerFromBuffer()</code>.</p>
-
-<p>Note: the parameters <code class="language-plaintext highlighter-rouge">numChannels</code> and <code class="language-plaintext highlighter-rouge">sampleRate</code> <strong>are mandatory, and must match the actual PCM data</strong>. <a href="codec.md#note-on-raw-pcm-and-wave-files">See here</a> a discussion about <code class="language-plaintext highlighter-rouge">Raw PCM</code> and <code class="language-plaintext highlighter-rouge">WAVE</code> file format.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">Uint8List</span> <span class="n">myWavBuffer</span> <span class="o">=</span> <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">pcmToWaveBuffer</span><span class="p">(</span><span class="nl">inputBuffer:</span> <span class="n">myPCMBuffer</span><span class="p">,</span> <span class="nl">numChannels:</span> <span class="mi">1</span><span class="p">,</span> <span class="nl">sampleRate:</span> <span class="mi">8000</span><span class="p">);</span>
-</code></pre></div></div>
+<p>This parameter cannot be used. After <code class="language-plaintext highlighter-rouge">startPlayerFromStream()</code> the player is always on until <code class="language-plaintext highlighter-rouge">stopPlayer()</code>. The app can send audio data when it wants. Even after an elapsed time without any audio data.</p>
 
 <hr />
 
-<h2 id="wavetopcm"><code class="language-plaintext highlighter-rouge">waveToPCM()</code></h2>
+<h2 id="interleaved-playback-without-back-pressure-without-flow-control">Interleaved playback without back pressure (without flow control),</h2>
 
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;void&gt; waveToPCM
-(
-      {
-          String inputFile,
-          String outputFile,
-       }
-) async
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_mPlayer.uint8ListSink</code> is a Stream Sink used when the data are interleaved and when you have UInt8List buffers to be played</li>
+  <li><code class="language-plaintext highlighter-rouge">_mPlayer.float32Sink</code> is a Stream Sink used when the data are not interleaved and when you have Float32 data to be played</li>
+  <li><code class="language-plaintext highlighter-rouge">_mPlayer.int16Sink</code> is a Stream Sink used when the data are not interleaved and when you have Int16 data to be played</li>
+</ul>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Uint8List</span> <span class="n">d</span><span class="p">;</span>
+<span class="p">...</span>
+<span class="n">_mPlayer</span><span class="o">.</span><span class="na">uint8ListSink</span><span class="o">!.</span><span class="na">add</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>This verb is usefull to convert a Wave file to a Raw PCM file.</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">List</span><span class="p">&lt;</span><span class="n">Float32List</span><span class="p">&gt;</span> <span class="n">d</span><span class="p">;</span> <span class="c1">// A List of `numChannels` Float32List</span>
+<span class="p">...</span>
+<span class="n">_mPlayer</span><span class="o">.</span><span class="na">float32Sink</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 
-<p>It removes the <code class="language-plaintext highlighter-rouge">Wave</code> envelop from the PCM file.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kt">String</span> <span class="n">inputFile</span> <span class="o">=</span> <span class="s">'</span><span class="si">$myInputPath</span><span class="s">/bar.pcm'</span><span class="p">;</span>
-        <span class="kd">var</span> <span class="n">tempDir</span> <span class="o">=</span> <span class="k">await</span> <span class="n">getTemporaryDirectory</span><span class="p">();</span>
-        <span class="kt">String</span> <span class="n">outpufFile</span> <span class="o">=</span> <span class="s">'</span><span class="si">${tempDir.path}</span><span class="s">/</span><span class="si">$foo</span><span class="s">.wav'</span><span class="p">;</span>
-        <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">waveToPCM</span><span class="p">(</span><span class="nl">inputFile:</span> <span class="n">inputFile</span><span class="p">,</span> <span class="nl">outpoutFile:</span> <span class="n">outputFile</span><span class="p">);</span>
 </code></pre></div></div>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">List</span><span class="p">&lt;</span><span class="n">Int16List</span><span class="p">&gt;;</span> <span class="c1">// A List of `numChannels` Int16List</span>
+<span class="p">...</span>
+<span class="n">_mPlayer</span><span class="o">.</span><span class="na">int16Sink</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <code class="language-plaintext highlighter-rouge">int16Sink</code> is not yet supported on Android and Web. It is actually only implemented on iOS.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <code class="language-plaintext highlighter-rouge">float32Sink</code> is not yet supported on Android. It is actually only implemented on iOS and Web.</div>
+
+<p>The App does <code class="language-plaintext highlighter-rouge">myPlayer.uint8ListSink.add(d)</code> or <code class="language-plaintext highlighter-rouge">_mPlayer.float32Sink(d)</code> or <code class="language-plaintext highlighter-rouge">mPlayer.int16Sink(d);</code> each time it wants to play some data. No need to await, no need to verify if the previous buffers have finished to be played. All the data added to the Stream Sink are buffered, and are played sequentially. The App continues to work without knowing when the buffers are really played.</p>
+
+<p>This means two things :</p>
+
+<ul>
+  <li>If the App is very fast adding buffers to <code class="language-plaintext highlighter-rouge">foodSink</code> it can consume a lot of memory for the waiting buffers.</li>
+  <li>
+    <p>When the App has finished feeding the sink, it cannot just do <code class="language-plaintext highlighter-rouge">myPlayer.stopPlayer()</code>, because there are perhaps many buffers not yet played.</p>
+
+    <p>If it does a <code class="language-plaintext highlighter-rouge">stopPlayer()</code>, all the waiting buffers will be flushed which is probably not what it wants.</p>
+  </li>
+</ul>
+
+<h2 id="feeduint8fromstream-feedint16fromstream-and-feedf32fromstream">feedUint8FromStream(), feedInt16FromStream() and feedF32FromStream()</h2>
+
+<p>Instead of using the three getters uint8ListSink, float32Sink and int16Sink, you can also call directely the functions :</p>
+<ul>
+  <li>feedUint8FromStream()</li>
+  <li>feedInt16FromStream()</li>
+  <li>feedF32FromStream()</li>
+</ul>
 
 <hr />
 
-<h2 id="wavetopcmbuffer"><code class="language-plaintext highlighter-rouge">waveToPCMBuffer()</code></h2>
+<h2 id="examples"><em>Examples</em></h2>
 
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Uint8List waveToPCMBuffer (Uint8List inputBuffer)
-</code></pre></div></div>
+<p>You can look to the provided examples :</p>
 
-<p>This verb is usefull to convert a Wave buffer to a Raw PCM buffer.
-Note that this verb is not asynchronous and does not return a Future.</p>
-
-<p>It removes the <code class="language-plaintext highlighter-rouge">Wave</code> envelop from the PCM buffer.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">Uint8List</span> <span class="n">pcmBuffer</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">waveToPCMBuffer</span><span class="p">(</span><span class="nl">inputBuffer:</span> <span class="n">aWaveBuffer</span><span class="p">);</span>
-</code></pre></div></div>
+<ul>
+  <li><a href="https://github.com/canardoux/flutter_sound/blob/master/flutter_sound/example/lib/streams/streams.dart">This example</a></li>
+  <li><a href="hhttps://github.com/Canardoux/flutter_sound/blob/master/flutter_sound/example/lib/livePlaybackWithoutBackPressure/live_playback_without_back_pressure.dart">This example</a> shows how to play Live data, without Back Pressure from Flutter Sound</li>
+</ul>
 
 <hr />
 
-<h2 id="duration"><code class="language-plaintext highlighter-rouge">duration()</code></h2>
+<h2 id="notes--1">Notes :</h2>
 
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Future&lt;Duration&gt; duration(String uri) async
-</code></pre></div></div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Note: Floating Point PCM data is not yet supported on Android. It is actually only implemented on iOS and Web.</div>
 
-<p>This verb is used to get an estimation of the duration of a sound file.
-Be aware that it is just an estimation, based on the Codec used and the sample rate.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Note: Non interleaved PCM data is not yet supported on Android. It is actually only implemented on iOS and Web.</div>
 
-<p>Note : this verb uses FFmpeg and is not available int the LITE flavor of Flutter Sound.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Note: Non interleaved Int16 PCM data is not yet supported on iOS and Web. It is only implemented with codec.pcmFloat32.</div>
 
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">Duration</span> <span class="n">d</span> <span class="o">=</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">duration</span><span class="p">(</span><span class="s">"</span><span class="si">$myFilePath</span><span class="s">/bar.wav"</span><span class="p">);</span>
-</code></pre></div></div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Note: This functionnality needs, at least, an Android SDK &gt;= 21. This new functionnality works better with Android minSdk &gt;= 23, because previous SDK was not able to do UNBLOCKING <code class="language-plaintext highlighter-rouge">write</code>.</div>
 
-<hr />
-
-<h2 id="isffmpegavailable"><code class="language-plaintext highlighter-rouge">isFFmpegAvailable()</code></h2>
-
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;bool&gt; isFFmpegAvailable() async
-</code></pre></div></div>
-
-<p>This verb is used to know during runtime if FFmpeg is linked with the App.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">if</span> <span class="p">(</span> <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">isFFmpegAvailable</span><span class="p">()</span> <span class="p">)</span>
-        <span class="p">{</span>
-                <span class="n">Duration</span> <span class="n">d</span> <span class="o">=</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">duration</span><span class="p">(</span><span class="s">"</span><span class="si">$myFilePath</span><span class="s">/bar.wav"</span><span class="p">);</span>
-        <span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="executeffmpegwitharguments"><code class="language-plaintext highlighter-rouge">executeFFmpegWithArguments()</code></h2>
-
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;int&gt; executeFFmpegWithArguments(List&lt;String&gt; arguments)
-</code></pre></div></div>
-
-<p>This verb is a wrapper for the great FFmpeg application.
-The command <em>“man ffmpeg”</em> (if you have installed ffmpeg on your computer) will give you many informations.
-If you do not have <code class="language-plaintext highlighter-rouge">ffmpeg</code> on your computer you will find easyly on internet many documentation on this great program.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kt">int</span> <span class="n">rc</span> <span class="o">=</span> <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">executeFFmpegWithArguments</span>
- <span class="p">([</span>
-        <span class="s">'-loglevel'</span><span class="p">,</span>
-        <span class="s">'error'</span><span class="p">,</span>
-        <span class="s">'-y'</span><span class="p">,</span>
-        <span class="s">'-i'</span><span class="p">,</span>
-        <span class="n">infile</span><span class="p">,</span>
-        <span class="s">'-c:a'</span><span class="p">,</span>
-        <span class="s">'copy'</span><span class="p">,</span>
-        <span class="n">outfile</span><span class="p">,</span>
-<span class="p">]);</span> <span class="c1">// remux OGG to CAF</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="getlastffmpegreturncode"><code class="language-plaintext highlighter-rouge">getLastFFmpegReturnCode()</code></h2>
-
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;int&gt; getLastFFmpegReturnCode() async
-</code></pre></div></div>
-
-<p>This simple verb is used to get the result of the last FFmpeg command</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">getLastFFmpegReturnCode</span><span class="p">();</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="getlastffmpegcommandoutput"><code class="language-plaintext highlighter-rouge">getLastFFmpegCommandOutput()</code></h2>
-
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;String&gt; getLastFFmpegCommandOutput() async
-</code></pre></div></div>
-
-<p>This simple verb is used to get the output of the last FFmpeg command</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">print</span><span class="p">(</span> <span class="k">await</span> <span class="n">getLastFFmpegCommandOutput</span><span class="p">()</span> <span class="p">);</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="ffmpeggetmediainformation"><code class="language-plaintext highlighter-rouge">FFmpegGetMediaInformation</code></h2>
-
-<p><em>Dart definition (prototype) :</em></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Future&lt;Map&lt;dynamic, dynamic&gt;&gt; FFmpegGetMediaInformation(String uri) async
-</code></pre></div></div>
-
-<p>This verb is used to get various informations on a file.</p>
-
-<p>The informations got with FFmpegGetMediaInformation() are <a href="https://pub.dev/packages/flutter_ffmpeg">documented here</a>.</p>
-
-<p><em>Example:</em></p>
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">Map</span><span class="p">&lt;</span><span class="kd">dynamic</span><span class="p">,</span> <span class="kd">dynamic</span><span class="p">&gt;</span> <span class="n">info</span> <span class="o">=</span> <span class="k">await</span> <span class="n">flutterSoundHelper</span><span class="o">.</span><span class="na">FFmpegGetMediaInformation</span><span class="p">(</span> <span class="n">uri</span> <span class="p">);</span>
-</code></pre></div></div>
 
 
     <div class="tags">
@@ -1366,15 +1338,7 @@ If you do not have <code class="language-plaintext highlighter-rouge">ffmpeg</co
         
         
         
-        <a href="tag_api.html" class="btn btn-default navbar-btn cursorNorm" role="button">api</a>
-        
-        
-        
-        <a href="tag_utilities.html" class="btn btn-default navbar-btn cursorNorm" role="button">utilities</a>
-        
-        
-        
-        <a href="tag_helpers.html" class="btn btn-default navbar-btn cursorNorm" role="button">helpers</a>
+        <a href="tag_guide.html" class="btn btn-default navbar-btn cursorNorm" role="button">guide</a>
         
         
         

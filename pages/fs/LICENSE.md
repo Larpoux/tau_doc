@@ -1,4 +1,12 @@
-# Mozilla Public License
+---
+title: License
+description: The Flutter Sound License
+keywords: 
+tags: [FlutterSound]
+permalink: fs-license.html
+summary: MPL2 - the Mozilla Public License v2.
+---
+## Mozilla Public License
 
 Version 2.0
 
