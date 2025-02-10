@@ -24,7 +24,7 @@ fi
 #cp index.html _site/index.html
 #cp -a ../etau/example/build/web _site/live_etau_example
 
-
+echo 'git push'
 git add .
 git commit -m 'doc'
 git pull
@@ -32,6 +32,8 @@ git push
 
 echo -n 'Upload to canardoux.xyz ...'
 scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
+echo ''
+
 exit 0
 
 
