@@ -2,20 +2,11 @@
 [
 
 {
-"title": "License",
-"tags": "license",
-"keywords": "license",
-"url": "fs_links_license.html",
-"summary": "Flutter Sound License"
-}
-,
-
-{
-"title": "CC License",
-"tags": "license",
-"keywords": "CC License",
-"url": "LICENSE.html",
-"summary": "The Creative Commons license CC BY-NC-SA."
+"title": "Flutter Sound CHANGELOG",
+"tags": "changelog",
+"keywords": "changelog",
+"url": "changelog.html",
+"summary": "The Changelog of The &tau; Project."
 }
 ,
 
@@ -34,6 +25,24 @@
 "keywords": "license",
 "url": "fs_links_license.html",
 "summary": "Flutter Sound License"
+}
+,
+
+{
+"title": "License",
+"tags": "license",
+"keywords": "license",
+"url": "fs_links_license.html",
+"summary": "Flutter Sound License"
+}
+,
+
+{
+"title": "CC License",
+"tags": "license",
+"keywords": "CC License",
+"url": "LICENSE.html",
+"summary": "The Creative Commons license CC BY-NC-SA."
 }
 ,
 
@@ -65,20 +74,20 @@
 ,
 
 {
-"title": "constructor",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_constructor.html",
-"summary": "Creating the `Recorder` instance."
-}
-,
-
-{
 "title": "Utilities API",
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
 "url": "fs_api_utilities_constructor.html",
 "summary": "constructor"
+}
+,
+
+{
+"title": "constructor",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs_api_recorder_constructor.html",
+"summary": "Creating the `Recorder` instance."
 }
 ,
 
@@ -515,6 +524,15 @@
 ,
 
 {
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_on_progress.html",
+"summary": "onProgress."
+}
+,
+
+{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -527,8 +545,8 @@
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
-"url": "fs_api_player_on_progress.html",
-"summary": "onProgress."
+"url": "fs_api_player_open_audio_session.html",
+"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -538,15 +556,6 @@
 "keywords": "API Recorder",
 "url": "fs_api_recorder_open_audio_session.html",
 "summary": "`openRecorder()` and `closeRecorder()`"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
 }
 ,
 
@@ -704,15 +713,6 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -731,11 +731,11 @@
 ,
 
 {
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_set_audio_focus.html",
-"summary": "setAudioFocus()"
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_setLogLevel.html",
+"summary": "setLogLevel()"
 }
 ,
 
@@ -745,6 +745,15 @@
 "keywords": "API Player",
 "url": "fs_api_player_set_audio_focus.html",
 "summary": "setAudioFocus."
+}
+,
+
+{
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs_api_recorder_set_audio_focus.html",
+"summary": "setAudioFocus()"
 }
 ,
 
