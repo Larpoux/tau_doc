@@ -78,20 +78,8 @@ collections:
 defaults:
   -
     scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      comments: true
-      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
-      search: true
-      sidebar: mydoc_sidebar
-      topnav: topnav
-
-  -
-    scope:
       path: "pages/fs"
-      type: "fs"
+      type: "pages"
     values:
       layout: "page"
       comments: false

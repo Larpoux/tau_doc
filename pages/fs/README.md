@@ -5,7 +5,6 @@ keywords: home homepage readme
 tags: [FlutterSound]
 permalink: fs-README.html
 summary: The Flutter Sound Project README.
-sidebar: fs_sidebar
 ---
 
 {% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
