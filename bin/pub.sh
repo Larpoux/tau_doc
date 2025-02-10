@@ -29,7 +29,8 @@ git commit -m 'doc'
 git pull
 git push
 
-
+echo -n 'Upload to canardoux.xyz ...'
+scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc
 exit 0
 
 
