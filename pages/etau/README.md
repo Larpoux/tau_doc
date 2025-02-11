@@ -123,7 +123,7 @@ Actually, I am almost alone to maintain and develop three important projects :
 - Taudio (flutter Sound 10.0)
 - Etau
 
-This is too much on my shoulders. We desesperatly need at least one other developer.
+This is too much work on my shoulders. We desesperatly need at least one other developer.
 
 ## Thanks
 
