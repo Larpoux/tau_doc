@@ -6,6 +6,8 @@
 rm -rf _site
 #cp ../flutter_sound/README.md pages/fs
 
+
+
 rm -rf live/fs
 cp -r ../flutter_sound/example/build/web live/fs
 if [ $? -ne 0 ]; then
@@ -53,6 +55,8 @@ scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
 echo ''
 
 exit 0
+
+############  DEPRECATED #####################
 
 
 scp bin/doc2.sh canardoux@danku:/home/canardoux/bin

@@ -51,8 +51,8 @@ feedback_email: larpoux@canardoux.xyz
 
 FS_VERSION: 9.23.0
 TD_VERSION: 3.3.3
-ETAU_VERSION: 9.23.0
-ETAU_VERSION: 9.23.0
+ETAU_VERSION: 0.1.2-alpha-5+3
+ETAU_VERSION: 0.1.2-alpha-5+3
 TAUWEB_VERSION: 0.0.14-alpha.4
 TAUWEB_VERSION: 0.0.14-alpha.4
 TAUWARS_VERSION: 0.0.14-alpha.4
