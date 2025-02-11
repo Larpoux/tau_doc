@@ -24,7 +24,7 @@ topnav_dropdowns:
           hint: "The Flutter Sound examples"
 
         - title: e-tau examples
-          url: /live_etau_example
+          url: /live\/etau\/index.html
           hint: "The e-tau example!"
 
 
