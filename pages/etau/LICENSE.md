@@ -3,7 +3,7 @@ title: License
 description: The Etau License
 keywords: 
 tags: [Etau]
-permalink: etau-license.html
+permalink: etau-LICENSE.html
 summary: GPL-3 - the Gnu Public License v2.
 ---
 ## GNU Public License
