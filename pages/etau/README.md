@@ -13,8 +13,11 @@ summary: The Etau Project README.
 
 ## e-tau stands for Ukraine
 
-{% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
-{% include image.html file="banner.png"  caption="Stand up For Ukraine : Street Art" %}
+![PeaceForUkraine](https://flutter-sound.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
+Peace for Ukraine
+
+![PrayForUkraine](https://flutter-sound.canardoux.xyz/images/banner.png)
+Pray for Ukraine
 
 ## Overview
 
@@ -116,7 +119,7 @@ Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with
 
 {% include important.html content="
 We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.
-"%}.
+"%}
 
 Actually, I am almost alone to maintain and develop three important projects :
 - Flutter Sound 9.x
@@ -130,4 +133,4 @@ This is too much work on my shoulders. We desesperatly need at least one other d
 {% include note.html content="
 If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/flutter_sound).
 This is free and this will reassure me that **I do not spend most of my life for nobody**.
-" %}
+"%}
