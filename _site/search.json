@@ -20,15 +20,6 @@
 ,
 
 {
-"title": "CC License",
-"tags": "license",
-"keywords": "CC License",
-"url": "LICENSE.html",
-"summary": "The Creative Commons license CC BY-NC-SA."
-}
-,
-
-{
 "title": "License",
 "tags": "Etau",
 "keywords": "",
@@ -47,11 +38,11 @@
 ,
 
 {
-"title": "tau-dio",
-"tags": "Taudio",
-"keywords": "home homepage readme",
-"url": "td-README.html",
-"summary": "The tau-dio documentation."
+"title": "CC License",
+"tags": "license",
+"keywords": "CC License",
+"url": "LICENSE.html",
+"summary": "The Creative Commons license CC BY-NC-SA."
 }
 ,
 
@@ -65,6 +56,15 @@
 ,
 
 {
+"title": "Etau",
+"tags": "",
+"keywords": "",
+"url": "etau-README.html",
+"summary": "The Etau Project README."
+}
+,
+
+{
 "title": "Flutter Sound",
 "tags": "",
 "keywords": "",
@@ -74,11 +74,11 @@
 ,
 
 {
-"title": "Etau",
+"title": "Taudio",
 "tags": "",
 "keywords": "",
-"url": "etau-README.html",
-"summary": "The Etau Project README."
+"url": "taudio-README.html",
+"summary": "The Taudio Project README."
 }
 ,
 
@@ -169,6 +169,15 @@
 "keywords": "home homepage readme",
 "url": "etau_README.html",
 "summary": "The Ε_τ (Etau) documentation."
+}
+,
+
+{
+"title": "Tauweb",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "etau-tauweb.html",
+"summary": "Tauweb : an `Etau` implementation for Flutter Web"
 }
 ,
 
@@ -803,15 +812,6 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
 "title": "Recorder API",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -825,6 +825,15 @@
 "tags": "apiutilitieshelpers",
 "keywords": "API, utilities, helpers",
 "url": "fs_api_utilities_setLogLevel.html",
+"summary": "setLogLevel()"
+}
+,
+
+{
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_setLogLevel.html",
 "summary": "setLogLevel()"
 }
 ,
@@ -857,19 +866,19 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_subscription_duration.html",
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs_api_recorder_set_subscription_duration.html",
 "summary": "setSubscriptionDuration()"
 }
 ,
 
 {
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_set_subscription_duration.html",
+"title": "Player API",
+"tags": "apiplayer",
+"keywords": "API Player",
+"url": "fs_api_player_set_subscription_duration.html",
 "summary": "setSubscriptionDuration()"
 }
 ,
@@ -884,20 +893,20 @@
 ,
 
 {
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs_examples_setVolume.html",
-"summary": "Set the sound volume"
-}
-,
-
-{
 "title": "Player API",
 "tags": "apiplayer",
 "keywords": "API Player",
 "url": "fs_api_player_set_volume.html",
 "summary": "setVolume()"
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs_examples_setVolume.html",
+"summary": "Set the sound volume"
 }
 ,
 

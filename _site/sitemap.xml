@@ -40,12 +40,6 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/LICENSE.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/etau-LICENSE.html</loc>
   </url>
   
@@ -58,7 +52,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/td-README.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/LICENSE.html</loc>
   </url>
   
   
@@ -70,13 +64,19 @@
   
   
   <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/etau-README.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs-README.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/etau-README.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/taudio-README.html</loc>
   </url>
   
   
@@ -137,6 +137,12 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/etau_README.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/etau-tauweb.html</loc>
   </url>
   
   
@@ -562,12 +568,6 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_setLogLevel.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_setLogLevel.html</loc>
   </url>
   
@@ -575,6 +575,12 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_utilities_setLogLevel.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_setLogLevel.html</loc>
   </url>
   
   
@@ -598,13 +604,13 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_set_subscription_duration.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_set_subscription_duration.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_set_subscription_duration.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_set_subscription_duration.html</loc>
   </url>
   
   
@@ -616,13 +622,13 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setVolume.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_set_volume.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_set_volume.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setVolume.html</loc>
   </url>
   
   
