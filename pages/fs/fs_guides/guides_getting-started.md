@@ -2,7 +2,7 @@
 title:  "Getting Started"
 description: "Getting Started.."
 summary: "Introduction for Flutter Sound beginners."
-permalink: fs_guides_getting_started.html
+permalink: fs-guides_getting_started.html
 sidebar: fs_sidebar
 tags: [getting_started,guide]
 keywords: gettingStarted

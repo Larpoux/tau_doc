@@ -2,8 +2,7 @@
 title:  "&tau; on web"
 description: "&tau; on web."
 summary: "Flutter Sound on web."
-permalink: fs_guides_web.html
-sidebar: fs_sidebar
+permalink: guides_web.html
 tags: [flutter_sound,web]
 keywords: Flutter, Web
 ---

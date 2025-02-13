@@ -2,7 +2,7 @@
 title:  "Guides"
 description: "Recording PCM."
 summary: "Recording PCM."
-permalink: fs_guides_recording_pcm.html
+permalink: fs-guides_recording_pcm.html
 sidebar: fs_sidebar
 tags: [guide]
 keywords: guides

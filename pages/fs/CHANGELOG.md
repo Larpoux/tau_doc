@@ -3,12 +3,13 @@ title: "Flutter Sound CHANGELOG"
 description: The Flutter Sound Project CHANGELOG
 permalink: fs-CHANGELOG.html
 summary: The Changelog of The Flutter Sound Project.
+toc: false
 ---
-## 9.24.0 - 2025/02/10
+### 9.24.0 - 2025/02/10
 
 - Flutter Sound does not depend any more on etau/tau_web
 
-## TODO
+#### TODO
 
 - On Web : Record/Playback PcmFloat32 not interleaved : NeedSomeFood : DartError: Bad state: Future already completed
 - On Web : Implement Stream interleaved.   - Implement stream not interleaved on Android
@@ -42,12 +43,12 @@ summary: The Changelog of The Flutter Sound Project.
 - DB Peak when Channel Count > 1
 - Flutter Sound 10.0-Alpha
 
-## 9.23.0 - 2025/02/08
+### 9.23.0 - 2025/02/08
 
 - Flutter Sound Web does not depend anymore on JS
 - Flutter Sound does not depend anymore on Audio_Session
 
-## 9.22.0 - 2025/02/07
+### 9.22.0 - 2025/02/07
 
 - iOS : DB Peak level for codec == Codec.pcm16 and codec == Codec.pcmFloat32
 - android : DB Peak level for codec == Codec.pcm16 and codec == Codec.pcmFloat32 - [#1151](https://github.com/Canardoux/flutter_sound/issues/1151)

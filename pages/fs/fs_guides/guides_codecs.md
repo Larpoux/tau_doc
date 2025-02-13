@@ -2,7 +2,7 @@
 title:  "Codecs"
 description: "Supported codecs."
 summary: "Supported codecs."
-permalink: fs_guides_codec.html
+permalink: fs-guides_codec.html
 sidebar: fs_sidebar
 tags: [guide]
 keywords: guides

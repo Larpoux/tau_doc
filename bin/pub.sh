@@ -22,6 +22,8 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
+rm -rf fs/*
+cp -a ../flutter_sound/doc/api fs/
 
 
 

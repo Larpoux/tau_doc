@@ -170,15 +170,15 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="/toto" target="_blank" rel="noopener"  title="The tau-dio examples" >Taudio examples.</a></li>
+                        <li><a href="/live\etau\index.html"   title="The Etau examples" >Etau examples</a></li>
                         
                         
                         
-                        <li><a href="/live\fs\index.html"   title="The Flutter Sound examples" >Flutter Sound examples.</a></li>
+                        <li><a href="/live\fs\index.html"   title="The Flutter Sound examples" >Flutter Sound examples</a></li>
                         
                         
                         
-                        <li><a href="/live\etau\index.html"   title="The e-tau example!" >e-tau examples</a></li>
+                        <li><a href="/toto" target="_blank" rel="noopener"  title="The tau-dio examples" >Taudio examples</a></li>
                         
                         
                     </ul>
@@ -193,7 +193,7 @@
                         
                         
                         
-                        <li><a href="https://github.com/canardoux/tau-doc/projects/1" target="_blank" rel="noopener"  title="A better tau" >Roadmap</a></li>
+                        <li><a href="https://github.com/Canardoux/tau/projects" target="_blank" rel="noopener"  title="A better tau" >Roadmap</a></li>
                         
                         
                     </ul>
@@ -204,7 +204,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="https://github.com/canardoux/taudio" target="_blank" rel="noopener"  title="tau-dio on github" >Taudio</a></li>
+                        <li><a href="https://github.com/canardoux/etau" target="_blank" rel="noopener"  title="Etau on github" >Etau</a></li>
                         
                         
                         
@@ -212,7 +212,7 @@
                         
                         
                         
-                        <li><a href="https://github.com/canardoux/etau" target="_blank" rel="noopener"  title="e-tau on github" >e-tau</a></li>
+                        <li><a href="https://github.com/canardoux/taudio" target="_blank" rel="noopener"  title="tau-dio on github" >Taudio</a></li>
                         
                         
                     </ul>
@@ -223,7 +223,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="https://pub.dev/packages/taudio" target="_blank" rel="noopener"  title="tau-dio on flutter main site" >Taudio</a></li>
+                        <li><a href="https://pub.dev/packages/etau" target="_blank" rel="noopener"  title="Etau on flutter main site" >Etau</a></li>
                         
                         
                         
@@ -231,7 +231,7 @@
                         
                         
                         
-                        <li><a href="https://pub.dev/packages/etau" target="_blank" rel="noopener"  title="e-tau on flutter main site" >e-tau</a></li>
+                        <li><a href="https://pub.dev/packages/taudio" target="_blank" rel="noopener"  title="Taudio on flutter main site" >Taudio</a></li>
                         
                         
                     </ul>
@@ -257,11 +257,11 @@
                 </li>
                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">The τ (tau) family<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">The τ (Tau) family<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="/td-README.html"   title="" >Taudio</a></li>
+                        <li class="dropdownActive"><a href="/etau-README.html"   title="" >Etau</a></li>
                         
                         
                         
@@ -269,7 +269,7 @@
                         
                         
                         
-                        <li class="dropdownActive"><a href="/etau-README.html"   title="" >e-tau</a></li>
+                        <li><a href="/td-README.html"   title="" >Taudio</a></li>
                         
                         
                     </ul>
@@ -975,7 +975,7 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ul>
 
-<h2 id="e-tau-stands-for-ukraine">e-tau stands for Ukraine</h2>
+<h2 id="etau-stands-for-ukraine">Etau stands for Ukraine!</h2>
 
 <p><img src="https://flutter-sound.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg" alt="PeaceForUkraine" />
 Peace for Ukraine</p>
@@ -985,8 +985,8 @@ Pray for Ukraine</p>
 
 <h2 id="overview">Overview</h2>
 
-<p>This is (will be) an implementation on flutter of the <a href="https://www.w3.org/TR/webaudio-1.1">W3C Web Audio API</a>.
-e-tau is actually in a developement state. It is an Alpha version. Even not a Beta version.</p>
+<p>This is (will be) a port on flutter of the <a href="https://www.w3.org/TR/webaudio-1.1">W3C Web Audio API</a>.
+<code class="language-plaintext highlighter-rouge">Etau</code> is actually in a developement state. It is an Alpha version. Even not yet a Beta version.</p>
 
 <p>There are many things to do before you can use it. Specially:</p>
 
@@ -1014,73 +1014,50 @@ e-tau is actually in a developement state. It is an Alpha version. Even not a Be
 
 <p>Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Mozilla documentation</a> but also from other sources.</p>
 
-<p>In a few words, the Web Audio API let you assembly <code class="language-plaintext highlighter-rouge">nodes</code> as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, …). But you really should look to the Mozilla documentation which is very good.</p>
+<p>In a few words, the Web Audio API let you assembly “nodes” as a chain of nodes in order to process a stream of audio data, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, …). But you really should look to the Mozilla documentation which is very good (and better than my poor english ;-) ).</p>
 
-<p>You will have to ask yourself if you must use <a href="https://pub.dev/packages/taudio">Taudio</a> (which is a wrapper around e-tau), or directly Etau.
-The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio any longer.</p>
+<p>You will have to ask yourself if you must use <a href="https://pub.dev/packages/taudio">Taudio</a> (which is a wrapper around <code class="language-plaintext highlighter-rouge">Etau</code>), or directly <code class="language-plaintext highlighter-rouge">Etau</code>.
+The W3C recommandation is powerful but simple to use. There are probably no many reasons to use <code class="language-plaintext highlighter-rouge">Taudio</code> any longer.</p>
 
-<h2 id="e-tau-structure">e-tau Structure</h2>
+<h2 id="etau-structure"><code class="language-plaintext highlighter-rouge">Etau</code> Structure</h2>
 
-<p>e-tau is a Flutter API allowing the App to use the W3C Web Audio API.
+<p><code class="language-plaintext highlighter-rouge">Etau</code> is a Flutter API allowing the App to use the W3C Web Audio API.
 This is an interface: this is what the App see and access.
 Because this is an interface, the App must import an implementation.
 Several implementations are possible. Actually we are developping two implementations:</p>
 
 <ul>
-  <li>Tau Web, which is an implementation for Flutter Web</li>
-  <li>Tau War, which is an implementation for mobiles</li>
+  <li>Tauweb, which is an implementation for Flutter Web</li>
+  <li>Tauwar, which is an implementation for mobiles</li>
 </ul>
 
 <p>The app must import one (or several) implementations. But except for this import, the App does not access them.
-It alway access e-tau which is the inteface. This allow the App to have a unic code for various platform.</p>
+It alway access <code class="language-plaintext highlighter-rouge">Etau</code> which is the interface. This allows the App to have a unic code for various platforms.</p>
 
 <h2 id="examples-demo-apps">Examples (Demo Apps)</h2>
 
-<p>Flutter Sound comes with several <a href="https://github.com/Canardoux/flutter_sound/tree/master/example/lib">Demo/Examples</a>.</p>
-
-<p>You can run a live view of these examples <a href="http://tau.canardoux.xyz/live/etau/index.html">here</a>.</p>
-
-<h2 id="flutter-sound-and-streams">Flutter Sound and Streams</h2>
-
-<p>Streams support are a main Flutter Sound feature that is very exciting.</p>
-
+<p><code class="language-plaintext highlighter-rouge">Etau</code> comes with several [Demo/Examples]:</p>
 <ul>
-  <li>Flutter Sound can record to a dart stream of audio data (PCM Float32 or PCM Int16). This let you process live audio data in dart, or send these data to a remote host.</li>
-  <li>Flutter Sound can playback from a dart stream of audio data (PCM Float32 or PCM Int16). This let play live audio data generated from dart
-(sequencer, sound generator, …) or from a remote host.</li>
+  <li><a href="https://github.com/Canardoux/etau/tree/main/example/lib/BasicEx">Simple basic examples</a> showing how to use <code class="language-plaintext highlighter-rouge">Etau</code></li>
+  <li>A port of all the <a href="https://github.com/Canardoux/etau/tree/main/example/lib/MozillaEx">Mozilla examples</a>, using Dart instead of JS ofcourse. These Mozilla examples are also very simple, and can be looked at instead of our basic examples.</li>
 </ul>
 
-<p>You can look to the <a href="fs_guides_streams.html">FS Streams guide</a>.</p>
+<p>You can run a live view of these examples <a href="https://tau.canardoux.xyz/live/etau/index.html">here</a>.</p>
 
 <h2 id="license">License</h2>
 
-<p>Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).</p>
+<p><code class="language-plaintext highlighter-rouge">Etau</code> is (will be) released under the Gnu Public Licence v3 (GPL v3).</p>
+
+<h2 id="the-tau-family">The Tau family</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">Tau</code> family is composed with:</p>
 
 <ul>
-  <li>Flutter Sound is published under the MPL-2.0 License.</li>
-  <li>Flutter Sound is copyrighted by Dooboolab and Canardoux.</li>
-  <li>Flutter Sound is now released under the permissive Mozilla license which has a <strong>weak</strong> <em>copyleft</em> clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).</li>
-</ul>
-
-<h2 id="the-τ-family">The τ family</h2>
-
-<p>The τ (Tau) project is composed with the following flutter plugins:</p>
-
-<ul>
-  <li>Flutter Sound 9.x</li>
-  <li><a href="https://pub.dev/packages/flutter_sound_web">Flutter_sound_web</a></li>
-  <li><a href="https://pub.dev/packages/flutter_sound_platform_interface">Flutter_sound_platform_interface</a> (a glue between the Flutter Sound API and the 3 platforms: Web, iOS and Android)</li>
-  <li><a href="https://pub.dev/packages/taudio">Taudio</a> (Flutter Sound 10.0)</li>
-  <li><a href="https://pub.dev/packages/etau">Etau</a> (an implementation of the Web Audio API)</li>
-  <li><a href="https://pub.dev/packages/tau_web">Tau-Web</a> (an implementation of Etau for Flutter Web)</li>
-  <li><a href="https://pub.dev/packages/tau_war">Tau-War</a> (an implementation of Etau for the mobiles)</li>
-</ul>
-
-<p>And two public libraries for mobiles support:</p>
-
-<ul>
-  <li>Flutter Sound Core for iOS</li>
-  <li>Flutter Sound Core for Android</li>
+  <li><code class="language-plaintext highlighter-rouge">Flutter Sound 9.x</code> (the legacy plugin developed for many years)</li>
+  <li><code class="language-plaintext highlighter-rouge">Taudio</code> (which is something like Flutter Sound 10.0)</li>
+  <li><code class="language-plaintext highlighter-rouge">Etau</code> (which is a port on Flutter of the W3C Web Audio API)</li>
+  <li><code class="language-plaintext highlighter-rouge">Tauweb</code> (which is the <code class="language-plaintext highlighter-rouge">Etau</code> implementation for Flutter Web)</li>
+  <li><code class="language-plaintext highlighter-rouge">Tauwar</code> (which is the <code class="language-plaintext highlighter-rouge">Etau</code> implementation for mobiles)</li>
 </ul>
 
 <h3 id="taudio">Taudio</h3>
@@ -1097,9 +1074,9 @@ It alway access e-tau which is the inteface. This allow the App to have a unic c
   </li>
 </ul>
 
-<p>Taudio is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don’t want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.</p>
+<p><code class="language-plaintext highlighter-rouge">Taudio</code> is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don’t want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.</p>
 
-<p>Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above <a href="https://pub.dev/packages/etau">Etau</a>.</p>
+<p><code class="language-plaintext highlighter-rouge">Taudio</code> is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above <a href="https://pub.dev/packages/etau">Etau</a>.</p>
 
 <h2 id="we-need-help">We need help</h2>
 
@@ -1119,7 +1096,7 @@ We greatly appreciate any contributions to the project which can be as simple as
 <h2 id="thanks">Thanks</h2>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
-If you like my work, you can click on the <code class="language-plaintext highlighter-rouge">Thumb up</code> button of the top of the <a href="https://pub.dev/packages/flutter_sound">pub.dev page</a>.
+### If you like my work, you can click on the <code class="language-plaintext highlighter-rouge">Thumb up</code> button of the top of the <a href="https://pub.dev/packages/etau">pub.dev page</a>.
 This is free and this will reassure me that <strong>I do not spend most of my life for nobody</strong>.
 </div>
 
@@ -1139,7 +1116,7 @@ This is free and this will reassure me that <strong>I do not spend most of my li
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 12, 2025 <br />
+ Site last generated: Feb 13, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

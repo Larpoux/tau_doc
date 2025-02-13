@@ -2,7 +2,7 @@
 title:  "Temporary files"
 description: "Temporary files"
 summary: "Using temporary files."
-permalink: fs_temporary_files.html
+permalink: fs-guides_temporary_files.html
 sidebar: fs_sidebar
 tags: [flutter_sound]
 keywords: Flutter, &tau;

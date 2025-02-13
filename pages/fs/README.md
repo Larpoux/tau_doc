@@ -39,23 +39,27 @@ The Flutter Sound package supports playback from:
 * Dart buffers
 * Assets
 * Files
-* URL
-* Streams
+* Remote URL
+* Dart Streams
 
 The Flutter Sound package supports recording to:
 
 * Dart buffers
 * Files
-* Streams
+* Dart Streams
 
 ## SDK requirements
 
 * Flutter Sound requires an iOS 10.0 SDK \(or later\)
 * Flutter Sound requires an Android 21 \(or later\)
+* Flutter Sound is OK with the main Web browsers
+   - Google Chrome
+   - Firefox
+   - Safari
 
 ## Examples \(Demo Apps\)
 
-Flutter Sound comes with several [Demo/Examples](https://github.com/Canardoux/flutter_sound/tree/master/example/lib).
+Flutter Sound comes with several [Demo/Examples](http://tau.canardoux.xyz/fs-ex___.html).
 
 You can run a live view of these examples [here](http://tau.canardoux.xyz/live/fs/index.html).
 
@@ -63,7 +67,7 @@ You can run a live view of these examples [here](http://tau.canardoux.xyz/live/f
 
 The Flutter Sound package includes the following features :
 
-* Play and Record sound or music with various codecs. \(See [the supported codecs here](fs_guides_codec.html)\)
+* Play and Record sound or music with various codecs. \(See [the supported codecs here](/fs-guides_codec.html)\)
 * Play local or remote files specified by their URL.
 * Play assets.
 * Record to a live dart Stream
@@ -78,25 +82,22 @@ Streams support are a main Flutter Sound feature that is very exciting.
 - Flutter Sound can playback from a dart stream of audio data (PCM Float32 or PCM Int16). This let play live audio data generated from dart
 (sequencer, sound generator, ...) or from a remote host.
 
-You can look to the [FS Streams guide](fs_guides_streams.html).
+You can look to the [FS Streams guide](fs-guides_streams.html).
 
 ## License
 
-- Flutter Sound is published under the MPL-2.0 License.
+- Flutter Sound is published under the [MPL-2.0 License](fs-LICENSE.html).
 - Flutter Sound is copyrighted by Dooboolab and Canardoux.
 - Flutter Sound is now released under the permissive Mozilla license which has a **weak** *copyleft* clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).
+- The Tau documentation is published under the [Creative Commons CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) license.
 
 ## The τ family
 
-The τ (Tau) project is composed with the following flutter plugins:
-
-- Flutter Sound 9.x
-- [Flutter_sound_web](https://pub.dev/packages/flutter_sound_web)
-- [Flutter_sound_platform_interface](https://pub.dev/packages/flutter_sound_platform_interface) (a glue between the Flutter Sound API and the 3 platforms: Web, iOS and Android)
-- [Taudio](https://pub.dev/packages/taudio) (Flutter Sound 10.0)
-- [Etau](https://pub.dev/packages/etau) (an implementation of the Web Audio API)
-- [Tau-Web](https://pub.dev/packages/tau_web) (an implementation of Etau for Flutter Web)
-- [Tau-War](https://pub.dev/packages/tau_war) (an implementation of Etau for the mobiles)
+- `Flutter Sound 9.x` (this legacy plugin developed for many years)
+- [Etau]() (which is a port on Flutter of the W3C Web Audio API)
+- `Tauweb` (which is the `Etau` implementation for Flutter Web)
+- `Tauwar` (which is the `Etau` implementation for mobiles)
+- `Taudio` (which is something like Flutter Sound 10.0)
 
 And two public libraries for mobiles support:
 
@@ -139,7 +140,7 @@ Because the Web Audio API is a W3C recommandation, you can find very good docume
 In a few words, the Web Audio API let you assembly `nodes` as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, ...). But you really should look to the Mozilla documentation which is very good.
 
 You will have to ask yourself if you must use [Taudio](https://pub.dev/packages/taudio) (which is a wrapper around [Etau](https://pub.dev/packages/etau)), or directly Etau.
-The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio any longer.
+The W3C recommandation is powerful but simple to use. There are probably no many reasons to use Taudio any longer.
 
 Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).
 
@@ -159,6 +160,6 @@ This is too much on my shoulders. We desesperatly need at least one other develo
 ## Thanks
 
 {% include note.html content="
-If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/flutter_sound).
+### If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/flutter_sound).
 This is free and this will reassure me that **I do not spend most of my life for nobody**.
 "%}

@@ -2,15 +2,6 @@
 [
 
 {
-"title": "Etau CHANGELOG",
-"tags": "",
-"keywords": "",
-"url": "etau-CHANGELOG.html",
-"summary": "The Changelog of The Etau Project."
-}
-,
-
-{
 "title": "Flutter Sound CHANGELOG",
 "tags": "",
 "keywords": "",
@@ -20,29 +11,11 @@
 ,
 
 {
-"title": "License",
-"tags": "license",
-"keywords": "license",
-"url": "fs_links_license.html",
-"summary": "Flutter Sound License"
-}
-,
-
-{
-"title": "License",
-"tags": "FlutterSound",
+"title": "Etau CHANGELOG",
+"tags": "",
 "keywords": "",
-"url": "fs-license.html",
-"summary": "MPL2 - the Mozilla Public License v2."
-}
-,
-
-{
-"title": "License",
-"tags": "Etau",
-"keywords": "",
-"url": "etau-LICENSE.html",
-"summary": "GPL-3 - the Gnu Public License v2."
+"url": "etau-CHANGELOG.html",
+"summary": "The Changelog of The Etau Project."
 }
 ,
 
@@ -57,19 +30,28 @@
 
 {
 "title": "License",
-"tags": "license",
-"keywords": "license",
-"url": "fs_links_license.html",
-"summary": "Flutter Sound License"
+"tags": "Etau",
+"keywords": "",
+"url": "etau-LICENSE.html",
+"summary": "GPL-3 - the Gnu Public License v2."
 }
 ,
 
 {
-"title": "Flutter Sound",
-"tags": "",
+"title": "License",
+"tags": "FlutterSound",
 "keywords": "",
-"url": "fs-README.html",
-"summary": "The Flutter Sound Project README."
+"url": "fs-LICENSE.html",
+"summary": "MPL2 - the Mozilla Public License v2."
+}
+,
+
+{
+"title": "tau-dio",
+"tags": "Taudio",
+"keywords": "home homepage readme",
+"url": "td-README.html",
+"summary": "The tau-dio documentation."
 }
 ,
 
@@ -83,11 +65,11 @@
 ,
 
 {
-"title": "tau-dio",
-"tags": "Taudio",
-"keywords": "home homepage readme",
-"url": "td-README.html",
-"summary": "The tau-dio documentation."
+"title": "Flutter Sound",
+"tags": "",
+"keywords": "",
+"url": "fs-README.html",
+"summary": "The Flutter Sound Project README."
 }
 ,
 
@@ -110,15 +92,6 @@
 ,
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_constructor.html",
-"summary": "constructor"
-}
-,
-
-{
 "title": "constructor",
 "tags": "apirecorder",
 "keywords": "API Recorder",
@@ -128,29 +101,11 @@
 ,
 
 {
-"title": "Contributions",
-"tags": "contributions",
-"keywords": "Contributions",
-"url": "fs_links_contribution.html",
-"summary": "We need you!"
-}
-,
-
-{
-"title": "Contributions",
-"tags": "contributions",
-"keywords": "Contributions",
-"url": "fs_links_contribution.html",
-"summary": "We need you!"
-}
-,
-
-{
-"title": "Dank u Developer",
-"tags": "danku_developer",
-"keywords": "danku, dank u",
-"url": "contributor_landing_page.html",
-"summary": "Dank u for Developers."
+"title": "Utilities API",
+"tags": "apiutilitieshelpers",
+"keywords": "API, utilities, helpers",
+"url": "fs_api_utilities_constructor.html",
+"summary": "constructor"
 }
 ,
 
@@ -214,6 +169,141 @@
 "keywords": "home homepage readme",
 "url": "etau_README.html",
 "summary": "The Ε_τ (Etau) documentation."
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-ex___.html",
+"summary": "Overview on the examples"
+}
+,
+
+{
+"title": "Demo",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_demo.html",
+"summary": "A demonstration of the Flutter Sound features."
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_multi_playbacks.html",
+"summary": "Multi Playbacks"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex__playback_from_stream_1.html",
+"summary": "Playback From Stream(1)"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_playback_from_stream_2.html",
+"summary": "Playback From Stream (2)"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_player_onprogress.html",
+"summary": "Simple setSubscriptionDuration()/onProgress()"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_record_to_stream.html",
+"summary": "RecordToStream"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex__examples_recorder_onprogress.html",
+"summary": "Simple setSubscriptionDuration()/onProgress() for a FlutterSoundRecorder"
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-ex_seek.html",
+"summary": "Seek into a playback"
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-ex_setLogLevel.html",
+"summary": "Set Log Level"
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-ex_setVolume.html",
+"summary": "Set the sound volume"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_simple_playback.html",
+"summary": "Simple Playback"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_simple_recorder.html",
+"summary": "Simple Recorder"
+}
+,
+
+{
+"title": "Examples",
+"tags": "exampledemo",
+"keywords": "Flutter, Flutter Sound, examples, demo",
+"url": "fs-ex_sound_effects.html",
+"summary": "Sound Effects"
+}
+,
+
+{
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs-ex_setSpeed.html",
+"summary": "Set the speed of a playback"
 }
 ,
 
@@ -308,20 +398,20 @@
 ,
 
 {
-"title": "PCM files",
-"tags": "guide",
-"keywords": "guides",
-"url": "guides_pcm_wave.html",
-"summary": "Raw PCM and Wave files."
+"title": "Installation",
+"tags": "flutter_soundinstallation",
+"keywords": "Flutter, Flutter Sound, installation",
+"url": "fs-guides_install.html",
+"summary": "Flutter Sound installation."
 }
 ,
 
 {
-"title": "Guides",
+"title": "PCM files",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_guides.html",
-"summary": "Various guides about The &tau; Project."
+"url": "fs-guides_pcm_wave.html",
+"summary": "Raw PCM and Wave files."
 }
 ,
 
@@ -329,8 +419,26 @@
 "title": "Codecs",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_codec.html",
+"url": "fs-guides_codec.html",
 "summary": "Supported codecs."
+}
+,
+
+{
+"title": "Contributions",
+"tags": "contributions",
+"keywords": "Contributions",
+"url": "fs-guides_dev.html",
+"summary": "We need you!"
+}
+,
+
+{
+"title": "&amp;tau; on web",
+"tags": "flutter_soundweb",
+"keywords": "Flutter, Web",
+"url": "fs-guides_web.html",
+"summary": "Flutter Sound on web."
 }
 ,
 
@@ -338,35 +446,8 @@
 "title": "Getting Started",
 "tags": "getting_startedguide",
 "keywords": "gettingStarted",
-"url": "fs_guides_getting_started.html",
+"url": "fs-guides_getting_started.html",
 "summary": "Introduction for Flutter Sound beginners."
-}
-,
-
-{
-"title": "Audio Graphs",
-"tags": "guides",
-"keywords": "Audio Graph",
-"url": "fs_guides_graph.html",
-"summary": "What is a &tau; audio Graph ?"
-}
-,
-
-{
-"title": "Flutter FFmpeg",
-"tags": "flutter_sound",
-"keywords": "Flutter, &tau;",
-"url": "fs_guides_lite-full.html",
-"summary": "Flutter FFmpeg compatibility."
-}
-,
-
-{
-"title": "Lock-screen",
-"tags": "guide",
-"keywords": "lock_screen",
-"url": "fs_guides_lock_screen.html",
-"summary": "The &tau; Project allows the App to be controlled from the Lock Screen."
 }
 ,
 
@@ -374,7 +455,7 @@
 "title": "Logger",
 "tags": "flutter_sound",
 "keywords": "Flutter, &tau;",
-"url": "fs_logger.html",
+"url": "fs-guides_logger.html",
 "summary": "Debugging logs."
 }
 ,
@@ -383,7 +464,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_play_stream.html",
+"url": "fs-guides_play_stream.html",
 "summary": "Playing PCM-16 from a Dart Stream."
 }
 ,
@@ -392,7 +473,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_record_stream.html",
+"url": "fs-guides_record_stream.html",
 "summary": "Recording PCM-16 to a Dart Stream."
 }
 ,
@@ -401,7 +482,7 @@
 "title": "Guides",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_recording_pcm.html",
+"url": "fs-guides_recording_pcm.html",
 "summary": "Recording PCM."
 }
 ,
@@ -410,7 +491,7 @@
 "title": "PCM Dart Streams",
 "tags": "guide",
 "keywords": "guides",
-"url": "fs_guides_streams.html",
+"url": "fs-guides_streams.html",
 "summary": "Recording PCM-16 to a Dart Stream."
 }
 ,
@@ -419,7 +500,7 @@
 "title": "&amp;tau; on web",
 "tags": "flutter_soundweb",
 "keywords": "Flutter, Web",
-"url": "fs_guides_web.html",
+"url": "guides_web.html",
 "summary": "Flutter Sound on web."
 }
 ,
@@ -428,17 +509,8 @@
 "title": "Temporary files",
 "tags": "flutter_sound",
 "keywords": "Flutter, &tau;",
-"url": "fs_temporary_files.html",
+"url": "fs-guides_temporary_files.html",
 "summary": "Using temporary files."
-}
-,
-
-{
-"title": "Widgets",
-"tags": "guide",
-"keywords": "ui_widgets",
-"url": "fs_guides_ui.html",
-"summary": "The &tau; Project offers two built-in widgets."
 }
 ,
 
@@ -479,20 +551,20 @@
 ,
 
 {
-"title": "Lock-screen",
-"tags": "guide",
-"keywords": "lock_screen",
-"url": "fs_guides_lock_screen.html",
-"summary": "Configuring Flutter Sound for background audio"
+"title": "License",
+"tags": "license",
+"keywords": "license",
+"url": "fs-links_LICENSE.html",
+"summary": "Flutter Sound License"
 }
 ,
 
 {
-"title": "Logger",
-"tags": "flutter_sound",
-"keywords": "Flutter, &tau;",
-"url": "fs_logger.html",
-"summary": "Debugging logs."
+"title": "Contributions",
+"tags": "contributions",
+"keywords": "Contributions",
+"url": "fs-links_contribution.html",
+"summary": "We need you!"
 }
 ,
 
@@ -502,24 +574,6 @@
 "keywords": "API",
 "url": "tau_api_main.html",
 "summary": "&tau; is composed with 4 modules."
-}
-,
-
-{
-"title": "Migration",
-"tags": "migration",
-"keywords": "migration",
-"url": "fs_links_migration.html",
-"summary": "Migration from previous version"
-}
-,
-
-{
-"title": "Migration",
-"tags": "migration",
-"keywords": "migration",
-"url": "fs_inks_migration.html",
-"summary": "Migration from previous version"
 }
 ,
 
@@ -740,11 +794,11 @@
 ,
 
 {
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_setLogLevel.html",
-"summary": "setLogLevel()"
+"title": "Examples",
+"tags": "example",
+"keywords": "Flutter, Flutter Sound, examples",
+"url": "fs_examples_setLogLevel.html",
+"summary": "Set Log Level"
 }
 ,
 
@@ -758,11 +812,11 @@
 ,
 
 {
-"title": "Examples",
-"tags": "example",
-"keywords": "Flutter, Flutter Sound, examples",
-"url": "fs_examples_setLogLevel.html",
-"summary": "Set Log Level"
+"title": "Recorder API",
+"tags": "apirecorder",
+"keywords": "API Recorder",
+"url": "fs_api_recorder_setLogLevel.html",
+"summary": "setLogLevel()"
 }
 ,
 
@@ -1055,11 +1109,11 @@
 ,
 
 {
-"title": "Widgets",
-"tags": "guide",
-"keywords": "ui_widgets",
-"url": "fs_guides_ui.html",
-"summary": "The &tau; Project offers two built-in widgets."
+"title": "Dart documentation generator",
+"tags": "",
+"keywords": "",
+"url": "fsapistatic-assets",
+"summary": ""
 }
 ,
 

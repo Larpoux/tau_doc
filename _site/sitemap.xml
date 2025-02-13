@@ -28,31 +28,13 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/etau-CHANGELOG.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs-CHANGELOG.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_links_license.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs-license.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/etau-LICENSE.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/etau-CHANGELOG.html</loc>
   </url>
   
   
@@ -64,13 +46,19 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_links_license.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/etau-LICENSE.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs-README.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-LICENSE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/td-README.html</loc>
   </url>
   
   
@@ -82,7 +70,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/td-README.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-README.html</loc>
   </url>
   
   
@@ -100,31 +88,13 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_utilities_constructor.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_constructor.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_links_contribution.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_links_contribution.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/contributor_landing_page.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_utilities_constructor.html</loc>
   </url>
   
   
@@ -167,6 +137,96 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/etau_README.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex___.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_demo.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_multi_playbacks.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex__playback_from_stream_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_playback_from_stream_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_player_onprogress.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_record_to_stream.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex__examples_recorder_onprogress.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_seek.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_setLogLevel.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_setVolume.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_simple_playback.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_simple_recorder.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_sound_effects.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_setSpeed.html</loc>
   </url>
   
   
@@ -232,91 +292,79 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/guides_pcm_wave.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_install.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_guides.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_pcm_wave.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_codec.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_codec.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_getting_started.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_dev.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_graph.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_web.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_lite-full.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_getting_started.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_lock_screen.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_logger.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_logger.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_play_stream.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_play_stream.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_record_stream.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_record_stream.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_recording_pcm.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_recording_pcm.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_streams.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_streams.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/guides_web.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_web.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_temporary_files.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_ui.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-guides_temporary_files.html</loc>
   </url>
   
   
@@ -346,31 +394,19 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_lock_screen.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-links_LICENSE.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_logger.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-links_contribution.html</loc>
   </url>
   
   
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/tau_api_main.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_links_migration.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_inks_migration.html</loc>
   </url>
   
   
@@ -520,7 +556,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_setLogLevel.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setLogLevel.html</loc>
   </url>
   
   
@@ -532,7 +568,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setLogLevel.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_setLogLevel.html</loc>
   </url>
   
   
@@ -736,7 +772,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_guides_ui.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs/api/static-assets/</loc>
   </url>
   
   

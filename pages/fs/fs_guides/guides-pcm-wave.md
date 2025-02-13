@@ -2,7 +2,7 @@
 title:  "PCM files"
 description: "Raw PCM and Wave files."
 summary: "Raw PCM and Wave files."
-permalink: guides_pcm_wave.html
+permalink: fs-guides_pcm_wave.html
 tags: [guide]
 keywords: guides
 ---

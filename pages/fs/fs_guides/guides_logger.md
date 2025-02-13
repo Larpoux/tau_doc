@@ -2,12 +2,13 @@
 title:  "Logger"
 description: "Logging"
 summary: "Debugging logs."
-permalink: fs_logger.html
+permalink: fs-guides_logger.html
 sidebar: fs_sidebar
 tags: [flutter_sound]
 keywords: Flutter, &tau;
+toc: true
 ---
-# Managing the &tau; logs
+## Managing the &tau; logs
 
 The &tau; project uses now the `logger` plugin.
 

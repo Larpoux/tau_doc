@@ -3,7 +3,7 @@ title:  "Guides"
 description: "Recording PCM-16 to a Dart Stream."
 summary: "Recording PCM-16 to a Dart Stream."
 sidebar: fs_sidebar
-permalink: fs_guides_record_stream.html
+permalink: fs-guides_record_stream.html
 tags: [guide]
 keywords: guides
 ---

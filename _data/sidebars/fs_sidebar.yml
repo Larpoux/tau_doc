@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Flutter Sound
-  version: 0.1.2-alpha-5+3
+  version: 0.1.2
   folders:
 
   - title:
@@ -21,10 +21,9 @@ entries:
 
 # -------------------------------------------------
 
-  - title: === FLUTTER SOUND
+  - title: OVERVIEW
     output: web, pdf
     folderitems:
-
 
     - title: Readme
       url: /fs-README.html
@@ -35,13 +34,13 @@ entries:
       output: web, pdf
 
     - title: Live demo
-      url: /danku\/fs-live\/index.html
+      url: /live\/fs\/index.html
       output: web, pdf
 
 # ----------------------------------------------------------
 
 
-  - title: === GUIDES
+  - title: GUIDES
     output: web, pdf
     folderitems:
 
@@ -50,11 +49,11 @@ entries:
       output: web, pdf
 
     - title: Installation
-      url: /fs-flutter_sound_install.html
+      url: /fs-guides_install.html
       output: web, pdf
 
     - title: Development Setup
-      url: /fs-tau_dev.html
+      url: /fs-guides_dev.html
       output: web, pdf
 
     - title: Supported Codecs
@@ -62,11 +61,11 @@ entries:
       output: web, pdf
 
     - title: Logger
-      url: /fs-logger.html
+      url: /fs-guides_logger.html
       output: web, pdf
 
     - title: Temporary files
-      url: /fs-temporary_files.html
+      url: /fs-guides_temporary_files.html
       output: web, pdf
 
     - title: Raw PCM and Wave files
@@ -94,76 +93,83 @@ entries:
 # ---------------------------------------------------------------
 
 
-  - title: === EXAMPLES
+  - title: EXAMPLES
     output: web, pdf
     folderitems:
 
+    - title: Examples overview
+      url: fs-ex___.html
+      output: web, pdf
 
-    - title: demo
-      url: /fs-flutter_sound_examples_demo.html
+    - title: Demo
+      url: /fs-ex_demo.html
       output: web, pdf
 
     - title: Simple Playback
-      url: /fs-flutter_sound_examples_simple_playback.html
+      url: /fs-ex_simple_playback.html
       output: web, pdf
 
     - title: Simple Recorder
-      url: /fs-flutter_sound_examples_simple_recorder.html
+      url: /fs-ex_simple_recorder.html
       output: web, pdf
 
     - title: onProgress (Player)
-      url: /fs-flutter_sound_examples_player_onprogress.html
+      url: /fs-ex_player_onprogress.html
       output: web, pdf
 
     - title: onProgress (Recorder)
-      url: /fs-flutter_sound_examples_recorder_onprogress.html
+      url: /fs-ex_recorder_onprogress.html
       output: web, pdf
 
     - title: Multi Playbacks
-      url: /fs-flutter_sound_examples_multi_playbacks.html
+      url: /fs-ex_multi_playbacks.html
       output: web, pdf
 
     - title: Volume Control
-      url: /fs-flutter_sound_examples_setVolume.html
+      url: /fs-ex_setVolume.html
+      output: web, pdf
+
+    - title: Pan Control
+      url: /fs-ex_setVolume.html
       output: web, pdf
 
     - title: Speed Control
-      url: /fs-flutter_sound_examples_setSpeed.html
+      url: /fs-ex_setSpeed.html
       output: web, pdf
 
     - title: Seek
-      url: /fs-flutter_sound_examples_seek.html
+      url: /fs-ex_seek.html
       output: web, pdf
 
     - title: Record to Stream
-      url: /fs-flutter_sound_examples_record_to_stream.html
+      url: /fs-ex_record_to_stream.html
       output: web, pdf
 
     - title: Playback from Stream (1)
-      url: /fs-flutter_sound_examples_playback_from_stream_1.html
+      url: /fs-ex_playback_from_stream_1.html
       output: web, pdf
 
     - title: Playback from Stream (2)
-      url: /fs-flutter_sound_examples_playback_from_stream_2.html
+      url: /fs-ex_playback_from_stream_2.html
       output: web, pdf
 
     - title: Sound Effects
-      url: /fs-flutter_sound_examples_sound_effects.html
+      url: /fs-ex__effects.html
       output: web, pdf
 
     - title: Set Log Level
-      url: /fs-flutter_sound_examples_setLogLevel.html
+      url: /fs-ex_setLogLevel.html
       output: web, pdf
 
-    - title: Media Recorder
-      url: /fs-flutter_sound_examples_mediaRecorder.html
+    - title: Dart Streams
+      url: /fs-ex_streams.html
       output: web, pdf
 
 # -------------------------------------------------------------
 
 
 
-  - title: === API
+  - title: API
     output: web, pdf
     folderitems:
 
@@ -357,25 +363,41 @@ entries:
 # --------------------------------------------------------------------
 
 
-  - title: === API REF (DARTDOC)
+  - title: API REF
     output: web, pdf
     folderitems:
 
+    - title: Dart Doc
+      url: /fs\/api\/index.html
+      output: web, pdf
+
+    - title: Main Topic
+      url: /fs\/api\/topics\/Main-topic.html
+      output: web, pdf
+
+    - title: Utilities Topic
+      url: /fs\/api\/topics\/Utilities-topic.html
+      output: web, pdf
+
+    - title: Player Library
+      url: /fs\/api\/player\/player-library.html
+      output: web, pdf
+
     - title: Player Class
-      url: /pages\/flutter-sound\/api\/player\/FlutterSoundPlayer-class.html
+      url: /fs\/api\/player\/FlutterSoundPlayer-class.html
       output: web, pdf
 
-    - title: Recorder Class
-      url: /pages\/flutter-sound\/api\/recorder\/FlutterSoundRecorder-class.html
+    - title: Recorder Library
+      url: /fs\/api\/recorder\/recorder-library.html
       output: web, pdf
 
-    - title: Utilities
-      url: /pages\/flutter-sound\/api\/topics\/Utilities-topic.html
+    - title: Helpers
+      url: /fs\/api\/helper\/helper-library.html
       output: web, pdf
 
 # ---------------------------------------------------
 
-  - title: === LINKS
+  - title: LINKS
     output: web, pdf
 
     folderitems:
@@ -394,7 +416,8 @@ entries:
       output: web, pdf
 
     - title: License
-      url: /fs-LICENSE.html
+      url: /fs-links_LICENSE.html
+      output: web, pdf
       
       output: web, pdf
 

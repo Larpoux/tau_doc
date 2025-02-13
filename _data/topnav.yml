@@ -14,18 +14,17 @@ topnav_dropdowns:
     - title: Run
       folderitems:
 
-        - title: Taudio examples.
-          external_url: /toto
-          hint: "The tau-dio examples"
+        - title: Etau examples
+          url: /live\/etau\/index.html
+          hint: "The Etau examples"
 
-        - title: Flutter Sound examples.
-          #external_url: https://tau.canardoux.xyz/danku/fs-live
+        - title: Flutter Sound examples
           url: /live\/fs\/index.html
           hint: "The Flutter Sound examples"
 
-        - title: e-tau examples
-          url: /live\/etau\/index.html
-          hint: "The e-tau example!"
+        - title: Taudio examples
+          external_url: /toto
+          hint: "The tau-dio examples"
 
 
     - title: News
@@ -36,40 +35,40 @@ topnav_dropdowns:
           hint: "The tau Project news"
 
         - title: Roadmap
-          external_url: https://github.com/canardoux/tau-doc/projects/1
+          external_url: https://github.com/Canardoux/tau/projects
           hint: A better tau
 
 
     - title: Repo
       folderitems:
 
-        - title: Taudio
-          external_url: https://github.com/canardoux/taudio
-          hint: tau-dio on github
+        - title: Etau
+          external_url: https://github.com/canardoux/etau
+          hint: Etau on github
  
         - title: Flutter Sound
           external_url: https://github.com/canardoux/flutter_sound
           hint: Flutter Sound on github
 
-        - title: e-tau
-          external_url: https://github.com/canardoux/etau
-          hint: e-tau on github
+        - title: Taudio
+          external_url: https://github.com/canardoux/taudio
+          hint: tau-dio on github
 
 
     - title: pub.dev
       folderitems:
 
-        - title: Taudio
-          external_url: https://pub.dev/packages/taudio
-          hint: tau-dio on flutter main site
+        - title: Etau
+          external_url: https://pub.dev/packages/etau
+          hint: Etau on flutter main site
  
         - title: Flutter Sound
           external_url: https://pub.dev/packages/flutter_sound
           hint: Flutter Sound on flutter main site
 
-        - title: e-tau
-          external_url: https://pub.dev/packages/etau
-          hint: e-tau on flutter main site
+        - title: Taudio
+          external_url: https://pub.dev/packages/taudio
+          hint: Taudio on flutter main site
 
 
     - title: Sharing
@@ -89,13 +88,14 @@ topnav_dropdowns:
 
 
 
-    - title: The τ (tau) family
+    - title: The τ (Tau) family
       folderitems:
-        - title: Taudio
-          url: td-README.html
+        - title: Etau
+          url: etau-README.html
 
         - title: Flutter Sound
           url: fs-README.html
 
-        - title: e-tau
-          url: etau-README.html
+        - title: Taudio
+          url: td-README.html
+

@@ -2,7 +2,7 @@
 title:  "Guides"
 description: "Playing PCM-16 from a Dart Stream."
 summary: "Playing PCM-16 from a Dart Stream."
-permalink: fs_guides_play_stream.html
+permalink: fs-guides_play_stream.html
 sidebar: fs_sidebar
 tags: [guide]
 keywords: guides
