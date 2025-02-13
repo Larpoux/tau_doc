@@ -34,7 +34,7 @@ entries:
       output: web, pdf
 
     - title: Live demo
-      url: /live\/fs\/index.html
+      url: /tau\/fs\/live\/index.html
       output: web, pdf
 
 # ----------------------------------------------------------
@@ -368,31 +368,31 @@ entries:
     folderitems:
 
     - title: Dart Doc
-      url: /fs\/api\/index.html
+      url: /tau\/fs\/api\/index.html
       output: web, pdf
 
     - title: Main Topic
-      url: /fs\/api\/topics\/Main-topic.html
+      url: /tau\/fs\/api\/topics\/Main-topic.html
       output: web, pdf
 
     - title: Utilities Topic
-      url: /fs\/api\/topics\/Utilities-topic.html
+      url: /tau\/fs\/api\/topics\/Utilities-topic.html
       output: web, pdf
 
     - title: Player Library
-      url: /fs\/api\/player\/player-library.html
+      url: /tau\/fs\/api\/player\/player-library.html
       output: web, pdf
 
     - title: Player Class
-      url: /fs\/api\/player\/FlutterSoundPlayer-class.html
+      url: /tau\/fs\/api\/player\/FlutterSoundPlayer-class.html
       output: web, pdf
 
     - title: Recorder Library
-      url: /fs\/api\/recorder\/recorder-library.html
+      url: /tau\/fs\/api\/recorder\/recorder-library.html
       output: web, pdf
 
     - title: Helpers
-      url: /fs\/api\/helper\/helper-library.html
+      url: /tau\/fs\/api\/helper\/helper-library.html
       output: web, pdf
 
 # ---------------------------------------------------

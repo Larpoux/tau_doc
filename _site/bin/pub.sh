@@ -48,6 +48,10 @@ echo -n 'Upload to canardoux.xyz ...'
 scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
 echo ''
 
+
+bin/apidoc.sh
+
+
 exit 0
 
 ############  DEPRECATED #####################
@@ -73,8 +77,6 @@ echo ''
 
 ###
 
-
-bin/apidoc.sh
 
 rm -r danku/fs-live
 cp -a ../flutter_sound/flutter_sound/example/build/web danku/fs-live

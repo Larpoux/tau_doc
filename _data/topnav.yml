@@ -15,15 +15,15 @@ topnav_dropdowns:
       folderitems:
 
         - title: Etau examples
-          url: /live\/etau\/index.html
+          url: /tau\/etau\/live\/index.html
           hint: "The Etau examples"
 
         - title: Flutter Sound examples
-          url: /live\/fs\/index.html
+          url: /tau\/fs\/live\/index.html
           hint: "The Flutter Sound examples"
 
         - title: Taudio examples
-          external_url: /toto
+          external_url: /tau\/taudio\/live\/index.html
           hint: "The tau-dio examples"
 
 
