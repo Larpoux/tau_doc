@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the ChannelMergerNode class from the etau_class library, for the Dart programming language.">
+  <title>ChannelMergerNode class - etau_class library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">etau</a></li>
+    <li><a href="../public_etau_class/public_etau_class-library.html">public&#47;etau_class.dart</a></li>
+    <li class="self-crumb">ChannelMergerNode class</li>
+  </ol>
+  <div class="self-name">ChannelMergerNode</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="public_etau_class&#47;public_etau_class-library-sidebar.html"
+    data-below-sidebar="public_etau_class&#47;ChannelMergerNode-class-sidebar.html">
+    <div>
+<h1><span class="kind-class">ChannelMergerNode</span> class 
+    <a href="https://dart.dev/language/class-modifiers#abstract" class="feature feature-abstract" title="This type can not be directly constructed.">abstract</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>The <code>ChannelMergerNode</code> interface, often used in conjunction with its
+opposite, <a href="../public_etau_class/ChannelSplitterNode-class.html">ChannelSplitterNode</a>, reunites different mono inputs into a
+single output. Each input is used to fill a channel of the output. This is
+useful for accessing each channels separately, e.g. for performing channel
+mixing where gain must be separately controlled on each channel.</p>
+<p><img src="webaudiomerger.png" alt="Default channel merger node with six mono inputs combining to form a
+single output."></p>
+<p>If <code>ChannelMergerNode</code> has one single output, but as many inputs as there
+are channels to merge; the number of inputs is defined as a parameter of its
+constructor and the call to <a href="../public_etau_class/BaseAudioContext/createChannelMerger.html">BaseAudioContext.createChannelMerger</a>. In the
+case that no value is given, it will default to <code>6</code>.</p>
+<p>Using a <code>ChannelMergerNode</code>, it is possible to create outputs with more
+channels than the rendering hardware is able to process. In that case, when
+the signal is sent to the <a href="../public_etau_class/BaseAudioContext/listener.html">BaseAudioContext.listener</a> object, supernumerary
+channels will be ignored.</p>
+<table class="properties">
+<tbody>
+<tr>
+<th scope="row">Number of inputs</th>
+<td>variable; default to <code>6</code>.</td>
+</tr>
+<tr>
+<th scope="row">Number of outputs</th>
+<td><code>1</code></td>
+</tr>
+<tr>
+<th scope="row">Channel count mode</th>
+<td><code>"explicit"</code></td>
+</tr>
+<tr>
+<th scope="row">Channel count</th>
+<td><code>2 </code>(not used in the default count mode)</td>
+</tr>
+<tr>
+<th scope="row">Channel interpretation</th>
+<td><code>"speakers"</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>API documentation sourced from
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode">MDN Web Docs</a>.</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+
+        
+  <dt>Implemented types</dt>
+  <dd>
+    <ul class="comma-separated clazz-relationships">
+        <li><a href="../public_etau_class/AudioNode-class.html">AudioNode</a></li>
+    </ul>
+  </dd>
+        
+
+
+        
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+    <dl class="constructor-summary-list">
+        <dt id="ChannelMergerNode" class="callable">
+          <span class="name"><a href="../public_etau_class/ChannelMergerNode/ChannelMergerNode.html">ChannelMergerNode</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-properties">
+    <h2>Properties</h2>
+    <dl class="properties">
+        <dt id="channelCount" class="property inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/channelCount.html">channelCount</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The <strong><code>channelCount</code></strong> property of the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> represents an
+integer used to determine how many channels are used when
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#up-mixing_and_down-mixing">up-mixing and down-mixing</a>
+connections to any inputs to the node.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="channelCountMode" class="property inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/channelCountMode.html">channelCountMode</a></span>
+  <span class="signature">&#8596; <a href="../public_etau_class/ChannelCountMode.html">ChannelCountMode</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The <code>channelCountMode</code> property of the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> represents an
+enumerated value describing the way channels must be matched between the
+node's inputs and outputs.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="channelInterpretation" class="property inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/channelInterpretation.html">channelInterpretation</a></span>
+  <span class="signature">&#8596; <a href="../public_etau_class/ChannelInterpretation.html">ChannelInterpretation</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The <strong><code>channelInterpretation</code></strong> property of the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> interface
+represents an enumerated value describing how input channels are mapped to
+output channels when the number of inputs/outputs is different. For
+example, this setting defines how a mono input will be up-mixed to a
+stereo or 5.1 channel output, or how a quad channel input will be
+down-mixed to a stereo or mono output.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="context" class="property inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/context.html">context</a></span>
+  <span class="signature">&#8594; <a href="../public_etau_class/BaseAudioContext-class.html">BaseAudioContext</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The read-only <code>context</code> property of the
+<a href="../public_etau_class/AudioNode-class.html">AudioNode</a> returns the associated
+<a href="../public_etau_class/BaseAudioContext-class.html">BaseAudioContext</a>, that is the object representing the processing graph
+the node is participating in.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="numberOfInputs" class="property inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/numberOfInputs.html">numberOfInputs</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The <code>numberOfInputs</code> property of
+the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> returns the number of inputs feeding the
+node. Source nodes are defined as nodes having a <code>numberOfInputs</code>
+property with a value of 0.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="numberOfOutputs" class="property inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/numberOfOutputs.html">numberOfOutputs</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The <code>numberOfOutputs</code> property of
+the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> returns the number of outputs coming out of
+the node. Destination nodes — like <a href="../public_etau_class/AudioDestinationNode-class.html">AudioDestinationNode</a> — have
+a value of 0 for this attribute.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="connect" class="callable inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/connect.html">connect</a></span><span class="signature">(<wbr><span class="parameter" id="connect-param-destinationNode"><span class="type-annotation"><a href="../public_etau_class/AudioNode-class.html">AudioNode</a></span> <span class="parameter-name">destinationNode</span>, [</span><span class="parameter" id="connect-param-output"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">output</span>, </span><span class="parameter" id="connect-param-input"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">input</span></span>])
+    <span class="returntype parameter">&#8594; <a href="../public_etau_class/AudioNode-class.html">AudioNode</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The <code>connect()</code> method of the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> lets
+you connect one of the node's outputs to a target, which may be either
+another
+<code>AudioNode</code> (thereby directing the sound data to the specified node).
+See also <a href="../public_etau_class/AudioNode/connectParam.html">AudioNode.connectParam</a>
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="connectParam" class="callable inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/connectParam.html">connectParam</a></span><span class="signature">(<wbr><span class="parameter" id="connectParam-param-destinationParam"><span class="type-annotation"><a href="../public_etau_class/AudioParam-class.html">AudioParam</a></span> <span class="parameter-name">destinationParam</span>, [</span><span class="parameter" id="connectParam-param-output"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">output</span>, </span><span class="parameter" id="connectParam-param-input"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">input</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  This is a variant of <a href="../public_etau_class/AudioNode/connect.html">AudioNode.connect</a> with a <code>DestinationParam</code> argument instead of an <code>AudioNode</code>.
+Note : The W3C recommandation uses just one verb for both.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="disconnect" class="callable inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/disconnect.html">disconnect</a></span><span class="signature">(<wbr>[<span class="parameter" id="disconnect-param-destinationParamOrOutput"><span class="type-annotation"><a href="../public_etau_class/AudioNode-class.html">AudioNode</a></span> <span class="parameter-name">destinationParamOrOutput</span>, </span><span class="parameter" id="disconnect-param-output"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">output</span>, </span><span class="parameter" id="disconnect-param-input"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">input</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The <strong><code>disconnect()</code></strong> method of the <a href="../public_etau_class/AudioNode-class.html">AudioNode</a> lets you
+disconnect one or more nodes from the node on which the method is called.
+See also <a href="../public_etau_class/AudioNode/disconnectParam.html">AudioNode.disconnectParam</a>
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="disconnectParam" class="callable inherited">
+  <span class="name"><a href="../public_etau_class/AudioNode/disconnectParam.html">disconnectParam</a></span><span class="signature">(<wbr><span class="parameter" id="disconnectParam-param-destinationParam"><span class="type-annotation"><a href="../public_etau_class/AudioParam-class.html">AudioParam</a></span> <span class="parameter-name">destinationParam</span>, [</span><span class="parameter" id="disconnectParam-param-output"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">output</span>, </span><span class="parameter" id="disconnectParam-param-input"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">input</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  This is a variant of <a href="../public_etau_class/AudioNode/disconnect.html">AudioNode.disconnect</a> with a <code>DestinationParam</code> argument instead of an <code>AudioNode</code>.
+Note : The W3C recommandation uses just one verb for both.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">etau</a></li>
+    <li><a href="../public_etau_class/public_etau_class-library.html">etau_class</a></li>
+    <li class="self-crumb">ChannelMergerNode class</li>
+</ol>
+
+    <h5>etau_class library</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    etau
+      0.17.6
+  </span>
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
