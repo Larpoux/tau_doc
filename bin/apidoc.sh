@@ -1,9 +1,14 @@
 #!/bin/bash
 
-rm -r fs-api
-cp -a ../flutter_sound/flutter_sound/doc/api fs-api
-rm -r toto
-cp -a ../flutter_sound/flutter_sound/doc/api toto
+rm -r tau/etau/api tau/fs/api tau/taudio/api
+cp -a ../flutter_sound/doc/api tau/fs
+cp -a ../taudio/doc/api tau/taudio
+cp -a ../etau/doc/api tau/etau
+
+exit 0
+
+#################  DEPRECATED ##################
+
 cp ../tau_doc/bin/tau_doc-api-styles.css fs-api/static-assets/styles.css
 
 echo "Add Front matter on top of dartdoc pages"
