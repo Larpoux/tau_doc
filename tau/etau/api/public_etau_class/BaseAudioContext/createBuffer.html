@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the createBuffer method from the BaseAudioContext class, for the Dart programming language.">
+  <title>createBuffer method - BaseAudioContext class - etau_class library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">etau</a></li>
+    <li><a href="../../public_etau_class/public_etau_class-library.html">public&#47;etau_class.dart</a></li>
+    <li><a href="../../public_etau_class/BaseAudioContext-class.html">BaseAudioContext</a></li>
+    <li class="self-crumb">createBuffer abstract method</li>
+  </ol>
+  <div class="self-name">createBuffer</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="public_etau_class&#47;BaseAudioContext-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-method">createBuffer</span> abstract method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+<span class="returntype"><a href="../../public_etau_class/AudioBuffer-class.html">AudioBuffer</a></span>
+<span class="name ">createBuffer</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="createBuffer-param-numberOfChannels"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">numberOfChannels</span>, </span></li>
+<li><span class="parameter" id="createBuffer-param-length"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">length</span>, </span></li>
+<li><span class="parameter" id="createBuffer-param-sampleRate"><span class="type-annotation"><a href="../../public_etau_class/TauSampleRate.html">TauSampleRate</a></span> <span class="parameter-name">sampleRate</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>The <code>createBuffer()</code> method of the <a href="../../public_etau_class/BaseAudioContext-class.html">BaseAudioContext</a>
+is used to create a new, empty <a href="../../public_etau_class/AudioBuffer-class.html">AudioBuffer</a> object, which
+can then be populated by data, and played via an <a href="../../public_etau_class/AudioBufferSourceNode-class.html">AudioBufferSourceNode</a>.</p>
+<p>For more details about audio buffers, check out the <a href="../../public_etau_class/AudioBuffer-class.html">AudioBuffer</a>
+reference page.</p>
+<blockquote>
+<p><strong>Note:</strong> <code>createBuffer()</code> used to be able to take compressed
+data and give back decoded samples, but this ability was removed from
+the specification,
+because all the decoding was done on the main thread, so
+<code>createBuffer()</code> was blocking other code execution. The asynchronous
+method
+<code>decodeAudioData()</code> does the same thing — takes compressed audio, such
+as an
+MP3 file, and directly gives you back an <a href="../../public_etau_class/AudioBuffer-class.html">AudioBuffer</a> that you can
+then play via an <a href="../../public_etau_class/AudioBufferSourceNode-class.html">AudioBufferSourceNode</a>. For simple use cases
+like playing an MP3, <code>decodeAudioData()</code> is what you should be using.</p>
+</blockquote>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">AudioBuffer createBuffer(
+  int numberOfChannels,
+  int length,
+  TauSampleRate sampleRate,
+);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">etau</a></li>
+    <li><a href="../../public_etau_class/public_etau_class-library.html">etau_class</a></li>
+    <li><a href="../../public_etau_class/BaseAudioContext-class.html">BaseAudioContext</a></li>
+    <li class="self-crumb">createBuffer abstract method</li>
+</ol>
+
+    <h5>BaseAudioContext class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    etau
+      0.17.6
+  </span>
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

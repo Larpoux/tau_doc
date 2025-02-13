@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the curve property from the WaveShaperNode class, for the Dart programming language.">
+  <title>curve property - WaveShaperNode class - etau_class library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">etau</a></li>
+    <li><a href="../../public_etau_class/public_etau_class-library.html">public&#47;etau_class.dart</a></li>
+    <li><a href="../../public_etau_class/WaveShaperNode-class.html">WaveShaperNode</a></li>
+    <li class="self-crumb">curve property</li>
+  </ol>
+  <div class="self-name">curve</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="public_etau_class&#47;WaveShaperNode-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-property">curve</span> property 
+</h1></div>
+
+    
+
+    
+        
+  <section id="getter">
+    <section class="multi-line-signature">
+      
+      <span class="returntype"><a href="../../public_etau_class/TauFloat32Array.html">TauFloat32Array</a></span>
+      get
+      <span class="name ">curve</span>
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>The <code>curve</code> property of the <a href="../../public_etau_class/WaveShaperNode-class.html">WaveShaperNode</a> is a <code>Float32Array</code>
+of numbers describing the distortion to apply.</p>
+<p>The mid-element of the array is applied to any signal value of <code>0</code>, the
+first one to signal values of <code>-1</code>, and the last to signal values of <code>1</code>;
+values lower than <code>-1</code> or greater than <code>1</code> are treated like <code>-1</code> or <code>1</code>
+respectively.</p>
+<p>If necessary, intermediate values of the distortion curve are linearly
+interpolated.</p>
+<blockquote>
+<p><strong>Note:</strong> The array can be a <code>null</code> value: in that case, no distortion
+is applied to the input signal.</p>
+</blockquote>
+</section>
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">TauFloat32Array get curve;</code></pre>
+</section>
+
+  </section>
+
+
+        
+  <section id="setter">
+    <section class="multi-line-signature">
+      
+      set
+      <span class="name ">curve</span>
+      <span class="signature">(<wbr><span class="parameter" id="curve=-param-value"><span class="type-annotation"><a href="../../public_etau_class/TauFloat32Array.html">TauFloat32Array</a></span> <span class="parameter-name">value</span></span>)</span>
+      
+
+    </section>
+    
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">set curve(TauFloat32Array value);</code></pre>
+</section>
+
+  </section>
+
+</div> <!-- /.main-content -->
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+  <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">etau</a></li>
+    <li><a href="../../public_etau_class/public_etau_class-library.html">etau_class</a></li>
+    <li><a href="../../public_etau_class/WaveShaperNode-class.html">WaveShaperNode</a></li>
+    <li class="self-crumb">curve property</li>
+</ol>
+
+  <h5>WaveShaperNode class</h5>
+  <div id="dartdoc-sidebar-left-content"></div>
+</div><!--/.sidebar-offcanvas-->
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    etau
+      0.17.6
+  </span>
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

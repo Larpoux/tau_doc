@@ -35,6 +35,11 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
+
+cp -a ../flutter_sound/doc/api tau/fs
+cp -a ../taudio/doc/api tau/taudio
+cp -a ../etau/doc/api tau/etau
+
 #cp index.html _site/index.html
 #cp -a ../etau/example/build/web _site/live_etau_example
 
@@ -49,7 +54,7 @@ scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
 echo ''
 
 
-bin/apidoc.sh
+
 
 
 exit 0
