@@ -1,11 +1,7 @@
 ---
 title:  "Codecs"
-description: "Supported codecs."
 summary: "Supported codecs."
 permalink: fs-guides_codec.html
-sidebar: fs_sidebar
-tags: [guide]
-keywords: guides
 ---
 
 ## Supported Codecs

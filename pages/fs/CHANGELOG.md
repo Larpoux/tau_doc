@@ -1,6 +1,5 @@
 ---
 title: "Flutter Sound CHANGELOG"
-description: The Flutter Sound Project CHANGELOG
 permalink: fs-CHANGELOG.html
 summary: The Changelog of The Flutter Sound Project.
 toc: false

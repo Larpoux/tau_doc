@@ -17,7 +17,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Flutter Sound on web.">
-<meta name="keywords" content="flutter_soundweb,  Flutter, Web">
+<meta name="keywords" content=" ">
 <title>&tau; on web | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -332,7 +332,7 @@
       
   
   <li>
-      <a title="OVERVIEW" href="#">OVERVIEW</a>
+      <a title="GUIDES" href="#">GUIDES</a>
       <ul>
           
           
@@ -356,15 +356,6 @@
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="GUIDES" href="#">GUIDES</a>
-      <ul>
-          
           
           
           <li><a title="Getting Started" href="/fs-guides_getting_started.html">Getting Started</a></li>
@@ -374,14 +365,14 @@
           
           
           
+          <li><a title="On Progress" href="/fs-guides_on_progress.html">On Progress</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Installation" href="/fs-guides_install.html">Installation</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Development Setup" href="/fs-guides_dev.html">Development Setup</a></li>
           
           
           
@@ -416,21 +407,7 @@
           
           
           
-          <li><a title="Recording or playing Raw PCM" href="/fs-guides_recording_pcm.html">Recording or playing Raw PCM</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Recording to a Dart Stream" href="/fs-guides_record_stream.html">Recording to a Dart Stream</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Playback from a Dart Stream" href="/fs-guides_play_stream.html">Playback from a Dart Stream</a></li>
+          <li><a title="Recording or playing live streams" href="/fs-guides_live_streams.html">Recording or playing live streams</a></li>
           
           
           
@@ -912,6 +889,22 @@
       
   
   <li>
+      <a title="Tau dev." href="#">Tau dev.</a>
+      <ul>
+          
+          
+          
+          <li><a title="Flutter Sound dev." href="/fs-guides_dev.html">Flutter Sound dev.</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="LINKS" href="#">LINKS</a>
       <ul>
           
@@ -1004,10 +997,6 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/fs/fs_guides/guides_fs_on_web.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
-
-    
-
    <h1 id="flutter-sound-on-web">Flutter Sound on Web</h1>
 
 <p>Flutter Sound is now supported by Flutter Web (with some limitations). Please <a href="flutter_sound_install.html#flutter-web">go to there</a> to have informations on how to setup your App for web.</p>
@@ -1053,10 +1042,6 @@ await startPlayer('foo'); // ('foo' is the LocalSessionStorage key of the record
   <li>Flutter Sound does not provide the audio peak level in the Recorder Progress events.</li>
 </ul>
 
-<h2 id="ffmpeg">FFmpeg</h2>
-
-<p>Actually, Flutter Sound on Web does not support FFmpeg. We are still actually not sure if we should support it or if the code weight would be too high for a Web App.</p>
-
 <h2 id="cors">CORS</h2>
 
 <p>Web Browsers have a security system which is called <code class="language-plaintext highlighter-rouge">CORS</code>. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">See here</a>.</p>
@@ -1066,36 +1051,24 @@ and that you must check the behavior of your server.</p>
 
 <p>For example, to run correctly the Demo App, and play a remote AAC sound which is stored on the <a href="https://www.canardoux.xyz/tau_sound/web_example/sample.aac">canardoux.xyz host</a>,
 I had to add :</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Header set Access-Control-Allow-Origin "*"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        Header set Access-Control-Allow-Origin "*"
 </code></pre></div></div>
-<p>in the configuration file of my Apache2 server.
-(<a href="https://enable-cors.org/server_apache.html">see here</a>)</p>
+<p>in the configuration file of my Apache2 server (<a href="https://enable-cors.org/server_apache.html">see here</a>),</p>
+
+<p>and</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        add_header Access-Control-Allow-Origin *;
+</code></pre></div></div>
+<p>in the configuration file of my nginx server.</p>
 
 <p>After adding this parameter, it is now possible to do :</p>
 <ul>
-  <li><a href="https://www.canardoux.xyz/tau_sound/web_example/index.html">call the example app</a></li>
-  <li>Enter the “Demo example”</li>
-  <li>Select “media = Remote URL”</li>
-  <li>Select “Codec = AAC”</li>
-  <li>Play</li>
+  <li><a href="https://www.canardoux.xyz/tau_sound/web_example/index.html">call to the example app</a>.</li>
 </ul>
 
 <p>This will play correctly the remote AAC file.</p>
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_flutter_sound.html" class="btn btn-default navbar-btn cursorNorm" role="button">flutter_sound</a>
-        
-        
-        
-        <a href="tag_web.html" class="btn btn-default navbar-btn cursorNorm" role="button">web</a>
-        
-        
         
     </div>
 
@@ -1110,7 +1083,7 @@ I had to add :</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 13, 2025 <br />
+ Site last generated: Feb 14, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

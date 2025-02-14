@@ -17,7 +17,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Flutter Sound installation.">
-<meta name="keywords" content="flutter_soundinstallation,  Flutter, Flutter Sound, installation">
+<meta name="keywords" content=" ">
 <title>Installation | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -332,7 +332,7 @@
       
   
   <li>
-      <a title="OVERVIEW" href="#">OVERVIEW</a>
+      <a title="GUIDES" href="#">GUIDES</a>
       <ul>
           
           
@@ -356,15 +356,6 @@
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="GUIDES" href="#">GUIDES</a>
-      <ul>
-          
           
           
           <li><a title="Getting Started" href="/fs-guides_getting_started.html">Getting Started</a></li>
@@ -374,15 +365,15 @@
           
           
           
+          <li><a title="On Progress" href="/fs-guides_on_progress.html">On Progress</a></li>
+          
+          
+          
+          
+          
+          
           <!-- Here -->
           <li class="active"><a title="/Installation" href="fs-guides_install.html">Installation</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Development Setup" href="/fs-guides_dev.html">Development Setup</a></li>
           
           
           
@@ -417,21 +408,7 @@
           
           
           
-          <li><a title="Recording or playing Raw PCM" href="/fs-guides_recording_pcm.html">Recording or playing Raw PCM</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Recording to a Dart Stream" href="/fs-guides_record_stream.html">Recording to a Dart Stream</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Playback from a Dart Stream" href="/fs-guides_play_stream.html">Playback from a Dart Stream</a></li>
+          <li><a title="Recording or playing live streams" href="/fs-guides_live_streams.html">Recording or playing live streams</a></li>
           
           
           
@@ -912,6 +889,22 @@
       
   
   <li>
+      <a title="Tau dev." href="#">Tau dev.</a>
+      <ul>
+          
+          
+          
+          <li><a title="Flutter Sound dev." href="/fs-guides_dev.html">Flutter Sound dev.</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="LINKS" href="#">LINKS</a>
       <ul>
           
@@ -1004,82 +997,42 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/fs/fs_guides/guides-install.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
-
-    
-
    <h1 id="installation">Installation</h1>
 
 <h2 id="install">Install</h2>
 
-<p>For help on adding as a dependency, view the <a href="https://flutter.io/using-packages/">documentation</a>.</p>
+<p>Flutter Sound is a regular Flutter plugin. For help on adding a Flutter plugin as a dependency, view the Flutter <a href="https://flutter.io/using-packages/">documentation</a>.</p>
 
-<h3 id="sdk-requirements">SDK requirements</h3>
+<h2 id="sdk-requirements">SDK requirements</h2>
 
 <ul>
   <li>Flutter Sound requires an iOS 10.0 SDK (or later)</li>
   <li>Flutter Sound requires an Android 21 (or later)</li>
 </ul>
 
-<h3 id="flutter-sound-flavors">Flutter Sound flavors</h3>
+<h2 id="linking-your-app-directly-from-pubdev">Linking your App directly from <code class="language-plaintext highlighter-rouge">pub.dev</code></h2>
 
-<p>From version 9.x, Flutter Sound does not have anymore two flavors (LITE/FULL).
-There is now just one plugin.
-Flutter Sound comes in two flavors :</p>
+<p>Add <code class="language-plaintext highlighter-rouge">flutter_sound</code> as a dependency in pubspec.yaml.</p>
 
-<h3 id="linking-your-app-directly-from-pubdev">Linking your App directly from <code class="language-plaintext highlighter-rouge">pub.dev</code></h3>
-
-<p>Add <code class="language-plaintext highlighter-rouge">flutter_sound</code> or <code class="language-plaintext highlighter-rouge">flutter_sound_lite</code> as a dependency in pubspec.yaml.</p>
-
-<p>The actual versions are :</p>
-
-<ul>
-  <li>flutter_sound_lite: ^8.3.9  (the LTS version without FFmpeg)</li>
-  <li>flutter_sound: ^8.3.9 (the LTS version with FFmpeg embedded)</li>
-</ul>
+<p>The actual version is : 9.x. A version 10.0 is currentely being developped. See <code class="language-plaintext highlighter-rouge">Taudio</code>, downside.</p>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
   flutter:
     sdk: flutter
-  flutter_sound: ^8.3.9
+  flutter_sound: ^9.23
 </code></pre></div></div>
 
-<p>or</p>
+<h2 id="linking-your-app-with-flutter-sound-sources-optional">Linking your App with Flutter Sound sources (optional)</h2>
 
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite: ^8.3.9
-</code></pre></div></div>
+<p>The Flutter-Sound sources <a href="https://github.com/canardoux/flutter_sound">are here</a>.
+It is a subproject of <a href="https://github.com/canardoux/tau">tau</a></p>
 
-<p><strong>Additional iOS Setup for Recording</strong></p>
+<p>You probably want to look to <a href="fs-guides_dev.html">the Dev notice</a></p>
 
-<p>If your app requires recording functionality on iOS, you will need to configure the audio session using the <code class="language-plaintext highlighter-rouge">audio_session</code> package. Add it to your dependencies in <code class="language-plaintext highlighter-rouge">pubspec.yaml</code>:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
-  flutter:
-    sdk: flutter
-  audio_session: ^0.1.21
-</code></pre></div></div>
-
-<h3 id="linking-your-app-with-flutter-sound-sources-optional">Linking your App with Flutter Sound sources (optional)</h3>
-
-<p>The Flutter-Sound sources <a href="https://github.com/dooboolab/flutter_sound">are here</a>.</p>
-
-<p>There is actually two branches :</p>
-
-<ul>
-  <li>V7. This is the last release which is not compliant with Dart Null Safety</li>
-  <li>master. This is the branch currently developed and is released under the version 8.x.x.</li>
-</ul>
-
-<p>You probably want to look to <a href="tau_dev.html">the Dev notice</a>
-If you want to generate your App from the sources with a <code class="language-plaintext highlighter-rouge">FULL</code> flavor:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>some/where
-git clone https://github.com/dooboolab/flutter_sound
-<span class="nb">cd </span>some/where/flutter_sound
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /some/where
+git clone <span class="nt">--recursive</span> https://github.com/canardoux/tau
+<span class="nb">cd</span> /some/where/tau
 bin/reldev.sh DEV
-bin/flavor FULL
 </code></pre></div></div>
 
 <p>and add your dependency in your pubspec.yaml :</p>
@@ -1088,53 +1041,24 @@ bin/flavor FULL
   flutter:
     sdk: flutter
   flutter_sound:
-    path: some/where/flutter_sound
+    path: /some/where/tau/flutter_sound
 </code></pre></div></div>
 
-<p>If you prefer to link your App with the <code class="language-plaintext highlighter-rouge">LITE</code> flavor :</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>some/where
-git clone https://github.com/dooboolab/flutter_sound
-<span class="nb">cd </span>some/where/flutter_sound
-bin/reldev.sh DEV
-bin/flavor.sh LITE
-</code></pre></div></div>
-
-<p>and add your dependency in your pubspec.yaml :</p>
-
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite:
-    path: some/where/flutter_sound
-</code></pre></div></div>
-
-<h3 id="ffmpeg">FFmpeg</h3>
+<h2 id="ffmpeg">FFmpeg</h2>
 
 <p>From version 9.x, Flutter Sound does not depend anymore on Flutter FFmpeg.
 If the App needs to do some audio conversions, it must depend itself on Flutter FFmpeg and include the apropriate interface.</p>
 
-<h3 id="post-installation">Post Installation</h3>
+<p>Flutter FFmpeg is really great. Huge but great. It can help you to handle sound files.
+Flutter Sound is for playing or recording. Not to manipulate sound files.</p>
+
+<h2 id="post-installation">Post Installation</h2>
 
 <ul>
   <li>
-    <p>On <em>iOS</em> you need to add usage descriptions to <code class="language-plaintext highlighter-rouge">info.plist</code>:</p>
+    <p>On <em>iOS</em> you may need to add usage descriptions to <code class="language-plaintext highlighter-rouge">info.plist</code>:</p>
 
-    <pre><code class="language-markup">      &lt;key&gt;NSAppleMusicUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;NSCalendarsUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;NSContactsUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;NSMotionUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;NSSpeechRecognitionUsageDescription&lt;/key&gt;
-      &lt;string&gt;MyApp does not need this permission&lt;/string&gt;
-      &lt;key&gt;UIBackgroundModes&lt;/key&gt;
+    <pre><code class="language-markup">      &lt;key&gt;UIBackgroundModes&lt;/key&gt;
       &lt;array&gt;
               &lt;string&gt;audio&lt;/string&gt;
       &lt;/array&gt;
@@ -1163,13 +1087,13 @@ If the App needs to do some audio conversions, it must depend itself on Flutter 
   </li>
 </ul>
 
-<h3 id="flutter-web">Flutter Web</h3>
+<h2 id="flutter-web">Flutter Web</h2>
 
 <p>From version 9.x, the app does not need anymore to include the Flutter Sound library in its ‘index.html’.</p>
 
-<h3 id="troubles-shooting">Troubles shooting</h3>
+<h2 id="troubles-shooting">Troubles shooting</h2>
 
-<h4 id="problem-with-cocoapods">Problem with Cocoapods</h4>
+<h3 id="problem-with-cocoapods">Problem with Cocoapods</h3>
 
 <p>If you get this message (specially after the release of a new Flutter Version) :</p>
 
@@ -1196,7 +1120,7 @@ cd</span> ..
 
 <p>If everything good, the last <code class="language-plaintext highlighter-rouge">pod install</code> must not give any error.</p>
 
-<h4 id="problem-with-the-linker-during-ios-link-edit">Problem with the linker during iOS link-edit</h4>
+<h3 id="problem-with-the-linker-during-ios-link-edit">Problem with the linker during iOS link-edit</h3>
 
 <p>If you get this strange message from the Xcode linker :</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Undefined symbols for architecture arm64:
@@ -1212,18 +1136,6 @@ cd</span> ..
 
     <div class="tags">
         
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_flutter_sound.html" class="btn btn-default navbar-btn cursorNorm" role="button">flutter_sound</a>
-        
-        
-        
-        <a href="tag_installation.html" class="btn btn-default navbar-btn cursorNorm" role="button">installation</a>
-        
-        
-        
     </div>
 
 
@@ -1237,7 +1149,7 @@ cd</span> ..
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 13, 2025 <br />
+ Site last generated: Feb 14, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

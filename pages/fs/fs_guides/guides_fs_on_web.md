@@ -1,10 +1,7 @@
 ---
 title:  "&tau; on web"
-description: "&tau; on web."
 summary: "Flutter Sound on web."
 permalink: fs-guides_web.html
-tags: [flutter_sound,web]
-keywords: Flutter, Web
 ---
 # Flutter Sound on Web
 
@@ -50,10 +47,6 @@ Limitations :
 * Flutter Sound does not have access to the audio focus
 * Flutter Sound does not provide the audio peak level in the Recorder Progress events.
 
-## FFmpeg
-
-Actually, Flutter Sound on Web does not support FFmpeg. We are still actually not sure if we should support it or if the code weight would be too high for a Web App.
-
 ## CORS
 
 Web Browsers have a security system which is called `CORS`. [See here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
@@ -64,17 +57,20 @@ and that you must check the behavior of your server.
 For example, to run correctly the Demo App, and play a remote AAC sound which is stored on the [canardoux.xyz host](https://www.canardoux.xyz/tau_sound/web_example/sample.aac),
 I had to add :
 ```
-Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Origin "*"
 ```
-in the configuration file of my Apache2 server.
-([see here](https://enable-cors.org/server_apache.html))
+in the configuration file of my Apache2 server ([see here](https://enable-cors.org/server_apache.html)), 
+
+and
+```
+        add_header Access-Control-Allow-Origin *;
+```
+in the configuration file of my nginx server.
+
 
 
 After adding this parameter, it is now possible to do :
-- [call the example app](https://www.canardoux.xyz/tau_sound/web_example/index.html)
-- Enter the "Demo example"
-- Select "media = Remote URL"
-- Select "Codec = AAC"
-- Play
+- [call to the example app](https://www.canardoux.xyz/tau_sound/web_example/index.html).
+
 
 This will play correctly the remote AAC file.

@@ -1,16 +1,11 @@
 ---
 title:  "Logger"
-description: "Logging"
 summary: "Debugging logs."
 permalink: fs-guides_logger.html
-sidebar: fs_sidebar
-tags: [flutter_sound]
-keywords: Flutter, &tau;
-toc: true
 ---
 ## Managing the &tau; logs
 
-The &tau; project uses now the `logger` plugin.
+The Flutter Sound project uses now the [logger](https://pub.dev/packages/logger) plugin.
 
 There are three loggers : 
 
@@ -36,7 +31,7 @@ enum Level
 }
 ```
 
-If you want to debugg or develop The &tau; Project you can sepecify another Log Level during the instanciation of your modules : 
+If you want to debugg or develop The Flutter Sound Project you can sepecify another Log Level during the instanciation of your modules : 
 
 ```dart
 FlutterSoundPlayer myPlayer = FlutterSoundPlayer(logLevel: Level.debug);

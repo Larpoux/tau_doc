@@ -17,7 +17,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Using temporary files.">
-<meta name="keywords" content="flutter_sound,  Flutter, &tau;">
+<meta name="keywords" content=" ">
 <title>Temporary files | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -332,7 +332,7 @@
       
   
   <li>
-      <a title="OVERVIEW" href="#">OVERVIEW</a>
+      <a title="GUIDES" href="#">GUIDES</a>
       <ul>
           
           
@@ -356,15 +356,6 @@
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="GUIDES" href="#">GUIDES</a>
-      <ul>
-          
           
           
           <li><a title="Getting Started" href="/fs-guides_getting_started.html">Getting Started</a></li>
@@ -374,14 +365,14 @@
           
           
           
+          <li><a title="On Progress" href="/fs-guides_on_progress.html">On Progress</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Installation" href="/fs-guides_install.html">Installation</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Development Setup" href="/fs-guides_dev.html">Development Setup</a></li>
           
           
           
@@ -417,21 +408,7 @@
           
           
           
-          <li><a title="Recording or playing Raw PCM" href="/fs-guides_recording_pcm.html">Recording or playing Raw PCM</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Recording to a Dart Stream" href="/fs-guides_record_stream.html">Recording to a Dart Stream</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Playback from a Dart Stream" href="/fs-guides_play_stream.html">Playback from a Dart Stream</a></li>
+          <li><a title="Recording or playing live streams" href="/fs-guides_live_streams.html">Recording or playing live streams</a></li>
           
           
           
@@ -912,6 +889,22 @@
       
   
   <li>
+      <a title="Tau dev." href="#">Tau dev.</a>
+      <ul>
+          
+          
+          
+          <li><a title="Flutter Sound dev." href="/fs-guides_dev.html">Flutter Sound dev.</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="LINKS" href="#">LINKS</a>
       <ul>
           
@@ -1004,46 +997,45 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/fs/fs_guides/guides_temporary_files.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
-
-    
-
    <h1 id="managing-temporary-records">Managing temporary records</h1>
 
 <h2 id="using-path_provider">Using path_provider</h2>
 
-<p>The App can get the temporary directory with the plugin <code class="language-plaintext highlighter-rouge">path_provider</code> and use it for <code class="language-plaintext highlighter-rouge">startRecorder()</code> parameter :</p>
+<p>The App can get the temporary directory with the plugin <a href="https://pub.dev/packages/path_provider">path_provider</a> and use it for <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a> parameter :</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        var tempDir = await getTemporaryDirectory();
-        String path = '${tempDir.path}/flutter_sound.aac';
-        await myRecorder.startRecorder( toFile: path, codec: Codec.aacADTS );
-        ...
-        await myRecorder.stopRecorder();
-        await myPlayer.startPlayer( fromURI: path, codec: Codec.aacADTS );
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kd">var</span> <span class="n">tempDir</span> <span class="o">=</span> <span class="k">await</span> <span class="n">getTemporaryDirectory</span><span class="p">();</span>
+        <span class="kt">String</span> <span class="n">path</span> <span class="o">=</span> <span class="s">'</span><span class="si">${tempDir.path}</span><span class="s">/flutter_sound.aac'</span><span class="p">;</span>
+        <span class="k">await</span> <span class="n">myRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span> <span class="nl">toFile:</span> <span class="n">path</span><span class="p">,</span> <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span> <span class="p">);</span>
+        <span class="p">...</span>
+        <span class="k">await</span> <span class="n">myRecorder</span><span class="o">.</span><span class="na">stopRecorder</span><span class="p">();</span>
+        <span class="k">await</span> <span class="n">myPlayer</span><span class="o">.</span><span class="na">startPlayer</span><span class="p">(</span> <span class="nl">fromURI:</span> <span class="n">path</span><span class="p">,</span> <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span> <span class="p">);</span>
 </code></pre></div></div>
 
-<p>This does not work well on Flutter Web.</p>
+<p>This does not work well on Flutter Web, because you don’t have access to a real file system in a Web Browser.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+Temporary files are emulated by Flutter Sound on Flutter Web, using <code class="language-plaintext highlighter-rouge">Blob</code> objects.
+</div>
 
 <h2 id="using-a-temporary-file-name">Using a temporary file name</h2>
 
-<p>If the App does not specify a full path to the startRecorder parameter,
-the <code class="language-plaintext highlighter-rouge">startRecorder()</code> argument is considered as a temporary file name.</p>
+<p>If the App does not specify a full path to the startRecorder parameter (without any ‘/’),
+the <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a> argument is considered as a temporary file name.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        await myRecorder.startRecorder( toFile: 'foo.aac', codec: Codec.aacADTS ); // Without any slash '/'.
-        ...
-        await myRecorder.stopRecorder();
-        await myPlayer.startPlayer( fromURI: 'foo.aac', codec: Codec.aacADTS );
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">await</span> <span class="n">myRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span> <span class="nl">toFile:</span> <span class="s">'foo.aac'</span><span class="p">,</span> <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span> <span class="p">);</span> <span class="c1">// Without any slash '/'.</span>
+        <span class="p">...</span>
+        <span class="k">await</span> <span class="n">myRecorder</span><span class="o">.</span><span class="na">stopRecorder</span><span class="p">();</span>
+        <span class="k">await</span> <span class="n">myPlayer</span><span class="o">.</span><span class="na">startPlayer</span><span class="p">(</span> <span class="nl">fromURI:</span> <span class="s">'foo.aac'</span><span class="p">,</span> <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span> <span class="p">);</span>
 </code></pre></div></div>
 
-<p><code class="language-plaintext highlighter-rouge">stopRecorder()</code> returns a Future to the URL of the temporary file created if the App needs it.</p>
+<p><a href="/tau/fs/api/recorder/FlutterSoundRecorder/stopRecorder.html">stopRecorder()</a> returns a Future to the URL of the temporary file created if the App needs it.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        await myRecorder.startRecorder( toFile: 'foo.aac', codec: Codec.aacADTS ); // Without any slash '/'.
-        ...
-        String url = await myRecorder.stopRecorder();
-        await myPlayer.startPlayer( fromURI: url, codec: Codec.aacADTS );
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">await</span> <span class="n">myRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span> <span class="nl">toFile:</span> <span class="s">'foo.aac'</span><span class="p">,</span> <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span> <span class="p">);</span> <span class="c1">// Without any slash '/'.</span>
+        <span class="p">...</span>
+        <span class="kt">String</span> <span class="n">url</span> <span class="o">=</span> <span class="k">await</span> <span class="n">myRecorder</span><span class="o">.</span><span class="na">stopRecorder</span><span class="p">();</span>
+        <span class="k">await</span> <span class="n">myPlayer</span><span class="o">.</span><span class="na">startPlayer</span><span class="p">(</span> <span class="nl">fromURI:</span> <span class="n">url</span><span class="p">,</span> <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span> <span class="p">);</span>
 </code></pre></div></div>
 
-<p>All the temporary files created are automaticaly deleted when the App does a <code class="language-plaintext highlighter-rouge">closeAudioSession()</code>.</p>
+<p>All the temporary files created are automaticaly deleted when the App does a [closeRecorder()[(/tau/fs/api/recorder/FlutterSoundRecorder/stopRecorder.html)].</p>
 
 <p>This works on :</p>
 <ul>
@@ -1054,14 +1046,6 @@ the <code class="language-plaintext highlighter-rouge">startRecorder()</code> ar
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_flutter_sound.html" class="btn btn-default navbar-btn cursorNorm" role="button">flutter_sound</a>
-        
-        
         
     </div>
 
@@ -1076,7 +1060,7 @@ the <code class="language-plaintext highlighter-rouge">startRecorder()</code> ar
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 13, 2025 <br />
+ Site last generated: Feb 14, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

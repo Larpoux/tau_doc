@@ -1,81 +1,44 @@
 ---
 title:  "Installation"
-description: "Flutter Sound installation."
 summary: "Flutter Sound installation."
 permalink: fs-guides_install.html
-tags: [flutter_sound,installation]
-keywords: Flutter, Flutter Sound, installation
 ---
 # Installation
 
 ## Install
 
-For help on adding as a dependency, view the [documentation](https://flutter.io/using-packages/).
+Flutter Sound is a regular Flutter plugin. For help on adding a Flutter plugin as a dependency, view the Flutter [documentation](https://flutter.io/using-packages/).
 
-### SDK requirements
+## SDK requirements
 
 * Flutter Sound requires an iOS 10.0 SDK \(or later\)
 * Flutter Sound requires an Android 21 \(or later\)
 
-### Flutter Sound flavors
+## Linking your App directly from `pub.dev`
 
-From version 9.x, Flutter Sound does not have anymore two flavors (LITE/FULL).
-There is now just one plugin.
-Flutter Sound comes in two flavors :
+Add `flutter_sound` as a dependency in pubspec.yaml.
 
-### Linking your App directly from `pub.dev`
-
-Add `flutter_sound` or `flutter_sound_lite` as a dependency in pubspec.yaml.
-
-The actual versions are :
-
-* flutter\_sound\_lite: ^8.3.9  \(the LTS version without FFmpeg\)
-* flutter\_sound: ^8.3.9 \(the LTS version with FFmpeg embedded\)
+The actual version is : 9.x. A version 10.0 is currentely being developped. See `Taudio`, downside.
 
 ```text
 dependencies:
   flutter:
     sdk: flutter
-  flutter_sound: ^8.3.9
+  flutter_sound: ^9.23
 ```
 
-or
+## Linking your App with Flutter Sound sources \(optional\)
 
-```text
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite: ^8.3.9
-```
+The Flutter-Sound sources [are here](https://github.com/canardoux/flutter_sound).
+It is a subproject of [tau](https://github.com/canardoux/tau)
 
-**Additional iOS Setup for Recording**
-
-If your app requires recording functionality on iOS, you will need to configure the audio session using the `audio_session` package. Add it to your dependencies in `pubspec.yaml`:
-```text
-dependencies:
-  flutter:
-    sdk: flutter
-  audio_session: ^0.1.21
-```
-
-### Linking your App with Flutter Sound sources \(optional\)
-
-The Flutter-Sound sources [are here](https://github.com/dooboolab/flutter_sound).
-
-There is actually two branches :
-
-* V7. This is the last release which is not compliant with Dart Null Safety
-* master. This is the branch currently developed and is released under the version 8.x.x.
-
-You probably want to look to [the Dev notice](tau_dev.html)
-If you want to generate your App from the sources with a `FULL` flavor:
+You probably want to look to [the Dev notice](fs-guides_dev.html)
 
 ```bash
-cd some/where
-git clone https://github.com/dooboolab/flutter_sound
-cd some/where/flutter_sound
+cd /some/where
+git clone --recursive https://github.com/canardoux/tau
+cd /some/where/tau
 bin/reldev.sh DEV
-bin/flavor FULL
 ```
 
 and add your dependency in your pubspec.yaml :
@@ -85,53 +48,22 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_sound:
-    path: some/where/flutter_sound
+    path: /some/where/tau/flutter_sound
 ```
 
-If you prefer to link your App with the `LITE` flavor :
-
-```bash
-cd some/where
-git clone https://github.com/dooboolab/flutter_sound
-cd some/where/flutter_sound
-bin/reldev.sh DEV
-bin/flavor.sh LITE
-```
-
-and add your dependency in your pubspec.yaml :
-
-```text
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_sound_lite:
-    path: some/where/flutter_sound
-```
-
-### FFmpeg
+## FFmpeg
 
 From version 9.x, Flutter Sound does not depend anymore on Flutter FFmpeg.
 If the App needs to do some audio conversions, it must depend itself on Flutter FFmpeg and include the apropriate interface.
 
-### Post Installation
+Flutter FFmpeg is really great. Huge but great. It can help you to handle sound files.
+Flutter Sound is for playing or recording. Not to manipulate sound files.
 
-* On _iOS_ you need to add usage descriptions to `info.plist`:
+## Post Installation
+
+* On _iOS_ you may need to add usage descriptions to `info.plist`:
 
   ```markup
-        <key>NSAppleMusicUsageDescription</key>
-        <string>MyApp does not need this permission</string>
-        <key>NSCalendarsUsageDescription</key>
-        <string>MyApp does not need this permission</string>
-        <key>NSCameraUsageDescription</key>
-        <string>MyApp does not need this permission</string>
-        <key>NSContactsUsageDescription</key>
-        <string>MyApp does not need this permission</string>
-        <key>NSLocationWhenInUseUsageDescription</key>
-        <string>MyApp does not need this permission</string>
-        <key>NSMotionUsageDescription</key>
-        <string>MyApp does not need this permission</string>
-        <key>NSSpeechRecognitionUsageDescription</key>
-        <string>MyApp does not need this permission</string>
         <key>UIBackgroundModes</key>
         <array>
                 <string>audio</string>
@@ -157,13 +89,13 @@ If your App needs to play remote files you possibly must add :
   <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
   ```
 
-### Flutter Web
+## Flutter Web
 
 From version 9.x, the app does not need anymore to include the Flutter Sound library in its 'index.html'.
 
-### Troubles shooting
+## Troubles shooting
 
-#### Problem with Cocoapods
+### Problem with Cocoapods
 
 If you get this message \(specially after the release of a new Flutter Version\) :
 
@@ -192,7 +124,7 @@ cd ..
 
 If everything good, the last `pod install` must not give any error.
 
-#### Problem with the linker during iOS link-edit
+### Problem with the linker during iOS link-edit
 
 If you get this strange message from the Xcode linker : 
 ```

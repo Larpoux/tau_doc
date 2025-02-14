@@ -17,7 +17,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Introduction for Flutter Sound beginners.">
-<meta name="keywords" content="getting_startedguide,  gettingStarted">
+<meta name="keywords" content=" ">
 <title>Getting Started | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -332,7 +332,7 @@
       
   
   <li>
-      <a title="OVERVIEW" href="#">OVERVIEW</a>
+      <a title="GUIDES" href="#">GUIDES</a>
       <ul>
           
           
@@ -356,15 +356,6 @@
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="GUIDES" href="#">GUIDES</a>
-      <ul>
-          
           
           
           <!-- Here -->
@@ -375,14 +366,14 @@
           
           
           
+          <li><a title="On Progress" href="/fs-guides_on_progress.html">On Progress</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Installation" href="/fs-guides_install.html">Installation</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Development Setup" href="/fs-guides_dev.html">Development Setup</a></li>
           
           
           
@@ -417,21 +408,7 @@
           
           
           
-          <li><a title="Recording or playing Raw PCM" href="/fs-guides_recording_pcm.html">Recording or playing Raw PCM</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Recording to a Dart Stream" href="/fs-guides_record_stream.html">Recording to a Dart Stream</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Playback from a Dart Stream" href="/fs-guides_play_stream.html">Playback from a Dart Stream</a></li>
+          <li><a title="Recording or playing live streams" href="/fs-guides_live_streams.html">Recording or playing live streams</a></li>
           
           
           
@@ -912,6 +889,22 @@
       
   
   <li>
+      <a title="Tau dev." href="#">Tau dev.</a>
+      <ul>
+          
+          
+          
+          <li><a title="Flutter Sound dev." href="/fs-guides_dev.html">Flutter Sound dev.</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="LINKS" href="#">LINKS</a>
       <ul>
           
@@ -1004,161 +997,117 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/canardoux/tau_doc/blob/gh-pages/pages/fs/fs_guides/guides_getting-started.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+   <h2 id="playback">Playback</h2>
 
-    
-
-   <h1 id="getting-started">Getting Started</h1>
-
-<h2 id="playback">Playback</h2>
-
-<p>The complete running example <a href="flutter_sound_examples_simple_playback.html">is there</a></p>
+<p>The complete source of a runnable example <a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/simple_playback/simple_playback.dart">is there</a></p>
 
 <h3 id="1-fluttersoundplayer-instanciation">1. FlutterSoundPlayer instanciation</h3>
 
 <p>To play back something you must instanciate a player. Most of the time, you will need just one player, and you can place this instanciation in the variables initialisation of your class :</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kn">import</span> <span class="s">'package:flauto/flutter_sound.dart'</span><span class="o">;</span>
-  <span class="kn">import</span> <span class="s">'package:audio_session/audio_session.dart'</span><span class="o">;</span>
 <span class="p">...</span>
-  <span class="n">FlutterSoundPlayer</span> <span class="n">_myPlayer</span> <span class="o">=</span> <span class="n">FlutterSoundPlayer</span><span class="p">();</span>
+  <span class="n">FlutterSoundPlayer</span> <span class="n">_mPlayer</span> <span class="o">=</span> <span class="n">FlutterSoundPlayer</span><span class="p">();</span>
 </code></pre></div></div>
 
-<h3 id="2-open-and-close-the-audio-session">2. Open and close the audio session</h3>
+<h3 id="2-open-and-close-your-player">2. Open and close your player</h3>
 
-<p>Before calling <code class="language-plaintext highlighter-rouge">startPlayer()</code> you must open the Session.</p>
+<p>Before calling <code class="language-plaintext highlighter-rouge">startPlayer()</code> you must <a href="/tau/fs/api/player/FlutterSoundPlayer/openPlayer.html">open the Player</a>.</p>
 
-<p>When you have finished with it, <strong>you must</strong> close the session. A good places to put those verbs are in the procedures <code class="language-plaintext highlighter-rouge">initState()</code> and <code class="language-plaintext highlighter-rouge">dispose()</code>.</p>
+<p>When you have finished with it, <strong>you must</strong> <a href="/tau/fs/api/player/FlutterSoundPlayer/closePlayer.html">close it</a>. A good places to put those verbs are in the procedures <code class="language-plaintext highlighter-rouge">initState()</code> and <code class="language-plaintext highlighter-rouge">dispose()</code>.</p>
 
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@override</span>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">FlutterSoundPlayer</span><span class="o">?</span> <span class="n">_mPlayer</span> <span class="o">=</span> <span class="n">FlutterSoundPlayer</span><span class="p">();</span>
+  <span class="kt">bool</span> <span class="n">_mPlayerIsInited</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+  <span class="nd">@override</span>
   <span class="kt">void</span> <span class="n">initState</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">super</span><span class="o">.</span><span class="na">initState</span><span class="p">();</span>
-    <span class="c1">// Be careful : openAudioSession return a Future.</span>
+    <span class="c1">// Be careful : openPlayer returns a Future.</span>
     <span class="c1">// Do not access your FlutterSoundPlayer or FlutterSoundRecorder before the completion of the Future</span>
-    <span class="n">_myPlayer</span><span class="o">.</span><span class="na">openAudioSession</span><span class="p">()</span><span class="o">.</span><span class="na">then</span><span class="p">((</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="na">initState</span><span class="p">();</span>
+    <span class="n">_mPlayer</span><span class="o">!.</span><span class="na">openPlayer</span><span class="p">()</span><span class="o">.</span><span class="na">then</span><span class="p">((</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
       <span class="n">setState</span><span class="p">(()</span> <span class="p">{</span>
         <span class="n">_mPlayerIsInited</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
       <span class="p">});</span>
     <span class="p">});</span>
   <span class="p">}</span>
+</code></pre></div></div>
 
-
-
-  <span class="nd">@override</span>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nd">@override</span>
   <span class="kt">void</span> <span class="n">dispose</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">stopPlayer</span><span class="p">();</span>
     <span class="c1">// Be careful : you must `close` the audio session when you have finished with it.</span>
-    <span class="n">_myPlayer</span><span class="o">.</span><span class="na">closeAudioSession</span><span class="p">();</span>
-    <span class="n">_myPlayer</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="n">_mPlayer</span><span class="o">!.</span><span class="na">closePlayer</span><span class="p">();</span>
+    <span class="n">_mPlayer</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
     <span class="k">super</span><span class="o">.</span><span class="na">dispose</span><span class="p">();</span>
   <span class="p">}</span>
 </code></pre></div></div>
 
 <h3 id="3-play-your-sound">3. Play your sound</h3>
 
-<p>To play a sound you call <code class="language-plaintext highlighter-rouge">startPlayer()</code>. To stop a sound you call <code class="language-plaintext highlighter-rouge">stopPlayer()</code></p>
+<p>To play a sound you call <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html">startPlayer()</a>. To stop a sound you call <a href="/tau/fs/api/player/FlutterSoundPlayer/stopPlayer.html">stopPlayer()</a></p>
 
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">play</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
-    <span class="k">await</span> <span class="n">_myPlayer</span><span class="o">.</span><span class="na">startPlayer</span><span class="p">(</span>
-      <span class="nl">fromURI:</span> <span class="n">_exampleAudioFilePathMP3</span><span class="p">,</span>
-      <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">mp3</span><span class="p">,</span>
-      <span class="nl">whenFinished:</span> <span class="p">(){</span><span class="n">setState</span><span class="p">((){});}</span>
-    <span class="p">);</span>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="n">_exampleAudioFilePathMP3</span> <span class="o">=</span> <span class="s">'https://tau.canardoux.xyz/live/extract/05.mp3'</span><span class="p">;</span>
+
+  <span class="kt">void</span> <span class="n">play</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
+    <span class="k">await</span> <span class="n">_mPlayer</span><span class="o">!.</span><span class="na">startPlayer</span><span class="p">(</span>
+        <span class="nl">fromURI:</span> <span class="n">_exampleAudioFilePathMP3</span><span class="p">,</span>
+        <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">mp3</span><span class="p">,</span>
+        <span class="nl">whenFinished:</span> <span class="p">()</span> <span class="p">{</span>
+          <span class="n">setState</span><span class="p">(()</span> <span class="p">{});</span>
+        <span class="p">});</span>
     <span class="n">setState</span><span class="p">(()</span> <span class="p">{});</span>
   <span class="p">}</span>
-
-  <span class="n">Future</span><span class="p">&lt;</span><span class="kt">void</span><span class="p">&gt;</span> <span class="n">stopPlayer</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">_myPlayer</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">await</span> <span class="n">_myPlayer</span><span class="o">.</span><span class="na">stopPlayer</span><span class="p">();</span>
+</code></pre></div></div>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">Future</span><span class="p">&lt;</span><span class="kt">void</span><span class="p">&gt;</span> <span class="n">stopPlayer</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">_mPlayer</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">await</span> <span class="n">_mPlayer</span><span class="o">!.</span><span class="na">stopPlayer</span><span class="p">();</span>
     <span class="p">}</span>
   <span class="p">}</span>
 </code></pre></div></div>
 
 <h2 id="recording">Recording</h2>
 
-<p>The complete running example <a href="flutter_sound_examples_simple_recorder.html">is there</a></p>
+<p>The complete source of a runnable example <a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/simple_recorder/simple_recorder.dart">is there</a></p>
 
 <h3 id="1-fluttersoundrecorder-instanciation">1. FlutterSoundRecorder instanciation</h3>
 
-<p>To play back something you must instanciate a recorder. Most of the time, you will need just one recorder, and you can place this instanciation in the variables initialisation of your class :</p>
+<p>To record something you must instanciate a recorder. Most of the time, you will need just one recorder, and you can place this instanciation in the variables initialisation of your class :</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">FlutterSoundRecorder</span> <span class="n">_myRecorder</span> <span class="o">=</span> <span class="n">FlutterSoundRecorder</span><span class="p">();</span>
 </code></pre></div></div>
 
-<h3 id="2-open-and-close-the-audio-session-1">2. Open and close the audio session</h3>
+<h3 id="2-open-and-close-the-audio-session">2. Open and close the audio session</h3>
 
-<p>Before calling <code class="language-plaintext highlighter-rouge">startRecorder()</code> you must open the Session.</p>
+<p>Before calling <code class="language-plaintext highlighter-rouge">startRecorder()</code> you must <a href="/tau/fs/api/recorder/FlutterSoundRecorder/openRecorder.html">open</a> your recorder.</p>
 
-<p>When you have finished with it, <strong>you must</strong> close the session. A god place to pute those verbs is in the procedures <code class="language-plaintext highlighter-rouge">initState()</code> and <code class="language-plaintext highlighter-rouge">dispose()</code>.</p>
+<p>When you have finished with it, <strong>you must</strong> <a href="/tau/fs/api/recorder/FlutterSoundRecorder/closeRecorder.html">close</a> it. A god place to pute those verbs is in the procedures <code class="language-plaintext highlighter-rouge">initState()</code> and <code class="language-plaintext highlighter-rouge">dispose()</code>.</p>
 
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@override</span>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nd">@override</span>
   <span class="kt">void</span> <span class="n">initState</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">super</span><span class="o">.</span><span class="na">initState</span><span class="p">();</span>
-    <span class="c1">// Be careful : openRecorder return a Future.</span>
-    <span class="c1">// Do not access your FlutterSoundPlayer or FlutterSoundRecorder before the completion of the Future</span>
-    <span class="n">_myRecorder</span><span class="o">.</span><span class="na">openRecorder</span><span class="p">()</span><span class="o">.</span><span class="na">then</span><span class="p">((</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">_mPlayer</span><span class="o">!.</span><span class="na">openPlayer</span><span class="p">()</span><span class="o">.</span><span class="na">then</span><span class="p">((</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
       <span class="n">setState</span><span class="p">(()</span> <span class="p">{</span>
-        <span class="n">_mRecorderIsInited</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="n">_mPlayerIsInited</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
       <span class="p">});</span>
     <span class="p">});</span>
   <span class="p">}</span>
+</code></pre></div></div>
 
-
-
-  <span class="nd">@override</span>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nd">@override</span>
   <span class="kt">void</span> <span class="n">dispose</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// Be careful : you must `close` the audio session when you have finished with it.</span>
-    <span class="n">_myRecorder</span><span class="o">.</span><span class="na">closeRecorder</span><span class="p">();</span>
-    <span class="n">_myRecorder</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="n">stopPlayer</span><span class="p">();</span>
+    <span class="c1">// Be careful : you must `close` the recorder when you have finished with it.</span>
+    <span class="n">_mPlayer</span><span class="o">!.</span><span class="na">closePlayer</span><span class="p">();</span>
+    <span class="n">_mPlayer</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
     <span class="k">super</span><span class="o">.</span><span class="na">dispose</span><span class="p">();</span>
   <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="3-additional-setup-for-ios-audio-recording">3. Additional Setup for iOS Audio Recording</h3>
+<h3 id="3-record-something">3. Record something</h3>
 
-<p>When recording audio on iOS devices, extra configuration is required to properly set up the audio session.</p>
-
-<p>After calling <code class="language-plaintext highlighter-rouge">openRecorder()</code>, configure the audio session as shown below:</p>
-
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@override</span>
-<span class="kt">void</span> <span class="nf">initState</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">super</span><span class="o">.</span><span class="na">initState</span><span class="p">();</span>
-  <span class="c1">// Be careful : openRecorder return a Future.</span>
-  <span class="c1">// Do not access your FlutterSoundPlayer or FlutterSoundRecorder before the completion of the Future</span>
-  <span class="n">_myRecorder</span><span class="o">.</span><span class="na">openRecorder</span><span class="p">()</span><span class="o">.</span><span class="na">then</span><span class="p">((</span><span class="n">value</span><span class="p">)</span> <span class="kd">async</span> <span class="p">{</span>
-    <span class="k">await</span> <span class="n">initializeAudioSession</span><span class="p">();</span>
-    <span class="n">setState</span><span class="p">(()</span> <span class="p">{</span>
-      <span class="n">_mRecorderIsInited</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-    <span class="p">});</span>
-  <span class="p">});</span>
-<span class="p">}</span>
-
-<span class="n">Future</span><span class="p">&lt;</span><span class="kt">void</span><span class="p">&gt;</span> <span class="n">initializeAudioSession</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
-  <span class="kd">final</span> <span class="n">session</span> <span class="o">=</span> <span class="k">await</span> <span class="n">AudioSession</span><span class="o">.</span><span class="na">instance</span><span class="p">;</span>
-  <span class="k">await</span> <span class="n">session</span><span class="o">.</span><span class="na">configure</span><span class="p">(</span>
-    <span class="n">AudioSessionConfiguration</span><span class="p">(</span>
-      <span class="nl">avAudioSessionCategory:</span> <span class="n">AVAudioSessionCategory</span><span class="o">.</span><span class="na">playAndRecord</span><span class="p">,</span>
-      <span class="nl">avAudioSessionCategoryOptions:</span> <span class="n">AVAudioSessionCategoryOptions</span><span class="o">.</span><span class="na">allowBluetooth</span> <span class="o">|</span>
-          <span class="n">AVAudioSessionCategoryOptions</span><span class="o">.</span><span class="na">defaultToSpeaker</span><span class="p">,</span>
-      <span class="nl">avAudioSessionMode:</span> <span class="n">AVAudioSessionMode</span><span class="o">.</span><span class="na">spokenAudio</span><span class="p">,</span>
-      <span class="nl">avAudioSessionRouteSharingPolicy:</span> <span class="n">AVAudioSessionRouteSharingPolicy</span><span class="o">.</span><span class="na">defaultPolicy</span><span class="p">,</span>
-      <span class="nl">avAudioSessionSetActiveOptions:</span> <span class="n">AVAudioSessionSetActiveOptions</span><span class="o">.</span><span class="na">none</span><span class="p">,</span>
-      <span class="nl">androidAudioAttributes:</span> <span class="kd">const</span> <span class="n">AndroidAudioAttributes</span><span class="p">(</span>
-        <span class="nl">contentType:</span> <span class="n">AndroidAudioContentType</span><span class="o">.</span><span class="na">speech</span><span class="p">,</span>
-        <span class="nl">flags:</span> <span class="n">AndroidAudioFlags</span><span class="o">.</span><span class="na">none</span><span class="p">,</span>
-        <span class="nl">usage:</span> <span class="n">AndroidAudioUsage</span><span class="o">.</span><span class="na">voiceCommunication</span><span class="p">,</span>
-      <span class="p">),</span>
-      <span class="nl">androidAudioFocusGainType:</span> <span class="n">AndroidAudioFocusGainType</span><span class="o">.</span><span class="na">gain</span><span class="p">,</span>
-      <span class="nl">androidWillPauseWhenDucked:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="p">),</span>
-  <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>This configuration will enable Bluetooth support, route audio to the device speaker, and ensure that your app is properly set up for voice recording on iOS.</p>
-
-<h3 id="4-record-something">4. Record something</h3>
-
-<p>To record something you call <code class="language-plaintext highlighter-rouge">startRecorder()</code>. To stop the recorder you call <code class="language-plaintext highlighter-rouge">stopRecorder()</code></p>
+<p>To record something you call <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a>. To stop the recorder you call <a href="/tau/fs/api/recorder/FlutterSoundRecorder/stopRecorder.html">stopRecorder()</a></p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">Future</span><span class="p">&lt;</span><span class="kt">void</span><span class="p">&gt;</span> <span class="n">record</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
     <span class="k">await</span> <span class="n">_myRecorder</span><span class="o">.</span><span class="na">startRecorder</span><span class="p">(</span>
@@ -1166,27 +1115,15 @@ $('#toc').on('click', 'a', function() {
       <span class="nl">codec:</span> <span class="n">Codec</span><span class="o">.</span><span class="na">aacADTS</span><span class="p">,</span>
     <span class="p">);</span>
   <span class="p">}</span>
+</code></pre></div></div>
 
-
-  <span class="n">Future</span><span class="p">&lt;</span><span class="kt">void</span><span class="p">&gt;</span> <span class="n">stopRecorder</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">Future</span><span class="p">&lt;</span><span class="kt">void</span><span class="p">&gt;</span> <span class="n">stopRecorder</span><span class="p">()</span> <span class="kd">async</span> <span class="p">{</span>
     <span class="k">await</span> <span class="n">_myRecorder</span><span class="o">.</span><span class="na">stopRecorder</span><span class="p">();</span>
   <span class="p">}</span>
 </code></pre></div></div>
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_getting_started.html" class="btn btn-default navbar-btn cursorNorm" role="button">getting_started</a>
-        
-        
-        
-        <a href="tag_guide.html" class="btn btn-default navbar-btn cursorNorm" role="button">guide</a>
-        
-        
         
     </div>
 
@@ -1201,7 +1138,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 13, 2025 <br />
+ Site last generated: Feb 14, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

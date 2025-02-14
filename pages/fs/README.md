@@ -1,6 +1,5 @@
 ---
 title: Flutter Sound
-description: The Flutter Sound Project README
 permalink: fs-README.html
 summary: The Flutter Sound Project README.
 ---
@@ -96,10 +95,10 @@ You can look to the [FS Streams guide](http://tau.canardoux.xyz/fs-guides_stream
 The `Tau` family begins to be rich :). It is composed by those following Flutter plugins.
 
 - `Flutter Sound 9.x` (this legacy plugin developed for many years)
-- [Etau](http://tau.canardoux.xyz/etau-README.html) (which is a port on Flutter Web of the W3C Web Audio API)
-- [Tauweb](http://tau.canardoux.xyz/etau-tauweb.html) (which is the `Etau` implementation for Flutter Web)
-- [Tauwar](http://tau.canardoux.xyz/etau-tauwar.html) (which is the `Etau` implementation for Flutter on mobiles)
-- [Taudio](TODO) (which is (will be) something like Flutter Sound 10.0)
+- [Etau](https://pub.dev/packages/etau) (which is a port on Flutter Web of the W3C Web Audio API)
+- [Tauweb](https://pub.dev/packages/tau_web) (which is the `Etau` implementation for Flutter Web)
+- [Tauwar](https://pub.dev/packages/tau_war) (which is the `Etau` implementation for Flutter on mobiles)
+- [Taudio](https://pub.dev/packages/taudio) (which is (will be) something like Flutter Sound 10.0)
 
 ### [Etau](https://pub.dev/packages/etau)
 

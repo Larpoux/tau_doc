@@ -1,6 +1,5 @@
 ---
 title: Etau
-description: The Etau Project README
 permalink: etau-README.html
 summary: The Etau Project README.
 ---
@@ -45,7 +44,7 @@ Because the Web Audio API is a W3C recommandation, you can find very good docume
 
 In a few words, the Web Audio API let you assembly "nodes" as a chain of nodes in order to process a stream of audio data, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, ...). But you really should look to the Mozilla documentation which is very good (and better than my poor english ;-) ).
 
-You will have to ask yourself if you must use [Taudio](https://pub.dev/packages/taudio) (which is a wrapper around `Etau`), or directly `Etau`.
+You will have to ask yourself if you must use [Taudio](https://pub.dev/packages/taudio) (which is just a wrapper around `Etau`), or directly `Etau`.
 The W3C recommandation is powerful but simple to use. There are probably no many reasons to use `Taudio` any longer.
 
 ## `Etau` Structure
@@ -55,8 +54,8 @@ This is an interface: this is what the App see and access.
 Because this is an interface, the App must import an implementation.
 Several implementations are possible. Actually we are developping two implementations:
 
-- Tauweb, which is an implementation for Flutter Web
-- Tauwar, which is an implementation for mobiles
+- `Tauweb`, which is an implementation for Flutter Web
+- `Tauwar`, which is an implementation for mobiles
 
 The app must import one (or several) implementations. But except for this import, the App does not access them.
 It alway access `Etau` which is the interface. This allows the App to have a unic code for various platforms.
@@ -94,7 +93,7 @@ The current Flutter Sound version is 9.x. [Taudio](https://pub.dev/packages/taud
 
 `Taudio` is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don't want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.
 
-`Taudio` is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above [Etau](https://pub.dev/packages/etau).
+`Taudio` is a complete rewrite of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above [Etau](https://pub.dev/packages/etau).
 
 ## We need help
 

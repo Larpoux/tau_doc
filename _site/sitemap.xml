@@ -40,12 +40,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/etau-LICENSE.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/fs-LICENSE.html</loc>
   </url>
   
@@ -53,6 +47,18 @@
   
   <url>
     <loc>http://localhost:4000/LICENSE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/etau-LICENSE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fs-README.html</loc>
   </url>
   
   
@@ -70,19 +76,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs-README.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/taudio-README.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs_architecture.html</loc>
   </url>
   
   
@@ -256,12 +250,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/fs_api_player_food.html</loc>
   </url>
   
@@ -269,6 +257,12 @@
   
   <url>
     <loc>http://localhost:4000/fs_api_player_food_sink.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fs-guides_dev.html</loc>
   </url>
   
   
@@ -316,12 +310,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs-guides_dev.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/fs-guides_web.html</loc>
   </url>
   
@@ -334,49 +322,25 @@
   
   
   <url>
+    <loc>http://localhost:4000/fs-guides_live_streams.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/fs-guides_logger.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/fs-guides_play_stream.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs-guides_record_stream.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs-guides_recording_pcm.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs-guides_streams.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/guides_web.html</loc>
+    <loc>http://localhost:4000/fs-guides_on_progress.html</loc>
   </url>
   
   
   
   <url>
     <loc>http://localhost:4000/fs-guides_temporary_files.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs_install.html</loc>
   </url>
   
   
@@ -442,13 +406,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs_api_recorder_on_progress.html</loc>
+    <loc>http://localhost:4000/fs_api_player_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/fs_api_player_on_progress.html</loc>
+    <loc>http://localhost:4000/fs_api_recorder_on_progress.html</loc>
   </url>
   
   
@@ -562,7 +526,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs_examples_setLogLevel.html</loc>
+    <loc>http://localhost:4000/fs_api_player_setLogLevel.html</loc>
   </url>
   
   
@@ -580,13 +544,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs_api_player_setLogLevel.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs_api_recorder_set_audio_focus.html</loc>
+    <loc>http://localhost:4000/fs_examples_setLogLevel.html</loc>
   </url>
   
   
@@ -598,13 +556,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/fs_api_player_set_speed.html</loc>
+    <loc>http://localhost:4000/fs_api_recorder_set_audio_focus.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/fs_api_recorder_set_subscription_duration.html</loc>
+    <loc>http://localhost:4000/fs_api_player_set_speed.html</loc>
   </url>
   
   
@@ -616,19 +574,25 @@
   
   
   <url>
+    <loc>http://localhost:4000/fs_api_recorder_set_subscription_duration.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/fs_api_player_set_ui_progress_bar.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/fs_api_player_set_volume.html</loc>
+    <loc>http://localhost:4000/fs_examples_setVolume.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/fs_examples_setVolume.html</loc>
+    <loc>http://localhost:4000/fs_api_player_set_volume.html</loc>
   </url>
   
   
@@ -713,12 +677,6 @@
   
   <url>
     <loc>http://localhost:4000/fs_dev.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fs_rfc.html</loc>
   </url>
   
   

@@ -21,7 +21,7 @@ entries:
 
 # -------------------------------------------------
 
-  - title: OVERVIEW
+  - title: GUIDES
     output: web, pdf
     folderitems:
 
@@ -37,23 +37,16 @@ entries:
       url: /tau\/fs\/live\/index.html
       output: web, pdf
 
-# ----------------------------------------------------------
-
-
-  - title: GUIDES
-    output: web, pdf
-    folderitems:
-
     - title: Getting Started
       url: /fs-guides_getting_started.html
       output: web, pdf
 
-    - title: Installation
-      url: /fs-guides_install.html
+    - title: On Progress
+      url: /fs-guides_on_progress.html
       output: web, pdf
 
-    - title: Development Setup
-      url: /fs-guides_dev.html
+    - title: Installation
+      url: /fs-guides_install.html
       output: web, pdf
 
     - title: Supported Codecs
@@ -72,16 +65,8 @@ entries:
       url: /fs-guides_pcm_wave.html
       output: web, pdf
 
-    - title: Recording or playing Raw PCM
-      url: /fs-guides_recording_pcm.html
-      output: web, pdf
-
-    - title: Recording to a Dart Stream
-      url: /fs-guides_record_stream.html
-      output: web, pdf
-
-    - title: Playback from a Dart Stream
-      url: /fs-guides_play_stream.html
+    - title: Recording or playing live streams
+      url: /fs-guides_live_streams.html
       output: web, pdf
 
     - title: Flutter Sound on Web
@@ -393,6 +378,17 @@ entries:
 
     - title: Helpers
       url: /tau\/fs\/api\/helper\/helper-library.html
+      output: web, pdf
+
+# ---------------------------------------------------------------
+
+
+  - title: Tau dev.
+    output: web, pdf
+    folderitems:
+
+    - title: Flutter Sound dev.
+      url: /fs-guides_dev.html
       output: web, pdf
 
 # ---------------------------------------------------
