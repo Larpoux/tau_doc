@@ -66,7 +66,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="tau_doc" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://tau-gh.canardoux.xyz/index.html/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -999,9 +999,8 @@ $('#toc').on('click', 'a', function() {
 
    <h1 id="flutter-sound-on-web">Flutter Sound on Web</h1>
 
-<p>Flutter Sound is now supported by Flutter Web (with some limitations). Please <a href="flutter_sound_install.html#flutter-web">go to there</a> to have informations on how to setup your App for web.</p>
-
-<p>You can play with <a href="pages/flutter-sound/web_example/index.html">this live demo on the web</a>.</p>
+<p>Flutter Sound is now supported by Flutter Web.
+You can play with <a href="/tau\/fs\/live\/index.html">this live demo on the web</a>.</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">NoSuchMethodError:</span> <span class="n">tried</span> <span class="n">to</span> <span class="n">call</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">function</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="kc">null</span><span class="o">:</span> <span class="s">'dart.global.newRecorderInstance'</span>
 </code></pre></div></div>
@@ -1013,34 +1012,24 @@ Double check if your javascript source files are correct.
 <h2 id="player">Player</h2>
 
 <ul>
-  <li>Flutter Sound can play buffers with <code class="language-plaintext highlighter-rouge">startPlayerFromBuffer()</code>, exactly like with other platforms. Please refer to <a href="guides_codec">the codecs compatibility table</a></li>
-  <li>Flutter Sound can play remote URL with <code class="language-plaintext highlighter-rouge">startPlayer()</code>, exactly like with other platforms. Again, refer to <a href="guides_codec">the codecs compatibility table</a></li>
-  <li>Playing from a Dart Stream with <code class="language-plaintext highlighter-rouge">startPlayerFromStream()</code>is not yet implemented.</li>
-  <li>Playing with UI is obviously not implemented, because we do not have control to the lock screen inside a web app.</li>
-  <li>Flutter Sound does not have control of the audio-focus.</li>
+  <li>Flutter Sound can play buffers with <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html">startPlayer(FromBuffer: )</a>, exactly like with other platforms. Please refer to <a href="fs-guides_codec.html#on-web-browsers">the codecs compatibility table</a></li>
+  <li>Flutter Sound can play remote URL with <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html">startPlayer()</a>, exactly like with other platforms. Again, refer to <a href="fs-guides_codec.html#on-web-browsers">the codecs compatibility table</a></li>
+  <li>Playing from a Dart Stream with <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html">startPlayerFromStream()</a> is now implemented.</li>
 </ul>
 
-<p>The web App does not have access to any file system. But you can store an URL into your local SessionStorage, and use the key as if it was an audio file. This is compatible with the Flutter Sound recorder.</p>
+<p>The web App does not have access to any file system. But you can store a <code class="language-plaintext highlighter-rouge">Blob Object</code> URL into your local SessionStorage, and use the key as if it was an audio file. This is compatible with the Flutter Sound recorder.</p>
 
 <h2 id="recorder">Recorder</h2>
 
-<p>Flutter Sound on web cannot have access to any file system. You can use <code class="language-plaintext highlighter-rouge">startRecorder()</code> like others platforms, but the recorded data will be stored inside an internal HTTP object. When the recorder is stopped, <code class="language-plaintext highlighter-rouge">startRecorder</code> stores the URL of this object into your local sessionStorage.</p>
+<p>Flutter Sound on web cannot have access to any file system. You can use <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a> like others platforms, but the recorded data will be stored inside an internal HTTP <code class="language-plaintext highlighter-rouge">Blob Object</code>. When the recorder is stopped, <code class="language-plaintext highlighter-rouge">startRecorder</code> stores the URL of this object into your local sessionStorage.</p>
 
-<p>Please refer to <a href="guides_codec">the codecs compatibility table</a> : Flutter Sound Recorder does not work on Safari nor iOS.</p>
+<p>Please refer to <a href="fs-guides_codec.html#on-web-browsers">the codecs compatibility table</a> : Flutter Sound Recorder does not work on Safari nor iOS.</p>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>await startRecorder(codec: opusWebM, toFile: 'foo'); // the LocalSessionStorage key `foo` will contain the URL of the recorded object
 ...
 await stopRecorder();
 await startPlayer('foo'); // ('foo' is the LocalSessionStorage key of the recorded sound URL object)
 </code></pre></div></div>
-
-<p>Limitations :</p>
-
-<ul>
-  <li>Recording to a Dart Stream is not yet implemented</li>
-  <li>Flutter Sound does not have access to the audio focus</li>
-  <li>Flutter Sound does not provide the audio peak level in the Recorder Progress events.</li>
-</ul>
 
 <h2 id="cors">CORS</h2>
 
@@ -1062,7 +1051,7 @@ I had to add :</p>
 
 <p>After adding this parameter, it is now possible to do :</p>
 <ul>
-  <li><a href="https://www.canardoux.xyz/tau_sound/web_example/index.html">call to the example app</a>.</li>
+  <li><a href="/tau\/fs\/live\/index.html">call to the example app</a>.</li>
 </ul>
 
 <p>This will play correctly the remote AAC file.</p>

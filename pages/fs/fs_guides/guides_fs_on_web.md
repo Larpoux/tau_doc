@@ -5,9 +5,8 @@ permalink: fs-guides_web.html
 ---
 # Flutter Sound on Web
 
-Flutter Sound is now supported by Flutter Web \(with some limitations\). Please [go to there](flutter_sound_install.html#flutter-web) to have informations on how to setup your App for web.
-
-You can play with [this live demo on the web](pages/flutter-sound/web_example/index.html).
+Flutter Sound is now supported by Flutter Web.
+You can play with [this live demo on the web](/tau\/fs\/live\/index.html).
 
 ```dart
 NoSuchMethodError: tried to call a non-function, such as null: 'dart.global.newRecorderInstance'
@@ -20,19 +19,17 @@ Double check if your javascript source files are correct.
 
 ## Player
 
-* Flutter Sound can play buffers with `startPlayerFromBuffer()`, exactly like with other platforms. Please refer to [the codecs compatibility table](guides_codec)
-* Flutter Sound can play remote URL with `startPlayer()`, exactly like with other platforms. Again, refer to [the codecs compatibility table](guides_codec)
-* Playing from a Dart Stream with `startPlayerFromStream()`is not yet implemented.
-* Playing with UI is obviously not implemented, because we do not have control to the lock screen inside a web app.
-* Flutter Sound does not have control of the audio-focus.
+* Flutter Sound can play buffers with [startPlayer(FromBuffer: )](/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html), exactly like with other platforms. Please refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers)
+* Flutter Sound can play remote URL with [startPlayer()](/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html), exactly like with other platforms. Again, refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers)
+* Playing from a Dart Stream with [startPlayerFromStream()](/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html) is now implemented.
 
-The web App does not have access to any file system. But you can store an URL into your local SessionStorage, and use the key as if it was an audio file. This is compatible with the Flutter Sound recorder.
+The web App does not have access to any file system. But you can store a `Blob Object` URL into your local SessionStorage, and use the key as if it was an audio file. This is compatible with the Flutter Sound recorder.
 
 ## Recorder
 
-Flutter Sound on web cannot have access to any file system. You can use `startRecorder()` like others platforms, but the recorded data will be stored inside an internal HTTP object. When the recorder is stopped, `startRecorder` stores the URL of this object into your local sessionStorage.
+Flutter Sound on web cannot have access to any file system. You can use [startRecorder()](/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html) like others platforms, but the recorded data will be stored inside an internal HTTP `Blob Object`. When the recorder is stopped, `startRecorder` stores the URL of this object into your local sessionStorage.
 
-Please refer to [the codecs compatibility table](guides_codec) : Flutter Sound Recorder does not work on Safari nor iOS.
+Please refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers) : Flutter Sound Recorder does not work on Safari nor iOS.
 
 ```text
 await startRecorder(codec: opusWebM, toFile: 'foo'); // the LocalSessionStorage key `foo` will contain the URL of the recorded object
@@ -40,12 +37,6 @@ await startRecorder(codec: opusWebM, toFile: 'foo'); // the LocalSessionStorage 
 await stopRecorder();
 await startPlayer('foo'); // ('foo' is the LocalSessionStorage key of the recorded sound URL object)
 ```
-
-Limitations :
-
-* Recording to a Dart Stream is not yet implemented
-* Flutter Sound does not have access to the audio focus
-* Flutter Sound does not provide the audio peak level in the Recorder Progress events.
 
 ## CORS
 
@@ -70,7 +61,7 @@ in the configuration file of my nginx server.
 
 
 After adding this parameter, it is now possible to do :
-- [call to the example app](https://www.canardoux.xyz/tau_sound/web_example/index.html).
+- [call to the example app](/tau\/fs\/live\/index.html).
 
 
 This will play correctly the remote AAC file.
