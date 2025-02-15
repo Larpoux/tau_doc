@@ -50,7 +50,7 @@ git pull
 git push
 
 echo -n 'Upload to canardoux.xyz ...'
-scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
+scp -r -v _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
 echo ''
 
 
