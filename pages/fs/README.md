@@ -12,10 +12,10 @@ summary: The Flutter Sound Project README.
 
 ## Flutter Sound stands for Ukraine
 
-![PeaceForUkraine](https://flutter-sound.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
+![PeaceForUkraine](https://tau-ver.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
 Peace for Ukraine
 
-![PrayForUkraine](https://flutter-sound.canardoux.xyz/images/banner.png)
+![PrayForUkraine](https://tau-ver.canardoux.xyz/images/banner.png)
 Pray for Ukraine
 
 ## Flutter Sound as a τ Project

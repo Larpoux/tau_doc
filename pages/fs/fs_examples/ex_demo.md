@@ -6,7 +6,7 @@ permalink: fs-ex_demo.html
 
 The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/demo/demo.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
-This is a Demo of what it is possible to do with Flutter Sound. The code of this Demo app is not so simple.
+This is a demo of what it is possible to do with Flutter Sound. The code of this Demo app is not so simple.
 
 Flutter Sound beginners : you probably should look to [SimplePlayback](fs-ex_simple_playback.html) and [SimpleRecorder](fs-ex_simple_recorder.html)
 

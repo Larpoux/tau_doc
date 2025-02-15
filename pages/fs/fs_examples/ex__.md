@@ -1,6 +1,6 @@
 ---
 title:  "Examples"
-summary: "Flutter Sound come with a list of verys simple examples."
+summary: "Flutter Sound comes with a list of very simple examples."
 permalink: fs-ex__.html
 ---
 

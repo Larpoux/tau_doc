@@ -7,15 +7,15 @@ summary: The Etau Project README.
 
 ## Documentation
 
-- ## Etau user : your doc [is here](https://tau.canardoux.xyz/etau-README.html)
-- ## The CHANGELOG [is here](https://tau.canardoux.xyz/etau-CHANGELOG.html)
+- ## Etau user : your doc [is here](https://tau-ver.canardoux.xyz/etau-README.html)
+- ## The CHANGELOG [is here](https://tau-ver.canardoux.xyz/etau-CHANGELOG.html)
 
 ## Etau stands for Ukraine!
 
-![PeaceForUkraine](https://flutter-sound.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
+![PeaceForUkraine](https://tau-ver.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
 Peace for Ukraine
 
-![PrayForUkraine](https://flutter-sound.canardoux.xyz/images/banner.png)
+![PrayForUkraine](https://tau-ver.canardoux.xyz/images/banner.png)
 Pray for Ukraine
 
 ## Overview
@@ -66,7 +66,7 @@ It alway access `Etau` which is the interface. This allows the App to have a uni
 - [Simple basic examples](https://github.com/Canardoux/etau/tree/main/example/lib/BasicEx) showing how to use `Etau`
 - A port of all the [Mozilla examples](https://github.com/Canardoux/etau/tree/main/example/lib/MozillaEx), using Dart instead of JS ofcourse. These Mozilla examples are also very simple, and can be looked at instead of our basic examples.
 
-You can run a live view of these examples [here](https://tau.canardoux.xyz/live/etau/index.html).
+You can run a live view of these examples [here](https://tau-ver.canardoux.xyz/tau/etau/live/index.html).
 
 ## License
 
