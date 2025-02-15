@@ -13,7 +13,7 @@ The complete source of a runnable example [is there](https://github.com/Canardou
 To play back something you must instanciate a player. Most of the time, you will need just one player, and you can place this instanciation in the variables initialisation of your class :
 
 ```dart
-  import 'package:flauto/flutter_sound.dart';
+  import 'package:flutter_sound/flutter_sound.dart';
 ...
   FlutterSoundPlayer _mPlayer = FlutterSoundPlayer();
 ```
@@ -31,7 +31,7 @@ When you have finished with it, **you must** [close it](/tau/fs/api/player/Flutt
   @override
   void initState() {
     // Be careful : openPlayer returns a Future.
-    // Do not access your FlutterSoundPlayer or FlutterSoundRecorder before the completion of the Future
+    // Do not access your FlutterSoundPlayer before the completion of the Future
     super.initState();
     _mPlayer!.openPlayer().then((value) {
       setState(() {

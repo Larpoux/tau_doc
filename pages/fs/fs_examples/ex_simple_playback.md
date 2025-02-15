@@ -1,22 +1,13 @@
 ---
 title:  "Examples"
-description: "Simple Playback"
-summary: "Simple Playback"
+summary: "A very simple Playback"
 permalink: fs-ex_simple_playback.html
-tags: [example,demo]
-keywords: Flutter, Flutter Sound, examples, demo
 ---
-# Examples
 
-
-## SimplePlayback
-
-[SimplePlayback](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_playback/simple_playback.dart)
-
-{% include image.html file="examples/simple_playback.png" %}
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/simple_playback/simple_playback.dart)
 
 This is a very simple example for Flutter Sound beginners, that shows how to play a remote file.
 
 This example is really basic.
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_playback/simple_playback.dart)
+{% include image.html file="/fs/ExampleScreenShots/SimplePlayback.png" %}

@@ -45,7 +45,7 @@ the [startRecorder()](/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.ht
         await myPlayer.startPlayer( fromURI: url, codec: Codec.aacADTS );
 ```
 
-All the temporary files created are automaticaly deleted when the App does a [closeRecorder()[(/tau/fs/api/recorder/FlutterSoundRecorder/stopRecorder.html)].
+All the temporary files created are automaticaly deleted when the App does a [closeRecorder()](/tau/fs/api/recorder/FlutterSoundRecorder/closeRecorder.html)].
 
 This works on :
 - Android

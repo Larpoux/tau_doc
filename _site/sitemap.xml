@@ -58,13 +58,19 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs-README.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/README.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/README.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/td-README.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-README.html</loc>
   </url>
   
   
@@ -76,25 +82,13 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/taudio-README.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_constructor.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_utilities_constructor.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_convert.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_constructor.html</loc>
   </url>
   
   
@@ -107,12 +101,6 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_delete_record.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_demo.html</loc>
   </url>
   
   
@@ -142,7 +130,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex___.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex__.html</loc>
   </url>
   
   
@@ -160,7 +148,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex__playback_from_stream_1.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_playback_from_stream_1.html</loc>
   </url>
   
   
@@ -184,7 +172,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex__examples_recorder_onprogress.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_recorder_onprogress.html</loc>
   </url>
   
   
@@ -227,6 +215,12 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_setSpeed.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs-ex_streams.html</loc>
   </url>
   
   
@@ -382,12 +376,6 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_multi_playbacks.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/news.html</loc>
   </url>
   
@@ -406,25 +394,25 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_on_progress.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_on_progress.html</loc>
   </url>
   
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_open_audio_session.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_on_progress.html</loc>
   </url>
   
   
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_open_audio_session.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_open_audio_session.html</loc>
   </url>
   
   
@@ -454,43 +442,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_play_from_mic.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_playback_from_stream_1.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_playback_from_stream_2.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_constructor.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_player_onprogress.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_record_to_stream.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_recorder_onprogress.html</loc>
   </url>
   
   
@@ -514,25 +466,7 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_seek.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_seek_player.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_setLogLevel.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_setLogLevel.html</loc>
   </url>
   
   
@@ -544,7 +478,13 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setLogLevel.html</loc>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_setLogLevel.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_setLogLevel.html</loc>
   </url>
   
   
@@ -586,12 +526,6 @@
   
   
   <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setVolume.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_set_volume.html</loc>
   </url>
   
@@ -599,30 +533,6 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_player_set_volumepan.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_sound_examples_simple_playback.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_simple_recorder.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_sound_effects.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_setSpeed.html</loc>
   </url>
   
   
@@ -665,12 +575,6 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_recorder_stop_recorder.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_stream_loop.html</loc>
   </url>
   
   
@@ -725,12 +629,6 @@
   
   <url>
     <loc>https://tau-gh.canardoux.xyz/index.html/fs_api_utilities_wave_to_pcm_buffer.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://tau-gh.canardoux.xyz/index.html/fs_examples_widget_ui.html</loc>
   </url>
   
   

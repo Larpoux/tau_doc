@@ -431,7 +431,7 @@
           
           
           
-          <li><a title="Examples overview" href="/fs-ex___.html">Examples overview</a></li>
+          <li><a title="Examples overview" href="/fs-ex__.html">Examples overview</a></li>
           
           
           
@@ -481,13 +481,6 @@
           
           
           <li><a title="Volume Control" href="/fs-ex_setVolume.html">Volume Control</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Pan Control" href="/fs-ex_setVolume.html">Pan Control</a></li>
           
           
           
@@ -1044,20 +1037,20 @@ RAW PCM Formats are REALLY!!!, REALLY!!! great with Dart Streams. See the <a hre
 <p>A Wave file is a WAVE header + RAW PCM data. When you want to play a WAVE file, all the PCM attributs can be found in the header. You don’t have to specify those parameters when you want to play such a file. The Wave audio file format has a terrible drawback : it cannot be streamed. The Wave file is considered not valid, until it is closed. During the construction of the Wave file, it is considered as corrupted because the Wave header is still not written.</p>
 
 <p>Raw PCM is not really an audio format. Raw PCM files store the raw data <strong>without</strong> any envelope. This means that when you want to play RAW PCM files, you must specified all the PCM attributs (Sample Rate, coding, number of channels, …).
-A simple way for playing a RAW PCM file, is to add a <code class="language-plaintext highlighter-rouge">Wave</code> header in front of the data before playing it. To do that, the helper verb <a href="/fs/api/helper/FlutterSoundHelper/pcmToWave.html">pcmToWave()</a> is convenient. You can also call directely the <code class="language-plaintext highlighter-rouge">startPlayer()</code> verb. If you do that, do not forget to provide the <code class="language-plaintext highlighter-rouge">sampleRate</code> and <code class="language-plaintext highlighter-rouge">numChannels</code> parameters.</p>
+A simple way for playing a RAW PCM file, is to add a <code class="language-plaintext highlighter-rouge">Wave</code> header in front of the data before playing it. To do that, the helper verb <a href="/tau/fs/api/helper/FlutterSoundHelper/pcmToWave.html">pcmToWave()</a> is convenient. You can also call directely the <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html">startPlayer()</a> verb. If you do that, do not forget to provide the <code class="language-plaintext highlighter-rouge">sampleRate</code> and <code class="language-plaintext highlighter-rouge">numChannels</code> parameters.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> 
-If you need to remove the header from a WAVE file, the helper verb <a href="/fs/api/helper/FlutterSoundHelper/waveToPCM.html">waveToPCM()</a> is convenient.
+If you need to remove the header from a WAVE file, the helper verb <a href="/tau/fs/api/helper/FlutterSoundHelper/waveToPCM.html">waveToPCM()</a> is convenient.
 </div>
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> 
-If you need to add a header in front of a RAW file, the helper verb <a href="/fs/api/helper/FlutterSoundHelper/pcmToWave.html">pcmToWave()</a> is convenient.
+If you need to add a header in front of a RAW file, the helper verb <a href="/tau/fs/api/helper/FlutterSoundHelper/pcmToWave.html">pcmToWave()</a> is convenient.
 </div>
 
 <hr />
 
 <h2 id="recording-or-playing-raw-pcm-files">Recording or playing Raw PCM files</h2>
 
-<p>To record a RAW PCM16 file, you use the regular <a href="/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a> API verb. To play a Raw PCM16 file, you can either add a Wave header in front of the file with <a href="/fs/api/helper/FlutterSoundHelper/pcmToWave.html">pcm16ToWave</a> verb, or call the regular <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html">startPlayer()</a> or <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html">startPlayerFromStream</a> API verb. If you do the later, you must provide the <code class="language-plaintext highlighter-rouge">sampleRate</code> and <code class="language-plaintext highlighter-rouge">numChannels</code> parameter during the call. You can look to the examples provided with Flutter Sound.</p>
+<p>To record a RAW PCM16 file, you use the regular <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a> API verb. To play a Raw PCM16 file, you can either add a Wave header in front of the file with <a href="/tau/fs/api/helper/FlutterSoundHelper/pcmToWave.html">pcm16ToWave</a> verb, or call the regular <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayer.html">startPlayer()</a> or <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html">startPlayerFromStream</a> API verb. If you do the later, you must provide the <code class="language-plaintext highlighter-rouge">sampleRate</code> and <code class="language-plaintext highlighter-rouge">numChannels</code> parameter during the call. You can look to the examples provided with Flutter Sound.</p>
 
 <p><em>Example</em>:</p>
 
@@ -1138,9 +1131,9 @@ If you need to add a header in front of a RAW file, the helper verb <a href="/fs
 
 <h2 id="interleaving">Interleaving</h2>
 
-<p>When you want to play data from a stream, or when you want to record something to a stream, you can specify the interleaving state. See <a href="fs-guides_streams.html">this guide</a> for Dart Streams support.</p>
+<p>When you want to play data from a stream, or when you want to record something to a stream, you can specify the interleaving state. See <a href="fs-guides_live_streams.html">this guide</a> for Dart Streams support.</p>
 <ul>
-  <li>When the data are interleaved, the samples are given for each channel in a raw (ch0, ch1, ch0, ch1, ch0, ch1, …).</li>
+  <li>When the data are interleaved, the samples are given for each channel in a row (ch0, ch1, ch0, ch1, ch0, ch1, …).</li>
   <li>When the data are not interleaved (Plan Mode), the samples are given separately for each channel (ch0, ch0, ch0, …)(ch1, ch1, ch1, …).</li>
 </ul>
 
@@ -1189,7 +1182,7 @@ If you need to add a header in front of a RAW file, the helper verb <a href="/fs
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 14, 2025 <br />
+ Site last generated: Feb 15, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

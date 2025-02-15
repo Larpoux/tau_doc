@@ -1,11 +1,11 @@
 ---
 title:  "PCM Dart Streams"
-summary: "Recording PCM-16 to a Dart Stream and Playback from Stream are two **VERY**, **VERY** important Flutter Sound features that must not be overlooked."
+summary: "Recording PCM-16 to a Dart Stream and Playback from a Dart Stream are two **VERY**, **VERY** important Flutter Sound features that must not be overlooked."
 permalink: fs-guides_live_streams.html
 ---
 ## Record to Stream
 
-To record to live PCM data, when calling the verb [startRecorder()](/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html), you specify the parameter `toStream:`, `toStreamFloat32:` or `toStreamInt16:` with your Stream sink, instead of the parameter `toFile:`. This parameter is a Dart StreamSink that you can listen to, for processing the audio data. 
+To record to a live PCM data, when calling the verb [startRecorder()](/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html), you specify the parameter `toStream:`, `toStreamFloat32:` or `toStreamInt16:` with your Stream sink, instead of the parameter `toFile:`. This parameter is a Dart StreamSink that you can listen to, for processing the audio data. 
 
 - The parameter `toStream:` is used when you want to record interleaved data to a `<Uint8List>` Stream Sink
 - The parameter `toStreamFloat32:` is used when you want to record non interleaved data (Planar mode) to a `<List<Float32List>>` Stream Sink
@@ -47,7 +47,10 @@ The main parameters for the verb [startRecorder()](/tau/fs/api/recorder/FlutterS
 
 ### _Interleaved Example_
 
-You can look to the [simple example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart) provided with Flutter Sound.
+You can look to 
+* The [simple example](fs-ex_record_to_stream.html) provided with Flutter Sound.
+* The [simple example](fs-ex_streams.html)
+
 
 ```dart
   StreamController<Uint8List> recordingDataController = StreamController<Uint8List>();
@@ -69,7 +72,7 @@ You can look to the [simple example](https://github.com/Canardoux/flutter_sound/
 
 ### _Non Interleaved Example_
 
-You can look to the [same simple example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart) provided with Flutter Sound.
+You can look to the same [simple example](fs-ex_streams.html) provided with Flutter Sound.
 
 ```dart
   StreamController<Food> recordingDataController = StreamController<List<Float32List>>();
@@ -120,7 +123,7 @@ Note: This functionnality needs, at least, an Android SDK &gt;= 21. This new fun
 
 To play live stream, you start playing with the verb [startPlayerFromStream()](/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html) instead of the regular `startPlayer()` verb.
 
-The main parameters for the verb [startPlayerFromStream()](/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html)` are : 
+The main parameters for the verb [startPlayerFromStream()](/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html) are : 
 
 - `codec:` : The codec (Codec.pcm16 or Codec.pcmFloat32)
 - `sampleRate:` : The sample rate
@@ -139,7 +142,7 @@ await myPlayer.startPlayerFromStream
 
 ### interleaved:
 
-This parameter specifies if the data to be played are interleaved or not. When the data are interleaved, you will use the [_mPlayer.uint8ListSink](/tau/fs/api/player/FlutterSoundPlayer/uint8ListSink.html) to play data. When the data are not interleaved, you will use [_mPlayer.float32Sink](/fs/api/player/FlutterSoundPlayer/float32Sink.html) or [_mPlayer.int16Sink](/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html) depending on the codec used. When the data are interleaved, the data provided by the app must be coded as UInt8List. This is convenient when you have raw data to be played from a remote server. When the data are not interleaved, they are provided as `List<List>`, with an array of length equal to the number of channels. 
+This parameter specifies if the data to be played are interleaved or not. When the data are interleaved, you will use the [_mPlayer.uint8ListSink](/tau/fs/api/player/FlutterSoundPlayer/uint8ListSink.html) to play data. When the data are not interleaved, you will use [_mPlayer.float32Sink](/tau/fs/api/player/FlutterSoundPlayer/float32Sink.html) or [_mPlayer.int16Sink](/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html) depending on the codec used. When the data are interleaved, the data provided by the app must be coded as UInt8List. This is convenient when you have raw data to be played from a remote server. When the data are not interleaved, they are provided as `List<List>`, with an array of length equal to the number of channels. 
 
 {% include tip.html content="
 It is possible to use non interleaved data, even with `numChannels` equal 1 when you have int16 Integers or float32 data to be played and not a raw buffer.
@@ -159,27 +162,27 @@ This parameter cannot be used. After [startPlayerFromStream()](/tau/fs/api/playe
 
 ### Playback without back pressure (without flow control),
 
-- [_mPlayer.float32Sink](/fs/api/player/FlutterSoundPlayer/float32Sink.html) is a Stream Sink used when the data are interleaved and when you have UInt8List buffers to be played
+- [_mPlayer.float32Sink](/tau/fs/api/player/FlutterSoundPlayer/float32Sink.html) is a Stream Sink used when the data are interleaved and when you have UInt8List buffers to be played
 - [_mPlayer.int16Sink](/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html) is a Stream Sink used when the data are not interleaved and when you have Float32 data to be played
 - [_mPlayer.int16Sink](/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html) is a Stream Sink used when the data are not interleaved and when you have Int16 data to be played
 
 ```dart
 Uint8List d;
 ...
-_mPlayer.uint8ListSink!.add(d);
+_mPlayer.uint8ListSink.add(d);
 ```
 
 ```dart
 List<Float32List> d; // A List of `numChannels` Float32List
 ...
-_mPlayer.float32Sink(d);
+_mPlayer.float32Sink.add(d);
 
 ```
 
 ```dart
 List<Int16List>; // A List of `numChannels` Int16List
 ...
-_mPlayer.int16Sink(d);
+_mPlayer.int16Sink.add(d);
 ```
 
 
@@ -192,22 +195,22 @@ _mPlayer.int16Sink(d);
 
 The App does `myPlayer.uint8ListSink.add(d)` or `_mPlayer.float32Sink(d)` or `mPlayer.int16Sink(d);` each time it wants to play some data. No need to await, no need to verify if the previous buffers have finished to be played. All the data added to the Stream Sink are buffered, and are played sequentially. The App continues to work without knowing when the buffers are really played.
 
-This means two things :
+This means three things :
 
-* If the App is very fast adding buffers to `foodSink` it can consume a lot of memory for the waiting buffers.
+* If the App is very fast adding buffers to the `foodSink` it can consume a lot of memory for the waiting buffers.
 * When the App has finished feeding the sink, it cannot just do `myPlayer.stopPlayer()`, because there are perhaps many buffers not yet played.
-
-  If it does a `stopPlayer()`, all the waiting buffers will be flushed which is probably not what it wants.
+If it does a `stopPlayer()`, all the waiting buffers will be flushed which is probably not what it wants.
+* The App cannot know when the audio data are really played.
 
 
 --------------
 
 ### _Examples_ 
 
-You can look to the provided example :
+You can look to the provided examples :
 
-* The [same simple example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart)
-* [This example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithoutBackPressure/live_playback_without_back_pressure.dart) shows how to play Live data, without Back Pressure from Flutter Sound
+* The [simple example](fs-ex_streams.html)
+* [This example](fs-ex_playback_from_stream_1.html) shows how to play live data, without Back Pressure from Flutter Sound
 
 --------------------
 
@@ -215,20 +218,20 @@ You can look to the provided example :
 
 Playing live data without flow control is very simple, because you don't have to wait//handle Futures. But sometimes it can be interesting to manage a flow control :
 - When you have huge data generated and you cannot loop feeding your Stream Sink.
-- When you want to know when the data has been played and generate data on demand.
+- When you want to know when the data has been played for generating data on demand.
 - When you just want to know when your previous packet has been played
 
 
 If the App wants to keep synchronization with what is played, it uses the verb feedUint8FromStream(), feedInt16FromStream() or feedF32FromStream() to play data. 
-- [feedUint8FromStream()](/tau/fs/api/player/FlutterSoundPlayer/feedUint8FromStream.htm)
-- [feedInt16FromStream()](/fs/api/player/FlutterSoundPlayer/feedInt16FromStream.html)
+- [feedUint8FromStream()](/tau/fs/api/player/FlutterSoundPlayer/feedUint8FromStream.html)
+- [feedInt16FromStream()](/tau/fs/api/player/FlutterSoundPlayer/feedInt16FromStream.html)
 - [feedF32FromStream()](/tau/fs/api/player/FlutterSoundPlayer/feedF32FromStream.html)
 
 It is really very important not to call another `feedFromStream()` before the completion of the previous future. When each Future is completed, the App can be sure that the provided data are correctely either played, or at least put in low level internal buffers, and it knows that it is safe to do another one.
 
 _Example:_
 
-You can look to this [This example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithBackPressure/live_playback_with_back_pressure.dart)
+You can look to this [This example](fs-ex_playback_from_stream_2.html)
 
 ```text
 await myPlayer.startPlayerFromStream(codec: Codec.pcm16, numChannels: 1, sampleRate: 48000);
@@ -246,11 +249,13 @@ You will `await` or use `then()` for each call to `feedFromStream()`.
 
 * This new functionnality needs, at least, an Android SDK &gt;= 23
 
-## _Examples_ You can look to the provided examples :
+## _Examples_
 
-* [This simple example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart) shows how to play Live data, without Back Pressure from Flutter Sound.
-* [This example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithoutBackPressure/live_playback_without_back_pressure.dart) shows how to play Live data, without Back Pressure from Flutter Sound.
-* [This example](https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithBackPressure/live_playback_with_back_pressure.dart) shows how to play Float32, or Int16, Interleaved or Planar.
+You can look to the provided examples :
+
+* [This simple example](fs-ex_playback_from_stream_2) shows how to play live data, with Back Pressure.
+* [This example](fs-ex_playback_from_stream_1) shows how to play live data, without Back Pressure.
+* [This example](fs-ex_streams.html) shows how to play Float32, or Int16, Interleaved or Planar.
 
 
 --------------------

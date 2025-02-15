@@ -12,8 +12,11 @@ summary: The Flutter Sound Project README.
 
 ## Flutter Sound stands for Ukraine
 
-{% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
-{% include image.html file="banner.png"  caption="Stand up For Ukraine : Street Art" %}
+![PeaceForUkraine](https://flutter-sound.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
+Peace for Ukraine
+
+![PrayForUkraine](https://flutter-sound.canardoux.xyz/images/banner.png)
+Pray for Ukraine
 
 ## Flutter Sound as a τ Project
 
@@ -132,7 +135,7 @@ The W3C recommandation is powerful but simple to use. There are probably no many
 The current Flutter Sound version is 9.x. [Taudio](https://pub.dev/packages/taudio) is a new name for Flutter Sound 10.0. `Taudio` is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:
 - A documentation (TODO)
 - A support of the three main platforms:
-   - Web
+   - Web (TODO)
    - iOS (TODO)
    - Android (TODO)
 

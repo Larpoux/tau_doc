@@ -7,6 +7,7 @@ toc: false
 ### 9.24.0 - 2025/02/10
 
 - Flutter Sound does not depend any more on etau/tau_web
+- Doc. Really! No more 404 errors!
 
 #### TODO
 

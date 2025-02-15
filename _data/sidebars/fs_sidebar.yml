@@ -83,7 +83,7 @@ entries:
     folderitems:
 
     - title: Examples overview
-      url: fs-ex___.html
+      url: fs-ex__.html
       output: web, pdf
 
     - title: Demo
@@ -111,10 +111,6 @@ entries:
       output: web, pdf
 
     - title: Volume Control
-      url: /fs-ex_setVolume.html
-      output: web, pdf
-
-    - title: Pan Control
       url: /fs-ex_setVolume.html
       output: web, pdf
 

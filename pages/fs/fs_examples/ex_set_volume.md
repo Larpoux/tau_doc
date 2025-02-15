@@ -1,10 +1,7 @@
 ---
-title:  "Examples"
-description: "setVolume()"
-summary: "Set the sound volume"
+title:  "Set Volume"
+summary: "Control of the sound volume"
 permalink: fs-ex_setVolume.html
-tags: [example]
-keywords: Flutter, Flutter Sound, examples
 ---
 # Examples
 
@@ -15,6 +12,7 @@ keywords: Flutter, Flutter Sound, examples
 
 {% include image.html file="examples/set_volume.png" %}
 
-`setVolume()` is a very simple basic example which allows the user to ajust the sound volume.
+This is a very simple basic example which allows the user to adjust the sound volume.
+It launch two players which play each an asset. The User can adjust the volume of them independently.
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/volume_control/volume_control.dart)
+{% include image.html file="/fs/ExampleScreenShots/VolumeControl.png" %}

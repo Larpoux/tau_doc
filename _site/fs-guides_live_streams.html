@@ -16,7 +16,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Recording PCM-16 to a Dart Stream and Playback from Stream are two **VERY**, **VERY** important Flutter Sound features that must not be overlooked.">
+<meta name="description" content="Recording PCM-16 to a Dart Stream and Playback from a Dart Stream are two **VERY**, **VERY** important Flutter Sound features that must not be overlooked.">
 <meta name="keywords" content=" ">
 <title>PCM Dart Streams | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -431,7 +431,7 @@
           
           
           
-          <li><a title="Examples overview" href="/fs-ex___.html">Examples overview</a></li>
+          <li><a title="Examples overview" href="/fs-ex__.html">Examples overview</a></li>
           
           
           
@@ -481,13 +481,6 @@
           
           
           <li><a title="Volume Control" href="/fs-ex_setVolume.html">Volume Control</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Pan Control" href="/fs-ex_setVolume.html">Pan Control</a></li>
           
           
           
@@ -966,7 +959,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Recording PCM-16 to a Dart Stream and Playback from Stream are two **VERY**, **VERY** important Flutter Sound features that must not be overlooked.</div>
+    <div class="summary">Recording PCM-16 to a Dart Stream and Playback from a Dart Stream are two **VERY**, **VERY** important Flutter Sound features that must not be overlooked.</div>
    
 
     
@@ -999,7 +992,7 @@ $('#toc').on('click', 'a', function() {
 
    <h2 id="record-to-stream">Record to Stream</h2>
 
-<p>To record to live PCM data, when calling the verb <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a>, you specify the parameter <code class="language-plaintext highlighter-rouge">toStream:</code>, <code class="language-plaintext highlighter-rouge">toStreamFloat32:</code> or <code class="language-plaintext highlighter-rouge">toStreamInt16:</code> with your Stream sink, instead of the parameter <code class="language-plaintext highlighter-rouge">toFile:</code>. This parameter is a Dart StreamSink that you can listen to, for processing the audio data.</p>
+<p>To record to a live PCM data, when calling the verb <a href="/tau/fs/api/recorder/FlutterSoundRecorder/startRecorder.html">startRecorder()</a>, you specify the parameter <code class="language-plaintext highlighter-rouge">toStream:</code>, <code class="language-plaintext highlighter-rouge">toStreamFloat32:</code> or <code class="language-plaintext highlighter-rouge">toStreamInt16:</code> with your Stream sink, instead of the parameter <code class="language-plaintext highlighter-rouge">toFile:</code>. This parameter is a Dart StreamSink that you can listen to, for processing the audio data.</p>
 
 <ul>
   <li>The parameter <code class="language-plaintext highlighter-rouge">toStream:</code> is used when you want to record interleaved data to a <code class="language-plaintext highlighter-rouge">&lt;Uint8List&gt;</code> Stream Sink</li>
@@ -1048,7 +1041,11 @@ You can specify <code class="language-plaintext highlighter-rouge">toStreamFloat
 
 <h3 id="interleaved-example"><em>Interleaved Example</em></h3>
 
-<p>You can look to the <a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart">simple example</a> provided with Flutter Sound.</p>
+<p>You can look to</p>
+<ul>
+  <li>The <a href="fs-ex_record_to_stream.html">simple example</a> provided with Flutter Sound.</li>
+  <li>The <a href="fs-ex_streams.html">simple example</a></li>
+</ul>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Uint8List</span><span class="p">&gt;</span> <span class="n">recordingDataController</span> <span class="o">=</span> <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Uint8List</span><span class="p">&gt;();</span>
   <span class="n">_mRecordingDataSubscription</span> <span class="o">=</span>
@@ -1068,7 +1065,7 @@ You can specify <code class="language-plaintext highlighter-rouge">toStreamFloat
 
 <h3 id="non-interleaved-example"><em>Non Interleaved Example</em></h3>
 
-<p>You can look to the <a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart">same simple example</a> provided with Flutter Sound.</p>
+<p>You can look to the same <a href="fs-ex_streams.html">simple example</a> provided with Flutter Sound.</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">StreamController</span><span class="p">&lt;</span><span class="n">Food</span><span class="p">&gt;</span> <span class="n">recordingDataController</span> <span class="o">=</span> <span class="n">StreamController</span><span class="p">&lt;</span><span class="kt">List</span><span class="p">&lt;</span><span class="n">Float32List</span><span class="p">&gt;&gt;();</span>
   <span class="n">_mRecordingDataSubscription</span> <span class="o">=</span>
@@ -1118,7 +1115,7 @@ Note: This functionnality needs, at least, an Android SDK &gt;= 21. This new fun
 
 <p>To play live stream, you start playing with the verb <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html">startPlayerFromStream()</a> instead of the regular <code class="language-plaintext highlighter-rouge">startPlayer()</code> verb.</p>
 
-<p>The main parameters for the verb <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html">startPlayerFromStream()</a>` are :</p>
+<p>The main parameters for the verb <a href="/tau/fs/api/player/FlutterSoundPlayer/startPlayerFromStream.html">startPlayerFromStream()</a> are :</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">codec:</code> : The codec (Codec.pcm16 or Codec.pcmFloat32)</li>
@@ -1138,7 +1135,7 @@ Note: This functionnality needs, at least, an Android SDK &gt;= 21. This new fun
 
 <h3 id="interleaved-1">interleaved:</h3>
 
-<p>This parameter specifies if the data to be played are interleaved or not. When the data are interleaved, you will use the <a href="/tau/fs/api/player/FlutterSoundPlayer/uint8ListSink.html">_mPlayer.uint8ListSink</a> to play data. When the data are not interleaved, you will use <a href="/fs/api/player/FlutterSoundPlayer/float32Sink.html">_mPlayer.float32Sink</a> or <a href="/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html">_mPlayer.int16Sink</a> depending on the codec used. When the data are interleaved, the data provided by the app must be coded as UInt8List. This is convenient when you have raw data to be played from a remote server. When the data are not interleaved, they are provided as <code class="language-plaintext highlighter-rouge">List&lt;List&gt;</code>, with an array of length equal to the number of channels.</p>
+<p>This parameter specifies if the data to be played are interleaved or not. When the data are interleaved, you will use the <a href="/tau/fs/api/player/FlutterSoundPlayer/uint8ListSink.html">_mPlayer.uint8ListSink</a> to play data. When the data are not interleaved, you will use <a href="/tau/fs/api/player/FlutterSoundPlayer/float32Sink.html">_mPlayer.float32Sink</a> or <a href="/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html">_mPlayer.int16Sink</a> depending on the codec used. When the data are interleaved, the data provided by the app must be coded as UInt8List. This is convenient when you have raw data to be played from a remote server. When the data are not interleaved, they are provided as <code class="language-plaintext highlighter-rouge">List&lt;List&gt;</code>, with an array of length equal to the number of channels.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> 
 It is possible to use non interleaved data, even with <code class="language-plaintext highlighter-rouge">numChannels</code> equal 1 when you have int16 Integers or float32 data to be played and not a raw buffer.
@@ -1159,25 +1156,25 @@ Non interleaved PCM data is not yet supported on Android. It is actually only im
 <h3 id="playback-without-back-pressure-without-flow-control">Playback without back pressure (without flow control),</h3>
 
 <ul>
-  <li><a href="/fs/api/player/FlutterSoundPlayer/float32Sink.html">_mPlayer.float32Sink</a> is a Stream Sink used when the data are interleaved and when you have UInt8List buffers to be played</li>
+  <li><a href="/tau/fs/api/player/FlutterSoundPlayer/float32Sink.html">_mPlayer.float32Sink</a> is a Stream Sink used when the data are interleaved and when you have UInt8List buffers to be played</li>
   <li><a href="/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html">_mPlayer.int16Sink</a> is a Stream Sink used when the data are not interleaved and when you have Float32 data to be played</li>
   <li><a href="/tau/fs/api/player/FlutterSoundPlayer/int16Sink.html">_mPlayer.int16Sink</a> is a Stream Sink used when the data are not interleaved and when you have Int16 data to be played</li>
 </ul>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Uint8List</span> <span class="n">d</span><span class="p">;</span>
 <span class="p">...</span>
-<span class="n">_mPlayer</span><span class="o">.</span><span class="na">uint8ListSink</span><span class="o">!.</span><span class="na">add</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+<span class="n">_mPlayer</span><span class="o">.</span><span class="na">uint8ListSink</span><span class="o">.</span><span class="na">add</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 </code></pre></div></div>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">List</span><span class="p">&lt;</span><span class="n">Float32List</span><span class="p">&gt;</span> <span class="n">d</span><span class="p">;</span> <span class="c1">// A List of `numChannels` Float32List</span>
 <span class="p">...</span>
-<span class="n">_mPlayer</span><span class="o">.</span><span class="na">float32Sink</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+<span class="n">_mPlayer</span><span class="o">.</span><span class="na">float32Sink</span><span class="o">.</span><span class="na">add</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 
 </code></pre></div></div>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">List</span><span class="p">&lt;</span><span class="n">Int16List</span><span class="p">&gt;;</span> <span class="c1">// A List of `numChannels` Int16List</span>
 <span class="p">...</span>
-<span class="n">_mPlayer</span><span class="o">.</span><span class="na">int16Sink</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+<span class="n">_mPlayer</span><span class="o">.</span><span class="na">int16Sink</span><span class="o">.</span><span class="na">add</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
@@ -1190,26 +1187,24 @@ Non interleaved PCM data is not yet supported on Android. It is actually only im
 
 <p>The App does <code class="language-plaintext highlighter-rouge">myPlayer.uint8ListSink.add(d)</code> or <code class="language-plaintext highlighter-rouge">_mPlayer.float32Sink(d)</code> or <code class="language-plaintext highlighter-rouge">mPlayer.int16Sink(d);</code> each time it wants to play some data. No need to await, no need to verify if the previous buffers have finished to be played. All the data added to the Stream Sink are buffered, and are played sequentially. The App continues to work without knowing when the buffers are really played.</p>
 
-<p>This means two things :</p>
+<p>This means three things :</p>
 
 <ul>
-  <li>If the App is very fast adding buffers to <code class="language-plaintext highlighter-rouge">foodSink</code> it can consume a lot of memory for the waiting buffers.</li>
-  <li>
-    <p>When the App has finished feeding the sink, it cannot just do <code class="language-plaintext highlighter-rouge">myPlayer.stopPlayer()</code>, because there are perhaps many buffers not yet played.</p>
-
-    <p>If it does a <code class="language-plaintext highlighter-rouge">stopPlayer()</code>, all the waiting buffers will be flushed which is probably not what it wants.</p>
-  </li>
+  <li>If the App is very fast adding buffers to the <code class="language-plaintext highlighter-rouge">foodSink</code> it can consume a lot of memory for the waiting buffers.</li>
+  <li>When the App has finished feeding the sink, it cannot just do <code class="language-plaintext highlighter-rouge">myPlayer.stopPlayer()</code>, because there are perhaps many buffers not yet played.
+If it does a <code class="language-plaintext highlighter-rouge">stopPlayer()</code>, all the waiting buffers will be flushed which is probably not what it wants.</li>
+  <li>The App cannot know when the audio data are really played.</li>
 </ul>
 
 <hr />
 
 <h3 id="examples"><em>Examples</em></h3>
 
-<p>You can look to the provided example :</p>
+<p>You can look to the provided examples :</p>
 
 <ul>
-  <li>The <a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart">same simple example</a></li>
-  <li><a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithoutBackPressure/live_playback_without_back_pressure.dart">This example</a> shows how to play Live data, without Back Pressure from Flutter Sound</li>
+  <li>The <a href="fs-ex_streams.html">simple example</a></li>
+  <li><a href="fs-ex_playback_from_stream_1.html">This example</a> shows how to play live data, without Back Pressure from Flutter Sound</li>
 </ul>
 
 <hr />
@@ -1219,14 +1214,14 @@ Non interleaved PCM data is not yet supported on Android. It is actually only im
 <p>Playing live data without flow control is very simple, because you don’t have to wait//handle Futures. But sometimes it can be interesting to manage a flow control :</p>
 <ul>
   <li>When you have huge data generated and you cannot loop feeding your Stream Sink.</li>
-  <li>When you want to know when the data has been played and generate data on demand.</li>
+  <li>When you want to know when the data has been played for generating data on demand.</li>
   <li>When you just want to know when your previous packet has been played</li>
 </ul>
 
 <p>If the App wants to keep synchronization with what is played, it uses the verb feedUint8FromStream(), feedInt16FromStream() or feedF32FromStream() to play data.</p>
 <ul>
-  <li><a href="/tau/fs/api/player/FlutterSoundPlayer/feedUint8FromStream.htm">feedUint8FromStream()</a></li>
-  <li><a href="/fs/api/player/FlutterSoundPlayer/feedInt16FromStream.html">feedInt16FromStream()</a></li>
+  <li><a href="/tau/fs/api/player/FlutterSoundPlayer/feedUint8FromStream.html">feedUint8FromStream()</a></li>
+  <li><a href="/tau/fs/api/player/FlutterSoundPlayer/feedInt16FromStream.html">feedInt16FromStream()</a></li>
   <li><a href="/tau/fs/api/player/FlutterSoundPlayer/feedF32FromStream.html">feedF32FromStream()</a></li>
 </ul>
 
@@ -1234,7 +1229,7 @@ Non interleaved PCM data is not yet supported on Android. It is actually only im
 
 <p><em>Example:</em></p>
 
-<p>You can look to this <a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithBackPressure/live_playback_with_back_pressure.dart">This example</a></p>
+<p>You can look to this <a href="fs-ex_playback_from_stream_2.html">This example</a></p>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>await myPlayer.startPlayerFromStream(codec: Codec.pcm16, numChannels: 1, sampleRate: 48000);
 
@@ -1253,12 +1248,14 @@ await myPlayer.stopPlayer();
   <li>This new functionnality needs, at least, an Android SDK &gt;= 23</li>
 </ul>
 
-<h2 id="examples-you-can-look-to-the-provided-examples-"><em>Examples</em> You can look to the provided examples :</h2>
+<h2 id="examples-1"><em>Examples</em></h2>
+
+<p>You can look to the provided examples :</p>
 
 <ul>
-  <li><a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/recordToStream/record_to_stream_example.dart">This simple example</a> shows how to play Live data, without Back Pressure from Flutter Sound.</li>
-  <li><a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithoutBackPressure/live_playback_without_back_pressure.dart">This example</a> shows how to play Live data, without Back Pressure from Flutter Sound.</li>
-  <li><a href="https://github.com/Canardoux/flutter_sound/blob/master/example/lib/livePlaybackWithBackPressure/live_playback_with_back_pressure.dart">This example</a> shows how to play Float32, or Int16, Interleaved or Planar.</li>
+  <li><a href="fs-ex_playback_from_stream_2">This simple example</a> shows how to play live data, with Back Pressure.</li>
+  <li><a href="fs-ex_playback_from_stream_1">This example</a> shows how to play live data, without Back Pressure.</li>
+  <li><a href="fs-ex_streams.html">This example</a> shows how to play Float32, or Int16, Interleaved or Planar.</li>
 </ul>
 
 <hr />
@@ -1298,7 +1295,7 @@ Note: This functionnality needs, at least, an Android SDK &gt;= 21. This new fun
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 xyz.canardoux. Licensed under Creative Commons CC BY-NC-SA 4.0. <br />
- Site last generated: Feb 14, 2025 <br />
+ Site last generated: Feb 15, 2025 <br />
 <p><img src="images/favicon180.png" alt="Company logo"  max-width="10" width="5%" height="5%"/></p>
                 </div>
             </div>

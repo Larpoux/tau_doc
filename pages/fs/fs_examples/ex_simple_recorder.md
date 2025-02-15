@@ -1,16 +1,10 @@
 ---
 title:  "Examples"
-description: "Simple Recorder"
-summary: "Simple Recorder"
+summary: "A very simple Recorder"
 permalink: fs-ex_simple_recorder.html
-tags: [example,demo]
-keywords: Flutter, Flutter Sound, examples, demo
 ---
-# Examples
 
-## SimpleRecorder
-
-[SimpleRecorder](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_recorder/simple_recorder.dart)
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/simple_recorder/simple_recorder.dart)
 
 {% include image.html file="examples/simple_recorder.png" %}
 
@@ -18,4 +12,4 @@ This is a very simple example for Flutter Sound beginners, that shows how to rec
 
 This example is really basic.
 
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/simple_recorder/simple_recorder.dart)
+{% include image.html file="/fs/ExampleScreenShots/SimpleRecorder.png" %}

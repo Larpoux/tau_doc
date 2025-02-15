@@ -54,8 +54,8 @@ This is an interface: this is what the App see and access.
 Because this is an interface, the App must import an implementation.
 Several implementations are possible. Actually we are developping two implementations:
 
-- `Tauweb`, which is an implementation for Flutter Web
-- `Tauwar`, which is an implementation for mobiles
+- [Tauweb](https://pub.dev/packages/tau_web), which is an implementation for Flutter Web
+- [Tauwar](https://pub.dev/packages/tau_war), which is an implementation for mobiles
 
 The app must import one (or several) implementations. But except for this import, the App does not access them.
 It alway access `Etau` which is the interface. This allows the App to have a unic code for various platforms.
@@ -76,24 +76,16 @@ You can run a live view of these examples [here](https://tau.canardoux.xyz/live/
 
 The `Tau` family is composed with:
 
-- `Flutter Sound 9.x` (the legacy plugin developed for many years)
-- `Taudio` (which is something like Flutter Sound 10.0)
 - `Etau` (which is a port on Flutter of the W3C Web Audio API)
-- `Tauweb` (which is the `Etau` implementation for Flutter Web)
-- `Tauwar` (which is the `Etau` implementation for mobiles)
+- [Flutter Sound](https://pub.dev/packages/flutter_sound) (the legacy plugin developed for many years)
+- [Tauweb](https://pub.dev/packages/tau_web) (which is the `Etau` implementation for Flutter Web)
+- [Tauweb](https://pub.dev/packages/tau_war) (which is the `Etau` implementation for mobiles)
+- [Taudio](https://pub.dev/packages/taudio) (which is something like Flutter Sound 10.0)
 
-### Taudio
+The `Etau` project is actually being developed.
 
-The current Flutter Sound version is 9.x. [Taudio](https://pub.dev/packages/taudio) is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:
-- A documentation (TODO)
-- A support of the three main platforms:
-   - Web
-   - iOS (TODO)
-   - Android (TODO)
+Actually this is only a place holder.
 
-`Taudio` is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don't want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.
-
-`Taudio` is a complete rewrite of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above [Etau](https://pub.dev/packages/etau).
 
 ## We need help
 

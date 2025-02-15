@@ -52,11 +52,8 @@ feedback_email: larpoux@canardoux.xyz
 FS_VERSION: 9.23.0
 TD_VERSION: 3.3.3
 TAUDIO_VERSION: 0.0.1
-TAUDIO_VERSION: 0.0.1
 TAUWEB_VERSION: 0.0.14-alpha.4
-TAUWEB_VERSION: 0.0.14-alpha.4
-TAUWARS_VERSION: 0.0.14-alpha.4
-TAUWARS_VERSION: 0.0.14-alpha.4
+TAUWAR_VERSION: 0.0.14-alpha.4
 
 highlighter: rouge
 # library used for syntax highlighting
@@ -92,7 +89,7 @@ defaults:
 
   -
     scope:
-      path: "pages/td"
+      path: "pages/taudio"
       type: "pages"
     values:
       layout: "page"
