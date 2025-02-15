@@ -84,7 +84,7 @@ echo ''
 
 
 rm -r danku/fs-live
-cp -a ../flutter_sound/flutter_sound/example/build/web danku/fs-live
+cp -a -v ../flutter_sound/flutter_sound/example/build/web danku/fs-live
 
 ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
 scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null
