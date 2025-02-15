@@ -1,21 +1,11 @@
 ---
-title:  "Examples"
-description: "setSpeed()"
+title:  "Set Speed"
 summary: "Set the speed of a playback"
 permalink: fs-ex_setSpeed.html
-tags: [example]
-keywords: Flutter, Flutter Sound, examples
 ---
-# Examples
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/speed_control/speed_control.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
+This is a very simple basic example which allows the user to ajust the speed of a playback.
 
-## setSpeed
-
-[setSpeed](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/speed_control/speed_control.dart)
-
-{% include image.html file="examples/speed_control.png" %}
-
-`setSpeed()` is a very simple basic example which allows the user to ajust the speed of a playback.
-
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/speed_control/speed_control.dart)
+{% include image.html file="/fs/ExampleScreenShots/SpeedControl.png" %}
 

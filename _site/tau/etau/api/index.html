@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="etau API docs, for the Dart programming language.">
+  <title>etau - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://tau.canardoux.xyz/etau-README.html">etau package</a></li>
+  </ol>
+  <div class="self-name">etau</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <p><img src="https://img.shields.io/pub/v/etau.svg?style=flat-square" alt="pub version"></p>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li>
+<h2 id="etau-user--your-doc-is-herehttpstaucanardouxxyzetau-readmehtml">Etau user : your doc <a href="https://tau.canardoux.xyz/etau-README.html">is here</a></h2>
+</li>
+<li>
+<h2 id="the-changelog-is-herehttpstaucanardouxxyzetau-changeloghtml">The CHANGELOG <a href="https://tau.canardoux.xyz/etau-CHANGELOG.html">is here</a></h2>
+</li>
+</ul>
+<h2 id="e-tau-stands-for-ukraine">e-tau stands for Ukraine</h2>
+<p>{% include image.html file="2-year-old-irish-girl-ukrainian.jpg"  caption="Peace for Ukraine" %}
+{% include image.html file="banner.png"  caption="Stand up For Ukraine : Street Art" %}</p>
+<h2 id="overview">Overview</h2>
+<p>This is (will be) an implementation on flutter of the <a href="https://www.w3.org/TR/webaudio-1.1">W3C Web Audio API</a>.
+e-tau is actually in a developement state. It is an Alpha version. Even not a Beta version.</p>
+<p>There are many things to do before you can use it. Specially:</p>
+<ul>
+<li>A documentation (TODO)</li>
+<li>A support of the three main platforms:
+<ul>
+<li>Web</li>
+<li>iOS (TODO)</li>
+<li>Android (TODO)</li>
+</ul>
+</li>
+</ul>
+<p>The Web Audio API is terrific:</p>
+<ul>
+<li>It is a <a href="https://www.w3.org/TR/webaudio-1.1">W3C recommandation</a></li>
+<li>It has a great <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">documentation from Moziilla</a></li>
+<li>It is really powerful</li>
+<li>It is simple to use</li>
+</ul>
+<h2 id="the-w3c-web-audio-api-recommandation">The W3C Web Audio API recommandation</h2>
+<p>Because the Web Audio API is a W3C recommandation, you can find very good documentations on the Web. Of course, the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Mozilla documentation</a> but also from other sources.</p>
+<p>In a few words, the Web Audio API let you assembly <code>nodes</code> as a string, from a Source Node (perhaps the mic), to a Destination Node (perhaps the speaker), threw several nodes able to process the sound (echo, analyzer, panner, distorder, ...). But you really should look to the Mozilla documentation which is very good.</p>
+<p>You will have to ask yourself if you must use <a href="https://pub.dev/packages/taudio">Taudio</a> (which is a wrapper around e-tau), or directly Etau.
+The W3C recommandation is powerful but simple to use. There are probably not many reason to use Taudio any longer.</p>
+<h2 id="e-tau-structure">e-tau Structure</h2>
+<p>e-tau is a Flutter API allowing the App to use the W3C Web Audio API.
+This is an interface: this is what the App see and access.
+Because this is an interface, the App must import an implementation.
+Several implementations are possible. Actually we are developping two implementations:</p>
+<ul>
+<li>Tau Web, which is an implementation for Flutter Web</li>
+<li>Tau War, which is an implementation for mobiles</li>
+</ul>
+<p>The app must import one (or several) implementations. But except for this import, the App does not access them.
+It alway access e-tau which is the inteface. This allow the App to have a unic code for various platform.</p>
+<h2 id="examples-demo-apps">Examples (Demo Apps)</h2>
+<p>Flutter Sound comes with several <a href="https://github.com/Canardoux/flutter_sound/tree/master/example/lib">Demo/Examples</a>.</p>
+<p>You can run a live view of these examples <a href="http://tau.canardoux.xyz/live/etau/index.html">here</a>.</p>
+<h2 id="flutter-sound-and-streams">Flutter Sound and Streams</h2>
+<p>Streams support are a main Flutter Sound feature that is very exciting.</p>
+<ul>
+<li>Flutter Sound can record to a dart stream of audio data (PCM Float32 or PCM Int16). This let you process live audio data in dart, or send these data to a remote host.</li>
+<li>Flutter Sound can playback from a dart stream of audio data (PCM Float32 or PCM Int16). This let play live audio data generated from dart
+(sequencer, sound generator, ...) or from a remote host.</li>
+</ul>
+<p>You can look to the <a href="fs_guides_streams.html">FS Streams guide</a>.</p>
+<h2 id="license">License</h2>
+<p>Etau is (will be) released under the Gnu Public Licence v3 (GPL v3).</p>
+<ul>
+<li>Flutter Sound is published under the MPL-2.0 License.</li>
+<li>Flutter Sound is copyrighted by Dooboolab and Canardoux.</li>
+<li>Flutter Sound is now released under the permissive Mozilla license which has a <strong>weak</strong> <em>copyleft</em> clause: if you modify some of Flutter Sound code you must publish your modifications under the MPL license too. But you may publish your App with any license you want. Even a Proprietary/Closed-Sources License (shame on you!).</li>
+</ul>
+<h2 id="the--family">The τ family</h2>
+<p>The τ (Tau) project is composed with the following flutter plugins:</p>
+<ul>
+<li>Flutter Sound 9.x</li>
+<li><a href="https://pub.dev/packages/flutter_sound_web">Flutter_sound_web</a></li>
+<li><a href="https://pub.dev/packages/flutter_sound_platform_interface">Flutter_sound_platform_interface</a> (a glue between the Flutter Sound API and the 3 platforms: Web, iOS and Android)</li>
+<li><a href="https://pub.dev/packages/taudio">Taudio</a> (Flutter Sound 10.0)</li>
+<li><a href="https://pub.dev/packages/etau">Etau</a> (an implementation of the Web Audio API)</li>
+<li><a href="https://pub.dev/packages/tau_web">Tau-Web</a> (an implementation of Etau for Flutter Web)</li>
+<li><a href="https://pub.dev/packages/tau_war">Tau-War</a> (an implementation of Etau for the mobiles)</li>
+</ul>
+<p>And two public libraries for mobiles support:</p>
+<ul>
+<li>Flutter Sound Core for iOS</li>
+<li>Flutter Sound Core for Android</li>
+</ul>
+<h3 id="taudio">Taudio</h3>
+<p>The current Flutter Sound version is 9.x. <a href="https://pub.dev/packages/taudio">Taudio</a> is a new name for Flutter Sound 10.0. Taudio is actually in a developement state. It is an Alpha version. Even not a Beta version. There are many things to do before you can use it. Specially:</p>
+<ul>
+<li>A documentation (TODO)</li>
+<li>A support of the three main platforms:
+<ul>
+<li>Web</li>
+<li>iOS (TODO)</li>
+<li>Android (TODO)</li>
+</ul>
+</li>
+</ul>
+<p>Taudio is (will be) released under the Gnu Public Licence v3 (GPL v3). This mean that if you don't want, cannot or maynot release your App under a GPL License, you must stuck with Flutter Sound 9.x. This is not a big deal: Flutter Sound v 9.x will be maintain for a forseable future.</p>
+<p>Taudio is a complete rewritten of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but adds a new wrapper above <a href="https://pub.dev/packages/etau">Etau</a>.</p>
+<h2 id="we-need-help">We need help</h2>
+<p>{% include important.html content="
+We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.
+"%}.</p>
+<p>Actually, I am almost alone to maintain and develop three important projects :</p>
+<ul>
+<li>Flutter Sound 9.x</li>
+<li>Taudio (flutter Sound 10.0)</li>
+<li>Etau</li>
+</ul>
+<p>This is too much work on my shoulders. We desesperatly need at least one other developer.</p>
+<h2 id="thanks">Thanks</h2>
+<p>{% include note.html content="
+If you like my work, you can click on the <code>Thumb up</code> button of the top of the <a href="https://pub.dev/packages/flutter_sound">pub.dev page</a>.
+This is free and this will reassure me that <strong>I do not spend most of my life for nobody</strong>.
+"%}</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="etau">
+  <span class="name"><a href="etau/etau-library.html">etau</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="dummy">
+  <span class="name"><a href="public_dummy/public_dummy-library.html">public/dummy</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="etau_class">
+  <span class="name"><a href="public_etau_class/public_etau_class-library.html">public/etau_class</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="etau_interface">
+  <span class="name"><a href="public_etau_interface/public_etau_interface-library.html">public/etau_interface</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://tau.canardoux.xyz/etau-README.html">etau package</a></li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">etau</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="etau/etau-library.html">etau</a></li>
+      <li><a href="public_dummy/public_dummy-library.html">public/dummy</a></li>
+      <li><a href="public_etau_class/public_etau_class-library.html">public/etau_class</a></li>
+      <li><a href="public_etau_interface/public_etau_interface-library.html">public/etau_interface</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    etau
+      0.17.6
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

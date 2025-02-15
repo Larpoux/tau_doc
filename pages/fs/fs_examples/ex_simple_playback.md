@@ -4,7 +4,7 @@ summary: "A very simple Playback"
 permalink: fs-ex_simple_playback.html
 ---
 
-The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/simple_playback/simple_playback.dart)
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/simple_playback/simple_playback.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
 This is a very simple example for Flutter Sound beginners, that shows how to play a remote file.
 

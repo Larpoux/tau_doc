@@ -16,9 +16,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Audio Streams">
+<meta name="description" content="Audio Streams with dart code">
 <meta name="keywords" content=" ">
-<title>Examples | The tau Project documentation.</title>
+<title>Audio Streams | The tau Project documentation.</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -66,7 +66,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="tau_doc" href="https://tau-gh.canardoux.xyz/index.html/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="tau_doc" href="http://localhost:4000/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -281,7 +281,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the Examples page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:larpoux@canardoux.xyz?subject=The tau Project documentation feedback&body=I have some feedback about the Audio Streams page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -299,7 +299,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Examples">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Audio Streams">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -507,21 +507,21 @@
           
           
           
-          <li><a title="Playback from Stream (1)" href="/fs-ex_playback_from_stream_1.html">Playback from Stream (1)</a></li>
+          <li><a title="Playback without flow control" href="/fs-ex_playback_from_stream_1.html">Playback without flow control</a></li>
           
           
           
           
           
           
-          <li><a title="Playback from Stream (2)" href="/fs-ex_playback_from_stream_2.html">Playback from Stream (2)</a></li>
+          <li><a title="Playback with flow control" href="/fs-ex_playback_from_stream_2.html">Playback with flow control</a></li>
           
           
           
           
           
           
-          <li><a title="Sound Effects" href="/fs-ex__effects.html">Sound Effects</a></li>
+          <li><a title="Sound Effects" href="/fs-ex_sound_effects.html">Sound Effects</a></li>
           
           
           
@@ -951,7 +951,7 @@
         <!-- Content Column -->
         <div class="col-md-10" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Examples</h1>
+   <h1 class="post-title-main">Audio Streams</h1>
 </div>
 
 
@@ -959,7 +959,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Audio Streams</div>
+    <div class="summary">Audio Streams with dart code</div>
    
 
     
@@ -990,8 +990,19 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h1 id="examples">Examples</h1>
+   <p>The example source <a href="https://github.com/canardoux/flutter_sound/blob/master/example/lib/streams/streams.dart">is there</a>. You can have a live run of the examples <a href="/tau/fs/live/index.html">here</a>.</p>
 
+<p>The real interest of recording to a Stream is for example to feed a Speech-to-Text engine, or for processing the Live data in Dart in real time.</p>
+
+<p>This example can record something to a Stream. It handle the stream to store the data in memory.</p>
+
+<p>Then, the user can play a Stream that read the data store in memory.</p>
+
+<p>The example is just a little bit complicated because there are inside both a player stream and a recorder stream,
+because the user can select if he/she wants to use streams interleaved or planed, and because he/she can select to use
+Float32 PCM or Int16 PCM</p>
+
+<figure><img class="docimage" src="images//fs/ExampleScreenShots/Streams.png" alt="" /></figure>
 
 
     <div class="tags">

@@ -3,10 +3,10 @@
     <channel>
         <title>tau_doc</title>
         <description>This is the documentation of the tau Project.</description>
-        <link>https://tau-gh.canardoux.xyz/index.html/</link>
-        <atom:link href="https://tau-gh.canardoux.xyz/index.html/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 15 Feb 2025 06:57:10 +0100</pubDate>
-        <lastBuildDate>Sat, 15 Feb 2025 06:57:10 +0100</lastBuildDate>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 15 Feb 2025 11:20:05 +0100</pubDate>
+        <lastBuildDate>Sat, 15 Feb 2025 11:20:05 +0100</lastBuildDate>
         <generator>Jekyll v3.10.0</generator>
         
         <item>
@@ -25,8 +25,8 @@
 
 </description>
             <pubDate>Fri, 26 Feb 2016 00:00:00 +0100</pubDate>
-            <link>https://tau-gh.canardoux.xyz/index.html/samplepost.html</link>
-            <guid isPermaLink="true">https://tau-gh.canardoux.xyz/index.html/samplepost.html</guid>
+            <link>http://localhost:4000/samplepost.html</link>
+            <guid isPermaLink="true">http://localhost:4000/samplepost.html</guid>
             
             <category>news</category>
             
@@ -55,8 +55,8 @@
 
 </description>
             <pubDate>Wed, 24 Feb 2016 00:00:00 +0100</pubDate>
-            <link>https://tau-gh.canardoux.xyz/index.html/myupdate.html</link>
-            <guid isPermaLink="true">https://tau-gh.canardoux.xyz/index.html/myupdate.html</guid>
+            <link>http://localhost:4000/myupdate.html</link>
+            <guid isPermaLink="true">http://localhost:4000/myupdate.html</guid>
             
             <category>news</category>
             
@@ -73,8 +73,8 @@
 
 </description>
             <pubDate>Sun, 12 Apr 2015 00:00:00 +0200</pubDate>
-            <link>https://tau-gh.canardoux.xyz/index.html/test-post-from-last-year.html</link>
-            <guid isPermaLink="true">https://tau-gh.canardoux.xyz/index.html/test-post-from-last-year.html</guid>
+            <link>http://localhost:4000/test-post-from-last-year.html</link>
+            <guid isPermaLink="true">http://localhost:4000/test-post-from-last-year.html</guid>
             
             <category>news</category>
             

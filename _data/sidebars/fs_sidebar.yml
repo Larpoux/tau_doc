@@ -126,16 +126,16 @@ entries:
       url: /fs-ex_record_to_stream.html
       output: web, pdf
 
-    - title: Playback from Stream (1)
+    - title: Playback without flow control
       url: /fs-ex_playback_from_stream_1.html
       output: web, pdf
 
-    - title: Playback from Stream (2)
+    - title: Playback with flow control
       url: /fs-ex_playback_from_stream_2.html
       output: web, pdf
 
     - title: Sound Effects
-      url: /fs-ex__effects.html
+      url: /fs-ex_sound_effects.html
       output: web, pdf
 
     - title: Set Log Level

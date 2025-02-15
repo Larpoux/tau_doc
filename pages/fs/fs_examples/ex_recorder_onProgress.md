@@ -4,7 +4,7 @@ summary: "Simple setSubscriptionDuration()/onProgress() for a FlutterSoundRecord
 permalink: fs-ex_recorder_onprogress.html
 ---
 
-The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/recorder_onProgress/recorder_on_progress.dart)
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/recorder_onProgress/recorder_on_progress.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
 This example shows how to use the verb `setSubscriptionDuration()` on a recorder for having an `onProgress()` callback.
 There is a slider to show are the playback frequency can be adjust.

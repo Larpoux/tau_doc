@@ -4,7 +4,7 @@ summary: "A very simple Recorder"
 permalink: fs-ex_simple_recorder.html
 ---
 
-The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/simple_recorder/simple_recorder.dart)
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/simple_recorder/simple_recorder.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
 {% include image.html file="examples/simple_recorder.png" %}
 

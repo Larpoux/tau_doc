@@ -4,7 +4,7 @@ summary: "A demonstration of the Flutter Sound features."
 permalink: fs-ex_demo.html
 ---
 
-The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/demo/demo.dart)
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/demo/demo.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
 This is a Demo of what it is possible to do with Flutter Sound. The code of this Demo app is not so simple.
 

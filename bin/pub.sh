@@ -50,7 +50,7 @@ git pull
 git push
 
 echo -n 'Upload to canardoux.xyz ...'
-scp -r -v _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
+scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/doc > /dev/null
 echo ''
 
 
@@ -58,34 +58,3 @@ echo ''
 
 
 exit 0
-
-############  DEPRECATED #####################
-
-
-scp bin/doc2.sh canardoux@danku:/home/canardoux/bin
-scp _toto.tgz canardoux@danku:/home/canardoux
-ssh canardoux@danku "bash /home/canardoux/bin/doc2.sh"
-scp -r flutter_sound/example/assets/extract canardoux@danku:/var/www/canardoux.xyz/flutter-sound
-
-
-scp -r flutter_sound/example/build/web      danku@danku:/var/www/canardoux.xyz/danku/web_example
-scp -r flutter_sound/example/assets/extract danku@danku:/var/www/canardoux.xyz/danku
-
-
-echo -n 'Upload to canardoux.xyz ...'
-ssh tau@danku 'rm -r /var/www/canardoux.xyz/tau/doc'
-scp -r _site tau@danku:/var/www/canardoux.xyz/tau/doc >/dev/null
-
-#####
-echo ''
-
-
-###
-
-
-rm -r danku/fs-live
-cp -a -v ../flutter_sound/flutter_sound/example/build/web danku/fs-live
-
-ssh tau@danku "rm -rf /var/www/canardoux.xyz/tau/*"
-scp -r _site/* tau@danku:/var/www/canardoux.xyz/tau/ >/dev/null
-ssh -t larpoux@danku "sudo /etc/init.d/nginx restart"

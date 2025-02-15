@@ -3,12 +3,7 @@ title:  "Set Volume"
 summary: "Control of the sound volume"
 permalink: fs-ex_setVolume.html
 ---
-# Examples
-
-
-## setVolume
-
-[setVolume](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/volume_control/volume_control.dart)
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/volume_control/volume_control.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
 {% include image.html file="examples/set_volume.png" %}
 

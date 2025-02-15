@@ -1,20 +1,11 @@
 ---
-title:  "Examples"
-description: "Seek()"
+title:  "Seek Player"
 summary: "Seek into a playback"
 permalink: fs-ex_seek.html
-tags: [example]
-keywords: Flutter, Flutter Sound, examples
 ---
-# Examples
 
-## Seek
+The example source [is there](https://github.com/canardoux/flutter_sound/blob/master/example/lib/seek/seek.dart). You can have a live run of the examples [here](/tau/fs/live/index.html).
 
-[Seek](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/seek/seek.dart)
+This is a very simple basic example which allows the user to set the position into a playback.
 
-{% include image.html file="examples/seek.png" %}
-
-`Seek()` is a very simple basic example which allows the user to set the position into a playback.
-
-The complete example source [is there](https://github.com/dooboolab/flutter_sound/blob/master/flutter_sound/example/lib/seek/seek.dart)
-
+{% include image.html file="/fs/ExampleScreenShots/SeekPlayer.png" %}
