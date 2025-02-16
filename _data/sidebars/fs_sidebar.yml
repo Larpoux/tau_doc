@@ -86,10 +86,6 @@ entries:
       url: fs-ex__.html
       output: web, pdf
 
-    - title: Demo
-      url: /fs-ex_demo.html
-      output: web, pdf
-
     - title: Simple Playback
       url: /fs-ex_simple_playback.html
       output: web, pdf
@@ -98,11 +94,27 @@ entries:
       url: /fs-ex_simple_recorder.html
       output: web, pdf
 
-    - title: onProgress (Player)
+    - title: Dart Streams
+      url: /fs-ex_streams.html
+      output: web, pdf
+
+    - title: Record to Stream
+      url: /fs-ex_record_to_stream.html
+      output: web, pdf
+
+    - title: From stream without flow control
+      url: /fs-ex_playback_from_stream_1.html
+      output: web, pdf
+
+    - title: From stream with flow control
+      url: /fs-ex_playback_from_stream_2.html
+      output: web, pdf
+
+    - title: On Progress (Player)
       url: /fs-ex_player_onprogress.html
       output: web, pdf
 
-    - title: onProgress (Recorder)
+    - title: On Progress (Recorder)
       url: /fs-ex_recorder_onprogress.html
       output: web, pdf
 
@@ -122,18 +134,6 @@ entries:
       url: /fs-ex_seek.html
       output: web, pdf
 
-    - title: Record to Stream
-      url: /fs-ex_record_to_stream.html
-      output: web, pdf
-
-    - title: Playback without flow control
-      url: /fs-ex_playback_from_stream_1.html
-      output: web, pdf
-
-    - title: Playback with flow control
-      url: /fs-ex_playback_from_stream_2.html
-      output: web, pdf
-
     - title: Sound Effects
       url: /fs-ex_sound_effects.html
       output: web, pdf
@@ -142,8 +142,8 @@ entries:
       url: /fs-ex_setLogLevel.html
       output: web, pdf
 
-    - title: Dart Streams
-      url: /fs-ex_streams.html
+    - title: Demo
+      url: /fs-ex_demo.html
       output: web, pdf
 
 # -------------------------------------------------------------

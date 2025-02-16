@@ -1,10 +1,7 @@
 ---
 title:  "Tauweb"
-description: "The Tauweb plugin"
 summary: "Tauweb : an `Etau` implementation for Flutter Web"
 permalink: etau-tauweb.html
-tags: [example,demo]
-keywords: Flutter, Flutter Sound, examples, demo
 ---
 
 ## RecordToStream

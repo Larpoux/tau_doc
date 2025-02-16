@@ -147,8 +147,8 @@
 
 {
 "title": "Tauweb",
-"tags": "exampledemo",
-"keywords": "Flutter, Flutter Sound, examples, demo",
+"tags": "",
+"keywords": "",
 "url": "etau-tauweb.html",
 "summary": "Tauweb : an `Etau` implementation for Flutter Web"
 }
@@ -204,16 +204,16 @@
 "tags": "",
 "keywords": "",
 "url": "fs-ex_player_onprogress.html",
-"summary": "Simple setSubscriptionDuration()/onProgress()"
+"summary": "Simple setSubscriptionDuration()and onProgress() for a player"
 }
 ,
 
 {
-"title": "Examples",
+"title": "Record to stream",
 "tags": "",
 "keywords": "",
 "url": "fs-ex_record_to_stream.html",
-"summary": "RecordToStream"
+"summary": "Record to a dart stream"
 }
 ,
 
@@ -222,7 +222,7 @@
 "tags": "",
 "keywords": "",
 "url": "fs-ex_recorder_onprogress.html",
-"summary": "Simple setSubscriptionDuration()/onProgress() for a FlutterSoundRecorder"
+"summary": "Simple setSubscriptionDuration() and onProgress() for a recorder"
 }
 ,
 
@@ -236,7 +236,7 @@
 ,
 
 {
-"title": "Examples",
+"title": "Set Log Level",
 "tags": "example",
 "keywords": "Flutter, Flutter Sound, examples",
 "url": "fs-ex_setLogLevel.html",
@@ -254,20 +254,20 @@
 ,
 
 {
-"title": "Examples",
+"title": "Simple Playback",
 "tags": "",
 "keywords": "",
 "url": "fs-ex_simple_playback.html",
-"summary": "A very simple Playback"
+"summary": "A very simple Playback that plays a remote file."
 }
 ,
 
 {
-"title": "Examples",
+"title": "Simple Recorder",
 "tags": "",
 "keywords": "",
 "url": "fs-ex_simple_recorder.html",
-"summary": "A very simple Recorder"
+"summary": "A very simple Recorder."
 }
 ,
 
@@ -290,11 +290,11 @@
 ,
 
 {
-"title": "Audio Streams",
+"title": "Dart Streams",
 "tags": "",
 "keywords": "",
 "url": "fs-ex_streams.html",
-"summary": "Audio Streams with dart code"
+"summary": "Audio Streams with Flutter Sound,"
 }
 ,
 
@@ -507,8 +507,8 @@
 
 {
 "title": "Contributions",
-"tags": "contributions",
-"keywords": "Contributions",
+"tags": "",
+"keywords": "",
 "url": "fs-links_contribution.html",
 "summary": "We need you!"
 }

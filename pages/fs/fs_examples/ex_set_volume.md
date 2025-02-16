@@ -10,4 +10,6 @@ The example source [is there](https://github.com/canardoux/flutter_sound/blob/ma
 This is a very simple basic example which allows the user to adjust the sound volume.
 It launch two players which play each an asset. The User can adjust the volume of them independently.
 
+This example is very basic.
+
 {% include image.html file="/fs/ExampleScreenShots/VolumeControl.png" %}

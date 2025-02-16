@@ -8,4 +8,6 @@ The example source [is there](https://github.com/canardoux/flutter_sound/blob/ma
 
 This is a very simple basic example which allows the user to set the position into a playback.
 
+This example is really basic.
+
 {% include image.html file="/fs/ExampleScreenShots/SeekPlayer.png" %}

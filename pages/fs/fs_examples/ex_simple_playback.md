@@ -1,6 +1,6 @@
 ---
-title:  "Examples"
-summary: "A very simple Playback"
+title:  "Simple Playback"
+summary: "A very simple Playback that plays a remote file."
 permalink: fs-ex_simple_playback.html
 ---
 
