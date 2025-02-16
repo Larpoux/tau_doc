@@ -183,6 +183,8 @@ Future&lt;Duration?&gt; startPlayer({
   Uint8List? fromDataBuffer,
   Codec codec = Codec.aacADTS,
   int sampleRate = 16000, &#47;&#47; Used only with PCM codec
+&#47;&#47;&#47; The nnumber of channels
+  &#47;&#47;&#47; The number of channels
   int numChannels = 1, &#47;&#47; Used only with codec == Codec.pcm16
   TWhenFinished? whenFinished,
 }) async {
@@ -195,8 +197,6 @@ Future&lt;Duration?&gt; startPlayer({
         fromDataBuffer: fromDataBuffer,
         codec: codec,
         sampleRate: sampleRate,
-        &#47;&#47;&#47; The nnumber of channels
-&#47;&#47;&#47; The number of channels
         numChannels: numChannels,
         whenFinished: whenFinished,
       );
