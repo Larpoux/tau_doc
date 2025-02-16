@@ -29,15 +29,6 @@
 ,
 
 {
-"title": "CC License",
-"tags": "license",
-"keywords": "CC License",
-"url": "LICENSE.html",
-"summary": "The Creative Commons license CC BY-NC-SA."
-}
-,
-
-{
 "title": "License",
 "tags": "Etau",
 "keywords": "",
@@ -47,11 +38,11 @@
 ,
 
 {
-"title": "The τ (Tau) Project",
-"tags": "README",
-"keywords": "Etau README",
-"url": "README.html",
-"summary": "The README of The τ Project."
+"title": "CC License",
+"tags": "license",
+"keywords": "CC License",
+"url": "LICENSE.html",
+"summary": "The Creative Commons license CC BY-NC-SA."
 }
 ,
 
@@ -65,15 +56,6 @@
 ,
 
 {
-"title": "Flutter Sound",
-"tags": "",
-"keywords": "",
-"url": "fs-README.html",
-"summary": "The Flutter Sound Project README."
-}
-,
-
-{
 "title": "Etau",
 "tags": "",
 "keywords": "",
@@ -83,47 +65,20 @@
 ,
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_constructor.html",
-"summary": "constructor"
+"title": "The τ (Tau) Project",
+"tags": "README",
+"keywords": "Etau README",
+"url": "README.html",
+"summary": "The README of The τ Project."
 }
 ,
 
 {
-"title": "constructor",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_constructor.html",
-"summary": "Creating the `Recorder` instance."
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_convert_file.html",
-"summary": "convertFile()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_delete_record.html",
-"summary": "deleteRecord()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_duration.html",
-"summary": "duration()"
+"title": "Flutter Sound",
+"tags": "",
+"keywords": "",
+"url": "fs-README.html",
+"summary": "The Flutter Sound Project README."
 }
 ,
 
@@ -299,92 +254,11 @@
 ,
 
 {
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_execute_ffmpeg_with_arguments.html",
-"summary": "executeFFmpegWithArguments()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_feed_from_stream.html",
-"summary": "feedFromStream()."
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_ffmpeg_get_media_information.html",
-"summary": "ffMpegGetMediaInformation()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_food.html",
-"summary": "Food."
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_food_sink.html",
-"summary": "foodSink."
-}
-,
-
-{
 "title": "Contributions",
 "tags": "contributions",
 "keywords": "Contributions",
 "url": "fs-guides_dev.html",
 "summary": "We need you!"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_get_last_ffmpeg_command_output.html",
-"summary": "getLastFFmpegCommandOutput()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_get_last_ffmpeg_return_code.html",
-"summary": "getLastFFmpegReturnCode()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_get_player_state.html",
-"summary": "`playerState`, `isPlaying`, `isPaused`, `isStopped`. `getPlayerState()`"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_get_progress.html",
-"summary": "getProgress()"
 }
 ,
 
@@ -470,33 +344,6 @@
 ,
 
 {
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_is_decoder_supported.html",
-"summary": "isDecoderSupported()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_is_encoder_supported.html",
-"summary": "isEncoderSupported()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_is_ffmpeg_available.html",
-"summary": "isFFmpegAvailable()"
-}
-,
-
-{
 "title": "License",
 "tags": "license",
 "keywords": "license",
@@ -515,15 +362,6 @@
 ,
 
 {
-"title": "&amp;tau; API",
-"tags": "apigetting_started",
-"keywords": "API",
-"url": "tau_api_main.html",
-"summary": "&tau; is composed with 4 modules."
-}
-,
-
-{
 "title": "News",
 "tags": "news",
 "keywords": "news, blog, updates, release notes, announcements",
@@ -538,294 +376,6 @@
 "keywords": "news, blog, updates, release notes, announcements",
 "url": "news_archive.html",
 "summary": ""
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_now_playing.html",
-"summary": "nowPlaying()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_on_progress.html",
-"summary": "onProgress"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_on_progress.html",
-"summary": "onProgress."
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_open_audio_session.html",
-"summary": "`openPlayer()` and `closePlayer()`."
-}
-,
-
-{
-"title": "openRecorder()",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_open_audio_session.html",
-"summary": "`openRecorder()` and `closeRecorder()`"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_pause_player.html",
-"summary": "pausePlayer()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_pause_recorder.html",
-"summary": "pauseRecorder()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_pcm_to_wave.html",
-"summary": "pcmToWave()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_pcm_to_wave_buffer.html",
-"summary": "pcmToWaveBuffer()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_constructor.html",
-"summary": "The &tau; player API."
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_recorder_state.html",
-"summary": "`recorderState`, `isRecording`, `isPaused`, `isStopped`."
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_resume_player.html",
-"summary": "resumePlayer()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_resume_recorder.html",
-"summary": "resumeRecorder"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_seek_player.html",
-"summary": "seekToPlayer()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_setLogLevel.html",
-"summary": "setLogLevel()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_audio_focus.html",
-"summary": "setAudioFocus."
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_set_audio_focus.html",
-"summary": "setAudioFocus()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_speed.html",
-"summary": "setSpeed()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_subscription_duration.html",
-"summary": "setSubscriptionDuration()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_set_subscription_duration.html",
-"summary": "setSubscriptionDuration()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_ui_progress_bar.html",
-"summary": "setUIProgressBar()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_volume.html",
-"summary": "setVolume()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_set_volumepan.html",
-"summary": "setVolumePan()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_startPlayer.html",
-"summary": "startPlayer()."
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_start_player_from_mic.html",
-"summary": "startPlayerFromMic()."
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_start_player_from_stream.html",
-"summary": "startPlayerFromStream()."
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_start_player_from_track.html",
-"summary": "startPlayerFromTrack()."
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_start_recorder.html",
-"summary": "startRecorder()"
-}
-,
-
-{
-"title": "Player API",
-"tags": "apiplayer",
-"keywords": "API Player",
-"url": "fs_api_player_stop_player.html",
-"summary": "stopPlayer()"
-}
-,
-
-{
-"title": "Recorder API",
-"tags": "apirecorder",
-"keywords": "API Recorder",
-"url": "fs_api_recorder_stop_recorder.html",
-"summary": "stopRecorder()"
 }
 ,
 
@@ -862,42 +412,6 @@
 "keywords": "rfc, taudio",
 "url": "td_taudio_rfc.html",
 "summary": "Web Audio API on various frameworks."
-}
-,
-
-{
-"title": "UI Widgets API",
-"tags": "apiuiwidget",
-"keywords": "API, UI, widgets",
-"url": "tau_api_widgets",
-"summary": "The &tau; Project offers several UI Widgets."
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "tau_api_utilities",
-"summary": "The &tau; Project offers several helper utilities."
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_wave_to_pcm.html",
-"summary": "waveToPCM()"
-}
-,
-
-{
-"title": "Utilities API",
-"tags": "apiutilitieshelpers",
-"keywords": "API, utilities, helpers",
-"url": "fs_api_utilities_wave_to_pcm_buffer.html",
-"summary": "waveToPCMBuffer()"
 }
 ,
 
