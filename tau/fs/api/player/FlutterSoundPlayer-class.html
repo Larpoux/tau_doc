@@ -57,15 +57,22 @@
 
     
 <section class="desc markdown">
-  <p>A Player is an object that can playback from various sources.</p>
-<hr>
+  <h2 id="a-player-is-an-object-that-can-playback-from-various-sources">A Player is an object that can playback from various sources.</h2>
+<p>The Player class can have multiple instances at the same time. Each instance is used to control the sound of its source.</p>
+<p>The sources possible can be:</p>
+<ul>
+<li>A file</li>
+<li>A remote URL</li>
+<li>An internal buffer</li>
+<li>A dart stream</li>
+</ul>
 <p>Using a player is very simple :</p>
 <ol>
 <li>
 <p>Create a new <code>FlutterSoundPlayer</code></p>
 </li>
 <li>
-<p>Open it with <a href="../recorder/FlutterSoundRecorder/openRecorder.html">FlutterSoundRecorder.openRecorder()</a></p>
+<p>Open it with <code>FlutterSoundRecorder.openPlayer()</code></p>
 </li>
 <li>
 <p>Start your playback with <a href="../player/FlutterSoundPlayer/startPlayer.html">startPlayer()</a>.</p>
