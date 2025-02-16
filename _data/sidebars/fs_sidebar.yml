@@ -151,7 +151,7 @@ entries:
 # --------------------------------------------------------------------
 
 
-  - title: API REF
+  - title: API Ref.
     output: web, pdf
     folderitems:
 

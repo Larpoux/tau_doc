@@ -5,6 +5,8 @@ summary: The Flutter Sound Project README.
 ---
 ![pub version](https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square)
 
+![Flutter Sound](https://tau-ver.canardoux.xyz/images/fs/Logotype-primary.png)
+
 ## Documentation
 
 - ## Flutter Sound user : your doc [is here](https://tau.canardoux.xyz/fs-README.html)

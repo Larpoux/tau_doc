@@ -20,6 +20,15 @@
 ,
 
 {
+"title": "CC License",
+"tags": "license",
+"keywords": "CC License",
+"url": "LICENSE.html",
+"summary": "The Creative Commons license CC BY-NC-SA."
+}
+,
+
+{
 "title": "License",
 "tags": "",
 "keywords": "",
@@ -38,20 +47,20 @@
 ,
 
 {
-"title": "CC License",
-"tags": "license",
-"keywords": "CC License",
-"url": "LICENSE.html",
-"summary": "The Creative Commons license CC BY-NC-SA."
-}
-,
-
-{
 "title": "Taudio",
 "tags": "",
 "keywords": "",
 "url": "td-README.html",
 "summary": "The Taudio Project README."
+}
+,
+
+{
+"title": "Flutter Sound",
+"tags": "",
+"keywords": "",
+"url": "fs-README.html",
+"summary": "The Flutter Sound Project README."
 }
 ,
 
@@ -70,15 +79,6 @@
 "keywords": "Etau README",
 "url": "README.html",
 "summary": "The README of The τ Project."
-}
-,
-
-{
-"title": "Flutter Sound",
-"tags": "",
-"keywords": "",
-"url": "fs-README.html",
-"summary": "The Flutter Sound Project README."
 }
 ,
 
@@ -376,15 +376,6 @@
 "keywords": "news, blog, updates, release notes, announcements",
 "url": "news_archive.html",
 "summary": ""
-}
-,
-
-{
-"title": "Contributions",
-"tags": "contributions",
-"keywords": "Contributions",
-"url": "fs_dev.html",
-"summary": "We need you!"
 }
 ,
 
